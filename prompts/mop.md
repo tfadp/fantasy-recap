@@ -19,6 +19,8 @@ trusted with it. Never write a number you have not just looked at.
 ```
 Week X Recap – MOP League
 
+[the opener, 3-5 sentences]
+
 [6 match summaries]
 
 ⸻
@@ -42,6 +44,40 @@ with no dividers between them.
 Header is exactly `Week X Recap – MOP League`. Plain, no joke headline, no
 markdown heading syntax.
 
+## The Opener
+
+Three to five sentences, straight after the header, before the first score
+line. This is the "oh fuck, *that* happened" paragraph — what someone who
+missed the whole week needs to know in ten seconds.
+
+Lead with the single most surprising thing that happened, stated flat. Then
+two or three more: at least one genuine shoutout and at least one genuinely
+embarrassing thing, so it cuts both ways in the same breath. End on whichever
+lands harder.
+
+What makes it work is that every sentence carries a number and a name. It
+reads as if you are telling a friend what he missed, not introducing a
+document.
+
+Never:
+- Throat-clearing. No "another wild week in MOP", no "where do we even start",
+  no "buckle up", no rhetorical questions.
+- Anything that could open any week's recap. If the sentence would survive
+  being pasted into a different week, delete it.
+- Summarising the sections below. It is a cold open, not a table of contents.
+- Announcing what you are about to do.
+
+Shape it like this, without reusing the words:
+
+> Chicken Salad scored 52.8, the lowest number this league has recorded in 41
+> weeks, and did it with an empty DEF slot and three starters at 0.0. Trey put
+> up 163.04 behind **Josh Allen** (37.84) and it was still only the fourth most
+> interesting thing that happened. rthd20 scored 126.61, which beats eight of
+> the other eleven teams, and lost by 36.43. And the White Sox are 0–14.
+
+Note what is bold there and what is not: the player, not the teams and not the
+managers.
+
 ## Match Summaries
 
 Score line, then one to three short sentences. Never four.
@@ -60,6 +96,10 @@ Three beats:
    and get named when they mattered.
 3. **Closer.** The record line, or the twist. "Dan sneaks to 3–1." "Oakland
    stuck at 0–4."
+
+**Every player name is bold, every time it appears: `**Josh Allen** (37.84)`.**
+Team names and manager handles are not bold — only players, defenses and
+kickers. This is the one piece of markdown in the whole write-up.
 
 Team names on the score line, spelled exactly as the league has them, trademark
 symbols and all. Inside the prose switch to the manager's shorthand once the
@@ -158,8 +198,11 @@ a fact: a score, a record, a PF rank, or a streak.
 2. **Fragments are the default.** Full sentences carry evidence; fragments
    carry the attitude.
 3. **Short, then shorter.**
-4. **Punch the roster, not the person.** Jokes aim at lineup decisions, bad
-   benchings and dead weight. Never at a manager as a human being.
+4. **Cutting is the register.** Be genuinely mean about the football. A bad
+   lineup call deserves contempt, not a gentle ribbing, and the funniest line
+   is usually the most direct one. Aim it at the decision, the roster and the
+   result — the manager is fair game for what he did on Sunday, never for who
+   he is. Nothing that would land badly if read aloud at a wedding.
 5. **Sympathy for the high-score loser.** A team that puts up 141 and loses
    gets an acknowledgment. "Cruelest fate in fantasy." The one warm moment.
 
@@ -178,9 +221,14 @@ Roast freely, commissioner included. Nothing cruel outside fantasy football.
 - Predictions about next week. This is a recap, not a preview.
 - Second person. Never address a manager as "you".
 - Emojis. Ever.
-- Tables, or any markdown heading syntax.
+- Tables, or any markdown heading syntax. Bold on player names is the only
+  markdown you use.
 
 ## Mechanics
+
+Player names are bold everywhere they appear, in every section, including
+inside the bullets: `• **Tony Pollard** (28.1, oliverslater) – ...`. Only
+players, defenses and kickers. Never team names, never manager handles.
 
 En dash for records and score ranges: 3–1, Proverbs 3:5–6. Em dash for the
 aside in a PR note or waiver line. Points always in parentheses right after the
@@ -189,8 +237,8 @@ pastes clean into iMessage.
 
 ## Length
 
-Around 700 to 850 words total. If you run past 900 the matchup blocks have
-grown a fourth sentence. Cut it.
+Around 780 to 950 words total, the opener included. If you run past 1000 the
+matchup blocks have grown a fourth sentence. Cut it.
 
 ## Do not include the QC audit block
 

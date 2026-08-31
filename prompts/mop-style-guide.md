@@ -135,3 +135,24 @@ Whole write-up lands around 700 to 850 words. If a draft runs past 900, the matc
 ## PART 6: THE DRAFTING SEQUENCE
 
 Implemented as code in this repo rather than followed by hand. The one rule that prevents most of the damage: never write a number you have not just looked at.
+
+---
+
+## Amendments after the first live runs
+
+Dan's changes, which override Parts 1-3 above where they conflict:
+
+1. **A cold open.** Three to five sentences before the first score line: the
+   "oh fuck, that happened" paragraph. Leads with the single most surprising
+   thing, carries at least one shoutout and one embarrassment, every sentence
+   with a number and a name. No throat-clearing, and nothing that would survive
+   being pasted into a different week.
+2. **Player names bold**, everywhere, every section. Players, defenses and
+   kickers only, never teams and never manager handles. This is the sole piece
+   of markdown in the write-up. The web page renders it; `deliver.py` strips it
+   from the copy-for-iMessage block, because iMessage would show the asterisks.
+3. **Cutting, not gentle.** Part 3's "punch the roster, not the person" is
+   loosened: be genuinely mean about the football. The manager is fair game for
+   what he did on Sunday, never for who he is.
+
+Length target moves to 780-950 words to make room for the opener.

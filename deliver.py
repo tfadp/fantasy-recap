@@ -17,6 +17,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 import sys
 import urllib.request
 
@@ -73,6 +74,15 @@ def mark_sent(stem, text):
     log = _sent_log()
     log[stem] = hashlib.sha256(text.encode()).hexdigest()[:16]
     json.dump(log, open(SENT, "w"), indent=2, sort_keys=True)
+
+
+def for_imessage(text):
+    """
+    Player names are bold, which the web page renders and iMessage does not.
+    Pasting raw would put literal asterisks around every name, so the copy
+    block gets them stripped. The page and the .md keep the markup.
+    """
+    return re.sub(r"\*\*(.+?)\*\*", r"\1", text)
 
 
 def qc_audit(path):
@@ -188,7 +198,8 @@ def main():
             body = (f"{'Link to send' if is_public else 'Draft link (only you have it)'}:\n"
                     f"{link}\n\n"
                     f"{'-' * 40}\n"
-                    f"Text, ready to copy into the thread:\n\n{text}\n")
+                    f"Text, ready to copy into the thread:\n\n"
+                    f"{for_imessage(text)}\n")
             audit = qc_audit(path)
             if audit:
                 body += f"\n{'-' * 40}\nNot for the thread, for you:\n\n{audit}\n"
