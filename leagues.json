@@ -13,9 +13,9 @@
       "pr_display_scale": "points"
     },
     {
-      "_comment": "Yahoo via the browser extension. This is the Yahoo route.",
+      "_comment": "Yahoo via the browser extension. Disabled until the extension is verified against a live page, so it does not add a red X to every Tuesday run. Flip to true when we build it.",
       "name": "yahoo",
-      "enabled": true,
+      "enabled": false,
       "platform": "payload",
       "league_id": "from-the-extension",
       "display_name": "Yahoo league",
