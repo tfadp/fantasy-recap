@@ -145,13 +145,33 @@ def compute(current, history, weights=None, pf_mode="value",
     # The sample recap prints Power Rankings on a points-looking scale
     # (135.8 down to 95.4), not the 0-100 the stated formula produces. The
     # ordering is identical either way; only the printed number differs.
-    # display_scale="points" maps the 0-100 score onto the league's own
-    # weekly scoring range so it reads the way the old recaps did.
+    #
+    # Map onto the band of team season scoring *averages*, not the range of
+    # individual weekly scores. The weekly range is much wider than any team's
+    # real quality spread - one 52.8 stretches the whole bottom - so anchoring
+    # to it drove the last-placed team's power score onto the season's single
+    # worst weekly score. For the worst team that is usually its own score, so
+    # the ranking printed the same number twice and read like a typo.
+    #
+    # Points per game is the right unit anyway: the number now says roughly
+    # what this team is worth on a given Sunday, which is what a power ranking
+    # is claiming. It lands in the sample's 95-136 band on its own.
     if display_scale == "points" and rows:
-        wk = [p for s_ in seq.values() for p in s_]
-        lo_p, hi_p = min(wk), max(wk)
+        ppg = []
+        for r in rows:
+            t = by_id[r["team_id"]]
+            games = t.get("games_played") or (t["wins"] + t["losses"] + t["ties"])
+            if games:
+                ppg.append(t["points_for"] / games)
         scores = [r["power_score"] for r in rows]
         s_lo, s_hi = min(scores), max(scores)
+        lo_p, hi_p = (min(ppg), max(ppg)) if ppg else (s_lo, s_hi)
+        # Widen the band past the raw PPG spread. Squeezing a 0-100 score into
+        # a ~36-point range rounds neighbouring teams onto the same printed
+        # number, so two teams a rank apart showed an identical score and the
+        # ordering looked arbitrary. The pad keeps one decimal meaningful.
+        pad = (hi_p - lo_p) * 0.2
+        lo_p, hi_p = lo_p - pad, hi_p + pad
         for r in rows:
             frac = (r["power_score"] - s_lo) / (s_hi - s_lo) if s_hi > s_lo else 0.5
             r["display_score"] = round(lo_p + frac * (hi_p - lo_p), 1)

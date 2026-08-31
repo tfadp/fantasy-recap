@@ -96,6 +96,25 @@ the archive and points `index.html` at it. Before that the week exists only at
 nowhere, and is deleted on approval. The token comes from `DRAFT_SALT`, so it
 is not guessable from the week number.
 
+## Getting the group chat out of iMessage
+
+iMessage has no export button, but macOS keeps every message in a SQLite
+database at `~/Library/Messages/chat.db`. `tools/imessage_chat.py` reads it
+read-only and writes the one thread you point it at.
+
+```bash
+python3 tools/imessage_chat.py list              # find the league thread
+python3 tools/imessage_chat.py dump 42 > prompts/mop-chat.md
+```
+
+Your terminal needs **Full Disk Access** first: System Settings -> Privacy &
+Security -> Full Disk Access -> add Terminal, then restart it. Without that the
+open fails with "operation not permitted".
+
+Nothing is uploaded and nothing leaves the machine. Messages written on newer
+macOS store their text in `attributedBody` rather than `text`, and the tool
+decodes those, because skipping them would drop most of a modern thread.
+
 ## Keeping the chat private
 
 GitHub Pages on a free account only serves from a **public** repository. The
