@@ -317,11 +317,42 @@ def write_recap(a, cfg, note=None):
     return polish(_text_of(msg))
 
 
+class NothingYet(Exception):
+    """No week has been played yet. Not a failure, just early."""
+
+
+def _latest_played_week(cfg):
+    """
+    The week to write up is the most recent one that actually has scores.
+
+    Sleeper advances state/nfl into the new week during Tuesday, which is
+    exactly when this runs. Trusting `display_week` would ask for a week whose
+    games have not been played and fail every Tuesday at 9am - including the
+    first real one of the season. So start where the API points and step back
+    until a week has points on the board.
+    """
+    state = sleeper.current_state()
+    start = int(state.get("display_week") or state["week"])
+    for wk in range(start, max(start - 3, 0), -1):
+        try:
+            lw = sleeper.fetch(cfg["league_id"], wk)
+        except Exception:
+            continue
+        if any(side["points"] > 0 for m in lw["matchups"] for side in m["teams"]):
+            return wk, lw
+    raise NothingYet(
+        f"{cfg.get('display_name', cfg['name'])}: no week has been played yet "
+        f"(the API is on week {start}, season starts "
+        f"{state.get('season_start_date')}). Nothing to write.")
+
+
 def do_league(cfg, week, force, do_write, note=None):
     if cfg["platform"] == "sleeper":
-        state = sleeper.current_state()
-        wk = week or (state.get("display_week") or state["week"])
-        lw = sleeper.fetch(cfg["league_id"], wk)
+        if week:
+            wk = int(week)
+            lw = sleeper.fetch(cfg["league_id"], wk)
+        else:
+            wk, lw = _latest_played_week(cfg)
         history = sleeper.season_history(cfg["league_id"], wk,
                                          seasons_back=cfg.get("seasons_back", 2))
     elif cfg["platform"] == "yahoo":
@@ -444,12 +475,18 @@ def main():
         active = [c for c in active if c["name"] == a.only]
         if not active:
             sys.exit(f"no enabled league named {a.only!r} in leagues.json")
-    failures = []
+    failures, early = [], []
     for cfg in active:
         try:
             _, text = do_league(cfg, a.week, a.force, not a.no_write, note=a.note)
             print(f"\n=== {cfg['name']} ===")
             print(text or "(facts written; no model call)")
+        except NothingYet as e:
+            # Pre-season Tuesdays are not failures. Saying so quietly beats
+            # sending a red X and a "recap failed" email every week until
+            # kickoff, which trains you to ignore the one that matters.
+            early.append(cfg["name"])
+            print(f"\n=== {cfg['name']}: not yet ===\n{e}")
         except Exception as e:
             failures.append((cfg["name"], str(e)))
             print(f"\n=== {cfg['name']} FAILED ===\n{e}", file=sys.stderr)
@@ -457,6 +494,8 @@ def main():
     # one league failing must not stop the other from being delivered
     if failures and len(failures) == len(active):
         sys.exit(1)
+    if early and not failures:
+        sys.exit(0)
 
 
 if __name__ == "__main__":

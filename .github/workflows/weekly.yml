@@ -129,7 +129,7 @@ jobs:
         run: |
           git config user.name "fantasy-recap"
           git config user.email "actions@github.com"
-          git add out history docs approved.json
+          git add out history docs approved.json delivered.json
           git diff --staged --quiet || git commit -m "Week recap $(date +%F)"
           git push
 

@@ -12,7 +12,9 @@ If neither is configured this just prints, which is the right behavior when
 you want to read the draft before the league does.
 """
 
+import argparse
 import glob
+import hashlib
 import json
 import os
 import sys
@@ -23,6 +25,7 @@ import publish
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
+SENT = os.path.join(HERE, "delivered.json")
 LIMIT = 990
 
 # urllib announces itself as "Python-urllib/3.x", which Cloudflare blocks in
@@ -43,6 +46,33 @@ def latest_recaps():
 
 def stem_of(path):
     return os.path.basename(path)[:-3]  # drop ".md"
+
+
+def _sent_log():
+    if not os.path.exists(SENT):
+        return {}
+    try:
+        return json.load(open(SENT))
+    except Exception:
+        return {}
+
+
+def already_sent(stem, text):
+    """
+    Keyed on the text, not just the week, so a redo mails the new version but a
+    re-run of an unchanged week stays quiet.
+
+    Without this, any Tuesday where nothing new was played - every week before
+    kickoff, and any re-run - re-mails the newest recap on disk. Which is last
+    season's, and reads as though the thing fired correctly.
+    """
+    return _sent_log().get(stem) == hashlib.sha256(text.encode()).hexdigest()[:16]
+
+
+def mark_sent(stem, text):
+    log = _sent_log()
+    log[stem] = hashlib.sha256(text.encode()).hexdigest()[:16]
+    json.dump(log, open(SENT, "w"), indent=2, sort_keys=True)
 
 
 def qc_audit(path):
@@ -135,12 +165,21 @@ def page_link(stem=None):
 
 def main():
     env.load()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--force", action="store_true",
+                    help="send even if this exact text already went out")
+    args = ap.parse_args()
+
     recaps = latest_recaps()
     if not recaps:
         sys.exit("Nothing to deliver. Did run.py write a recap?")
 
     for name, text, path in recaps:
         stem = stem_of(path)
+        if already_sent(stem, text) and not args.force:
+            print(f"{name}: {stem} already delivered, nothing new. "
+                  f"(--force to send again)")
+            continue
         link, is_public = page_link(stem)
         state = "" if is_public else " [DRAFT]"
 
@@ -180,6 +219,8 @@ def main():
             f"{name} — Week {stem.split('-wk')[1].lstrip('0')} recap{state}", body))
         for pr in problems:
             print(f"  delivery failed, {pr}", file=sys.stderr)
+        if sent:
+            mark_sent(stem, text)
         print(f"{name}: {', '.join(sent) or 'printed only'}  ({path})")
         if not sent:
             print(body)
