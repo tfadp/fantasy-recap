@@ -45,6 +45,21 @@ def stem_of(path):
     return os.path.basename(path)[:-3]  # drop ".md"
 
 
+def qc_audit(path):
+    """
+    The style guide's call: keep the audit for verification, strip it from what
+    the league sees. So the model no longer writes it into the recap, and it
+    rides along on your copy instead.
+    """
+    facts = path[:-3] + "-facts.json"
+    if not os.path.exists(facts):
+        return ""
+    try:
+        return json.load(open(facts)).get("qc_audit", "")
+    except Exception:
+        return ""
+
+
 def chunk(text, limit=LIMIT):
     """Split on paragraph breaks so a joke never lands across two messages."""
     parts, cur = [], ""
@@ -135,6 +150,9 @@ def main():
                     f"{link}\n\n"
                     f"{'-' * 40}\n"
                     f"Text, ready to copy into the thread:\n\n{text}\n")
+            audit = qc_audit(path)
+            if audit:
+                body += f"\n{'-' * 40}\nNot for the thread, for you:\n\n{audit}\n"
             if not is_public:
                 body += (f"\n{'-' * 40}\n"
                          f"Happy with it?   ./recap approve {stem}\n"

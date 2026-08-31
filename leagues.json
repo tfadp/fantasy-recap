@@ -9,7 +9,8 @@
       "prompt_file": "prompts/mop.md",
       "lore_file": "prompts/mop-lore.md",
       "seasons_back": 2,
-      "chat_file": "prompts/mop-chat.md"
+      "chat_file": "prompts/mop-chat.md",
+      "pr_display_scale": "points"
     },
     {
       "_comment": "Yahoo via the browser extension. This is the Yahoo route.",

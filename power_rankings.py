@@ -181,17 +181,23 @@ def add_movement(rows, previous):
 
 
 def render(rows):
-    """Plain lines, no table, ready to paste."""
+    """
+    Plain lines, ready to paste. Arrows are rendered here rather than described
+    to the model, so the glyph and the number are both copied rather than
+    reconstructed. Style guide: (\u21913), (\u21934), (\u2013) for no change, never (0).
+    """
     out = []
     for r in rows:
         mv = r.get("movement")
-        arrow = ""
-        if mv:
-            arrow = f" ({'up' if mv > 0 else 'down'} {abs(mv)})"
-        elif mv == 0:
-            arrow = " (--)"
-        out.append(f"{r['rank']}. {r['team']} - {r.get('display_score', r['power_score'])}"
-                   f" - {r['record']}{arrow}")
+        if mv is None or mv == 0:
+            arrow = "(\u2013)"
+        elif mv > 0:
+            arrow = f"(\u2191{mv})"
+        else:
+            arrow = f"(\u2193{abs(mv)})"
+        score = r.get("display_score", r["power_score"])
+        out.append(f"{r['rank']}. {r['team']} \u2014 {round(float(score), 1)} {arrow}"
+                   f"   [record {r['record']}]")
     return "\n".join(out)
 
 

@@ -19,6 +19,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 import datetime
 
@@ -219,11 +220,10 @@ Every number below is already computed and verified. Use them exactly as given.
 Do not add up scores, compare values, or infer any statistic that is not stated.
 If a fact you want is not present, leave it out.
 
-On voice: this gets posted to a group chat, not filed as a report. It should
-read like the funniest person in the league wrote it, not like a recap
-generator. Use the league's own names and running jokes. Short paragraphs. Call
-people out by handle. Never produce a bare list of statistics where a sentence
-would land harder; the numbers are ammunition for the jokes, not the content."""
+The format and voice rules above are exact. Follow the section order, the bullet
+shapes, the word counts and the punctuation as written. This is pasted into an
+iMessage thread, so it must be plain text: no markdown headings, no tables, no
+emoji."""
 
 
 def _text_of(msg):
@@ -238,6 +238,18 @@ def _text_of(msg):
     if not parts:
         raise RuntimeError(f"model returned no text (stop_reason={msg.stop_reason})")
     return parts[-1].strip()
+
+
+# W-L records the style guide wants as en dashes. The model gets them right in
+# the match summaries and drifts to hyphens in Call the Doctor and the Power
+# Rankings notes, so the mechanical part is done mechanically. The lookbehind
+# protects team names that legitimately contain a hyphen after a colon, which
+# is the whole reason "Proverbs 3:5-6" survives this untouched.
+_RECORD = re.compile(r"(?<![\d:])(\d{1,2})-(\d{1,2})(?![\d-])")
+
+
+def polish(text):
+    return _RECORD.sub("\\1\u2013\\2", text)
 
 
 def write_recap(a, cfg, note=None):
@@ -289,7 +301,8 @@ def write_recap(a, cfg, note=None):
             + "\n\n".join(past) if past else "",
             f"THIS WEEK, PLAIN:\n{brief(a)}",
             f"POWER RANKINGS AUDIT:\n{a.get('power_rankings_audit', '')}",
-            f"QC AUDIT FOOTER, paste verbatim at the end:\n{a.get('qc_audit', '')}",
+            f"QC AUDIT, context only. Do NOT reproduce any of this in the recap:\n"
+            f"{a.get('qc_audit', '')}",
             f"THIS WEEK, COMPLETE DATA:\n{json.dumps(a, indent=2)}",
             (f"NOTE FROM DAN ON THIS REWRITE, follow it over any default:\n{note}"
              if note else ""),
@@ -301,7 +314,7 @@ def write_recap(a, cfg, note=None):
             "The model declined to write this one and the fallback did too. "
             "Usually a roast that read wrong out of context. Re-run with "
             "--note to steer it.")
-    return _text_of(msg)
+    return polish(_text_of(msg))
 
 
 def do_league(cfg, week, force, do_write, note=None):
