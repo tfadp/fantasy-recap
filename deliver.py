@@ -25,6 +25,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 LIMIT = 990
 
+# urllib announces itself as "Python-urllib/3.x", which Cloudflare blocks in
+# front of Resend with a 403 (error 1010) before the request ever reaches the
+# API. Nothing to do with the key. Send a real user agent.
+UA = "fantasy-recap/1.0 (+https://github.com/tfadp/fantasy-recap)"
+
 
 def latest_recaps():
     found = []
@@ -68,7 +73,7 @@ def groupme(text):
         req = urllib.request.Request(
             "https://api.groupme.com/v3/bots/post",
             data=json.dumps({"bot_id": bot, "text": part}).encode(),
-            headers={"Content-Type": "application/json"})
+            headers={"Content-Type": "application/json", "User-Agent": UA})
         with urllib.request.urlopen(req, timeout=30) as r:
             if r.status not in (200, 201, 202):
                 raise RuntimeError(f"GroupMe returned {r.status}")
@@ -84,7 +89,8 @@ def email(subject, text):
         "https://api.resend.com/emails",
         data=json.dumps({"from": "recap@resend.dev", "to": to,
                          "subject": subject, "text": text}).encode(),
-        headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+        headers={"Content-Type": "application/json", "User-Agent": UA,
+                 "Authorization": f"Bearer {key}"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.status < 300
 
@@ -135,13 +141,27 @@ def main():
                          f"Want it redone?  ./recap redo --week "
                          f"{int(stem.split('-wk')[1])} --note \"...\"\n")
 
-        sent = []
+        sent, problems = [], []
+
+        def attempt(label, fn):
+            # The recap is already written and published by this point. A
+            # provider being down must not turn that into a traceback and an
+            # empty Tuesday; report it and fall through to printing.
+            try:
+                if fn():
+                    sent.append(label)
+            except Exception as exc:
+                problems.append(f"{label}: {exc}")
+
         # GroupMe only fires for a week you have already approved; a draft is
         # not something to accidentally broadcast.
-        if is_public and groupme(f"{name}\n\n{text}" + (f"\n{link}" if link else "")):
-            sent.append("GroupMe")
-        if email(f"{name} — Week {stem.split('-wk')[1].lstrip('0')} recap{state}", body):
-            sent.append("email")
+        if is_public:
+            attempt("GroupMe", lambda: groupme(
+                f"{name}\n\n{text}" + (f"\n{link}" if link else "")))
+        attempt("email", lambda: email(
+            f"{name} — Week {stem.split('-wk')[1].lstrip('0')} recap{state}", body))
+        for pr in problems:
+            print(f"  delivery failed, {pr}", file=sys.stderr)
         print(f"{name}: {', '.join(sent) or 'printed only'}  ({path})")
         if not sent:
             print(body)
