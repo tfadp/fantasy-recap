@@ -427,10 +427,12 @@ def main():
     env.load()
 
     active = [c for c in load_config()["leagues"] if c.get("enabled", True)]
+    if a.only:
+        active = [c for c in active if c["name"] == a.only]
+        if not active:
+            sys.exit(f"no enabled league named {a.only!r} in leagues.json")
     failures = []
     for cfg in active:
-        if a.only and cfg["name"] != a.only:
-            continue
         try:
             _, text = do_league(cfg, a.week, a.force, not a.no_write, note=a.note)
             print(f"\n=== {cfg['name']} ===")
