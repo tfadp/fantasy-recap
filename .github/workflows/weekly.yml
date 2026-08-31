@@ -59,10 +59,21 @@ jobs:
         env:
           MOP_CHAT: ${{ secrets.MOP_CHAT }}
           MOP_LORE: ${{ secrets.MOP_LORE }}
+        # Actions runs steps under `bash -e`, so a bare `[ -n "$X" ] && cmd`
+        # exits 1 when the secret is unset and fails the whole job. Use if.
         run: |
-          [ -n "$MOP_CHAT" ] && printf '%s' "$MOP_CHAT" > prompts/mop-chat.md
-          [ -n "$MOP_LORE" ] && printf '%s' "$MOP_LORE" > prompts/mop-lore.md
-          echo "voice files restored: $(ls -1 prompts/*-chat.md prompts/*-lore.md 2>/dev/null | wc -l)"
+          if [ -n "$MOP_CHAT" ]; then
+            printf '%s' "$MOP_CHAT" > prompts/mop-chat.md
+            echo "restored mop-chat.md"
+          else
+            echo "MOP_CHAT not set; the recap will be written without the group chat"
+          fi
+          if [ -n "$MOP_LORE" ]; then
+            printf '%s' "$MOP_LORE" > prompts/mop-lore.md
+            echo "restored mop-lore.md"
+          else
+            echo "MOP_LORE not set; the recap will be written without the lore"
+          fi
 
       - name: Restore Yahoo token
         if: env.skip != 'true'
