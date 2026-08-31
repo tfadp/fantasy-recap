@@ -1,0 +1,97 @@
+MOP — 2025 Week 12
+
+SCOREBOARD
+  Danwitdashifts 132.16 def. The jackson family 95.37  (by 36.79)
+  Legacy LeaversTM 134.14 def. We Getting Shoughed Tn🎶 117.23  (by 16.91)
+  Windsor Terror 148.58 def. Henry & Harvey LLC 83.09  (by 65.49)
+  2025 New York Yankees 143.92 def. Proverbs 3:5-6 99.22  (by 44.7)
+  All Hail the Robot Buddha 119.21 def. 2024 White Sox 72.81  (by 46.4)
+  Based God 134.26 def. Chicken Salad 123.06  (by 11.2)
+
+THE WEEK IN ONE GLANCE
+  high: Windsor Terror 148.58
+  low:  2024 White Sox 72.81
+  league average: 116.92
+  closest: Based God over Chicken Salad by 11.2
+  blowout: Windsor Terror over Henry & Harvey LLC by 65.49
+  unlucky: Chicken Salad scored 123.06 and still lost to Based God (134.26); that score would have beaten 6 of the other 11 teams
+
+PLAYERS
+    55.4  Jahmyr Gibbs (RB, 2025 New York Yankees)
+    37.1  Jaxon Smith-Njigba (WR, Windsor Terror)
+   30.86  Jalen Hurts (QB, Chicken Salad)
+    30.6  Wan'Dale Robinson (WR, The jackson family)
+    29.9  Amon-Ra St. Brown (WR, Legacy LeaversTM)
+  worst start: Jameson Williams (WR) 0.0 for We Getting Shoughed Tn🎶
+
+LINEUP REGRET
+  Danwitdashifts benched DJ Moore (23.4) and started Alec Pierce (3.6), costing 19.8
+  Chicken Salad would have beaten Based God with its best lineup (144.96 vs 134.26, actually scored 123.06)
+
+STANDINGS
+   1. All Hail the Robot Buddha  11-3-0  PF 1768.38  PA 1491.82
+   2. Based God  10-4-0  PF 1919.41  PA 1587.31
+   3. Proverbs 3:5-6  10-4-0  PF 1787.01  PA 1589.67
+   4. 2025 New York Yankees  9-5-0  PF 1897.96  PA 1668.07
+   5. We Getting Shoughed Tn🎶  9-5-0  PF 1648.73  PA 1616.86
+   6. Windsor Terror  8-6-0  PF 1666.65  PA 1589.96
+   7. Legacy LeaversTM  7-7-0  PF 1706.55  PA 1715.55
+   8. Danwitdashifts  6-8-0  PF 1662.45  PA 1768.83
+   9. The jackson family  6-8-0  PF 1539.34  PA 1665.62
+  10. Chicken Salad  4-10-0  PF 1491.02  PA 1635.58
+  11. Henry & Harvey LLC  4-10-0  PF 1416.66  PA 1771.54
+  12. 2024 White Sox  0-14-0  PF 1429.43  PA 1832.78
+
+STREAKS
+  Based God: 4 straight wins  (LLWWWWWLWWWW)
+  All Hail the Robot Buddha: 3 straight wins  (WWWLWWLWLWWW)
+  Danwitdashifts: 2 straight wins  (LWWWLLLLWLWW)
+  Legacy LeaversTM: 2 straight wins  (LWLWLWLLLLWW)
+  2024 White Sox: 12 straight losses  (LLLLLLLLLLLL)
+  Chicken Salad: 4 straight losses  (WWLLLLLWLLLL)
+  Henry & Harvey LLC: 3 straight losses  (WLLLLLWWWLLL)
+  The jackson family: 2 straight losses  (WLLLWLLWWWLL)
+
+HISTORY (39 prior weeks on record)
+  Windsor Terror's 148.58 is the best since Based God put up 184.65 in 2025 week 10
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Kareem Hunt (soneal718, 11/21, $1) — 20.0 points (started at RB)
+  2. Jared Goff (overtimedan, 11/19) — 18.16 points (started at QB)
+  3. Zonovan Knight (xainshawty, 11/20) — 13.2 points (benched)
+  4. Isaiah Hodgins (zazach, 11/19) — 12.2 points (benched)
+  5. Las Vegas Raiders (bbasse3267, 11/23) — 9.75 points (started at DEF)
+  6. Baltimore Ravens (bbasse3267, 11/20, $7) — 9.0 points (benched)
+  7. T.J. Hockenson (jxllokreflo, 11/20) — 5.9 points (started at TE)
+  8. Darius Slayton (treypaulino, 11/22) — 3.3 points (started at FLEX)
+  9. Rhamondre Stevenson (treypaulino, 11/20) — 2.0 points (benched)
+  10. Jacory Croskey-Merritt (treypaulino, 11/24) — 0.0 points (benched)
+  11. Darren Waller (soneal718, 11/20) — 0.0 points (benched)
+  best add: Kareem Hunt — 20.0 for soneal718
+  worst add: Darius Slayton — started at FLEX, 3.3 for treypaulino
+
+MOVES
+  waiver $9: John Metchie to Danwitdashifts; dropped Alec Pierce off Danwitdashifts
+  waiver $7: Brenton Strange to Danwitdashifts; dropped Dalton Schultz off Danwitdashifts
+  waiver $14: Devin Neal to Windsor Terror; dropped Alvin Kamara off Windsor Terror
+  waiver: Philadelphia Eagles to We Getting Shoughed Tn🎶; dropped Zonovan Knight off We Getting Shoughed Tn🎶
+  waiver: Andrei Iosivas to 2024 White Sox
+  free_agent: ; dropped Kendrick Bourne off 2024 White Sox
+  free_agent: ; dropped Sam Darnold off 2024 White Sox
+  waiver: Raheem Mostert to 2025 New York Yankees; dropped Darius Slayton off 2025 New York Yankees
+  free_agent: Jacory Croskey-Merritt to 2025 New York Yankees; dropped Rhamondre Stevenson off 2025 New York Yankees
+  free_agent: Las Vegas Raiders to The jackson family; dropped Baltimore Ravens off The jackson family
+  free_agent: Darius Slayton to 2025 New York Yankees; dropped Jacory Croskey-Merritt off 2025 New York Yankees
+  free_agent: ; dropped Keon Coleman off Chicken Salad
+  waiver $1: Kareem Hunt to Windsor Terror; dropped Andrei Iosivas off Windsor Terror
+  free_agent: Andrei Iosivas to Windsor Terror
+  free_agent: Darren Waller to Windsor Terror
+  free_agent: ; dropped Mack Hollins off Windsor Terror
+  free_agent: T.J. Hockenson to 2024 White Sox
+  free_agent: ; dropped Tyler Higbee off 2024 White Sox
+  free_agent: Zonovan Knight to We Getting Shoughed Tn🎶; dropped Brenton Strange off We Getting Shoughed Tn🎶
+  free_agent: Isaiah Hodgins to Chicken Salad
+  free_agent: Jared Goff to Danwitdashifts; dropped Blake Corum off Danwitdashifts
+  waiver $7: Baltimore Ravens to The jackson family
+  waiver: Rhamondre Stevenson to 2025 New York Yankees; dropped Kareem Hunt off 2025 New York Yankees
+  free_agent: Mack Hollins to Windsor Terror; dropped Baltimore Ravens off Windsor Terror

@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Send Week To Writer settings</title>
+<style>
+  body { font: 14px/1.55 -apple-system, system-ui, sans-serif; max-width: 520px;
+         margin: 40px auto; padding: 0 20px; color: #16181d; }
+  label { display: block; margin: 18px 0 5px; font-weight: 600; }
+  input { width: 100%; padding: 8px; border: 1px solid #c8ccd4; border-radius: 6px;
+          font-size: 13px; font-family: ui-monospace, Menlo, monospace; }
+  p.hint { color: #5b6270; font-size: 12px; margin: 5px 0 0; }
+  button { margin-top: 22px; padding: 9px 18px; border-radius: 7px; border: 0;
+           background: #1c4ed8; color: #fff; font-weight: 600; cursor: pointer; }
+  #saved { color: #14562c; margin-left: 10px; font-size: 13px; }
+</style>
+
+<h2>Send Week To Writer</h2>
+
+<label for="repo">GitHub repository</label>
+<input id="repo" placeholder="yourname/fantasy-recap">
+<p class="hint">Where the recap pipeline lives. Format is owner/repo.</p>
+
+<label for="token">Personal access token</label>
+<input id="token" type="password" placeholder="github_pat_…">
+<p class="hint">
+  Fine-grained token, scoped to that one repository, with Contents read and
+  write. Stored only in this browser profile. It is never sent anywhere except
+  api.github.com.
+</p>
+
+<button id="save">Save</button><span id="saved"></span>
+<script src="options.js"></script>

@@ -1,0 +1,104 @@
+name: Weekly fantasy recap
+
+on:
+  schedule:
+    # 9:00 AM Eastern Tuesday. GitHub cron is UTC and does not follow DST,
+    # so this is 13:00 UTC during the NFL season (Eastern is UTC-4 through
+    # early November) and 14:00 UTC after the clocks change. Both are listed;
+    # the guard step below exits early on the one that is the wrong hour.
+    - cron: "0 13 * * 2"
+    - cron: "0 14 * * 2"
+  # the browser extension fires this when you click "Send week to writer"
+  repository_dispatch:
+    types: [yahoo-week]
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Week number (blank = current)"
+        required: false
+      force:
+        description: "Write even if a game is not final"
+        required: false
+        default: "false"
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Only run at 9am Eastern
+        run: |
+          HOUR=$(TZ=America/New_York date +%H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$HOUR" != "09" ]; then
+            echo "Local hour is $HOUR, not 09. Skipping."
+            echo "skip=true" >> $GITHUB_ENV
+          fi
+
+      - uses: actions/setup-python@v5
+        if: env.skip != 'true'
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        if: env.skip != 'true'
+        run: pip install -r requirements.txt
+
+      - name: Restore Yahoo token
+        if: env.skip != 'true'
+        env:
+          YAHOO_OAUTH_JSON: ${{ secrets.YAHOO_OAUTH_JSON }}
+        run: |
+          if [ -n "$YAHOO_OAUTH_JSON" ]; then
+            echo "$YAHOO_OAUTH_JSON" > oauth2.json
+          fi
+
+      - name: Stash the handed-in week
+        if: env.skip != 'true' && github.event_name == 'repository_dispatch'
+        env:
+          LW: ${{ toJSON(github.event.client_payload.league_week) }}
+        run: |
+          mkdir -p inbox
+          printf '%s' "$LW" > inbox/handed-in.json
+          python3 -c "import json;d=json.load(open('inbox/handed-in.json'));print('got',d.get('source'),'week',d.get('week'))"
+
+      - name: Run
+        if: env.skip != 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LEAGUE_TZ: America/New_York
+        run: |
+          python3 run.py \
+            ${{ github.event.inputs.week && format('--week {0}', github.event.inputs.week) || '' }} \
+            ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+
+      - name: Build the web page
+        if: env.skip != 'true'
+        run: python3 publish.py
+
+      - name: Send it
+        if: env.skip != 'true'
+        env:
+          GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
+          RECAP_EMAIL_TO: ${{ secrets.RECAP_EMAIL_TO }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          PAGES_URL: ${{ vars.PAGES_URL }}
+        run: python3 deliver.py
+
+      # Keeps history and past write-ups so next week's recap knows the lore.
+      - name: Commit results
+        if: env.skip != 'true'
+        run: |
+          git config user.name "fantasy-recap"
+          git config user.email "actions@github.com"
+          git add out history docs
+          git diff --staged --quiet || git commit -m "Week recap $(date +%F)"
+          git push
+
+      - name: Save the facts even if the run failed
+        if: always() && env.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: recap-output
+          path: out/
+          if-no-files-found: ignore

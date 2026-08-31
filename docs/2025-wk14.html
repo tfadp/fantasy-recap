@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOP Week 14</title>
+<meta name="description" content="Week 14 Recap - MOP League">
+<meta property="og:title" content="Week 14 Recap - MOP League">
+<meta property="og:description" content="MOP week 14 recap.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><style>
+:root{
+  --paper:#eef1f3; --card:#fff; --ink:#0f1519; --dim:#5b6774; --rule:#d7dde2;
+  --accent:#a82f1a; --good:#186b3f; --bad:#a3211a; --agate:#f6f8f9;
+  --display:"Barlow Condensed","Haettenschweiler","Arial Narrow",sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --data:"Barlow","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+    --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+    --agate:#12171d;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+  --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+  --agate:#12171d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:26px 18px 64px}
+
+.masthead{margin-bottom:26px}
+.masthead .eyebrow{font-family:var(--data);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(36px,10vw,58px);
+  line-height:.94;margin:8px 0 0;letter-spacing:-.01em;text-wrap:balance;
+  text-transform:uppercase}
+.masthead .dateline{font-family:var(--data);font-size:12px;color:var(--dim);
+  letter-spacing:.04em;margin-top:12px}
+
+section{margin-top:34px}
+.label{font-family:var(--data);font-size:11px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--ink);
+  padding-bottom:5px;margin-bottom:0}
+
+/* box score, only ever inside the receipts */
+.game{display:grid;grid-template-columns:1fr auto;gap:6px 14px;
+  align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);
+  font-family:var(--data)}
+.game .teams{font-size:16px;line-height:1.35}
+.game .w{font-weight:600}
+.game .l{color:var(--dim)}
+.game .sep{color:var(--dim);font-size:13px;padding:0 2px}
+.game .score{font-family:var(--display);font-size:22px;font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:.01em}
+.game .score .lp{color:var(--dim)}
+
+/* the write-up, which is the whole point of the page */
+.column{font-family:var(--body);font-size:18px;line-height:1.6}
+
+/* the receipts: folded away, for people who want to argue */
+.receipts{margin-top:44px;border-top:3px solid var(--ink);padding-top:0}
+.receipts summary{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+  padding:15px 0;cursor:pointer;list-style:none;display:flex;
+  justify-content:space-between;align-items:center;gap:12px}
+.receipts summary::-webkit-details-marker{display:none}
+.receipts summary::after{content:"Show";font-size:11px;color:var(--accent)}
+.receipts[open] summary::after{content:"Hide"}
+.receipts summary:hover{color:var(--ink)}
+.receipts section:first-of-type{margin-top:6px}
+.column p{margin:0 0 15px}
+.column p:last-child{margin-bottom:0}
+/* power rankings: the number is content, not list furniture, so it is kept
+   literal. An <ol> would renumber from 1 every time a description line
+   interrupts it, which is exactly what this format does twelve times. */
+.column p.ranked{margin:0 0 3px;font-family:var(--data);font-weight:600;
+  font-size:16px;font-variant-numeric:tabular-nums}
+.column p.ranked + p{margin:0 0 16px;color:var(--dim);font-size:16px}
+.column p.ranked .num{color:var(--accent);display:inline-block;min-width:1.6em}
+.column p strong:only-child{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-top:26px}
+.column hr{border:0;border-top:1px solid var(--rule);margin:30px 0}
+.column h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;
+  font-size:26px;font-weight:600;margin:34px 0 11px;line-height:1.05;
+  text-wrap:balance}
+.column ul,.column ol{margin:0 0 19px;padding-left:22px}
+.column li{margin-bottom:8px}
+.column em{font-style:italic;color:var(--dim)}
+.column strong{font-weight:600}
+.column blockquote{margin:0 0 19px;padding-left:16px;
+  border-left:3px solid var(--accent);color:var(--dim);font-style:italic}
+
+/* agate */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-family:var(--data);font-size:14px;
+  font-variant-numeric:tabular-nums;margin-top:2px}
+th{text-align:left;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;padding:9px 8px 6px 0;border-bottom:1px solid var(--rule)}
+td{padding:7px 8px 7px 0;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+td:last-child,th:last-child{padding-right:0}
+.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rank{color:var(--dim);width:1.6em;font-size:13px}
+.pts{font-weight:600}
+.up{color:var(--good);font-size:12px}
+.down{color:var(--bad);font-size:12px}
+.muted{color:var(--dim)}
+.slot{font-size:12px;color:var(--dim);letter-spacing:.03em;text-transform:uppercase}
+
+nav{margin-top:40px;padding-top:16px;border-top:3px solid var(--ink);
+  font-family:var(--data);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{margin-top:22px;font-family:var(--data);font-size:11px;color:var(--dim);
+  letter-spacing:.03em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body><div class="wrap"><header class="masthead">
+<div class="eyebrow">MOP &middot; Week 14, 2025</div>
+<h1>Week 14 Recap - MOP League</h1>
+<div class="dateline">Saturday, August 29</div>
+</header>
+<div class="column"><p><strong>Match Summaries</strong></p>
+<p>2025 New York Yankees (163.04) def. Henry &amp; Harvey LLC (126.61)</p>
+<p>Top score of the week. Josh Allen went for 37.84 and Trey never looked back. Higgins put up 27.2 for rthd20 and it did not matter. Trey to 9-5.</p>
+<p>All Hail the Robot Buddha (129.21) def. Chicken Salad (52.8)</p>
+<p>76.41 margin, the largest of the week, and the least competitive thing that happened all season. More on Chicken Salad below. RobotBuddha to 11-3, best record in the league.</p>
+<p>Legacy LeaversTM (130.93) def. Danwitdashifts (108.71)</p>
+<p>Michael Wilson dropped 37.2 out of nowhere for yogz. Blake Corum&#x27;s 26.1 was the only thing keeping Dan in it. Yogz to 7-7, Dan falls to 6-8.</p>
+<p>Windsor Terror (118.38) def. Proverbs 3:5-6 (83.24)</p>
+<p>Jaxon Smith-Njigba 28.1. Oliverslater&#x27;s whole roster managed 83.24 with a 15.94 from Caleb Williams as the high mark, which tells you everything. Windsor to 8-6.</p>
+<p>Based God (114.39) def. 2024 White Sox (98.01)</p>
+<p>Puka Nacua 35.7 did the work. Jxllokreflo got 23.26 from a waiver-wire Sam Darnold and still lost. That is fourteen straight. Based God to 10-4.</p>
+<p>The jackson family (116.04) def. We Getting Shoughed Tn (104.35)</p>
+<p>Stafford 23.24 over Christian Watson&#x27;s 24.9 in the closest game of the week, 11.69. Both teams have now lost more than they have won. bbasse3267 to 6-8.</p>
+<hr>
+<p><strong>Biggest Losers (Bench Legends)</strong></p>
+<p>Tony Pollard (28.1, oliverslater) - Sat while Ladd McConkey scored 2.2 in the FLEX. A 25.9 swing in an 83-point week.</p>
+<p>Dawson Knox (17.3, rthd20) - Benched behind Juwan Johnson&#x27;s 7.8 at TE.</p>
+<p>Philadelphia Eagles (15.25, xainshawty) - Started the Browns instead, who gave back 4.25.</p>
+<p>Isaiah Likely (12.5, zazach) - Benched in favor of George Kittle, who scored zero, because he did not play.</p>
+<p>None of these flipped a game. Every one of them was a choice.</p>
+<p><strong>Studs Who Failed</strong></p>
+<p>Travis Kelce (1.8, RobotBuddha) - 23% of the TE median. Won anyway.</p>
+<p>Jalen Hurts (4.4, zazach) - QB median was 18.21. Not the biggest problem on this roster.</p>
+<p>Isiah Pacheco (3.0, bbasse3267) - Listed questionable, played like it, RB median 14.5.</p>
+<p>Mark Andrews (1.9, overtimedan) - The TE position was a crime scene this week.</p>
+<p>Dallas Cowboys (1.25, rthd20) - A defense that scored less than most kickers.</p>
+<p><strong>Started A Zero</strong></p>
+<p>Chicken Salad started Rome Odunze, Parker Washington, and George Kittle. All three scored 0.0. Then left the DEF slot completely empty for a fourth zero. Four roster spots, no points, in a 76-point loss. zazach, we need to talk.</p>
+<p>Also: 2024 White Sox started Romeo Doubs (0.0), and the Yankees started the 49ers defense for 0.0 and won by 36 anyway.</p>
+<p><strong>Call the Doctor</strong></p>
+<p>Chicken Salad (4-10, 52.8) - Lowest score of the week by 30 points and the worst of the season.</p>
+<p>Proverbs 3:5-6 (10-4, 83.24) - 10-4 and second-worst score of the week. Peaked early.</p>
+<p>2024 White Sox (0-14, 98.01) - Fourteen games, fourteen losses. Two weeks left to avoid history.</p>
+<p><strong>Waiver Wire Genius</strong></p>
+<p>jxllokreflo → Sam Darnold (23.26) - Top three on the roster and the only real production the White Sox got. Still lost.</p>
+<p><strong>Toilet Bowl Performance</strong></p>
+<p>Chicken Salad (52.8) - The lowest score in MOP this season, achieved with four empty roster spots.</p>
+<hr>
+<p><strong>Power Rankings (with Movement)</strong></p>
+<p class="ranked"><span class="num">1.</span> Based God - 77.48 - 10-4 (--)</p>
+<p>Puka is the highest-scoring player on the best-scoring roster in the league.</p>
+<p class="ranked"><span class="num">2.</span> All Hail the Robot Buddha - 76.47 - 11-3 (--)</p>
+<p>Best record in the league and the most consistent week to week. Kelce scored 1.8 and they still won by 76.</p>
+<p class="ranked"><span class="num">3.</span> 2025 New York Yankees - 76.37 - 9-5 (up 1)</p>
+<p>163.04 is the top score of the week. Josh Allen is doing a lot of it.</p>
+<p class="ranked"><span class="num">4.</span> Proverbs 3:5-6 - 68.56 - 10-4 (down 1)</p>
+<p>10-4 with the second-worst score of the week. The record is ahead of the roster.</p>
+<p class="ranked"><span class="num">5.</span> Legacy LeaversTM - 55.48 - 7-7 (up 1)</p>
+<p>Back to .500 on a 37-point week from Michael Wilson.</p>
+<p class="ranked"><span class="num">6.</span> Windsor Terror - 52.13 - 8-6 (down 1)</p>
+<p>Won by 35 and still slid a spot. That is what a crowded middle looks like.</p>
+<p class="ranked"><span class="num">7.</span> We Getting Shoughed Tn - 50.82 - 9-5 (--)</p>
+<p>9-5 and ranked seventh, which is its own kind of insult.</p>
+<p class="ranked"><span class="num">8.</span> Danwitdashifts - 46.2 - 6-8 (--)</p>
+<p>Two below .500 with two to play. Mark Andrews scored 1.9. No further questions.</p>
+<p class="ranked"><span class="num">9.</span> The jackson family - 32.02 - 6-8 (up 1)</p>
+<p>Won the closest game of the week. Pacheco gave them 3.0 and they managed anyway.</p>
+<p class="ranked"><span class="num">10.</span> Henry &amp; Harvey LLC - 28.07 - 4-10 (up 1)</p>
+<p>126.61 is a respectable score. It was the fourth-highest of the week and still a loss.</p>
+<p class="ranked"><span class="num">11.</span> 2024 White Sox - 14.43 - 0-14 (up 1)</p>
+<p>Climbed a spot while going 0-14. The league has gotten worse around them.</p>
+<p class="ranked"><span class="num">12.</span> Chicken Salad - 13.06 - 4-10 (down 3)</p>
+<p>Biggest faller. Four zeros in one lineup will do that.</p></div><details class="receipts"><summary>The receipts</summary><section><p class="label">Box score</p><div class="game"><div class="teams"><span class="w">Legacy LeaversTM</span><span class="sep"> def. </span><span class="l">Danwitdashifts</span></div><div class="score">130.93<span class="lp">&thinsp;&ndash;&thinsp;108.71</span></div></div><div class="game"><div class="teams"><span class="w">The jackson family</span><span class="sep"> def. </span><span class="l">We Getting Shoughed Tn🎶</span></div><div class="score">116.04<span class="lp">&thinsp;&ndash;&thinsp;104.35</span></div></div><div class="game"><div class="teams"><span class="w">2025 New York Yankees</span><span class="sep"> def. </span><span class="l">Henry &amp; Harvey LLC</span></div><div class="score">163.04<span class="lp">&thinsp;&ndash;&thinsp;126.61</span></div></div><div class="game"><div class="teams"><span class="w">Windsor Terror</span><span class="sep"> def. </span><span class="l">Proverbs 3:5-6</span></div><div class="score">118.38<span class="lp">&thinsp;&ndash;&thinsp;83.24</span></div></div><div class="game"><div class="teams"><span class="w">All Hail the Robot Buddha</span><span class="sep"> def. </span><span class="l">Chicken Salad</span></div><div class="score">129.21<span class="lp">&thinsp;&ndash;&thinsp;52.8</span></div></div><div class="game"><div class="teams"><span class="w">Based God</span><span class="sep"> def. </span><span class="l">2024 White Sox</span></div><div class="score">114.39<span class="lp">&thinsp;&ndash;&thinsp;98.01</span></div></div></section><section><p class="label">Standings</p><div class="scroll"><table><thead><tr><th></th><th>Team</th><th class="n">Rec</th><th class="n">PF</th></tr></thead><tbody><tr><td class="rank">1</td><td>All Hail the Robot Buddha</td><td class="n">11&#8211;3</td><td class="n pts">1768.38</td></tr><tr><td class="rank">2</td><td>Based God</td><td class="n">10&#8211;4</td><td class="n pts">1919.41</td></tr><tr><td class="rank">3</td><td>Proverbs 3:5-6</td><td class="n">10&#8211;4</td><td class="n pts">1787.01</td></tr><tr><td class="rank">4</td><td>2025 New York Yankees</td><td class="n">9&#8211;5</td><td class="n pts">1897.96</td></tr><tr><td class="rank">5</td><td>We Getting Shoughed Tn🎶</td><td class="n">9&#8211;5</td><td class="n pts">1648.73</td></tr><tr><td class="rank">6</td><td>Windsor Terror</td><td class="n">8&#8211;6</td><td class="n pts">1666.65</td></tr><tr><td class="rank">7</td><td>Legacy LeaversTM</td><td class="n">7&#8211;7</td><td class="n pts">1706.55</td></tr><tr><td class="rank">8</td><td>Danwitdashifts</td><td class="n">6&#8211;8</td><td class="n pts">1662.45</td></tr><tr><td class="rank">9</td><td>The jackson family</td><td class="n">6&#8211;8</td><td class="n pts">1539.34</td></tr><tr><td class="rank">10</td><td>Chicken Salad</td><td class="n">4&#8211;10</td><td class="n pts">1491.02</td></tr><tr><td class="rank">11</td><td>Henry &amp; Harvey LLC</td><td class="n">4&#8211;10</td><td class="n pts">1416.66</td></tr><tr><td class="rank">12</td><td>2024 White Sox</td><td class="n">0&#8211;14</td><td class="n pts">1429.43</td></tr></tbody></table></div></section><section><p class="label">Top performers</p><div class="scroll"><table><thead><tr><th>Player</th><th>Team</th><th class="n">Pts</th></tr></thead><tbody><tr><td>Josh Allen <span class="slot">QB</span></td><td class="muted">2025 New York Yankees</td><td class="n pts">37.84</td></tr><tr><td>Michael Wilson <span class="slot">WR</span></td><td class="muted">Legacy LeaversTM</td><td class="n pts">37.2</td></tr><tr><td>Jahmyr Gibbs <span class="slot">RB</span></td><td class="muted">2025 New York Yankees</td><td class="n pts">37.0</td></tr><tr><td>Puka Nacua <span class="slot">WR</span></td><td class="muted">Based God</td><td class="n pts">35.7</td></tr><tr><td>Jaxon Smith-Njigba <span class="slot">WR</span></td><td class="muted">Windsor Terror</td><td class="n pts">28.1</td></tr></tbody></table></div></section><section><p class="label">Waiver wire</p><div class="scroll"><table><thead><tr><th>Pickup</th><th>By</th><th>Used</th><th class="n">Pts</th></tr></thead><tbody><tr><td>Sam Darnold <span class="slot">QB</span></td><td class="muted">jxllokreflo</td><td class="slot">started QB</td><td class="n pts">23.26</td></tr><tr><td>Jacksonville Jaguars <span class="slot">DEF</span></td><td class="muted">soneal718</td><td class="slot">benched</td><td class="n pts">12.75</td></tr><tr><td>Luther Burden <span class="slot">WR</span></td><td class="muted">yogz</td><td class="slot">benched</td><td class="n pts">11.0</td></tr><tr><td>Devaughn Vele <span class="slot">WR</span></td><td class="muted">yogz</td><td class="slot">benched</td><td class="n pts">7.0</td></tr><tr><td>Samaje Perine <span class="slot">RB</span></td><td class="muted">jxllokreflo</td><td class="slot">benched</td><td class="n pts">4.8</td></tr><tr><td>Green Bay Packers <span class="slot">DEF</span></td><td class="muted">jxllokreflo</td><td class="slot">started DEF</td><td class="n pts">2.75</td></tr><tr><td>Jalen Coker <span class="slot">WR</span></td><td class="muted">jxllokreflo</td><td class="slot">benched</td><td class="n pts">0.0</td></tr><tr><td>San Francisco 49ers <span class="slot">DEF</span></td><td class="muted">treypaulino</td><td class="slot">started DEF</td><td class="n pts">0.0</td></tr><tr><td>Theo Johnson <span class="slot">TE</span></td><td class="muted">treypaulino</td><td class="slot">benched</td><td class="n pts">0.0</td></tr></tbody></table></div></section></details>
+<nav><a href="2025-wk13.html">Week 13</a><a href="2025-wk12.html">Week 12</a></nav>
+<footer>Every number pulled straight from the league. Take it up with the API.</footer></div></body></html>

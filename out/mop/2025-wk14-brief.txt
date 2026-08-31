@@ -1,0 +1,139 @@
+MOP — 2025 Week 14
+
+SCOREBOARD
+  Legacy LeaversTM 130.93 def. Danwitdashifts 108.71  (by 22.22)
+  The jackson family 116.04 def. We Getting Shoughed Tn🎶 104.35  (by 11.69)
+  2025 New York Yankees 163.04 def. Henry & Harvey LLC 126.61  (by 36.43)
+  Windsor Terror 118.38 def. Proverbs 3:5-6 83.24  (by 35.14)
+  All Hail the Robot Buddha 129.21 def. Chicken Salad 52.8  (by 76.41)
+  Based God 114.39 def. 2024 White Sox 98.01  (by 16.38)
+
+THE WEEK IN ONE GLANCE
+  high: 2025 New York Yankees 163.04
+  low:  Chicken Salad 52.8
+  league average: 112.14
+  closest: The jackson family over We Getting Shoughed Tn🎶 by 11.69
+  blowout: All Hail the Robot Buddha over Chicken Salad by 76.41
+  upset: Windsor Terror (119.1 avg) beat Proverbs 3:5-6 (131.06 avg), 118.38 to 83.24
+  unlucky: Henry & Harvey LLC scored 126.61 and still lost to 2025 New York Yankees (163.04); that score would have beaten 8 of the other 11 teams
+
+PLAYERS
+   37.84  Josh Allen (QB, 2025 New York Yankees)
+    37.2  Michael Wilson (WR, Legacy LeaversTM)
+    37.0  Jahmyr Gibbs (RB, 2025 New York Yankees)
+    35.7  Puka Nacua (WR, Based God)
+    28.1  Jaxon Smith-Njigba (WR, Windsor Terror)
+  worst start: Rome Odunze (WR) 0.0 for Chicken Salad
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Tony Pollard (28.1, oliverslater) - would have replaced Ladd McConkey (2.2) at FLEX, +25.9
+  Isaiah Likely (12.5, zazach) - would have replaced George Kittle (0.0) at TE, +12.5
+  Omarion Hampton (14.7, xainshawty) - would have replaced Justin Jefferson (3.1) at FLEX, +11.6
+  Philadelphia Eagles (15.25, xainshawty) - would have replaced Cleveland Browns (4.25) at DEF, +11.0
+  Dawson Knox (17.3, rthd20) - would have replaced Juwan Johnson (7.8) at TE, +9.5
+  T.J. Hockenson (9.2, jxllokreflo) - would have replaced Romeo Doubs (0.0) at FLEX, +9.2
+  Tyler Allgeier (8.7, jxllokreflo) - would have replaced Romeo Doubs (0.0) at FLEX, +8.7
+  Zach Charbonnet (8.6, zazach) - would have replaced Parker Washington (0.0) at FLEX, +8.6
+  NOT a flip: We Getting Shoughed Tn🎶 only clears 116.04 with a full optimal lineup (132.35), which is several swaps. Do not write this as could-have-won.
+
+STARTED NOBODY
+  Chicken Salad left DEF empty and took a 0 there (L by 76.41)
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Isiah Pacheco (RB, The jackson family) 3.0 vs RB median 14.5 = 20.7%, Questionable
+  Dallas Cowboys (DEF, Henry & Harvey LLC) 1.25 vs DEF median 6.0 = 20.8%
+  Ladd McConkey (WR, Proverbs 3:5-6) 2.2 vs WR median 10.2 = 21.6%
+  Oronde Gadsden (TE, Based God) 1.7 vs TE median 7.8 = 21.8%
+  Travis Kelce (TE, All Hail the Robot Buddha) 1.8 vs TE median 7.8 = 23.1%
+  Jalen Hurts (QB, Chicken Salad) 4.4 vs QB median 18.21 = 24.2%
+  Mark Andrews (TE, Danwitdashifts) 1.9 vs TE median 7.8 = 24.4%
+  Kenneth Walker (RB, Based God) 3.8 vs RB median 14.5 = 26.2%, Questionable
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  2024 White Sox started Romeo Doubs (WR) for 0.0
+  2025 New York Yankees started San Francisco 49ers (DEF) for 0.0
+  Chicken Salad started Rome Odunze (WR) for 0.0
+  Chicken Salad started George Kittle (TE) [Questionable] for 0.0
+  Chicken Salad started Parker Washington (WR) for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  Chicken Salad (4-10, 52.8) - rank 12/12 this week; here for: one of the week's lowest scores
+  Proverbs 3:5-6 (10-4, 83.24) - rank 11/12 this week; here for: one of the week's lowest scores
+  2024 White Sox (0-14, 98.01) - rank 10/12 this week; here for: one of the week's lowest scores, record (0-14)
+  Henry & Harvey LLC (4-10, 126.61) - rank 4/12 this week; here for: record (4-10)
+
+TOILET BOWL: Chicken Salad 52.8
+
+WAIVER WIRE GENIUS (started, 10+, top-3 or swung the game)
+  jxllokreflo -> Sam Darnold 23.26 (top-3 on roster)
+
+STANDINGS
+   1. All Hail the Robot Buddha  11-3  PF 1768.38  PA 1491.82
+   2. Based God  10-4  PF 1919.41  PA 1587.31
+   3. Proverbs 3:5-6  10-4  PF 1787.01  PA 1589.67
+   4. 2025 New York Yankees  9-5  PF 1897.96  PA 1668.07
+   5. We Getting Shoughed Tn🎶  9-5  PF 1648.73  PA 1616.86
+   6. Windsor Terror  8-6  PF 1666.65  PA 1589.96
+   7. Legacy LeaversTM  7-7  PF 1706.55  PA 1715.55
+   8. Danwitdashifts  6-8  PF 1662.45  PA 1768.83
+   9. The jackson family  6-8  PF 1539.34  PA 1665.62
+  10. Chicken Salad  4-10  PF 1491.02  PA 1635.58
+  11. Henry & Harvey LLC  4-10  PF 1416.66  PA 1771.54
+  12. 2024 White Sox  0-14  PF 1429.43  PA 1832.78
+
+STREAKS
+  All Hail the Robot Buddha: 5 straight wins  (WWWLWWLWLWWWWW)
+  Legacy LeaversTM: 4 straight wins  (LWLWLWLLLLWWWW)
+  Windsor Terror: 3 straight wins  (LLLWWWWLLWLWWW)
+  2024 White Sox: 14 straight losses  (LLLLLLLLLLLLLL)
+  Henry & Harvey LLC: 5 straight losses  (WLLLLLWWWLLLLL)
+  Danwitdashifts: 2 straight losses  (LWWWLLLLWLWWLL)
+
+HISTORY (41 prior weeks on record)
+  2025 New York Yankees's 163.04 is the best since Proverbs 3:5-6 put up 163.12 in 2025 week 13
+  Chicken Salad's 52.8 is the lowest score in league history
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Sam Darnold (jxllokreflo, 12/05) — 23.26 points (started at QB)
+  2. Jacksonville Jaguars (soneal718, 12/03) — 12.75 points (benched)
+  3. Luther Burden (yogz, 12/06) — 11.0 points (benched)
+  4. Devaughn Vele (yogz, 12/03) — 7.0 points (benched)
+  5. Samaje Perine (jxllokreflo, 12/05) — 4.8 points (benched)
+  6. Green Bay Packers (jxllokreflo, 12/07) — 2.75 points (started at DEF)
+  7. Jalen Coker (jxllokreflo, 12/10, $5) — 0.0 points (benched)
+  8. San Francisco 49ers (treypaulino, 12/05) — 0.0 points (started at DEF)
+  9. Theo Johnson (treypaulino, 12/03) — 0.0 points (benched)
+  best add: Sam Darnold — 23.26 for jxllokreflo
+  worst add: San Francisco 49ers — started at DEF, 0.0 for treypaulino
+
+POWER RANKINGS (through this week)
+1. Based God - 77.48 - 10-4 (--)
+2. All Hail the Robot Buddha - 76.47 - 11-3 (--)
+3. 2025 New York Yankees - 76.37 - 9-5 (up 1)
+4. Proverbs 3:5-6 - 68.56 - 10-4 (down 1)
+5. Legacy LeaversTM - 55.48 - 7-7 (up 1)
+6. Windsor Terror - 52.13 - 8-6 (down 1)
+7. We Getting Shoughed Tn🎶 - 50.82 - 9-5 (--)
+8. Danwitdashifts - 46.2 - 6-8 (--)
+9. The jackson family - 32.02 - 6-8 (up 1)
+10. Henry & Harvey LLC - 28.07 - 4-10 (up 1)
+11. 2024 White Sox - 14.43 - 0-14 (up 1)
+12. Chicken Salad - 13.06 - 4-10 (down 3)
+
+MOVES
+  waiver $5: Jalen Coker to 2024 White Sox; dropped Sam Darnold off 2024 White Sox
+  waiver $10: Jaylen Wright to Legacy LeaversTM; dropped Devaughn Vele off Legacy LeaversTM
+  waiver $1: Trevor Lawrence to Windsor Terror; dropped Bo Nix off Windsor Terror
+  free_agent: ; dropped Cleveland Browns off We Getting Shoughed Tn🎶
+  free_agent: ; dropped Oronde Gadsden off Based God
+  waiver $5: Kansas City Chiefs to 2024 White Sox; dropped Green Bay Packers off 2024 White Sox
+  free_agent: Green Bay Packers to 2024 White Sox; dropped Samaje Perine off 2024 White Sox
+  free_agent: ; dropped Sean Tucker off All Hail the Robot Buddha
+  free_agent: Luther Burden to Legacy LeaversTM; dropped Isaac TeSlaa off Legacy LeaversTM
+  free_agent: San Francisco 49ers to 2025 New York Yankees; dropped Kansas City Chiefs off 2025 New York Yankees
+  free_agent: Samaje Perine to 2024 White Sox; dropped Andrei Iosivas off 2024 White Sox
+  free_agent: Sam Darnold to 2024 White Sox; dropped Brock Wright off 2024 White Sox
+  free_agent: Theo Johnson to 2025 New York Yankees; dropped Dalton Schultz off 2025 New York Yankees
+  free_agent: Devaughn Vele to Legacy LeaversTM; dropped Chimere Dike off Legacy LeaversTM
+  free_agent: Kansas City Chiefs to 2025 New York Yankees; dropped Atlanta Falcons off 2025 New York Yankees
+  free_agent: Jacksonville Jaguars to Windsor Terror; dropped Brian Robinson off Windsor Terror

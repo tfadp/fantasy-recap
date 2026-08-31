@@ -1,0 +1,4332 @@
+{
+  "league": "MOP",
+  "source": "sleeper",
+  "season": "2025",
+  "week": 14,
+  "games": [
+    {
+      "matchup_id": "1",
+      "winner": "Legacy LeaversTM",
+      "winner_points": 130.93,
+      "loser": "Danwitdashifts",
+      "loser_points": 108.71,
+      "margin": 22.22,
+      "winner_id": "7",
+      "loser_id": "11",
+      "expected_margin": 1.68,
+      "upset_size": -1.68
+    },
+    {
+      "matchup_id": "2",
+      "winner": "The jackson family",
+      "winner_points": 116.04,
+      "loser": "We Getting Shoughed Tn\ud83c\udfb6",
+      "loser_points": 104.35,
+      "margin": 11.69,
+      "winner_id": "9",
+      "loser_id": "1",
+      "expected_margin": -9.32,
+      "upset_size": 9.32
+    },
+    {
+      "matchup_id": "3",
+      "winner": "2025 New York Yankees",
+      "winner_points": 163.04,
+      "loser": "Henry & Harvey LLC",
+      "loser_points": 126.61,
+      "margin": 36.43,
+      "winner_id": "4",
+      "loser_id": "6",
+      "expected_margin": 34.23,
+      "upset_size": -34.23
+    },
+    {
+      "matchup_id": "4",
+      "winner": "Windsor Terror",
+      "winner_points": 118.38,
+      "loser": "Proverbs 3:5-6",
+      "loser_points": 83.24,
+      "margin": 35.14,
+      "winner_id": "5",
+      "loser_id": "8",
+      "expected_margin": -11.96,
+      "upset_size": 11.96
+    },
+    {
+      "matchup_id": "5",
+      "winner": "All Hail the Robot Buddha",
+      "winner_points": 129.21,
+      "loser": "Chicken Salad",
+      "loser_points": 52.8,
+      "margin": 76.41,
+      "winner_id": "10",
+      "loser_id": "12",
+      "expected_margin": 15.46,
+      "upset_size": -15.46
+    },
+    {
+      "matchup_id": "6",
+      "winner": "Based God",
+      "winner_points": 114.39,
+      "loser": "2024 White Sox",
+      "loser_points": 98.01,
+      "margin": 16.38,
+      "winner_id": "3",
+      "loser_id": "2",
+      "expected_margin": 36.43,
+      "upset_size": -36.43
+    }
+  ],
+  "teams": [
+    {
+      "team_id": "7",
+      "team": "Legacy LeaversTM",
+      "manager": "yogz",
+      "matchup_id": "1",
+      "points": 130.93,
+      "opponent": "Danwitdashifts",
+      "opponent_id": "11",
+      "opponent_points": 108.71,
+      "result": "W",
+      "margin": 22.22,
+      "top_starter": {
+        "player_id": "10232",
+        "name": "Michael Wilson",
+        "pos": "WR",
+        "nfl_team": "ARI",
+        "slot": "FLEX",
+        "points": 37.2,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "12518",
+        "name": "Tyler Warren",
+        "pos": "TE",
+        "nfl_team": "IND",
+        "slot": "TE",
+        "points": 3.7,
+        "injury": "Questionable"
+      },
+      "optimal_points": 141.73,
+      "points_left_on_bench": 10.8,
+      "lineup_efficiency": 0.9238,
+      "bench_mistakes": [
+        {
+          "benched": "Woody Marks",
+          "benched_points": 15.6,
+          "started": "Terry McLaurin",
+          "started_points": 7.1,
+          "cost": 8.5
+        },
+        {
+          "benched": "Luther Burden",
+          "benched_points": 11.0,
+          "started": "Terry McLaurin",
+          "started_points": 7.1,
+          "cost": 3.9
+        },
+        {
+          "benched": "Isaac TeSlaa",
+          "benched_points": 10.0,
+          "started": "Terry McLaurin",
+          "started_points": 7.1,
+          "cost": 2.9
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Woody Marks",
+        "benched_pos": "RB",
+        "benched_points": 15.6,
+        "started": "Terry McLaurin",
+        "started_slot": "FLEX",
+        "started_points": 7.1,
+        "swing": 8.5
+      },
+      "total_after_best_swap": 139.43,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "4892",
+          "name": "Baker Mayfield",
+          "pos": "QB",
+          "nfl_team": "TB",
+          "slot": "QB",
+          "points": 12.08,
+          "injury": null
+        },
+        {
+          "player_id": "8138",
+          "name": "James Cook",
+          "pos": "RB",
+          "nfl_team": "BUF",
+          "slot": "RB",
+          "points": 11.1,
+          "injury": null
+        },
+        {
+          "player_id": "11584",
+          "name": "Bucky Irving",
+          "pos": "RB",
+          "nfl_team": "TB",
+          "slot": "RB",
+          "points": 16.1,
+          "injury": null
+        },
+        {
+          "player_id": "7547",
+          "name": "Amon-Ra St. Brown",
+          "pos": "WR",
+          "nfl_team": "DET",
+          "slot": "WR",
+          "points": 15.2,
+          "injury": null
+        },
+        {
+          "player_id": "8137",
+          "name": "George Pickens",
+          "pos": "WR",
+          "nfl_team": "DAL",
+          "slot": "WR",
+          "points": 8.7,
+          "injury": null
+        },
+        {
+          "player_id": "12518",
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "nfl_team": "IND",
+          "slot": "TE",
+          "points": 3.7,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "5927",
+          "name": "Terry McLaurin",
+          "pos": "WR",
+          "nfl_team": "WAS",
+          "slot": "FLEX",
+          "points": 7.1,
+          "injury": null
+        },
+        {
+          "player_id": "10232",
+          "name": "Michael Wilson",
+          "pos": "WR",
+          "nfl_team": "ARI",
+          "slot": "FLEX",
+          "points": 37.2,
+          "injury": null
+        },
+        {
+          "player_id": "MIA",
+          "name": "Miami Dolphins",
+          "pos": "DEF",
+          "nfl_team": "MIA",
+          "slot": "DEF",
+          "points": 19.75,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "11834",
+          "name": "Devaughn Vele",
+          "pos": "WR",
+          "nfl_team": "NO",
+          "slot": null,
+          "points": 7.0,
+          "injury": null
+        },
+        {
+          "player_id": "12474",
+          "name": "Woody Marks",
+          "pos": "RB",
+          "nfl_team": "HOU",
+          "slot": null,
+          "points": 15.6,
+          "injury": null
+        },
+        {
+          "player_id": "12484",
+          "name": "Jayden Higgins",
+          "pos": "WR",
+          "nfl_team": "HOU",
+          "slot": null,
+          "points": 6.4,
+          "injury": "IR"
+        },
+        {
+          "player_id": "12519",
+          "name": "Luther Burden",
+          "pos": "WR",
+          "nfl_team": "CHI",
+          "slot": null,
+          "points": 11.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "12535",
+          "name": "Isaac TeSlaa",
+          "pos": "WR",
+          "nfl_team": "DET",
+          "slot": null,
+          "points": 10.0,
+          "injury": null
+        },
+        {
+          "player_id": "9754",
+          "name": "Quentin Johnston",
+          "pos": "WR",
+          "nfl_team": "LAC",
+          "slot": null,
+          "points": 2.8,
+          "injury": null
+        }
+      ],
+      "all_play_record": "10-1",
+      "week_rank": 2
+    },
+    {
+      "team_id": "11",
+      "team": "Danwitdashifts",
+      "manager": "overtimedan",
+      "matchup_id": "1",
+      "points": 108.71,
+      "opponent": "Legacy LeaversTM",
+      "opponent_id": "7",
+      "opponent_points": 130.93,
+      "result": "L",
+      "margin": 22.22,
+      "top_starter": {
+        "player_id": "11586",
+        "name": "Blake Corum",
+        "pos": "RB",
+        "nfl_team": "LAR",
+        "slot": "RB",
+        "points": 26.1,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "5012",
+        "name": "Mark Andrews",
+        "pos": "TE",
+        "nfl_team": "BAL",
+        "slot": "FLEX",
+        "points": 1.9,
+        "injury": null
+      },
+      "optimal_points": 108.71,
+      "points_left_on_bench": 0.0,
+      "lineup_efficiency": 1.0,
+      "bench_mistakes": [],
+      "best_legal_swap": null,
+      "total_after_best_swap": 108.71,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "3163",
+          "name": "Jared Goff",
+          "pos": "QB",
+          "nfl_team": "DET",
+          "slot": "QB",
+          "points": 16.16,
+          "injury": null
+        },
+        {
+          "player_id": "11586",
+          "name": "Blake Corum",
+          "pos": "RB",
+          "nfl_team": "LAR",
+          "slot": "RB",
+          "points": 26.1,
+          "injury": null
+        },
+        {
+          "player_id": "5892",
+          "name": "David Montgomery",
+          "pos": "RB",
+          "nfl_team": "HOU",
+          "slot": "RB",
+          "points": 14.3,
+          "injury": null
+        },
+        {
+          "player_id": "5859",
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "nfl_team": "NE",
+          "slot": "WR",
+          "points": 16.0,
+          "injury": null
+        },
+        {
+          "player_id": "8147",
+          "name": "John Metchie",
+          "pos": "WR",
+          "nfl_team": "CAR",
+          "slot": "WR",
+          "points": 7.4,
+          "injury": null
+        },
+        {
+          "player_id": "9480",
+          "name": "Brenton Strange",
+          "pos": "TE",
+          "nfl_team": "JAX",
+          "slot": "TE",
+          "points": 5.7,
+          "injury": null
+        },
+        {
+          "player_id": "6819",
+          "name": "Michael Pittman",
+          "pos": "WR",
+          "nfl_team": "PIT",
+          "slot": "FLEX",
+          "points": 16.9,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "5012",
+          "name": "Mark Andrews",
+          "pos": "TE",
+          "nfl_team": "BAL",
+          "slot": "FLEX",
+          "points": 1.9,
+          "injury": null
+        },
+        {
+          "player_id": "PIT",
+          "name": "Pittsburgh Steelers",
+          "pos": "DEF",
+          "nfl_team": "PIT",
+          "slot": "DEF",
+          "points": 4.25,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "4034",
+          "name": "Christian McCaffrey",
+          "pos": "RB",
+          "nfl_team": "SF",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "4983",
+          "name": "DJ Moore",
+          "pos": "WR",
+          "nfl_team": "BUF",
+          "slot": null,
+          "points": 0.6,
+          "injury": null
+        },
+        {
+          "player_id": "5970",
+          "name": "Greg Dortch",
+          "pos": "WR",
+          "nfl_team": "DET",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "6797",
+          "name": "Justin Herbert",
+          "pos": "QB",
+          "nfl_team": "LAC",
+          "slot": null,
+          "points": 13.16,
+          "injury": null
+        },
+        {
+          "player_id": "7594",
+          "name": "Chuba Hubbard",
+          "pos": "RB",
+          "nfl_team": "CAR",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        }
+      ],
+      "all_play_record": "4-7",
+      "week_rank": 8
+    },
+    {
+      "team_id": "1",
+      "team": "We Getting Shoughed Tn\ud83c\udfb6",
+      "manager": "xainshawty",
+      "matchup_id": "2",
+      "points": 104.35,
+      "opponent": "The jackson family",
+      "opponent_id": "9",
+      "opponent_points": 116.04,
+      "result": "L",
+      "margin": 11.69,
+      "top_starter": {
+        "player_id": "8167",
+        "name": "Christian Watson",
+        "pos": "WR",
+        "nfl_team": "GB",
+        "slot": "FLEX",
+        "points": 24.9,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "6794",
+        "name": "Justin Jefferson",
+        "pos": "WR",
+        "nfl_team": "MIN",
+        "slot": "FLEX",
+        "points": 3.1,
+        "injury": null
+      },
+      "optimal_points": 132.35,
+      "points_left_on_bench": 28.0,
+      "lineup_efficiency": 0.7884,
+      "bench_mistakes": [
+        {
+          "benched": "Omarion Hampton",
+          "benched_points": 14.7,
+          "started": "Justin Jefferson",
+          "started_points": 3.1,
+          "cost": 11.6
+        },
+        {
+          "benched": "Philadelphia Eagles",
+          "benched_points": 15.25,
+          "started": "Cleveland Browns",
+          "started_points": 4.25,
+          "cost": 11.0
+        },
+        {
+          "benched": "Kimani Vidal",
+          "benched_points": 11.4,
+          "started": "Justin Jefferson",
+          "started_points": 3.1,
+          "cost": 8.3
+        },
+        {
+          "benched": "Chris Rodriguez",
+          "benched_points": 5.2,
+          "started": "Justin Jefferson",
+          "started_points": 3.1,
+          "cost": 2.1
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Omarion Hampton",
+        "benched_pos": "RB",
+        "benched_points": 14.7,
+        "started": "Justin Jefferson",
+        "started_slot": "FLEX",
+        "started_points": 3.1,
+        "swing": 11.6
+      },
+      "total_after_best_swap": 115.95,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": true,
+      "starters": [
+        {
+          "player_id": "4046",
+          "name": "Patrick Mahomes",
+          "pos": "QB",
+          "nfl_team": "KC",
+          "slot": "QB",
+          "points": 9.3,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "12512",
+          "name": "Quinshon Judkins",
+          "pos": "RB",
+          "nfl_team": "CLE",
+          "slot": "RB",
+          "points": 9.4,
+          "injury": null
+        },
+        {
+          "player_id": "5850",
+          "name": "Josh Jacobs",
+          "pos": "RB",
+          "nfl_team": "GB",
+          "slot": "RB",
+          "points": 17.2,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "8148",
+          "name": "Jameson Williams",
+          "pos": "WR",
+          "nfl_team": "DET",
+          "slot": "WR",
+          "points": 17.3,
+          "injury": null
+        },
+        {
+          "player_id": "8144",
+          "name": "Chris Olave",
+          "pos": "WR",
+          "nfl_team": "NO",
+          "slot": "WR",
+          "points": 6.0,
+          "injury": null
+        },
+        {
+          "player_id": "12517",
+          "name": "Colston Loveland",
+          "pos": "TE",
+          "nfl_team": "CHI",
+          "slot": "TE",
+          "points": 12.9,
+          "injury": null
+        },
+        {
+          "player_id": "6794",
+          "name": "Justin Jefferson",
+          "pos": "WR",
+          "nfl_team": "MIN",
+          "slot": "FLEX",
+          "points": 3.1,
+          "injury": null
+        },
+        {
+          "player_id": "8167",
+          "name": "Christian Watson",
+          "pos": "WR",
+          "nfl_team": "GB",
+          "slot": "FLEX",
+          "points": 24.9,
+          "injury": null
+        },
+        {
+          "player_id": "CLE",
+          "name": "Cleveland Browns",
+          "pos": "DEF",
+          "nfl_team": "CLE",
+          "slot": "DEF",
+          "points": 4.25,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "10219",
+          "name": "Chris Rodriguez",
+          "pos": "RB",
+          "nfl_team": "JAX",
+          "slot": null,
+          "points": 5.2,
+          "injury": null
+        },
+        {
+          "player_id": "11647",
+          "name": "Kimani Vidal",
+          "pos": "RB",
+          "nfl_team": "LAC",
+          "slot": null,
+          "points": 11.4,
+          "injury": null
+        },
+        {
+          "player_id": "12507",
+          "name": "Omarion Hampton",
+          "pos": "RB",
+          "nfl_team": "LAC",
+          "slot": null,
+          "points": 14.7,
+          "injury": null
+        },
+        {
+          "player_id": "12529",
+          "name": "TreVeyon Henderson",
+          "pos": "RB",
+          "nfl_team": "NE",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "7611",
+          "name": "Rhamondre Stevenson",
+          "pos": "RB",
+          "nfl_team": "NE",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "PHI",
+          "name": "Philadelphia Eagles",
+          "pos": "DEF",
+          "nfl_team": "PHI",
+          "slot": null,
+          "points": 15.25,
+          "injury": null
+        }
+      ],
+      "all_play_record": "3-8",
+      "week_rank": 9
+    },
+    {
+      "team_id": "9",
+      "team": "The jackson family",
+      "manager": "bbasse3267",
+      "matchup_id": "2",
+      "points": 116.04,
+      "opponent": "We Getting Shoughed Tn\ud83c\udfb6",
+      "opponent_id": "1",
+      "opponent_points": 104.35,
+      "result": "W",
+      "margin": 11.69,
+      "top_starter": {
+        "player_id": "421",
+        "name": "Matthew Stafford",
+        "pos": "QB",
+        "nfl_team": "LAR",
+        "slot": "QB",
+        "points": 23.24,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "8205",
+        "name": "Isiah Pacheco",
+        "pos": "RB",
+        "nfl_team": "DET",
+        "slot": "FLEX",
+        "points": 3.0,
+        "injury": "Questionable"
+      },
+      "optimal_points": 116.04,
+      "points_left_on_bench": 0.0,
+      "lineup_efficiency": 1.0,
+      "bench_mistakes": [],
+      "best_legal_swap": null,
+      "total_after_best_swap": 116.04,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "421",
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "nfl_team": "LAR",
+          "slot": "QB",
+          "points": 23.24,
+          "injury": null
+        },
+        {
+          "player_id": "4866",
+          "name": "Saquon Barkley",
+          "pos": "RB",
+          "nfl_team": "PHI",
+          "slot": "RB",
+          "points": 18.2,
+          "injury": null
+        },
+        {
+          "player_id": "4199",
+          "name": "Aaron Jones",
+          "pos": "RB",
+          "nfl_team": "MIN",
+          "slot": "RB",
+          "points": 7.6,
+          "injury": null
+        },
+        {
+          "player_id": "8676",
+          "name": "Rashid Shaheed",
+          "pos": "WR",
+          "nfl_team": "SEA",
+          "slot": "WR",
+          "points": 16.7,
+          "injury": null
+        },
+        {
+          "player_id": "8134",
+          "name": "Khalil Shakir",
+          "pos": "WR",
+          "nfl_team": "BUF",
+          "slot": "WR",
+          "points": 9.6,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "7553",
+          "name": "Kyle Pitts",
+          "pos": "TE",
+          "nfl_team": "ATL",
+          "slot": "TE",
+          "points": 15.0,
+          "injury": null
+        },
+        {
+          "player_id": "8205",
+          "name": "Isiah Pacheco",
+          "pos": "RB",
+          "nfl_team": "DET",
+          "slot": "FLEX",
+          "points": 3.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "5872",
+          "name": "Deebo Samuel",
+          "pos": "WR",
+          "nfl_team": "SF",
+          "slot": "FLEX",
+          "points": 6.7,
+          "injury": null
+        },
+        {
+          "player_id": "LAC",
+          "name": "Los Angeles Chargers",
+          "pos": "DEF",
+          "nfl_team": "LAC",
+          "slot": "DEF",
+          "points": 16.0,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "10859",
+          "name": "Sam LaPorta",
+          "pos": "TE",
+          "nfl_team": "DET",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "11628",
+          "name": "Marvin Harrison",
+          "pos": "WR",
+          "nfl_team": "ARI",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "4881",
+          "name": "Lamar Jackson",
+          "pos": "QB",
+          "nfl_team": "BAL",
+          "slot": null,
+          "points": 22.06,
+          "injury": null
+        },
+        {
+          "player_id": "6130",
+          "name": "Devin Singletary",
+          "pos": "RB",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "8126",
+          "name": "Wan'Dale Robinson",
+          "pos": "WR",
+          "nfl_team": "TEN",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "LV",
+          "name": "Las Vegas Raiders",
+          "pos": "DEF",
+          "nfl_team": "LV",
+          "slot": null,
+          "points": 1.5,
+          "injury": null
+        }
+      ],
+      "all_play_record": "6-5",
+      "week_rank": 6
+    },
+    {
+      "team_id": "4",
+      "team": "2025 New York Yankees",
+      "manager": "treypaulino",
+      "matchup_id": "3",
+      "points": 163.04,
+      "opponent": "Henry & Harvey LLC",
+      "opponent_id": "6",
+      "opponent_points": 126.61,
+      "result": "W",
+      "margin": 36.43,
+      "top_starter": {
+        "player_id": "4984",
+        "name": "Josh Allen",
+        "pos": "QB",
+        "nfl_team": "BUF",
+        "slot": "QB",
+        "points": 37.84,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "2133",
+        "name": "Davante Adams",
+        "pos": "WR",
+        "nfl_team": "LAR",
+        "slot": "FLEX",
+        "points": 6.9,
+        "injury": null
+      },
+      "optimal_points": 169.14,
+      "points_left_on_bench": 6.1,
+      "lineup_efficiency": 0.9639,
+      "bench_mistakes": [
+        {
+          "benched": "Alec Pierce",
+          "benched_points": 13.0,
+          "started": "Davante Adams",
+          "started_points": 6.9,
+          "cost": 6.1
+        },
+        {
+          "benched": "Jayden Reed",
+          "benched_points": 9.3,
+          "started": "Davante Adams",
+          "started_points": 6.9,
+          "cost": 2.4
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Alec Pierce",
+        "benched_pos": "WR",
+        "benched_points": 13.0,
+        "started": "Davante Adams",
+        "started_slot": "FLEX",
+        "started_points": 6.9,
+        "swing": 6.1
+      },
+      "total_after_best_swap": 169.14,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "4984",
+          "name": "Josh Allen",
+          "pos": "QB",
+          "nfl_team": "BUF",
+          "slot": "QB",
+          "points": 37.84,
+          "injury": null
+        },
+        {
+          "player_id": "6813",
+          "name": "Jonathan Taylor",
+          "pos": "RB",
+          "nfl_team": "IND",
+          "slot": "RB",
+          "points": 11.4,
+          "injury": null
+        },
+        {
+          "player_id": "9221",
+          "name": "Jahmyr Gibbs",
+          "pos": "RB",
+          "nfl_team": "DET",
+          "slot": "RB",
+          "points": 37.0,
+          "injury": null
+        },
+        {
+          "player_id": "11631",
+          "name": "Brian Thomas",
+          "pos": "WR",
+          "nfl_team": "JAX",
+          "slot": "WR",
+          "points": 11.7,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "9997",
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "nfl_team": "BAL",
+          "slot": "WR",
+          "points": 20.6,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "5022",
+          "name": "Dallas Goedert",
+          "pos": "TE",
+          "nfl_team": "PHI",
+          "slot": "TE",
+          "points": 15.8,
+          "injury": null
+        },
+        {
+          "player_id": "5846",
+          "name": "DK Metcalf",
+          "pos": "WR",
+          "nfl_team": "PIT",
+          "slot": "FLEX",
+          "points": 21.8,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "2133",
+          "name": "Davante Adams",
+          "pos": "WR",
+          "nfl_team": "LAR",
+          "slot": "FLEX",
+          "points": 6.9,
+          "injury": null
+        },
+        {
+          "player_id": "SF",
+          "name": "San Francisco 49ers",
+          "pos": "DEF",
+          "nfl_team": "SF",
+          "slot": "DEF",
+          "points": 0.0,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "10213",
+          "name": "Tre Tucker",
+          "pos": "WR",
+          "nfl_team": "LV",
+          "slot": null,
+          "points": 4.4,
+          "injury": null
+        },
+        {
+          "player_id": "10222",
+          "name": "Jayden Reed",
+          "pos": "WR",
+          "nfl_team": "GB",
+          "slot": null,
+          "points": 9.3,
+          "injury": null
+        },
+        {
+          "player_id": "11597",
+          "name": "Theo Johnson",
+          "pos": "TE",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "4035",
+          "name": "Alvin Kamara",
+          "pos": "RB",
+          "nfl_team": "NO",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "8142",
+          "name": "Alec Pierce",
+          "pos": "WR",
+          "nfl_team": "IND",
+          "slot": null,
+          "points": 13.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "8146",
+          "name": "Garrett Wilson",
+          "pos": "WR",
+          "nfl_team": "NYJ",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        }
+      ],
+      "all_play_record": "11-0",
+      "week_rank": 1
+    },
+    {
+      "team_id": "6",
+      "team": "Henry & Harvey LLC",
+      "manager": "rthd20",
+      "matchup_id": "3",
+      "points": 126.61,
+      "opponent": "2025 New York Yankees",
+      "opponent_id": "4",
+      "opponent_points": 163.04,
+      "result": "L",
+      "margin": 36.43,
+      "top_starter": {
+        "player_id": "6801",
+        "name": "Tee Higgins",
+        "pos": "WR",
+        "nfl_team": "CIN",
+        "slot": "FLEX",
+        "points": 27.2,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "1479",
+        "name": "Keenan Allen",
+        "pos": "WR",
+        "nfl_team": "IND",
+        "slot": "WR",
+        "points": 5.2,
+        "injury": null
+      },
+      "optimal_points": 143.11,
+      "points_left_on_bench": 16.5,
+      "lineup_efficiency": 0.8847,
+      "bench_mistakes": [
+        {
+          "benched": "Dawson Knox",
+          "benched_points": 17.3,
+          "started": "Juwan Johnson",
+          "started_points": 7.8,
+          "cost": 9.5
+        },
+        {
+          "benched": "Cooper Kupp",
+          "benched_points": 11.5,
+          "started": "Keenan Allen",
+          "started_points": 5.2,
+          "cost": 6.3
+        },
+        {
+          "benched": "Jordan Mason",
+          "benched_points": 11.2,
+          "started": "Chris Godwin",
+          "started_points": 10.5,
+          "cost": 0.7
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Dawson Knox",
+        "benched_pos": "TE",
+        "benched_points": 17.3,
+        "started": "Juwan Johnson",
+        "started_slot": "TE",
+        "started_points": 7.8,
+        "swing": 9.5
+      },
+      "total_after_best_swap": 136.11,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "6770",
+          "name": "Joe Burrow",
+          "pos": "QB",
+          "nfl_team": "CIN",
+          "slot": "QB",
+          "points": 25.36,
+          "injury": null
+        },
+        {
+          "player_id": "12489",
+          "name": "RJ Harvey",
+          "pos": "RB",
+          "nfl_team": "DEN",
+          "slot": "RB",
+          "points": 22.0,
+          "injury": null
+        },
+        {
+          "player_id": "3198",
+          "name": "Derrick Henry",
+          "pos": "RB",
+          "nfl_team": "BAL",
+          "slot": "RB",
+          "points": 11.2,
+          "injury": null
+        },
+        {
+          "player_id": "7569",
+          "name": "Nico Collins",
+          "pos": "WR",
+          "nfl_team": "HOU",
+          "slot": "WR",
+          "points": 16.1,
+          "injury": null
+        },
+        {
+          "player_id": "1479",
+          "name": "Keenan Allen",
+          "pos": "WR",
+          "nfl_team": "IND",
+          "slot": "WR",
+          "points": 5.2,
+          "injury": null
+        },
+        {
+          "player_id": "7002",
+          "name": "Juwan Johnson",
+          "pos": "TE",
+          "nfl_team": "NO",
+          "slot": "TE",
+          "points": 7.8,
+          "injury": null
+        },
+        {
+          "player_id": "6801",
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "nfl_team": "CIN",
+          "slot": "FLEX",
+          "points": 27.2,
+          "injury": null
+        },
+        {
+          "player_id": "4037",
+          "name": "Chris Godwin",
+          "pos": "WR",
+          "nfl_team": "TB",
+          "slot": "FLEX",
+          "points": 10.5,
+          "injury": null
+        },
+        {
+          "player_id": "DAL",
+          "name": "Dallas Cowboys",
+          "pos": "DEF",
+          "nfl_team": "DAL",
+          "slot": "DEF",
+          "points": 1.25,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "12534",
+          "name": "Kyle Monangai",
+          "pos": "RB",
+          "nfl_team": "CHI",
+          "slot": null,
+          "points": 8.7,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "4039",
+          "name": "Cooper Kupp",
+          "pos": "WR",
+          "nfl_team": "SEA",
+          "slot": null,
+          "points": 11.5,
+          "injury": null
+        },
+        {
+          "player_id": "5870",
+          "name": "Daniel Jones",
+          "pos": "QB",
+          "nfl_team": "IND",
+          "slot": null,
+          "points": 1.8,
+          "injury": null
+        },
+        {
+          "player_id": "5906",
+          "name": "Dawson Knox",
+          "pos": "TE",
+          "nfl_team": "BUF",
+          "slot": null,
+          "points": 17.3,
+          "injury": null
+        },
+        {
+          "player_id": "8408",
+          "name": "Jordan Mason",
+          "pos": "RB",
+          "nfl_team": "MIN",
+          "slot": null,
+          "points": 11.2,
+          "injury": null
+        }
+      ],
+      "all_play_record": "8-3",
+      "week_rank": 4
+    },
+    {
+      "team_id": "5",
+      "team": "Windsor Terror",
+      "manager": "soneal718",
+      "matchup_id": "4",
+      "points": 118.38,
+      "opponent": "Proverbs 3:5-6",
+      "opponent_id": "8",
+      "opponent_points": 83.24,
+      "result": "W",
+      "margin": 35.14,
+      "top_starter": {
+        "player_id": "9488",
+        "name": "Jaxon Smith-Njigba",
+        "pos": "WR",
+        "nfl_team": "SEA",
+        "slot": "WR",
+        "points": 28.1,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "2505",
+        "name": "Darren Waller",
+        "pos": "TE",
+        "nfl_team": "CAR",
+        "slot": "FLEX",
+        "points": 2.7,
+        "injury": null
+      },
+      "optimal_points": 128.74,
+      "points_left_on_bench": 10.36,
+      "lineup_efficiency": 0.9195,
+      "bench_mistakes": [
+        {
+          "benched": "Kareem Hunt",
+          "benched_points": 9.0,
+          "started": "Darren Waller",
+          "started_points": 2.7,
+          "cost": 6.3
+        },
+        {
+          "benched": "Jacoby Brissett",
+          "benched_points": 20.04,
+          "started": "Bo Nix",
+          "started_points": 15.98,
+          "cost": 4.06
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Kareem Hunt",
+        "benched_pos": "RB",
+        "benched_points": 9.0,
+        "started": "Darren Waller",
+        "started_slot": "FLEX",
+        "started_points": 2.7,
+        "swing": 6.3
+      },
+      "total_after_best_swap": 124.68,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "11563",
+          "name": "Bo Nix",
+          "pos": "QB",
+          "nfl_team": "DEN",
+          "slot": "QB",
+          "points": 15.98,
+          "injury": null
+        },
+        {
+          "player_id": "12476",
+          "name": "Devin Neal",
+          "pos": "RB",
+          "nfl_team": "NO",
+          "slot": "RB",
+          "points": 15.4,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "8228",
+          "name": "Jaylen Warren",
+          "pos": "RB",
+          "nfl_team": "PIT",
+          "slot": "RB",
+          "points": 15.2,
+          "injury": null
+        },
+        {
+          "player_id": "11625",
+          "name": "Adonai Mitchell",
+          "pos": "WR",
+          "nfl_team": "NYJ",
+          "slot": "WR",
+          "points": 3.4,
+          "injury": null
+        },
+        {
+          "player_id": "9488",
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "nfl_team": "SEA",
+          "slot": "WR",
+          "points": 28.1,
+          "injury": null
+        },
+        {
+          "player_id": "8110",
+          "name": "Jake Ferguson",
+          "pos": "TE",
+          "nfl_team": "DAL",
+          "slot": "TE",
+          "points": 10.8,
+          "injury": null
+        },
+        {
+          "player_id": "2505",
+          "name": "Darren Waller",
+          "pos": "TE",
+          "nfl_team": "CAR",
+          "slot": "FLEX",
+          "points": 2.7,
+          "injury": null
+        },
+        {
+          "player_id": "12527",
+          "name": "Ashton Jeanty",
+          "pos": "RB",
+          "nfl_team": "LV",
+          "slot": "FLEX",
+          "points": 5.8,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "SEA",
+          "name": "Seattle Seahawks",
+          "pos": "DEF",
+          "nfl_team": "SEA",
+          "slot": "DEF",
+          "points": 21.0,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "3257",
+          "name": "Jacoby Brissett",
+          "pos": "QB",
+          "nfl_team": "ARI",
+          "slot": null,
+          "points": 20.04,
+          "injury": null
+        },
+        {
+          "player_id": "4098",
+          "name": "Kareem Hunt",
+          "pos": "RB",
+          "nfl_team": "FA",
+          "slot": null,
+          "points": 9.0,
+          "injury": null
+        },
+        {
+          "player_id": "7049",
+          "name": "Jauan Jennings",
+          "pos": "WR",
+          "nfl_team": "MIN",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "9504",
+          "name": "Kayshon Boutte",
+          "pos": "WR",
+          "nfl_team": "HOU",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "JAX",
+          "name": "Jacksonville Jaguars",
+          "pos": "DEF",
+          "nfl_team": "JAX",
+          "slot": null,
+          "points": 12.75,
+          "injury": null
+        }
+      ],
+      "all_play_record": "7-4",
+      "week_rank": 5
+    },
+    {
+      "team_id": "8",
+      "team": "Proverbs 3:5-6",
+      "manager": "oliverslater",
+      "matchup_id": "4",
+      "points": 83.24,
+      "opponent": "Windsor Terror",
+      "opponent_id": "5",
+      "opponent_points": 118.38,
+      "result": "L",
+      "margin": 35.14,
+      "top_starter": {
+        "player_id": "11560",
+        "name": "Caleb Williams",
+        "pos": "QB",
+        "nfl_team": "CHI",
+        "slot": "QB",
+        "points": 15.94,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "11635",
+        "name": "Ladd McConkey",
+        "pos": "WR",
+        "nfl_team": "LAC",
+        "slot": "FLEX",
+        "points": 2.2,
+        "injury": null
+      },
+      "optimal_points": 109.14,
+      "points_left_on_bench": 25.9,
+      "lineup_efficiency": 0.7627,
+      "bench_mistakes": [
+        {
+          "benched": "Tony Pollard",
+          "benched_points": 28.1,
+          "started": "Ladd McConkey",
+          "started_points": 2.2,
+          "cost": 25.9
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Tony Pollard",
+        "benched_pos": "RB",
+        "benched_points": 28.1,
+        "started": "Ladd McConkey",
+        "started_slot": "FLEX",
+        "started_points": 2.2,
+        "swing": 25.9
+      },
+      "total_after_best_swap": 109.14,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "11560",
+          "name": "Caleb Williams",
+          "pos": "QB",
+          "nfl_team": "CHI",
+          "slot": "QB",
+          "points": 15.94,
+          "injury": null
+        },
+        {
+          "player_id": "9509",
+          "name": "Bijan Robinson",
+          "pos": "RB",
+          "nfl_team": "ATL",
+          "slot": "RB",
+          "points": 9.4,
+          "injury": null
+        },
+        {
+          "player_id": "6790",
+          "name": "D'Andre Swift",
+          "pos": "RB",
+          "nfl_team": "CHI",
+          "slot": "RB",
+          "points": 11.2,
+          "injury": null
+        },
+        {
+          "player_id": "9500",
+          "name": "Josh Downs",
+          "pos": "WR",
+          "nfl_team": "IND",
+          "slot": "WR",
+          "points": 6.3,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "7564",
+          "name": "Ja'Marr Chase",
+          "pos": "WR",
+          "nfl_team": "CIN",
+          "slot": "WR",
+          "points": 10.2,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "11604",
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "nfl_team": "LV",
+          "slot": "TE",
+          "points": 14.6,
+          "injury": null
+        },
+        {
+          "player_id": "10229",
+          "name": "Rashee Rice",
+          "pos": "WR",
+          "nfl_team": "KC",
+          "slot": "FLEX",
+          "points": 7.4,
+          "injury": null
+        },
+        {
+          "player_id": "11635",
+          "name": "Ladd McConkey",
+          "pos": "WR",
+          "nfl_team": "LAC",
+          "slot": "FLEX",
+          "points": 2.2,
+          "injury": null
+        },
+        {
+          "player_id": "LAR",
+          "name": "Los Angeles Rams",
+          "pos": "DEF",
+          "nfl_team": "LAR",
+          "slot": "DEF",
+          "points": 6.0,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "12490",
+          "name": "Bhayshul Tuten",
+          "pos": "RB",
+          "nfl_team": "JAX",
+          "slot": null,
+          "points": -1.5,
+          "injury": null
+        },
+        {
+          "player_id": "12526",
+          "name": "Tetairoa McMillan",
+          "pos": "WR",
+          "nfl_team": "CAR",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "1339",
+          "name": "Zach Ertz",
+          "pos": "TE",
+          "nfl_team": "FA",
+          "slot": null,
+          "points": 2.1,
+          "injury": null
+        },
+        {
+          "player_id": "2216",
+          "name": "Mike Evans",
+          "pos": "WR",
+          "nfl_team": "SF",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "5967",
+          "name": "Tony Pollard",
+          "pos": "RB",
+          "nfl_team": "TEN",
+          "slot": null,
+          "points": 28.1,
+          "injury": null
+        },
+        {
+          "player_id": "8183",
+          "name": "Brock Purdy",
+          "pos": "QB",
+          "nfl_team": "SF",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        }
+      ],
+      "all_play_record": "1-10",
+      "week_rank": 11
+    },
+    {
+      "team_id": "10",
+      "team": "All Hail the Robot Buddha",
+      "manager": "RobotBuddha",
+      "matchup_id": "5",
+      "points": 129.21,
+      "opponent": "Chicken Salad",
+      "opponent_id": "12",
+      "opponent_points": 52.8,
+      "result": "W",
+      "margin": 76.41,
+      "top_starter": {
+        "player_id": "6804",
+        "name": "Jordan Love",
+        "pos": "QB",
+        "nfl_team": "GB",
+        "slot": "QB",
+        "points": 20.26,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "1466",
+        "name": "Travis Kelce",
+        "pos": "TE",
+        "nfl_team": "KC",
+        "slot": "TE",
+        "points": 1.8,
+        "injury": null
+      },
+      "optimal_points": 152.81,
+      "points_left_on_bench": 23.6,
+      "lineup_efficiency": 0.8456,
+      "bench_mistakes": [
+        {
+          "benched": "Harold Fannin",
+          "benched_points": 25.4,
+          "started": "Travis Kelce",
+          "started_points": 1.8,
+          "cost": 23.6
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Harold Fannin",
+        "benched_pos": "TE",
+        "benched_points": 25.4,
+        "started": "Travis Kelce",
+        "started_slot": "TE",
+        "started_points": 1.8,
+        "swing": 23.6
+      },
+      "total_after_best_swap": 152.81,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "6804",
+          "name": "Jordan Love",
+          "pos": "QB",
+          "nfl_team": "GB",
+          "slot": "QB",
+          "points": 20.26,
+          "injury": null
+        },
+        {
+          "player_id": "7567",
+          "name": "Kenny Gainwell",
+          "pos": "RB",
+          "nfl_team": "TB",
+          "slot": "RB",
+          "points": 16.2,
+          "injury": null
+        },
+        {
+          "player_id": "9226",
+          "name": "De'Von Achane",
+          "pos": "RB",
+          "nfl_team": "MIA",
+          "slot": "RB",
+          "points": 17.5,
+          "injury": null
+        },
+        {
+          "player_id": "5045",
+          "name": "Courtland Sutton",
+          "pos": "WR",
+          "nfl_team": "DEN",
+          "slot": "WR",
+          "points": 12.2,
+          "injury": null
+        },
+        {
+          "player_id": "7526",
+          "name": "Jaylen Waddle",
+          "pos": "WR",
+          "nfl_team": "DEN",
+          "slot": "WR",
+          "points": 18.1,
+          "injury": null
+        },
+        {
+          "player_id": "1466",
+          "name": "Travis Kelce",
+          "pos": "TE",
+          "nfl_team": "KC",
+          "slot": "TE",
+          "points": 1.8,
+          "injury": null
+        },
+        {
+          "player_id": "6786",
+          "name": "CeeDee Lamb",
+          "pos": "WR",
+          "nfl_team": "DAL",
+          "slot": "FLEX",
+          "points": 18.1,
+          "injury": null
+        },
+        {
+          "player_id": "5947",
+          "name": "Jakobi Meyers",
+          "pos": "WR",
+          "nfl_team": "JAX",
+          "slot": "FLEX",
+          "points": 14.8,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "HOU",
+          "name": "Houston Texans",
+          "pos": "DEF",
+          "nfl_team": "HOU",
+          "slot": "DEF",
+          "points": 10.25,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "11564",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "nfl_team": "NE",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "11566",
+          "name": "Jayden Daniels",
+          "pos": "QB",
+          "nfl_team": "WAS",
+          "slot": null,
+          "points": 3.72,
+          "injury": null
+        },
+        {
+          "player_id": "11627",
+          "name": "Troy Franklin",
+          "pos": "WR",
+          "nfl_team": "DEN",
+          "slot": null,
+          "points": 4.1,
+          "injury": null
+        },
+        {
+          "player_id": "12506",
+          "name": "Harold Fannin",
+          "pos": "TE",
+          "nfl_team": "CLE",
+          "slot": null,
+          "points": 25.4,
+          "injury": null
+        },
+        {
+          "player_id": "7090",
+          "name": "Darnell Mooney",
+          "pos": "WR",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 1.6,
+          "injury": null
+        }
+      ],
+      "all_play_record": "9-2",
+      "week_rank": 3
+    },
+    {
+      "team_id": "12",
+      "team": "Chicken Salad",
+      "manager": "zazach",
+      "matchup_id": "5",
+      "points": 52.8,
+      "opponent": "All Hail the Robot Buddha",
+      "opponent_id": "10",
+      "opponent_points": 129.21,
+      "result": "L",
+      "margin": 76.41,
+      "top_starter": {
+        "player_id": "9224",
+        "name": "Chase Brown",
+        "pos": "RB",
+        "nfl_team": "CIN",
+        "slot": "RB",
+        "points": 18.5,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "11620",
+        "name": "Rome Odunze",
+        "pos": "WR",
+        "nfl_team": "CHI",
+        "slot": "WR",
+        "points": 0.0,
+        "injury": null
+      },
+      "optimal_points": 79.9,
+      "points_left_on_bench": 27.1,
+      "lineup_efficiency": 0.6608,
+      "bench_mistakes": [
+        {
+          "benched": "Isaiah Likely",
+          "benched_points": 12.5,
+          "started": "George Kittle",
+          "started_points": 0.0,
+          "cost": 12.5
+        },
+        {
+          "benched": "Zach Charbonnet",
+          "benched_points": 8.6,
+          "started": "Parker Washington",
+          "started_points": 0.0,
+          "cost": 8.6
+        },
+        {
+          "benched": "Tampa Bay Buccaneers",
+          "benched_points": 6.0,
+          "started": "(empty slot)",
+          "started_points": 0.0,
+          "cost": 6.0
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Isaiah Likely",
+        "benched_pos": "TE",
+        "benched_points": 12.5,
+        "started": "George Kittle",
+        "started_slot": "TE",
+        "started_points": 0.0,
+        "swing": 12.5
+      },
+      "total_after_best_swap": 65.3,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "6904",
+          "name": "Jalen Hurts",
+          "pos": "QB",
+          "nfl_team": "PHI",
+          "slot": "QB",
+          "points": 4.4,
+          "injury": null
+        },
+        {
+          "player_id": "9224",
+          "name": "Chase Brown",
+          "pos": "RB",
+          "nfl_team": "CIN",
+          "slot": "RB",
+          "points": 18.5,
+          "injury": null
+        },
+        {
+          "player_id": "7588",
+          "name": "Javonte Williams",
+          "pos": "RB",
+          "nfl_team": "DAL",
+          "slot": "RB",
+          "points": 14.7,
+          "injury": null
+        },
+        {
+          "player_id": "11624",
+          "name": "Xavier Worthy",
+          "pos": "WR",
+          "nfl_team": "KC",
+          "slot": "WR",
+          "points": 8.5,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "11620",
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "nfl_team": "CHI",
+          "slot": "WR",
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "4217",
+          "name": "George Kittle",
+          "pos": "TE",
+          "nfl_team": "SF",
+          "slot": "TE",
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "9487",
+          "name": "Parker Washington",
+          "pos": "WR",
+          "nfl_team": "JAX",
+          "slot": "FLEX",
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "9508",
+          "name": "Tyjae Spears",
+          "pos": "RB",
+          "nfl_team": "TEN",
+          "slot": "FLEX",
+          "points": 6.7,
+          "injury": null
+        },
+        {
+          "player_id": "0",
+          "name": "(empty slot)",
+          "pos": "DEF",
+          "nfl_team": "-",
+          "slot": "DEF",
+          "points": 0.0,
+          "injury": null,
+          "empty": true
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "11199",
+          "name": "Emari Demercado",
+          "pos": "RB",
+          "nfl_team": "KC",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "3214",
+          "name": "Hunter Henry",
+          "pos": "TE",
+          "nfl_team": "NE",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "4981",
+          "name": "Calvin Ridley",
+          "pos": "WR",
+          "nfl_team": "TEN",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "6920",
+          "name": "Isaiah Hodgins",
+          "pos": "WR",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "8131",
+          "name": "Isaiah Likely",
+          "pos": "TE",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 12.5,
+          "injury": null
+        },
+        {
+          "player_id": "9753",
+          "name": "Zach Charbonnet",
+          "pos": "RB",
+          "nfl_team": "SEA",
+          "slot": null,
+          "points": 8.6,
+          "injury": "PUP"
+        },
+        {
+          "player_id": "TB",
+          "name": "Tampa Bay Buccaneers",
+          "pos": "DEF",
+          "nfl_team": "TB",
+          "slot": null,
+          "points": 6.0,
+          "injury": null
+        }
+      ],
+      "all_play_record": "0-11",
+      "week_rank": 12
+    },
+    {
+      "team_id": "2",
+      "team": "2024 White Sox",
+      "manager": "jxllokreflo",
+      "matchup_id": "6",
+      "points": 98.01,
+      "opponent": "Based God",
+      "opponent_id": "3",
+      "opponent_points": 114.39,
+      "result": "L",
+      "margin": 16.38,
+      "top_starter": {
+        "player_id": "4943",
+        "name": "Sam Darnold",
+        "pos": "QB",
+        "nfl_team": "SEA",
+        "slot": "QB",
+        "points": 23.26,
+        "injury": null
+      },
+      "worst_starter": {
+        "player_id": "8121",
+        "name": "Romeo Doubs",
+        "pos": "WR",
+        "nfl_team": "NE",
+        "slot": "FLEX",
+        "points": 0.0,
+        "injury": null
+      },
+      "optimal_points": 112.41,
+      "points_left_on_bench": 14.4,
+      "lineup_efficiency": 0.8719,
+      "bench_mistakes": [
+        {
+          "benched": "T.J. Hockenson",
+          "benched_points": 9.2,
+          "started": "Romeo Doubs",
+          "started_points": 0.0,
+          "cost": 9.2
+        },
+        {
+          "benched": "Tyler Allgeier",
+          "benched_points": 8.7,
+          "started": "Romeo Doubs",
+          "started_points": 0.0,
+          "cost": 8.7
+        },
+        {
+          "benched": "Samaje Perine",
+          "benched_points": 4.8,
+          "started": "Romeo Doubs",
+          "started_points": 0.0,
+          "cost": 4.8
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "T.J. Hockenson",
+        "benched_pos": "TE",
+        "benched_points": 9.2,
+        "started": "Romeo Doubs",
+        "started_slot": "FLEX",
+        "started_points": 0.0,
+        "swing": 9.2
+      },
+      "total_after_best_swap": 107.21,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "4943",
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "nfl_team": "SEA",
+          "slot": "QB",
+          "points": 23.26,
+          "injury": null
+        },
+        {
+          "player_id": "8122",
+          "name": "Zonovan Knight",
+          "pos": "RB",
+          "nfl_team": "ARI",
+          "slot": "RB",
+          "points": 6.4,
+          "injury": null
+        },
+        {
+          "player_id": "7543",
+          "name": "Travis Etienne",
+          "pos": "RB",
+          "nfl_team": "NO",
+          "slot": "RB",
+          "points": 21.2,
+          "injury": null
+        },
+        {
+          "player_id": "9756",
+          "name": "Jordan Addison",
+          "pos": "WR",
+          "nfl_team": "MIN",
+          "slot": "WR",
+          "points": 10.2,
+          "injury": null
+        },
+        {
+          "player_id": "6783",
+          "name": "Jerry Jeudy",
+          "pos": "WR",
+          "nfl_team": "CLE",
+          "slot": "WR",
+          "points": 16.6,
+          "injury": null
+        },
+        {
+          "player_id": "10236",
+          "name": "Dalton Kincaid",
+          "pos": "TE",
+          "nfl_team": "BUF",
+          "slot": "TE",
+          "points": 14.1,
+          "injury": null
+        },
+        {
+          "player_id": "12514",
+          "name": "Emeka Egbuka",
+          "pos": "WR",
+          "nfl_team": "TB",
+          "slot": "FLEX",
+          "points": 3.5,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "8121",
+          "name": "Romeo Doubs",
+          "pos": "WR",
+          "nfl_team": "NE",
+          "slot": "FLEX",
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "GB",
+          "name": "Green Bay Packers",
+          "pos": "DEF",
+          "nfl_team": "GB",
+          "slot": "DEF",
+          "points": 2.75,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "11589",
+          "name": "Trey Benson",
+          "pos": "RB",
+          "nfl_team": "ARI",
+          "slot": null,
+          "points": 0.0,
+          "injury": "IR"
+        },
+        {
+          "player_id": "11646",
+          "name": "Jalen Coker",
+          "pos": "WR",
+          "nfl_team": "CAR",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "12508",
+          "name": "Jaxson Dart",
+          "pos": "QB",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "2449",
+          "name": "Stefon Diggs",
+          "pos": "WR",
+          "nfl_team": "WAS",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "4147",
+          "name": "Samaje Perine",
+          "pos": "RB",
+          "nfl_team": "CIN",
+          "slot": null,
+          "points": 4.8,
+          "injury": null
+        },
+        {
+          "player_id": "5844",
+          "name": "T.J. Hockenson",
+          "pos": "TE",
+          "nfl_team": "MIN",
+          "slot": null,
+          "points": 9.2,
+          "injury": null
+        },
+        {
+          "player_id": "7891",
+          "name": "Brock Wright",
+          "pos": "TE",
+          "nfl_team": "DET",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "8132",
+          "name": "Tyler Allgeier",
+          "pos": "RB",
+          "nfl_team": "ARI",
+          "slot": null,
+          "points": 8.7,
+          "injury": null
+        },
+        {
+          "player_id": "NE",
+          "name": "New England Patriots",
+          "pos": "DEF",
+          "nfl_team": "NE",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        }
+      ],
+      "all_play_record": "2-9",
+      "week_rank": 10
+    },
+    {
+      "team_id": "3",
+      "team": "Based God",
+      "manager": "juliansryan",
+      "matchup_id": "6",
+      "points": 114.39,
+      "opponent": "2024 White Sox",
+      "opponent_id": "2",
+      "opponent_points": 98.01,
+      "result": "W",
+      "margin": 16.38,
+      "top_starter": {
+        "player_id": "9493",
+        "name": "Puka Nacua",
+        "pos": "WR",
+        "nfl_team": "LAR",
+        "slot": "WR",
+        "points": 35.7,
+        "injury": "Questionable"
+      },
+      "worst_starter": {
+        "player_id": "12493",
+        "name": "Oronde Gadsden",
+        "pos": "TE",
+        "nfl_team": "LAC",
+        "slot": "FLEX",
+        "points": 1.7,
+        "injury": null
+      },
+      "optimal_points": 114.39,
+      "points_left_on_bench": 0.0,
+      "lineup_efficiency": 1.0,
+      "bench_mistakes": [],
+      "best_legal_swap": null,
+      "total_after_best_swap": 114.39,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "player_id": "3294",
+          "name": "Dak Prescott",
+          "pos": "QB",
+          "nfl_team": "DAL",
+          "slot": "QB",
+          "points": 20.44,
+          "injury": null
+        },
+        {
+          "player_id": "8150",
+          "name": "Kyren Williams",
+          "pos": "RB",
+          "nfl_team": "LAR",
+          "slot": "RB",
+          "points": 17.7,
+          "injury": null
+        },
+        {
+          "player_id": "8155",
+          "name": "Breece Hall",
+          "pos": "RB",
+          "nfl_team": "NYJ",
+          "slot": "RB",
+          "points": 4.3,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "9493",
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "nfl_team": "LAR",
+          "slot": "WR",
+          "points": 35.7,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "7525",
+          "name": "DeVonta Smith",
+          "pos": "WR",
+          "nfl_team": "PHI",
+          "slot": "WR",
+          "points": 7.7,
+          "injury": null
+        },
+        {
+          "player_id": "8130",
+          "name": "Trey McBride",
+          "pos": "TE",
+          "nfl_team": "ARI",
+          "slot": "TE",
+          "points": 10.8,
+          "injury": null
+        },
+        {
+          "player_id": "12493",
+          "name": "Oronde Gadsden",
+          "pos": "TE",
+          "nfl_team": "LAC",
+          "slot": "FLEX",
+          "points": 1.7,
+          "injury": null
+        },
+        {
+          "player_id": "8151",
+          "name": "Kenneth Walker",
+          "pos": "RB",
+          "nfl_team": "KC",
+          "slot": "FLEX",
+          "points": 3.8,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "DEN",
+          "name": "Denver Broncos",
+          "pos": "DEF",
+          "nfl_team": "DEN",
+          "slot": "DEF",
+          "points": 12.25,
+          "injury": null
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "11638",
+          "name": "Ricky Pearsall",
+          "pos": "WR",
+          "nfl_team": "SF",
+          "slot": null,
+          "points": 0.0,
+          "injury": "IR"
+        },
+        {
+          "player_id": "11655",
+          "name": "Tyrone Tracy",
+          "pos": "RB",
+          "nfl_team": "NYG",
+          "slot": null,
+          "points": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player_id": "7021",
+          "name": "Rico Dowdle",
+          "pos": "RB",
+          "nfl_team": "PIT",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "8112",
+          "name": "Drake London",
+          "pos": "WR",
+          "nfl_team": "ATL",
+          "slot": null,
+          "points": 0.0,
+          "injury": null
+        },
+        {
+          "player_id": "CHI",
+          "name": "Chicago Bears",
+          "pos": "DEF",
+          "nfl_team": "CHI",
+          "slot": null,
+          "points": 1.25,
+          "injury": null
+        },
+        {
+          "player_id": "NO",
+          "name": "New Orleans Saints",
+          "pos": "DEF",
+          "nfl_team": "NO",
+          "slot": null,
+          "points": 2.25,
+          "injury": null
+        }
+      ],
+      "all_play_record": "5-6",
+      "week_rank": 7
+    }
+  ],
+  "facts": {
+    "highest_score": {
+      "team": "2025 New York Yankees",
+      "points": 163.04
+    },
+    "lowest_score": {
+      "team": "Chicken Salad",
+      "points": 52.8
+    },
+    "average_score": 112.14,
+    "closest_game": {
+      "matchup_id": "2",
+      "winner": "The jackson family",
+      "winner_points": 116.04,
+      "loser": "We Getting Shoughed Tn\ud83c\udfb6",
+      "loser_points": 104.35,
+      "margin": 11.69,
+      "winner_id": "9",
+      "loser_id": "1",
+      "expected_margin": -9.32,
+      "upset_size": 9.32
+    },
+    "biggest_blowout": {
+      "matchup_id": "5",
+      "winner": "All Hail the Robot Buddha",
+      "winner_points": 129.21,
+      "loser": "Chicken Salad",
+      "loser_points": 52.8,
+      "margin": 76.41,
+      "winner_id": "10",
+      "loser_id": "12",
+      "expected_margin": 15.46,
+      "upset_size": -15.46
+    },
+    "unluckiest_loss": {
+      "team": "Henry & Harvey LLC",
+      "points": 126.61,
+      "opponent": "2025 New York Yankees",
+      "opponent_points": 163.04,
+      "would_have_beaten": 8,
+      "of_other_teams": 11
+    },
+    "biggest_upset": {
+      "winner": "Windsor Terror",
+      "loser": "Proverbs 3:5-6",
+      "score": "118.38 to 83.24",
+      "actual_margin": 35.14,
+      "winner_season_avg": 119.1,
+      "loser_season_avg": 131.06,
+      "expected_margin_for_loser": 11.96
+    },
+    "highest_scoring_player": {
+      "player": "Josh Allen",
+      "pos": "QB",
+      "team": "2025 New York Yankees",
+      "points": 37.84
+    },
+    "worst_starter_league_wide": {
+      "player": "Rome Odunze",
+      "pos": "WR",
+      "team": "Chicken Salad",
+      "points": 0.0
+    },
+    "top_5_players": [
+      {
+        "player": "Josh Allen",
+        "pos": "QB",
+        "team": "2025 New York Yankees",
+        "points": 37.84
+      },
+      {
+        "player": "Michael Wilson",
+        "pos": "WR",
+        "team": "Legacy LeaversTM",
+        "points": 37.2
+      },
+      {
+        "player": "Jahmyr Gibbs",
+        "pos": "RB",
+        "team": "2025 New York Yankees",
+        "points": 37.0
+      },
+      {
+        "player": "Puka Nacua",
+        "pos": "WR",
+        "team": "Based God",
+        "points": 35.7
+      },
+      {
+        "player": "Jaxon Smith-Njigba",
+        "pos": "WR",
+        "team": "Windsor Terror",
+        "points": 28.1
+      }
+    ],
+    "biggest_bench_mistake": {
+      "team": "Proverbs 3:5-6",
+      "benched": "Tony Pollard",
+      "benched_points": 28.1,
+      "started": "Ladd McConkey",
+      "started_points": 2.2,
+      "cost": 25.9
+    },
+    "would_have_won_with_one_legal_swap": [],
+    "optimal_lineup_only_note": [
+      {
+        "team": "We Getting Shoughed Tn\ud83c\udfb6",
+        "scored": 104.35,
+        "optimal": 132.35,
+        "opponent_points": 116.04
+      }
+    ],
+    "bench_legends": [
+      {
+        "team": "Proverbs 3:5-6",
+        "manager": "oliverslater",
+        "benched": "Tony Pollard",
+        "benched_pos": "RB",
+        "benched_points": 28.1,
+        "started": "Ladd McConkey",
+        "started_slot": "FLEX",
+        "started_points": 2.2,
+        "swing": 25.9,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Chicken Salad",
+        "manager": "zazach",
+        "benched": "Isaiah Likely",
+        "benched_pos": "TE",
+        "benched_points": 12.5,
+        "started": "George Kittle",
+        "started_slot": "TE",
+        "started_points": 0.0,
+        "swing": 12.5,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "We Getting Shoughed Tn\ud83c\udfb6",
+        "manager": "xainshawty",
+        "benched": "Omarion Hampton",
+        "benched_pos": "RB",
+        "benched_points": 14.7,
+        "started": "Justin Jefferson",
+        "started_slot": "FLEX",
+        "started_points": 3.1,
+        "swing": 11.6,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "We Getting Shoughed Tn\ud83c\udfb6",
+        "manager": "xainshawty",
+        "benched": "Philadelphia Eagles",
+        "benched_pos": "DEF",
+        "benched_points": 15.25,
+        "started": "Cleveland Browns",
+        "started_slot": "DEF",
+        "started_points": 4.25,
+        "swing": 11.0,
+        "is_best_swap_for_team": false,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Henry & Harvey LLC",
+        "manager": "rthd20",
+        "benched": "Dawson Knox",
+        "benched_pos": "TE",
+        "benched_points": 17.3,
+        "started": "Juwan Johnson",
+        "started_slot": "TE",
+        "started_points": 7.8,
+        "swing": 9.5,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "2024 White Sox",
+        "manager": "jxllokreflo",
+        "benched": "T.J. Hockenson",
+        "benched_pos": "TE",
+        "benched_points": 9.2,
+        "started": "Romeo Doubs",
+        "started_slot": "FLEX",
+        "started_points": 0.0,
+        "swing": 9.2,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "2024 White Sox",
+        "manager": "jxllokreflo",
+        "benched": "Tyler Allgeier",
+        "benched_pos": "RB",
+        "benched_points": 8.7,
+        "started": "Romeo Doubs",
+        "started_slot": "FLEX",
+        "started_points": 0.0,
+        "swing": 8.7,
+        "is_best_swap_for_team": false,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Chicken Salad",
+        "manager": "zazach",
+        "benched": "Zach Charbonnet",
+        "benched_pos": "RB",
+        "benched_points": 8.6,
+        "started": "Parker Washington",
+        "started_slot": "FLEX",
+        "started_points": 0.0,
+        "swing": 8.6,
+        "is_best_swap_for_team": false,
+        "flipped_the_game": false
+      }
+    ],
+    "least_efficient_lineup": {
+      "team": "Chicken Salad",
+      "efficiency": 0.6608
+    },
+    "standings": [
+      {
+        "team_id": "10",
+        "name": "All Hail the Robot Buddha",
+        "manager": "RobotBuddha",
+        "wins": 11,
+        "losses": 3,
+        "ties": 0,
+        "points_for": 1768.38,
+        "points_against": 1491.82,
+        "rank": 1
+      },
+      {
+        "team_id": "3",
+        "name": "Based God",
+        "manager": "juliansryan",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1919.41,
+        "points_against": 1587.31,
+        "rank": 2
+      },
+      {
+        "team_id": "8",
+        "name": "Proverbs 3:5-6",
+        "manager": "oliverslater",
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "points_for": 1787.01,
+        "points_against": 1589.67,
+        "rank": 3
+      },
+      {
+        "team_id": "4",
+        "name": "2025 New York Yankees",
+        "manager": "treypaulino",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1897.96,
+        "points_against": 1668.07,
+        "rank": 4
+      },
+      {
+        "team_id": "1",
+        "name": "We Getting Shoughed Tn\ud83c\udfb6",
+        "manager": "xainshawty",
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "points_for": 1648.73,
+        "points_against": 1616.86,
+        "rank": 5
+      },
+      {
+        "team_id": "5",
+        "name": "Windsor Terror",
+        "manager": "soneal718",
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "points_for": 1666.65,
+        "points_against": 1589.96,
+        "rank": 6
+      },
+      {
+        "team_id": "7",
+        "name": "Legacy LeaversTM",
+        "manager": "yogz",
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "points_for": 1706.55,
+        "points_against": 1715.55,
+        "rank": 7
+      },
+      {
+        "team_id": "11",
+        "name": "Danwitdashifts",
+        "manager": "overtimedan",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1662.45,
+        "points_against": 1768.83,
+        "rank": 8
+      },
+      {
+        "team_id": "9",
+        "name": "The jackson family",
+        "manager": "bbasse3267",
+        "wins": 6,
+        "losses": 8,
+        "ties": 0,
+        "points_for": 1539.34,
+        "points_against": 1665.62,
+        "rank": 9
+      },
+      {
+        "team_id": "12",
+        "name": "Chicken Salad",
+        "manager": "zazach",
+        "wins": 4,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1491.02,
+        "points_against": 1635.58,
+        "rank": 10
+      },
+      {
+        "team_id": "6",
+        "name": "Henry & Harvey LLC",
+        "manager": "rthd20",
+        "wins": 4,
+        "losses": 10,
+        "ties": 0,
+        "points_for": 1416.66,
+        "points_against": 1771.54,
+        "rank": 11
+      },
+      {
+        "team_id": "2",
+        "name": "2024 White Sox",
+        "manager": "jxllokreflo",
+        "wins": 0,
+        "losses": 14,
+        "ties": 0,
+        "points_for": 1429.43,
+        "points_against": 1832.78,
+        "rank": 12
+      }
+    ],
+    "streaks": [
+      {
+        "team": "All Hail the Robot Buddha",
+        "streak": "W5",
+        "kind": "W",
+        "length": 5,
+        "results": "WWWLWWLWLWWWWW"
+      },
+      {
+        "team": "Legacy LeaversTM",
+        "streak": "W4",
+        "kind": "W",
+        "length": 4,
+        "results": "LWLWLWLLLLWWWW"
+      },
+      {
+        "team": "Windsor Terror",
+        "streak": "W3",
+        "kind": "W",
+        "length": 3,
+        "results": "LLLWWWWLLWLWWW"
+      },
+      {
+        "team": "The jackson family",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "WLLLWLLWWWLLLW"
+      },
+      {
+        "team": "2025 New York Yankees",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "LWWWLWWWLWLWLW"
+      },
+      {
+        "team": "Based God",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "LLWWWWWLWWWWLW"
+      },
+      {
+        "team": "2024 White Sox",
+        "streak": "L14",
+        "kind": "L",
+        "length": 14,
+        "results": "LLLLLLLLLLLLLL"
+      },
+      {
+        "team": "Henry & Harvey LLC",
+        "streak": "L5",
+        "kind": "L",
+        "length": 5,
+        "results": "WLLLLLWWWLLLLL"
+      },
+      {
+        "team": "Danwitdashifts",
+        "streak": "L2",
+        "kind": "L",
+        "length": 2,
+        "results": "LWWWLLLLWLWWLL"
+      },
+      {
+        "team": "We Getting Shoughed Tn\ud83c\udfb6",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "WLWWWLWLWWWLWL"
+      },
+      {
+        "team": "Proverbs 3:5-6",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "WWWLWWWWWLWLWL"
+      },
+      {
+        "team": "Chicken Salad",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "WWLLLLLWLLLLWL"
+      }
+    ],
+    "record_changes": [],
+    "historical": {
+      "weeks_of_history": 41,
+      "top_score_context": {
+        "team": "2025 New York Yankees",
+        "points": 163.04,
+        "all_time_rank": 23,
+        "is_league_record": false,
+        "last_time_higher": {
+          "season": "2025",
+          "week": 13,
+          "team": "Proverbs 3:5-6",
+          "points": 163.12
+        }
+      },
+      "low_score_context": {
+        "team": "Chicken Salad",
+        "points": 52.8,
+        "is_league_low": true,
+        "worse_performances_on_record": 0
+      },
+      "league_history_average": 121.06
+    },
+    "transactions": [
+      {
+        "type": "waiver",
+        "date": "12/10",
+        "team_ids": [
+          "2"
+        ],
+        "adds": [
+          {
+            "player_id": "11646",
+            "player": "Jalen Coker",
+            "pos": "WR",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "4943",
+            "player": "Sam Darnold",
+            "pos": "QB",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "faab_bid": 5,
+        "teams": [
+          "2024 White Sox"
+        ]
+      },
+      {
+        "type": "waiver",
+        "date": "12/10",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [
+          {
+            "player_id": "11643",
+            "player": "Jaylen Wright",
+            "pos": "RB",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "11834",
+            "player": "Devaughn Vele",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "faab_bid": 10,
+        "teams": [
+          "Legacy LeaversTM"
+        ]
+      },
+      {
+        "type": "waiver",
+        "date": "12/10",
+        "team_ids": [
+          "5"
+        ],
+        "adds": [
+          {
+            "player_id": "7523",
+            "player": "Trevor Lawrence",
+            "pos": "QB",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "11563",
+            "player": "Bo Nix",
+            "pos": "QB",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "faab_bid": 1,
+        "teams": [
+          "Windsor Terror"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/09",
+        "team_ids": [
+          "1"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "CLE",
+            "player": "Cleveland Browns",
+            "pos": "DEF",
+            "team_id": "1",
+            "team": "We Getting Shoughed Tn\ud83c\udfb6"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "We Getting Shoughed Tn\ud83c\udfb6"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/09",
+        "team_ids": [
+          "3"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "12493",
+            "player": "Oronde Gadsden",
+            "pos": "TE",
+            "team_id": "3",
+            "team": "Based God"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "Based God"
+        ]
+      },
+      {
+        "type": "waiver",
+        "date": "12/10",
+        "team_ids": [
+          "2"
+        ],
+        "adds": [
+          {
+            "player_id": "KC",
+            "player": "Kansas City Chiefs",
+            "pos": "DEF",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "GB",
+            "player": "Green Bay Packers",
+            "pos": "DEF",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "faab_bid": 5,
+        "teams": [
+          "2024 White Sox"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/07",
+        "team_ids": [
+          "2"
+        ],
+        "adds": [
+          {
+            "player_id": "GB",
+            "player": "Green Bay Packers",
+            "pos": "DEF",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "4147",
+            "player": "Samaje Perine",
+            "pos": "RB",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2024 White Sox"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/06",
+        "team_ids": [
+          "10"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "9506",
+            "player": "Sean Tucker",
+            "pos": "RB",
+            "team_id": "10",
+            "team": "All Hail the Robot Buddha"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "All Hail the Robot Buddha"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/06",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [
+          {
+            "player_id": "12519",
+            "player": "Luther Burden",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "12535",
+            "player": "Isaac TeSlaa",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "Legacy LeaversTM"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/05",
+        "team_ids": [
+          "4"
+        ],
+        "adds": [
+          {
+            "player_id": "SF",
+            "player": "San Francisco 49ers",
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "KC",
+            "player": "Kansas City Chiefs",
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2025 New York Yankees"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/05",
+        "team_ids": [
+          "2"
+        ],
+        "adds": [
+          {
+            "player_id": "4147",
+            "player": "Samaje Perine",
+            "pos": "RB",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "10226",
+            "player": "Andrei Iosivas",
+            "pos": "WR",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2024 White Sox"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/05",
+        "team_ids": [
+          "2"
+        ],
+        "adds": [
+          {
+            "player_id": "4943",
+            "player": "Sam Darnold",
+            "pos": "QB",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "7891",
+            "player": "Brock Wright",
+            "pos": "TE",
+            "team_id": "2",
+            "team": "2024 White Sox"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2024 White Sox"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/03",
+        "team_ids": [
+          "4"
+        ],
+        "adds": [
+          {
+            "player_id": "11597",
+            "player": "Theo Johnson",
+            "pos": "TE",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "5001",
+            "player": "Dalton Schultz",
+            "pos": "TE",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2025 New York Yankees"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/03",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [
+          {
+            "player_id": "11834",
+            "player": "Devaughn Vele",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "12540",
+            "player": "Chimere Dike",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "Legacy LeaversTM"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/03",
+        "team_ids": [
+          "4"
+        ],
+        "adds": [
+          {
+            "player_id": "KC",
+            "player": "Kansas City Chiefs",
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "ATL",
+            "player": "Atlanta Falcons",
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "2025 New York Yankees"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "2025 New York Yankees"
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "12/03",
+        "team_ids": [
+          "5"
+        ],
+        "adds": [
+          {
+            "player_id": "JAX",
+            "player": "Jacksonville Jaguars",
+            "pos": "DEF",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "drops": [
+          {
+            "player_id": "8154",
+            "player": "Brian Robinson",
+            "pos": "RB",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "faab_bid": null,
+        "teams": [
+          "Windsor Terror"
+        ]
+      }
+    ],
+    "trades": [],
+    "waiver_pickups": {
+      "pickups": [
+        {
+          "player": "Sam Darnold",
+          "pos": "QB",
+          "manager": "jxllokreflo",
+          "team": "2024 White Sox",
+          "date": "12/05",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "QB",
+          "points": 23.26
+        },
+        {
+          "player": "Jacksonville Jaguars",
+          "pos": "DEF",
+          "manager": "soneal718",
+          "team": "Windsor Terror",
+          "date": "12/03",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 12.75
+        },
+        {
+          "player": "Luther Burden",
+          "pos": "WR",
+          "manager": "yogz",
+          "team": "Legacy LeaversTM",
+          "date": "12/06",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 11.0
+        },
+        {
+          "player": "Devaughn Vele",
+          "pos": "WR",
+          "manager": "yogz",
+          "team": "Legacy LeaversTM",
+          "date": "12/03",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 7.0
+        },
+        {
+          "player": "Samaje Perine",
+          "pos": "RB",
+          "manager": "jxllokreflo",
+          "team": "2024 White Sox",
+          "date": "12/05",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 4.8
+        },
+        {
+          "player": "Green Bay Packers",
+          "pos": "DEF",
+          "manager": "jxllokreflo",
+          "team": "2024 White Sox",
+          "date": "12/07",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 2.75
+        },
+        {
+          "player": "Jalen Coker",
+          "pos": "WR",
+          "manager": "jxllokreflo",
+          "team": "2024 White Sox",
+          "date": "12/10",
+          "faab_bid": 5,
+          "status": "benched",
+          "slot": null,
+          "points": 0.0
+        },
+        {
+          "player": "San Francisco 49ers",
+          "pos": "DEF",
+          "manager": "treypaulino",
+          "team": "2025 New York Yankees",
+          "date": "12/05",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 0.0
+        },
+        {
+          "player": "Theo Johnson",
+          "pos": "TE",
+          "manager": "treypaulino",
+          "team": "2025 New York Yankees",
+          "date": "12/03",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 0.0
+        }
+      ],
+      "added_but_did_not_count": [
+        {
+          "player": "Jaylen Wright",
+          "pos": "RB",
+          "manager": "yogz",
+          "team": "Legacy LeaversTM",
+          "date": "12/10",
+          "faab_bid": 10,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Trevor Lawrence",
+          "pos": "QB",
+          "manager": "soneal718",
+          "team": "Windsor Terror",
+          "date": "12/10",
+          "faab_bid": 1,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Kansas City Chiefs",
+          "pos": "DEF",
+          "manager": "jxllokreflo",
+          "team": "2024 White Sox",
+          "date": "12/10",
+          "faab_bid": 5,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Kansas City Chiefs",
+          "pos": "DEF",
+          "manager": "treypaulino",
+          "team": "2025 New York Yankees",
+          "date": "12/03",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        }
+      ],
+      "best_add": {
+        "player": "Sam Darnold",
+        "pos": "QB",
+        "manager": "jxllokreflo",
+        "team": "2024 White Sox",
+        "date": "12/05",
+        "faab_bid": null,
+        "status": "started",
+        "slot": "QB",
+        "points": 23.26
+      },
+      "worst_add": {
+        "player": "San Francisco 49ers",
+        "pos": "DEF",
+        "manager": "treypaulino",
+        "team": "2025 New York Yankees",
+        "date": "12/05",
+        "faab_bid": null,
+        "status": "started",
+        "slot": "DEF",
+        "points": 0.0
+      },
+      "added_and_benched": [
+        {
+          "player": "Jacksonville Jaguars",
+          "pos": "DEF",
+          "manager": "soneal718",
+          "team": "Windsor Terror",
+          "date": "12/03",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 12.75
+        },
+        {
+          "player": "Luther Burden",
+          "pos": "WR",
+          "manager": "yogz",
+          "team": "Legacy LeaversTM",
+          "date": "12/06",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 11.0
+        }
+      ]
+    },
+    "match_summaries": [
+      {
+        "winner": "Legacy LeaversTM",
+        "winner_points": 130.93,
+        "loser": "Danwitdashifts",
+        "loser_points": 108.71,
+        "margin": 22.22,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "10232",
+          "name": "Michael Wilson",
+          "pos": "WR",
+          "nfl_team": "ARI",
+          "slot": "FLEX",
+          "points": 37.2,
+          "injury": null
+        },
+        "loser_top_scorer": {
+          "player_id": "11586",
+          "name": "Blake Corum",
+          "pos": "RB",
+          "nfl_team": "LAR",
+          "slot": "RB",
+          "points": 26.1,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "MIA",
+          "name": "Miami Dolphins",
+          "pos": "DEF",
+          "nfl_team": "MIA",
+          "slot": "DEF",
+          "points": 19.75,
+          "injury": null
+        }
+      },
+      {
+        "winner": "The jackson family",
+        "winner_points": 116.04,
+        "loser": "We Getting Shoughed Tn\ud83c\udfb6",
+        "loser_points": 104.35,
+        "margin": 11.69,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "421",
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "nfl_team": "LAR",
+          "slot": "QB",
+          "points": 23.24,
+          "injury": null
+        },
+        "loser_top_scorer": {
+          "player_id": "8167",
+          "name": "Christian Watson",
+          "pos": "WR",
+          "nfl_team": "GB",
+          "slot": "FLEX",
+          "points": 24.9,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "LAC",
+          "name": "Los Angeles Chargers",
+          "pos": "DEF",
+          "nfl_team": "LAC",
+          "slot": "DEF",
+          "points": 16.0,
+          "injury": null
+        }
+      },
+      {
+        "winner": "2025 New York Yankees",
+        "winner_points": 163.04,
+        "loser": "Henry & Harvey LLC",
+        "loser_points": 126.61,
+        "margin": 36.43,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "4984",
+          "name": "Josh Allen",
+          "pos": "QB",
+          "nfl_team": "BUF",
+          "slot": "QB",
+          "points": 37.84,
+          "injury": null
+        },
+        "loser_top_scorer": {
+          "player_id": "6801",
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "nfl_team": "CIN",
+          "slot": "FLEX",
+          "points": 27.2,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "SF",
+          "name": "San Francisco 49ers",
+          "pos": "DEF",
+          "nfl_team": "SF",
+          "slot": "DEF",
+          "points": 0.0,
+          "injury": null
+        }
+      },
+      {
+        "winner": "Windsor Terror",
+        "winner_points": 118.38,
+        "loser": "Proverbs 3:5-6",
+        "loser_points": 83.24,
+        "margin": 35.14,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "9488",
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "nfl_team": "SEA",
+          "slot": "WR",
+          "points": 28.1,
+          "injury": null
+        },
+        "loser_top_scorer": {
+          "player_id": "11560",
+          "name": "Caleb Williams",
+          "pos": "QB",
+          "nfl_team": "CHI",
+          "slot": "QB",
+          "points": 15.94,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "SEA",
+          "name": "Seattle Seahawks",
+          "pos": "DEF",
+          "nfl_team": "SEA",
+          "slot": "DEF",
+          "points": 21.0,
+          "injury": null
+        }
+      },
+      {
+        "winner": "All Hail the Robot Buddha",
+        "winner_points": 129.21,
+        "loser": "Chicken Salad",
+        "loser_points": 52.8,
+        "margin": 76.41,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "6804",
+          "name": "Jordan Love",
+          "pos": "QB",
+          "nfl_team": "GB",
+          "slot": "QB",
+          "points": 20.26,
+          "injury": null
+        },
+        "loser_top_scorer": {
+          "player_id": "9224",
+          "name": "Chase Brown",
+          "pos": "RB",
+          "nfl_team": "CIN",
+          "slot": "RB",
+          "points": 18.5,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "HOU",
+          "name": "Houston Texans",
+          "pos": "DEF",
+          "nfl_team": "HOU",
+          "slot": "DEF",
+          "points": 10.25,
+          "injury": null
+        }
+      },
+      {
+        "winner": "Based God",
+        "winner_points": 114.39,
+        "loser": "2024 White Sox",
+        "loser_points": 98.01,
+        "margin": 16.38,
+        "tie": false,
+        "winner_top_scorer": {
+          "player_id": "9493",
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "nfl_team": "LAR",
+          "slot": "WR",
+          "points": 35.7,
+          "injury": "Questionable"
+        },
+        "loser_top_scorer": {
+          "player_id": "4943",
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "nfl_team": "SEA",
+          "slot": "QB",
+          "points": 23.26,
+          "injury": null
+        },
+        "winner_def": {
+          "player_id": "DEN",
+          "name": "Denver Broncos",
+          "pos": "DEF",
+          "nfl_team": "DEN",
+          "slot": "DEF",
+          "points": 12.25,
+          "injury": null
+        }
+      }
+    ],
+    "studs_who_failed": {
+      "position_medians": {
+        "QB": 18.21,
+        "RB": 14.5,
+        "WR": 10.2,
+        "TE": 7.8,
+        "DEF": 6.0
+      },
+      "busts": [
+        {
+          "player": "Isiah Pacheco",
+          "pos": "RB",
+          "nfl_team": "DET",
+          "points": 3.0,
+          "team": "The jackson family",
+          "manager": "bbasse3267",
+          "position_median": 14.5,
+          "pct_of_median": 20.7,
+          "injury": "Questionable"
+        },
+        {
+          "player": "Dallas Cowboys",
+          "pos": "DEF",
+          "nfl_team": "DAL",
+          "points": 1.25,
+          "team": "Henry & Harvey LLC",
+          "manager": "rthd20",
+          "position_median": 6.0,
+          "pct_of_median": 20.8,
+          "injury": null
+        },
+        {
+          "player": "Ladd McConkey",
+          "pos": "WR",
+          "nfl_team": "LAC",
+          "points": 2.2,
+          "team": "Proverbs 3:5-6",
+          "manager": "oliverslater",
+          "position_median": 10.2,
+          "pct_of_median": 21.6,
+          "injury": null
+        },
+        {
+          "player": "Oronde Gadsden",
+          "pos": "TE",
+          "nfl_team": "LAC",
+          "points": 1.7,
+          "team": "Based God",
+          "manager": "juliansryan",
+          "position_median": 7.8,
+          "pct_of_median": 21.8,
+          "injury": null
+        },
+        {
+          "player": "Travis Kelce",
+          "pos": "TE",
+          "nfl_team": "KC",
+          "points": 1.8,
+          "team": "All Hail the Robot Buddha",
+          "manager": "RobotBuddha",
+          "position_median": 7.8,
+          "pct_of_median": 23.1,
+          "injury": null
+        },
+        {
+          "player": "Jalen Hurts",
+          "pos": "QB",
+          "nfl_team": "PHI",
+          "points": 4.4,
+          "team": "Chicken Salad",
+          "manager": "zazach",
+          "position_median": 18.21,
+          "pct_of_median": 24.2,
+          "injury": null
+        },
+        {
+          "player": "Mark Andrews",
+          "pos": "TE",
+          "nfl_team": "BAL",
+          "points": 1.9,
+          "team": "Danwitdashifts",
+          "manager": "overtimedan",
+          "position_median": 7.8,
+          "pct_of_median": 24.4,
+          "injury": null
+        },
+        {
+          "player": "Kenneth Walker",
+          "pos": "RB",
+          "nfl_team": "KC",
+          "points": 3.8,
+          "team": "Based God",
+          "manager": "juliansryan",
+          "position_median": 14.5,
+          "pct_of_median": 26.2,
+          "injury": "Questionable"
+        }
+      ],
+      "started_but_never_played": [
+        {
+          "player": "Romeo Doubs",
+          "pos": "WR",
+          "nfl_team": "NE",
+          "points": 0.0,
+          "team": "2024 White Sox",
+          "manager": "jxllokreflo",
+          "position_median": 10.2,
+          "pct_of_median": 0.0,
+          "injury": null
+        },
+        {
+          "player": "San Francisco 49ers",
+          "pos": "DEF",
+          "nfl_team": "SF",
+          "points": 0.0,
+          "team": "2025 New York Yankees",
+          "manager": "treypaulino",
+          "position_median": 6.0,
+          "pct_of_median": 0.0,
+          "injury": null
+        },
+        {
+          "player": "Rome Odunze",
+          "pos": "WR",
+          "nfl_team": "CHI",
+          "points": 0.0,
+          "team": "Chicken Salad",
+          "manager": "zazach",
+          "position_median": 10.2,
+          "pct_of_median": 0.0,
+          "injury": null
+        },
+        {
+          "player": "George Kittle",
+          "pos": "TE",
+          "nfl_team": "SF",
+          "points": 0.0,
+          "team": "Chicken Salad",
+          "manager": "zazach",
+          "position_median": 7.8,
+          "pct_of_median": 0.0,
+          "injury": "Questionable"
+        },
+        {
+          "player": "Parker Washington",
+          "pos": "WR",
+          "nfl_team": "JAX",
+          "points": 0.0,
+          "team": "Chicken Salad",
+          "manager": "zazach",
+          "position_median": 10.2,
+          "pct_of_median": 0.0,
+          "injury": null
+        }
+      ]
+    },
+    "call_the_doctor": [
+      {
+        "team": "Chicken Salad",
+        "manager": "zazach",
+        "points": 52.8,
+        "rank": 12,
+        "of": 12,
+        "result": "L",
+        "opponent": "All Hail the Robot Buddha",
+        "opponent_points": 129.21,
+        "record": "4-10",
+        "reasons": [
+          "one of the week's lowest scores"
+        ]
+      },
+      {
+        "team": "Proverbs 3:5-6",
+        "manager": "oliverslater",
+        "points": 83.24,
+        "rank": 11,
+        "of": 12,
+        "result": "L",
+        "opponent": "Windsor Terror",
+        "opponent_points": 118.38,
+        "record": "10-4",
+        "reasons": [
+          "one of the week's lowest scores"
+        ]
+      },
+      {
+        "team": "2024 White Sox",
+        "manager": "jxllokreflo",
+        "points": 98.01,
+        "rank": 10,
+        "of": 12,
+        "result": "L",
+        "opponent": "Based God",
+        "opponent_points": 114.39,
+        "record": "0-14",
+        "reasons": [
+          "one of the week's lowest scores",
+          "record (0-14)"
+        ]
+      },
+      {
+        "team": "Henry & Harvey LLC",
+        "manager": "rthd20",
+        "points": 126.61,
+        "rank": 4,
+        "of": 12,
+        "result": "L",
+        "opponent": "2025 New York Yankees",
+        "opponent_points": 163.04,
+        "record": "4-10",
+        "reasons": [
+          "record (4-10)"
+        ]
+      }
+    ],
+    "toilet_bowl": {
+      "team": "Chicken Salad",
+      "manager": "zazach",
+      "points": 52.8
+    },
+    "waiver_wire_genius": [
+      {
+        "player": "Sam Darnold",
+        "pos": "QB",
+        "manager": "jxllokreflo",
+        "team": "2024 White Sox",
+        "date": "12/05",
+        "faab_bid": null,
+        "status": "started",
+        "slot": "QB",
+        "points": 23.26,
+        "top_3_on_roster": true,
+        "swung_the_game": false,
+        "team_result": "L",
+        "team_margin": 16.38
+      }
+    ],
+    "empty_starting_slots": [
+      {
+        "team": "Chicken Salad",
+        "manager": "zazach",
+        "slot": "DEF",
+        "result": "L",
+        "margin": 76.41
+      }
+    ]
+  },
+  "power_rankings": [
+    {
+      "team_id": "3",
+      "team": "Based God",
+      "manager": "juliansryan",
+      "record": "10-4",
+      "power_score": 77.48,
+      "inputs": {
+        "season_pf": 1919.41,
+        "last2_avg": 119.52,
+        "win_pct": 71.43,
+        "stdev": 27.01,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 100.0,
+        "last2": 78.48,
+        "record": 71.43,
+        "consistency": 0.0
+      },
+      "rank": 1,
+      "display_score": 77.48,
+      "previous_rank": 1,
+      "movement": 0
+    },
+    {
+      "team_id": "10",
+      "team": "All Hail the Robot Buddha",
+      "manager": "RobotBuddha",
+      "record": "11-3",
+      "power_score": 76.47,
+      "inputs": {
+        "season_pf": 1768.38,
+        "last2_avg": 131.65,
+        "win_pct": 78.57,
+        "stdev": 13.36,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 69.96,
+        "last2": 100.0,
+        "record": 78.57,
+        "consistency": 38.41
+      },
+      "rank": 2,
+      "display_score": 76.47,
+      "previous_rank": 2,
+      "movement": 0
+    },
+    {
+      "team_id": "4",
+      "team": "2025 New York Yankees",
+      "manager": "treypaulino",
+      "record": "9-5",
+      "power_score": 76.37,
+      "inputs": {
+        "season_pf": 1897.96,
+        "last2_avg": 124.91,
+        "win_pct": 64.29,
+        "stdev": 23.69,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 95.73,
+        "last2": 88.04,
+        "record": 64.29,
+        "consistency": 0.0
+      },
+      "rank": 3,
+      "display_score": 76.37,
+      "previous_rank": 4,
+      "movement": 1
+    },
+    {
+      "team_id": "8",
+      "team": "Proverbs 3:5-6",
+      "manager": "oliverslater",
+      "record": "10-4",
+      "power_score": 68.56,
+      "inputs": {
+        "season_pf": 1787.01,
+        "last2_avg": 123.18,
+        "win_pct": 71.43,
+        "stdev": 27.42,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 73.66,
+        "last2": 84.97,
+        "record": 71.43,
+        "consistency": 0.0
+      },
+      "rank": 4,
+      "display_score": 68.56,
+      "previous_rank": 3,
+      "movement": -1
+    },
+    {
+      "team_id": "7",
+      "team": "Legacy LeaversTM",
+      "manager": "yogz",
+      "record": "7-7",
+      "power_score": 55.48,
+      "inputs": {
+        "season_pf": 1706.55,
+        "last2_avg": 120.19,
+        "win_pct": 50.0,
+        "stdev": 24.68,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 57.66,
+        "last2": 79.67,
+        "record": 50.0,
+        "consistency": 0.0
+      },
+      "rank": 5,
+      "display_score": 55.48,
+      "previous_rank": 6,
+      "movement": 1
+    },
+    {
+      "team_id": "5",
+      "team": "Windsor Terror",
+      "manager": "soneal718",
+      "record": "8-6",
+      "power_score": 52.13,
+      "inputs": {
+        "season_pf": 1666.65,
+        "last2_avg": 115.76,
+        "win_pct": 57.14,
+        "stdev": 22.72,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 49.72,
+        "last2": 71.81,
+        "record": 57.14,
+        "consistency": 0.0
+      },
+      "rank": 6,
+      "display_score": 52.13,
+      "previous_rank": 5,
+      "movement": -1
+    },
+    {
+      "team_id": "1",
+      "team": "We Getting Shoughed Tn\ud83c\udfb6",
+      "manager": "xainshawty",
+      "record": "9-5",
+      "power_score": 50.82,
+      "inputs": {
+        "season_pf": 1648.73,
+        "last2_avg": 110.97,
+        "win_pct": 64.29,
+        "stdev": 20.71,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 46.16,
+        "last2": 63.31,
+        "record": 64.29,
+        "consistency": 4.53
+      },
+      "rank": 7,
+      "display_score": 50.82,
+      "previous_rank": 7,
+      "movement": 0
+    },
+    {
+      "team_id": "11",
+      "team": "Danwitdashifts",
+      "manager": "overtimedan",
+      "record": "6-8",
+      "power_score": 46.2,
+      "inputs": {
+        "season_pf": 1662.45,
+        "last2_avg": 111.2,
+        "win_pct": 42.86,
+        "stdev": 23.35,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 48.89,
+        "last2": 63.72,
+        "record": 42.86,
+        "consistency": 0.0
+      },
+      "rank": 8,
+      "display_score": 46.2,
+      "previous_rank": 8,
+      "movement": 0
+    },
+    {
+      "team_id": "9",
+      "team": "The jackson family",
+      "manager": "bbasse3267",
+      "record": "6-8",
+      "power_score": 32.02,
+      "inputs": {
+        "season_pf": 1539.34,
+        "last2_avg": 101.31,
+        "win_pct": 42.86,
+        "stdev": 22.59,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 24.4,
+        "last2": 46.18,
+        "record": 42.86,
+        "consistency": 0.0
+      },
+      "rank": 9,
+      "display_score": 32.02,
+      "previous_rank": 10,
+      "movement": 1
+    },
+    {
+      "team_id": "6",
+      "team": "Henry & Harvey LLC",
+      "manager": "rthd20",
+      "record": "4-10",
+      "power_score": 28.07,
+      "inputs": {
+        "season_pf": 1416.66,
+        "last2_avg": 118.6,
+        "win_pct": 28.57,
+        "stdev": 17.96,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 0.0,
+        "last2": 76.85,
+        "record": 28.57,
+        "consistency": 17.2
+      },
+      "rank": 10,
+      "display_score": 28.07,
+      "previous_rank": 11,
+      "movement": 1
+    },
+    {
+      "team_id": "2",
+      "team": "2024 White Sox",
+      "manager": "jxllokreflo",
+      "record": "0-14",
+      "power_score": 14.43,
+      "inputs": {
+        "season_pf": 1429.43,
+        "last2_avg": 97.01,
+        "win_pct": 0.0,
+        "stdev": 13.5,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 2.54,
+        "last2": 38.55,
+        "record": 0.0,
+        "consistency": 37.76
+      },
+      "rank": 11,
+      "display_score": 14.43,
+      "previous_rank": 12,
+      "movement": 1
+    },
+    {
+      "team_id": "12",
+      "team": "Chicken Salad",
+      "manager": "zazach",
+      "record": "4-10",
+      "power_score": 13.06,
+      "inputs": {
+        "season_pf": 1491.02,
+        "last2_avg": 75.28,
+        "win_pct": 28.57,
+        "stdev": 23.31,
+        "league_avg_stdev": 21.69,
+        "weeks_counted": 14
+      },
+      "subscores": {
+        "pf": 14.79,
+        "last2": 0.0,
+        "record": 28.57,
+        "consistency": 0.0
+      },
+      "rank": 12,
+      "display_score": 13.06,
+      "previous_rank": 9,
+      "movement": -3
+    }
+  ],
+  "power_rankings_audit": "PR inputs (weights pf 0.4, last2 0.25, record 0.25, consistency 0.1; pf_mode value, consistency_mode spec)\n  Based God: PF 1919.41 -> 100.0 | L2 119.52 -> 78.48 | win% 71.43 | stdev 27.01 -> 0.0 | = 77.48\n  All Hail the Robot Buddha: PF 1768.38 -> 69.96 | L2 131.65 -> 100.0 | win% 78.57 | stdev 13.36 -> 38.41 | = 76.47\n  2025 New York Yankees: PF 1897.96 -> 95.73 | L2 124.91 -> 88.04 | win% 64.29 | stdev 23.69 -> 0.0 | = 76.37\n  Proverbs 3:5-6: PF 1787.01 -> 73.66 | L2 123.18 -> 84.97 | win% 71.43 | stdev 27.42 -> 0.0 | = 68.56\n  Legacy LeaversTM: PF 1706.55 -> 57.66 | L2 120.19 -> 79.67 | win% 50.0 | stdev 24.68 -> 0.0 | = 55.48\n  Windsor Terror: PF 1666.65 -> 49.72 | L2 115.76 -> 71.81 | win% 57.14 | stdev 22.72 -> 0.0 | = 52.13\n  We Getting Shoughed Tn\ud83c\udfb6: PF 1648.73 -> 46.16 | L2 110.97 -> 63.31 | win% 64.29 | stdev 20.71 -> 4.53 | = 50.82\n  Danwitdashifts: PF 1662.45 -> 48.89 | L2 111.2 -> 63.72 | win% 42.86 | stdev 23.35 -> 0.0 | = 46.2\n  The jackson family: PF 1539.34 -> 24.4 | L2 101.31 -> 46.18 | win% 42.86 | stdev 22.59 -> 0.0 | = 32.02\n  Henry & Harvey LLC: PF 1416.66 -> 0.0 | L2 118.6 -> 76.85 | win% 28.57 | stdev 17.96 -> 17.2 | = 28.07\n  2024 White Sox: PF 1429.43 -> 2.54 | L2 97.01 -> 38.55 | win% 0.0 | stdev 13.5 -> 37.76 | = 14.43\n  Chicken Salad: PF 1491.02 -> 14.79 | L2 75.28 -> 0.0 | win% 28.57 | stdev 23.31 -> 0.0 | = 13.06",
+  "qc_audit": "QC audit - MOP week 14, 2025\n  games counted: 6\n  max score: 163.04 (2025 New York Yankees)\n  min score: 52.8 (Chicken Salad)\n  waiver window: the week's own transactions, from the API\n  history: 41 prior weeks\n  check: 12 teams, each exactly once\n  check: 6 games\n  check: winners and margins recomputed\n  check: totals match starter sums\n  check: high 163.04, low 52.8, toilet bowl matches\n  check: bench swaps legal and single; 0 genuine flip(s)\n  check: 12 K/DEF starters counted\n  check: power rankings 1-12, movement nets to zero\n  check: every cited number computed here; the model adds no arithmetic"
+}

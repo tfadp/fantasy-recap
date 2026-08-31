@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Send Week To Writer",
+  "version": "1.0.0",
+  "description": "Exports the Yahoo fantasy matchup week you are looking at as structured JSON for your own recap workflow.",
+  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "options_page": "options.html",
+  "host_permissions": [
+    "https://football.fantasysports.yahoo.com/*",
+    "https://api.github.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Send week to writer"
+  }
+}

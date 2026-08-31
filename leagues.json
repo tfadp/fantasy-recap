@@ -1,0 +1,39 @@
+{
+  "leagues": [
+    {
+      "name": "mop",
+      "enabled": true,
+      "platform": "sleeper",
+      "league_id": "1389327808316067840",
+      "display_name": "MOP",
+      "prompt_file": "prompts/mop.md",
+      "lore_file": "prompts/mop-lore.md",
+      "seasons_back": 2,
+      "chat_file": "prompts/mop-chat.md"
+    },
+    {
+      "_comment": "Yahoo via the browser extension. This is the Yahoo route.",
+      "name": "yahoo",
+      "enabled": true,
+      "platform": "payload",
+      "league_id": "from-the-extension",
+      "display_name": "Yahoo league",
+      "prompt_file": "prompts/yahoo.md",
+      "lore_file": "prompts/yahoo-lore.md",
+      "seasons_back": 2,
+      "chat_file": "prompts/yahoo-chat.md"
+    },
+    {
+      "_comment": "Parked. The API adapter is written if you ever want it, but the extension is the route.",
+      "name": "yahoo-api",
+      "enabled": false,
+      "platform": "yahoo",
+      "league_id": "REPLACE.l.REPLACE",
+      "display_name": "Yahoo league",
+      "prompt_file": "prompts/yahoo.md",
+      "lore_file": "prompts/yahoo-lore.md",
+      "seasons_back": 2,
+      "chat_file": "prompts/yahoo-chat.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# secrets
+.env
+oauth2.json
+
+# caches
+cache/
+__pycache__/
+*.pyc
+
+# The voice files hold real group chat. GitHub Pages on a free account needs a
+# public repo, and your friends' messages do not belong on the public internet.
+# These live only on your machine and, for the scheduled run, in an Actions
+# secret. See README "Keeping the chat private".
+prompts/*-chat.md
+prompts/*-lore.md
