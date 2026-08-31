@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+"""
+The Tuesday morning front door.
+
+    ./recap                       pull, write, publish a draft, email it to you
+    ./recap approve               approve the newest week -> public URL + archive
+    ./recap approve 2026-wk03     approve a specific week
+    ./recap redo --note "..."     rewrite the newest week, steered
+    ./recap facts --week 3        numbers only, no model call, nothing published
+    ./recap link                  print the link for the newest week
+
+Everything it does is also reachable through run.py / publish.py / deliver.py.
+This just spares you remembering which is which at 9am.
+"""
+
+import glob
+import json
+import os
+import subprocess
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+
+import env  # noqa: E402
+import publish  # noqa: E402
+
+PY = sys.executable or "python3"
+
+
+def sh(*args):
+    r = subprocess.run([PY] + list(args), cwd=HERE)
+    if r.returncode:
+        sys.exit(r.returncode)
+
+
+def newest_stem():
+    stems = set()
+    for cfg in json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]:
+        for f in glob.glob(os.path.join(HERE, "out", cfg["name"], "*.md")):
+            stems.add(os.path.basename(f)[:-3])
+    if not stems:
+        sys.exit("No write-ups yet. Run ./recap first.")
+    return sorted(stems)[-1]
+
+
+def main():
+    env.load()
+    argv = sys.argv[1:]
+    cmd = argv[0] if argv and not argv[0].startswith("-") else "run"
+    rest = argv[1:] if cmd != "run" else argv
+
+    if cmd == "run":
+        sh("run.py", *rest)
+        sh("publish.py")
+        sh("deliver.py")
+
+    elif cmd == "redo":
+        sh("run.py", *rest)
+        sh("publish.py")
+        sh("deliver.py")
+
+    elif cmd == "approve":
+        stem = rest[0] if rest and not rest[0].startswith("-") else newest_stem()
+        publish.promote(stem)
+        link = os.environ.get("PAGES_URL", "").rstrip("/")
+        print(f"\nSend this:\n{link}/{stem}.html" if link
+              else f"\nApproved {stem}. Set PAGES_URL in .env to get the link printed.")
+
+    elif cmd == "facts":
+        sh("run.py", "--no-write", *rest)
+
+    elif cmd == "link":
+        import deliver
+        stem = newest_stem()
+        url, public = deliver.page_link(stem)
+        print(url or "Set PAGES_URL in .env")
+        if url and not public:
+            print("(draft - not on the archive yet)")
+
+    else:
+        sys.exit(__doc__)
+
+
+if __name__ == "__main__":
+    main()

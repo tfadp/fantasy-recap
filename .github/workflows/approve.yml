@@ -1,0 +1,58 @@
+name: Approve a recap
+
+# The other half of the draft flow. Tuesday's run leaves the week at a draft
+# URL; this promotes it to the clean URL and puts it on the archive.
+#
+# Runnable from the GitHub mobile app, so approving does not require a laptop:
+#   Actions -> Approve a recap -> Run workflow -> paste the week.
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Week stem, e.g. 2026-wk03 (blank = newest)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Approve and republish
+        env:
+          DRAFT_SALT: ${{ secrets.DRAFT_SALT }}
+          PAGES_URL: ${{ vars.PAGES_URL }}
+        run: |
+          WEEK="${{ github.event.inputs.week }}"
+          if [ -z "$WEEK" ]; then
+            WEEK=$(python3 -c "
+          import glob, json, os
+          stems = set()
+          for cfg in json.load(open('leagues.json'))['leagues']:
+              for f in glob.glob(os.path.join('out', cfg['name'], '*.md')):
+                  stems.add(os.path.basename(f)[:-3])
+          print(sorted(stems)[-1])")
+          fi
+          echo "Approving $WEEK"
+          python3 publish.py --approve "$WEEK"
+          echo "APPROVED_WEEK=$WEEK" >> $GITHUB_ENV
+
+      - name: Commit
+        run: |
+          git config user.name "fantasy-recap"
+          git config user.email "actions@github.com"
+          git add docs approved.json
+          git diff --staged --quiet || git commit -m "Approve $APPROVED_WEEK"
+          git push
+
+      - name: The link
+        run: |
+          echo "### Approved $APPROVED_WEEK" >> $GITHUB_STEP_SUMMARY
+          echo "${{ vars.PAGES_URL }}/$APPROVED_WEEK.html" >> $GITHUB_STEP_SUMMARY

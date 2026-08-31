@@ -34,7 +34,7 @@ def _fail(msg):
     raise QCFailure(msg)
 
 
-def run(a, lw, power=None, previous_power=None):
+def run(a, lw, power=None, previous_power=None, standings_source=None):
     """Returns the audit footer. Raises QCFailure on anything wrong."""
     checks = []
     f = a["facts"]
@@ -131,6 +131,28 @@ def run(a, lw, power=None, previous_power=None):
                 _fail(f"power ranking for {r['team']} has no audit inputs")
         checks.append(f"power rankings 1-{len(power)}, movement nets to zero"
                       if moves else f"power rankings 1-{len(power)}, no prior week so no arrows")
+
+    # --- standings are as-of-this-week, not as-of-right-now ----------------
+    # The bug this catches: Sleeper reports live roster records, so re-running
+    # an old week used to hand the model everyone's *final* record. Here every
+    # team's games played must equal the number of weeks actually counted.
+    if standings_source:
+        want = standings_source["expected_games"]
+        wrong = [(t["name"], t.get("games_played"))
+                 for t in lw["teams"]
+                 if t.get("games_played") is not None and t["games_played"] != want]
+        if wrong:
+            _fail(f"standings cover {want} week(s) but these teams show a "
+                  f"different number of games: {wrong}. A week is missing from "
+                  f"history, so every record and PF total would be wrong.")
+        weeks = standings_source["weeks_counted"]
+        if weeks != list(range(1, len(weeks) + 1)):
+            _fail(f"standings built from a gapped set of weeks: {weeks}")
+        checks.append(f"standings computed from weeks {weeks[0]}-{weeks[-1]}, "
+                      f"{want} games each"
+                      + ("" if standings_source["agrees_with_api"]
+                         else "; differs from the live API totals, which is "
+                              "expected when re-running a past week"))
 
     # --- 4/7: what the model is allowed to say -----------------------------
     checks.append("every cited number computed here; the model adds no arithmetic")

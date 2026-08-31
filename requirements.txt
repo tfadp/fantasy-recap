@@ -1,3 +1,9 @@
-anthropic>=0.40
+# The Sleeper path needs none of this - adapters, analysis, QC, power rankings
+# and publish.py are all standard library. You can compute a full week with
+# nothing installed. These are only for the parts that talk to other services.
+
+# writing the recap. >=0.125 for the `fallbacks` parameter.
+anthropic>=0.125
+
+# only for adapters/yahoo.py, which is parked and disabled
 yahoo_oauth>=2.1
-requests>=2.31

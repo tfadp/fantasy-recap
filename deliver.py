@@ -18,6 +18,9 @@ import os
 import sys
 import urllib.request
 
+import env
+import publish
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 LIMIT = 990
@@ -31,6 +34,10 @@ def latest_recaps():
             with open(files[-1]) as f:
                 found.append((cfg.get("display_name", cfg["name"]), f.read(), files[-1]))
     return found
+
+
+def stem_of(path):
+    return os.path.basename(path)[:-3]  # drop ".md"
 
 
 def chunk(text, limit=LIMIT):
@@ -82,39 +89,64 @@ def email(subject, text):
         return r.status < 300
 
 
-def page_link():
-    """The URL to paste into the message thread, if Pages is set up."""
+def page_link(stem=None):
+    """
+    The URL to paste into the thread. A week that has not been approved yet
+    lives at its unguessable draft path, so this returns that instead: you get
+    something you can actually open on your phone at 9am without it being the
+    link the league sees.
+    """
     base = os.environ.get("PAGES_URL")
-    if base:
-        return base.rstrip("/") + "/"
-    repo = os.environ.get("GITHUB_REPOSITORY")  # owner/name, set by Actions
-    if repo and "/" in repo:
-        owner, name = repo.split("/", 1)
-        return f"https://{owner}.github.io/{name}/"
-    return None
+    if not base:
+        repo = os.environ.get("GITHUB_REPOSITORY")  # owner/name, set by Actions
+        if repo and "/" in repo:
+            owner, name = repo.split("/", 1)
+            base = f"https://{owner}.github.io/{name}"
+    if not base:
+        return None, False
+    base = base.rstrip("/")
+    if stem is None:
+        return base + "/", True
+    if stem in publish.approved():
+        return f"{base}/{stem}.html", True
+    return f"{base}/drafts/{publish.draft_name(stem)}", False
 
 
 def main():
+    env.load()
     recaps = latest_recaps()
     if not recaps:
         sys.exit("Nothing to deliver. Did run.py write a recap?")
 
-    link = page_link()
     for name, text, path in recaps:
+        stem = stem_of(path)
+        link, is_public = page_link(stem)
+        state = "" if is_public else " [DRAFT]"
+
         body = text
         if link:
-            body = (f"{text}\n\n"
-                    f"---\nPaste this into the thread:\n{link}\n")
+            body = (f"{'Link to send' if is_public else 'Draft link (only you have it)'}:\n"
+                    f"{link}\n\n"
+                    f"{'-' * 40}\n"
+                    f"Text, ready to copy into the thread:\n\n{text}\n")
+            if not is_public:
+                body += (f"\n{'-' * 40}\n"
+                         f"Happy with it?   ./recap approve {stem}\n"
+                         f"Want it redone?  ./recap redo --week "
+                         f"{int(stem.split('-wk')[1])} --note \"...\"\n")
+
         sent = []
-        if groupme(f"{name}\n\n{text}" + (f"\n{link}" if link else "")):
+        # GroupMe only fires for a week you have already approved; a draft is
+        # not something to accidentally broadcast.
+        if is_public and groupme(f"{name}\n\n{text}" + (f"\n{link}" if link else "")):
             sent.append("GroupMe")
-        if email(f"{name} recap", body):
+        if email(f"{name} — Week {stem.split('-wk')[1].lstrip('0')} recap{state}", body):
             sent.append("email")
         print(f"{name}: {', '.join(sent) or 'printed only'}  ({path})")
         if not sent:
             print(body)
-    if link:
-        print(f"\nWeb version: {link}")
+        elif link:
+            print(f"  {link}")
 
 
 if __name__ == "__main__":

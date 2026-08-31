@@ -25,6 +25,8 @@ import json
 import os
 import re
 import datetime
+import hashlib
+import secrets
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -338,39 +340,125 @@ def render(stem, entries, order, standalone=True):
 <body><div class="wrap">{page}</div></body></html>"""
 
 
+APPROVED = os.path.join(HERE, "approved.json")
+DRAFTS = os.path.join(DOCS, "drafts")
+
+DRAFT_BANNER = (
+    '<div style="border:2px solid var(--accent);border-radius:6px;padding:12px 14px;'
+    'margin-bottom:22px;font-family:var(--data);font-size:13px;line-height:1.5">'
+    '<strong style="color:var(--accent);letter-spacing:.08em">DRAFT &mdash; NOT SENT</strong>'
+    '<br>Only you have this link. Approve it to publish the clean URL and add it '
+    'to the archive.</div>')
+
+
+def approved():
+    if not os.path.exists(APPROVED):
+        return []
+    return json.load(open(APPROVED)).get("approved", [])
+
+
+def approve(stem):
+    a = approved()
+    if stem not in a:
+        a.append(stem)
+        json.dump({"approved": sorted(a)}, open(APPROVED, "w"), indent=2)
+    return a
+
+
+def _salt():
+    """
+    Stable per-repo secret so a draft URL is not guessable from the week alone.
+    Generated once, kept out of git, supplied as a secret under Actions.
+    """
+    v = os.environ.get("DRAFT_SALT")
+    if v:
+        return v
+    path = os.path.join(HERE, ".draft-salt")
+    if not os.path.exists(path):
+        with open(path, "w") as f:
+            f.write(secrets.token_hex(16))
+    return open(path).read().strip()
+
+
+def draft_name(stem):
+    tok = hashlib.sha256(f"{stem}:{_salt()}".encode()).hexdigest()[:12]
+    return f"{stem}-{tok}.html"
+
+
 def collect():
     cfgs = json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]
     weeks = {}
     for cfg in cfgs:
         for f in glob.glob(os.path.join(OUT, cfg["name"], "*-facts.json")):
             stem = os.path.basename(f).replace("-facts.json", "")
-            weeks.setdefault(stem, []).append((cfg, f))
+            # a week with no write-up yet is not a page, it is a facts dump
+            if os.path.exists(os.path.join(OUT, cfg["name"], stem + ".md")):
+                weeks.setdefault(stem, []).append((cfg, f))
     return weeks
+
+
+def _as_draft(html):
+    html = html.replace('<meta charset="utf-8">',
+                        '<meta charset="utf-8">\n<meta name="robots" content="noindex,nofollow">')
+    return html.replace('<div class="wrap">', f'<div class="wrap">{DRAFT_BANNER}', 1)
 
 
 def build():
     weeks = collect()
     if not weeks:
-        print("Nothing in out/ to publish.")
+        print("Nothing in out/ to publish (no write-ups yet).")
         return []
     os.makedirs(DOCS, exist_ok=True)
-    order = sorted(weeks, reverse=True)
-    for stem in order:
+    os.makedirs(DRAFTS, exist_ok=True)
+
+    ok = [s for s in sorted(weeks, reverse=True) if s in approved()]
+    pending = [s for s in sorted(weeks, reverse=True) if s not in approved()]
+
+    # Approved weeks are the public site: clean URLs, archive nav, index.
+    for stem in ok:
         with open(os.path.join(DOCS, f"{stem}.html"), "w") as fh:
-            fh.write(render(stem, weeks[stem], order))
-    with open(os.path.join(DOCS, "index.html"), "w") as fh:
-        fh.write(open(os.path.join(DOCS, f"{order[0]}.html")).read())
+            fh.write(render(stem, weeks[stem], ok))
+    if ok:
+        with open(os.path.join(DOCS, "index.html"), "w") as fh:
+            fh.write(open(os.path.join(DOCS, f"{ok[0]}.html")).read())
+
+    # Pending weeks live at an unguessable path, off the archive entirely.
+    for stem in pending:
+        path = os.path.join(DRAFTS, draft_name(stem))
+        with open(path, "w") as fh:
+            fh.write(_as_draft(render(stem, weeks[stem], [])))
+
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    print(f"Published {len(order)} week(s) to docs/, newest is {order[0]}")
-    return order
+    if ok:
+        print(f"Published {len(ok)} approved week(s), newest is {ok[0]}")
+    for stem in pending:
+        print(f"DRAFT (not on the archive): drafts/{draft_name(stem)}  [{stem}]")
+    return ok + pending
+
+
+def promote(stem):
+    """Approve a week, then rebuild so it lands on the real URL."""
+    weeks = collect()
+    if stem not in weeks:
+        raise SystemExit(f"no such week: {stem}. have: {', '.join(sorted(weeks))}")
+    approve(stem)
+    d = os.path.join(DRAFTS, draft_name(stem))
+    if os.path.exists(d):
+        os.remove(d)
+    build()
+    print(f"Approved {stem}. Live at {stem}.html and on the index.")
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--artifact", metavar="STEM",
                     help="print one week as a fragment instead of building docs/")
+    ap.add_argument("--approve", metavar="STEM",
+                    help="promote a draft to its public URL and the archive")
     a = ap.parse_args()
-    if a.artifact:
+    if a.approve:
+        promote(a.approve)
+    elif a.artifact:
         w = collect()
         if a.artifact not in w:
             raise SystemExit(f"no such week: {a.artifact}. have: {', '.join(sorted(w))}")

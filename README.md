@@ -21,14 +21,14 @@ because it is never asked to.
 
 | Piece | State |
 |---|---|
-| Sleeper adapter | Working, tested against MOP league 2025 week 12 |
+| Sleeper adapter | Working. Replays 2025 weeks 1-14 byte-identically |
 | Analysis layer | Working, 25 weeks of real history pulled and validated |
 | Yahoo Chrome button | Written, **untested** until run on a live league page |
 | Yahoo API adapter | Parked. Written, unused, no approval pursued |
 | Web page + archive | Working, see `docs/` |
 | Game-final gate | Working, ESPN public scoreboard |
-| Email + link delivery | Written, needs an email key |
-| Schedule | GitHub Actions, Tuesday 9am Eastern |
+| Email + link delivery | Written, needs a Resend key |
+| Schedule | GitHub Actions, Tuesday 9am Eastern. Needs the repo pushed |
 | Recap sections | All seven, computed. Validated on Weeks 12, 13 and 14 |
 | Power Rankings | Working, cross-checked against the Week 4 hand ranking |
 
@@ -52,11 +52,21 @@ The API adapter stays in the repo, disabled, in case that ever changes.
 ## Setup
 
 ```bash
-pip install -r requirements.txt
-python3 run.py --only mop --week 12 --no-write     # Sleeper works immediately
+python3 run.py --only mop --week 12 --no-write   # works right now, nothing installed
 ```
 
-Sleeper needs nothing but the league id, already in `leagues.json`.
+The whole Sleeper path is standard library. No `pip install` is needed to pull
+a league, compute every statistic, run QC and build the page. `requirements.txt`
+is only for writing the prose and for the parked Yahoo adapter.
+
+To get the write-up as well:
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env          # then put your keys in it
+./recap facts --week 12       # numbers only
+./recap                       # the real thing
+```
 
 For Yahoo: open `chrome://extensions`, turn on Developer mode, Load unpacked,
 pick the `extension/` folder. In its Settings put your repository
@@ -64,8 +74,38 @@ pick the `extension/` folder. In its Settings put your repository
 Contents read and write. Then open your Yahoo league matchup page and click
 the button.
 
-Then set `ANTHROPIC_API_KEY` to have it write the recap, and either
-`RESEND_API_KEY` + `RECAP_EMAIL_TO` for email or `GROUPME_BOT_ID` to post.
+## Tuesday morning
+
+Nothing is sent to anyone automatically. The run publishes to a draft URL only
+you have, and emails you that link plus the finished text.
+
+```
+9:00am  Actions runs. Pulls the week, computes, writes, publishes a draft.
+        Emails you: the draft link, then the text ready to paste.
+
+you     Read it.
+        Good      -> ./recap approve          (or the "Approve a recap"
+                                               workflow, from your phone)
+                     paste the clean URL into the thread
+        Not good  -> ./recap redo --note "lead with the Kittle zero"
+```
+
+`./recap approve` promotes the week to `docs/<season>-wk<NN>.html`, adds it to
+the archive and points `index.html` at it. Before that the week exists only at
+`docs/drafts/<season>-wk<NN>-<token>.html`, which is `noindex`, is linked from
+nowhere, and is deleted on approval. The token comes from `DRAFT_SALT`, so it
+is not guessable from the week number.
+
+## Keeping the chat private
+
+GitHub Pages on a free account only serves from a **public** repository. The
+recap itself is meant to be public - you are pasting the link into a group chat
+- but `prompts/*-chat.md` and `prompts/*-lore.md` are your friends' actual
+messages, and those are gitignored for that reason.
+
+For the scheduled run they are restored from repository secrets `MOP_CHAT` and
+`MOP_LORE`, which the workflow writes to disk for the length of the job. Update
+them the same way you would any secret. Locally they just sit in `prompts/`.
 
 ## Delivery
 
@@ -93,6 +133,21 @@ a model reading a screenshot.
 | "Both now 6-2" | Unreachable. Each record is a separate field. |
 | Season stats and superlatives | Checked. `qc.py` asserts the stated high and low are the actual week max and min. |
 | Waiver attribution | Unreachable for the window and the manager, both of which come from the API. |
+| Standings as of the wrong week | Fixed. See below. |
+
+One more found while validating, which the original list did not anticipate.
+Sleeper's `/rosters` reports records **as they are right now**, not as they
+stood after the week being written up. On the live Tuesday run those are the
+same thing, which is why it never showed. Re-run week 1 in December and every
+team came back carrying its final record, and the model printed it, because
+technically every number it had been handed was computed.
+
+`standings.py` now derives the table from the season's own results instead.
+Validated by reproducing Sleeper's own end-of-season W/L, PF and PA exactly
+for all twelve teams across 2025. Two things fell out of it: `--week N` is now
+trustworthy for any past week, and the standings movement arrows work, which
+they never did before - the old code compared against a "last week" that had
+also been re-fetched live, so `record_changes` was always empty.
 
 What is left runs in `qc.py` as assertions, before the model is called. A
 failure writes nothing rather than producing a confident wrong recap:
@@ -105,6 +160,8 @@ failure writes nothing rather than producing a confident wrong recap:
 - every bench swap is a single legal swap, and a flip is only a flip if the
   new total actually clears the opponent
 - Power Rankings are 1..n and the movement arrows net to zero
+- every team's games played matches the number of weeks the standings cover,
+  so a week missing from history stops the run instead of shortening a record
 
 This is the point the post-mortem was reaching for: the system catches errors
 during execution instead of asking a person to catch them afterwards.
@@ -269,7 +326,11 @@ paragraph breaks and sent in order.
 
 ```
 leagues.json              which leagues, which prompt, how far back
+.env                      your keys, gitignored (copy .env.example)
+recap                     the front door: run / approve / redo / facts / link
 schema.py                 the contract + validation
+standings.py              records computed from results, not read live
+env.py                    .env loading, with real env vars winning
 adapters/sleeper.py       no auth, league id only
 adapters/yahoo.py         OAuth2, needs approval first
 adapters/payload.py       a week handed in from the browser button
@@ -277,7 +338,8 @@ extension/                the one-click Yahoo button
 nfl_status.py             are the games actually final
 analyze.py                every statistic, computed once
 run.py                    orchestration + the plain-text brief
-publish.py                builds the web page and the archive
+publish.py                builds the web page, drafts and the archive
+approved.json             which weeks have been approved for the archive
 deliver.py                email / GroupMe, with chunking
 prompts/<league>.md       your existing write-up prompt, verbatim
 prompts/<league>-lore.md  nicknames, rivalries, running jokes

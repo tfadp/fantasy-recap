@@ -516,31 +516,46 @@ def _pickup_performance(lw, rows, team_by_id):
         for p in r["bench"]:
             where[(r["team_id"], p["player_id"])] = ("benched", None, p["points"])
 
-    out, off_roster = [], []
+    # A player added, dropped and added again inside the same week produces one
+    # transaction per add, and the naive read counts him twice. Keep only the
+    # last add of each player by each team: that is the one he was actually on
+    # the roster under when the games kicked off.
+    adds = {}
     for t in lw.get("transactions", []):
         if t["type"] == "trade":
             continue
         for a in t.get("adds", []):
-            tid = a["team_id"]
-            team = team_by_id.get(tid) or {}
-            rec = {
-                "player": a["player"],
-                "pos": a.get("pos"),
-                "manager": team.get("manager"),
-                "team": team.get("name"),
-                "date": t.get("date"),
-                "faab_bid": t.get("faab_bid"),
-            }
-            hit = where.get((tid, a.get("player_id")))
-            if hit is None:
-                # added after this week's games, or added and cut before kickoff.
-                # Either way he never counted for this week, so he stays out of
-                # the ranking rather than showing up with a fake zero.
-                off_roster.append({**rec, "status": "not on the roster at kickoff",
-                                   "slot": None, "points": None})
-                continue
-            status, slot, pts = hit
-            out.append({**rec, "status": status, "slot": slot, "points": pts})
+            key = (a["team_id"], a.get("player_id"))
+            prev = adds.get(key)
+            if prev is None or (t.get("ts") or 0) >= (prev[0].get("ts") or 0):
+                # keep a bid from either attempt; the winning claim is the one
+                # that cost something
+                if prev and prev[0].get("faab_bid") and not t.get("faab_bid"):
+                    t = {**t, "faab_bid": prev[0]["faab_bid"]}
+                adds[key] = (t, a)
+
+    out, off_roster = [], []
+    for t, a in adds.values():
+        tid = a["team_id"]
+        team = team_by_id.get(tid) or {}
+        rec = {
+            "player": a["player"],
+            "pos": a.get("pos"),
+            "manager": team.get("manager"),
+            "team": team.get("name"),
+            "date": t.get("date"),
+            "faab_bid": t.get("faab_bid"),
+        }
+        hit = where.get((tid, a.get("player_id")))
+        if hit is None:
+            # added after this week's games, or added and cut before kickoff.
+            # Either way he never counted for this week, so he stays out of
+            # the ranking rather than showing up with a fake zero.
+            off_roster.append({**rec, "status": "not on the roster at kickoff",
+                               "slot": None, "points": None})
+            continue
+        status, slot, pts = hit
+        out.append({**rec, "status": status, "slot": slot, "points": pts})
     out.sort(key=lambda x: -(x["points"] or 0))
 
     started = [p for p in out if p["status"] == "started" and p["points"] is not None]

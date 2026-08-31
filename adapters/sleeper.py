@@ -165,6 +165,9 @@ def fetch(league_id, week):
                        "pos": _mkplayer(pmap, pid, 0)["pos"], "team_id": str(rid)}
                       for pid, rid in (t.get("drops") or {}).items()],
             "faab_bid": (t.get("settings") or {}).get("waiver_bid"),
+            # raw epoch ms, so a player added, dropped and re-added inside one
+            # week can be resolved to the add that actually stuck
+            "ts": ts,
         })
 
     return {

@@ -26,10 +26,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 import analyze  # noqa: E402
+import env  # noqa: E402
 import nfl_status  # noqa: E402
 import power_rankings  # noqa: E402
 import qc  # noqa: E402
 import schema  # noqa: E402
+import standings  # noqa: E402
 from adapters import sleeper  # noqa: E402
 
 OUT = os.path.join(HERE, "out")
@@ -205,11 +207,40 @@ def brief(a):
         bid = f" ${t['faab_bid']}" if t.get("faab_bid") else ""
         adds = ", ".join(f"{a['player']} to {a['team']}" for a in t.get("adds", []))
         drops = ", ".join(f"{d['player']} off {d['team']}" for d in t.get("drops", []))
-        L.append(f"  {t['type']}{bid}: {adds}{'; dropped ' + drops if drops else ''}")
+        # a drop with no add is a cut, and used to render as "free_agent: ;"
+        parts = [x for x in (adds, f"dropped {drops}" if drops else "") if x]
+        L.append(f"  {t['type']}{bid}: {'; '.join(parts) or '(no players)'}")
     return "\n".join(L)
 
 
-def write_recap(a, cfg):
+SYSTEM_TAIL = """
+
+Every number below is already computed and verified. Use them exactly as given.
+Do not add up scores, compare values, or infer any statistic that is not stated.
+If a fact you want is not present, leave it out.
+
+On voice: this gets posted to a group chat, not filed as a report. It should
+read like the funniest person in the league wrote it, not like a recap
+generator. Use the league's own names and running jokes. Short paragraphs. Call
+people out by handle. Never produce a bare list of statistics where a sentence
+would land harder; the numbers are ammunition for the jokes, not the content."""
+
+
+def _text_of(msg):
+    """
+    The last text block, not content[0].
+
+    With thinking on, content[0] is a thinking block, and the old
+    `msg.content[0].text` would have returned reasoning or raised. Worth being
+    explicit about because the failure only shows up once thinking is enabled.
+    """
+    parts = [b.text for b in msg.content if getattr(b, "type", None) == "text"]
+    if not parts:
+        raise RuntimeError(f"model returned no text (stop_reason={msg.stop_reason})")
+    return parts[-1].strip()
+
+
+def write_recap(a, cfg, note=None):
     """Call Claude with the league's prompt. Skipped if no API key is set."""
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -229,27 +260,26 @@ def write_recap(a, cfg):
     lore = read_optional("lore_file")
     chat = read_optional("chat_file")
 
+    # Filter to write-ups *first*, then take the last three. Sorting the whole
+    # directory and slicing before filtering only ever yielded one recap, since
+    # each week also writes a -brief.txt and a -facts.json that sort alongside.
     past = []
     pdir = os.path.join(OUT, cfg["name"])
     if os.path.isdir(pdir):
-        for fn in sorted(os.listdir(pdir))[-3:]:
-            if fn.endswith(".md"):
-                with open(os.path.join(pdir, fn)) as fh:
-                    past.append(f"--- {fn} ---\n{fh.read()}")
+        for fn in sorted(fn for fn in os.listdir(pdir) if fn.endswith(".md"))[-3:]:
+            with open(os.path.join(pdir, fn)) as fh:
+                past.append(f"--- {fn} ---\n{fh.read()}")
 
-    msg = anthropic.Anthropic(api_key=key).messages.create(
-        model=os.environ.get("RECAP_MODEL", "claude-sonnet-4-5"),
-        max_tokens=3000,
-        system=(base_prompt + "\n\n"
-                "Every number below is already computed and verified. Use them exactly as "
-                "given. Do not add up scores, compare values, or infer any statistic that is "
-                "not stated. If a fact you want is not present, leave it out.\n\n"
-                "On voice: this gets posted to a group chat, not filed as a report. It "
-                "should read like the funniest person in the league wrote it, not like a "
-                "recap generator. Open with a headline as a markdown h2. Use the league's "
-                "own names and running jokes. Short paragraphs. Call people out by handle. "
-                "Never produce a bare list of statistics where a sentence would land "
-                "harder; the numbers are ammunition for the jokes, not the content."),
+    client = anthropic.Anthropic(api_key=key)
+    msg = client.beta.messages.create(
+        model=os.environ.get("RECAP_MODEL", "claude-opus-5"),
+        max_tokens=16000,
+        thinking={"type": "adaptive"},
+        # If the roast trips a safety classifier at 9am on a Tuesday, the run
+        # should still produce a recap rather than an empty inbox.
+        betas=["server-side-fallback-2026-07-01"],
+        fallbacks="default",
+        system=base_prompt + SYSTEM_TAIL,
         messages=[{"role": "user", "content": "\n\n".join(filter(None, [
             ("HOW THIS LEAGUE ACTUALLY TALKS. Real messages from the group chat. "
              "Match this energy and reuse these bits where they land; do not quote "
@@ -261,13 +291,20 @@ def write_recap(a, cfg):
             f"POWER RANKINGS AUDIT:\n{a.get('power_rankings_audit', '')}",
             f"QC AUDIT FOOTER, paste verbatim at the end:\n{a.get('qc_audit', '')}",
             f"THIS WEEK, COMPLETE DATA:\n{json.dumps(a, indent=2)}",
+            (f"NOTE FROM DAN ON THIS REWRITE, follow it over any default:\n{note}"
+             if note else ""),
             "Write this week's recap.",
         ]))}],
     )
-    return msg.content[0].text
+    if msg.stop_reason == "refusal":
+        raise RuntimeError(
+            "The model declined to write this one and the fallback did too. "
+            "Usually a roast that read wrong out of context. Re-run with "
+            "--note to steer it.")
+    return _text_of(msg)
 
 
-def do_league(cfg, week, force, do_write):
+def do_league(cfg, week, force, do_write, note=None):
     if cfg["platform"] == "sleeper":
         state = sleeper.current_state()
         wk = week or (state.get("display_week") or state["week"])
@@ -293,7 +330,14 @@ def do_league(cfg, week, force, do_write):
     # games that have not been scheduled yet and refuse a finished week.
     nfl_status.assert_final(lw["season"], wk, allow_incomplete=force)
 
+    # Records, PF and PA as they stood after *this* week, computed from the
+    # season's own results. Must run before analyze and power_rankings, both of
+    # which read lw["teams"]. See standings.py for why the API's own numbers
+    # are not trustworthy outside the live Tuesday run.
+    stand = standings.apply(lw, history)
+
     a = analyze.analyze(lw, history)
+    a["standings_source"] = stand
 
     # power rankings, plus last week's so the arrows have something to move from
     pr = power_rankings.compute(
@@ -308,7 +352,7 @@ def do_league(cfg, week, force, do_write):
         consistency_mode=cfg.get("pr_consistency_mode", "spec"))
 
     # QC runs before the model is called. A failure here writes nothing.
-    a["qc_audit"] = qc.run(a, lw, pr)
+    a["qc_audit"] = qc.run(a, lw, pr, standings_source=stand)
 
     _save_history(cfg["name"], lw)
     _save_power(cfg["name"], lw, pr)
@@ -321,7 +365,7 @@ def do_league(cfg, week, force, do_write):
     with open(os.path.join(d, stem + "-brief.txt"), "w") as f:
         f.write(brief(a))
 
-    text = write_recap(a, cfg) if do_write else None
+    text = write_recap(a, cfg, note=note) if do_write else None
     if text:
         with open(os.path.join(d, stem + ".md"), "w") as f:
             f.write(text)
@@ -377,7 +421,10 @@ def main():
     ap.add_argument("--only", help="league name from leagues.json")
     ap.add_argument("--no-write", action="store_true")
     ap.add_argument("--force", action="store_true", help="ignore unfinished games")
+    ap.add_argument("--note", help="steer a rewrite, e.g. --note 'lead with the Kittle zero'")
     a = ap.parse_args()
+
+    env.load()
 
     active = [c for c in load_config()["leagues"] if c.get("enabled", True)]
     failures = []
@@ -385,7 +432,7 @@ def main():
         if a.only and cfg["name"] != a.only:
             continue
         try:
-            _, text = do_league(cfg, a.week, a.force, not a.no_write)
+            _, text = do_league(cfg, a.week, a.force, not a.no_write, note=a.note)
             print(f"\n=== {cfg['name']} ===")
             print(text or "(facts written; no model call)")
         except Exception as e:

@@ -13,3 +13,5 @@ __pycache__/
 # secret. See README "Keeping the chat private".
 prompts/*-chat.md
 prompts/*-lore.md
+.draft-salt
+approved.json.bak

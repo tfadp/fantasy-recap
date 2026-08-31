@@ -16,10 +16,17 @@ on:
       week:
         description: "Week number (blank = current)"
         required: false
+      note:
+        description: "Steer the rewrite, e.g. 'lead with the Kittle zero'"
+        required: false
       force:
         description: "Write even if a game is not final"
         required: false
         default: "false"
+
+# the run commits history, out/ and docs/ back to the repo
+permissions:
+  contents: write
 
 jobs:
   recap:
@@ -43,6 +50,19 @@ jobs:
       - name: Install
         if: env.skip != 'true'
         run: pip install -r requirements.txt
+
+      # The voice files are gitignored, because a public repo is the price of
+      # free Pages and the league's group chat should not be on it. They are
+      # restored here from secrets for the length of the run.
+      - name: Restore the voice files
+        if: env.skip != 'true'
+        env:
+          MOP_CHAT: ${{ secrets.MOP_CHAT }}
+          MOP_LORE: ${{ secrets.MOP_LORE }}
+        run: |
+          [ -n "$MOP_CHAT" ] && printf '%s' "$MOP_CHAT" > prompts/mop-chat.md
+          [ -n "$MOP_LORE" ] && printf '%s' "$MOP_LORE" > prompts/mop-lore.md
+          echo "voice files restored: $(ls -1 prompts/*-chat.md prompts/*-lore.md 2>/dev/null | wc -l)"
 
       - name: Restore Yahoo token
         if: env.skip != 'true'
@@ -70,10 +90,15 @@ jobs:
         run: |
           python3 run.py \
             ${{ github.event.inputs.week && format('--week {0}', github.event.inputs.week) || '' }} \
+            ${{ github.event.inputs.note && format('--note {0}', toJSON(github.event.inputs.note)) || '' }} \
             ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
+      # Publishes the week to an unguessable draft URL. It does not touch
+      # index.html or the archive until you approve it.
       - name: Build the web page
         if: env.skip != 'true'
+        env:
+          DRAFT_SALT: ${{ secrets.DRAFT_SALT }}
         run: python3 publish.py
 
       - name: Send it
@@ -83,15 +108,17 @@ jobs:
           RECAP_EMAIL_TO: ${{ secrets.RECAP_EMAIL_TO }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           PAGES_URL: ${{ vars.PAGES_URL }}
+          DRAFT_SALT: ${{ secrets.DRAFT_SALT }}
         run: python3 deliver.py
 
       # Keeps history and past write-ups so next week's recap knows the lore.
+      # The voice files are gitignored, so nothing private is committed here.
       - name: Commit results
         if: env.skip != 'true'
         run: |
           git config user.name "fantasy-recap"
           git config user.email "actions@github.com"
-          git add out history docs
+          git add out history docs approved.json
           git diff --staged --quiet || git commit -m "Week recap $(date +%F)"
           git push
 
