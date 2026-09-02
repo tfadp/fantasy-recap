@@ -60,3 +60,34 @@ per-week points, the better architecture is:
 
 That is 14 fetches instead of 7 and gets everything, rather than 7 fetches that
 get half a recap.
+
+## Probe 4: confirmed, plus two things that change the plan
+
+**The team page has the bench.** `/f1/<league>/<teamId>` reports
+`benchWords: ["BN","Bench","IR"]`, and carries a slot summary table whose header
+row is the league's own lineup shape:
+
+    QB | RB | WR | TE | W-R-T | K | DEF | BN | IR
+
+**Team names come from the page title**, cleanly:
+
+    "Bring It On Season 19 - Philly Special | Fantasy Football | ..."
+                             ^^^^^^^^^^^^^^
+
+so team 10 is "Philly Special". No selector to break.
+
+**`span.pos-label[data-pos]` exists only on the matchup page.** `posLabels` is
+empty on the team page, so the two pages need different row parsers. The
+matchup page keeps the clean attribute hook; the team page will need indices.
+
+**The standings page is useless to us: 200 with zero tables.** It renders client
+side, and `fetch` only ever sees server-rendered HTML. That is a real constraint
+on this whole approach, not just this page.
+
+It costs nothing here, though, because `standings.py` already computes records,
+points for and points against from the weekly results themselves - it was
+written for exactly this reason on the Sleeper side. Yahoo standings come free
+from the same code, and week 1 is trivially 1-0 or 0-1.
+
+Transactions are still unmapped and may well be client-rendered too, in which
+case Yahoo recaps lose the waiver section until the API comes through.
