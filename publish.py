@@ -376,12 +376,7 @@ def render(stem, entries, order, standalone=True):
 APPROVED = os.path.join(HERE, "approved.json")
 DRAFTS = os.path.join(DOCS, "drafts")
 
-DRAFT_BANNER = (
-    '<div style="border:2px solid var(--accent);border-radius:6px;padding:12px 14px;'
-    'margin-bottom:22px;font-family:var(--data);font-size:13px;line-height:1.5">'
-    '<strong style="color:var(--accent);letter-spacing:.08em">DRAFT &mdash; NOT SENT</strong>'
-    '<br>Only you have this link. Approve it to publish the clean URL and add it '
-    'to the archive.</div>')
+DRAFT_BANNER = ""
 
 
 def approved():
