@@ -2,17 +2,21 @@ name: Weekly fantasy recap
 
 on:
   schedule:
-    # Tuesday, 13:00 UTC. That is 9am Eastern through early November and 8am
-    # once the clocks change, and both are Tuesday morning.
+    # Tuesday 06:00 UTC: 2am Eastern until the clocks change, 1am after. Monday
+    # night is final by then, and GitHub cron routinely runs hours late, so in
+    # practice the recap lands early Tuesday morning.
     #
-    # There used to be two crons here, 13:00 and 14:00, with a guard step that
-    # skipped whichever one was not exactly 9am local, so daylight saving could
-    # not shift the run. That guard cost a real Tuesday: GitHub cron is
-    # best-effort and was delayed roughly four hours on 1 September, the guard
-    # read hour 13 instead of 09, skipped everything, and reported success. A
-    # green tick and no recap is the worst possible failure here, so precision
-    # about the hour is not worth having. One cron, no guard, runs late if
-    # GitHub is late.
+    # 13:00 UTC is the fallback. If the early run found a late Monday game not
+    # yet final, or GitHub dropped it, this one writes the week. If the early
+    # run already wrote it, --skip-written makes this one a no-op, so there is
+    # never a second, different recap in your inbox.
+    #
+    # The same flag covers a manual run with no note: it re-sends the week
+    # already written instead of rewriting it. Add a note to force a rewrite.
+    #
+    # No hour guard. A guard once skipped a real Tuesday (1 September) because
+    # the run was four hours late, and reported success.
+    - cron: "0 6 * * 2"
     - cron: "0 13 * * 2"
   # the browser extension fires this when you click "Send week to writer"
   repository_dispatch:
@@ -95,7 +99,8 @@ jobs:
           python3 run.py \
             ${{ github.event.inputs.week && format('--week {0}', github.event.inputs.week) || '' }} \
             ${{ github.event.inputs.note && format('--note {0}', toJSON(github.event.inputs.note)) || '' }} \
-            ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+            ${{ github.event.inputs.force == 'true' && '--force' || '' }} \
+            ${{ !github.event.inputs.note && '--skip-written' || '' }}
 
       # Publishes the week to an unguessable draft URL. It does not touch
       # index.html or the archive until you approve it.

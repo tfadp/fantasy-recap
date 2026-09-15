@@ -28,7 +28,7 @@ because it is never asked to.
 | Web page + archive | Working, see `docs/` |
 | Game-final gate | Working, ESPN public scoreboard |
 | Email + link delivery | Written, needs a Resend key |
-| Schedule | GitHub Actions, Tuesday 9am Eastern. Needs the repo pushed |
+| Schedule | GitHub Actions, Tuesday 2am Eastern, 9am fallback |
 | Recap sections | All seven, computed. Validated on Weeks 12, 13 and 14 |
 | Power Rankings | Working, cross-checked against the Week 4 hand ranking |
 

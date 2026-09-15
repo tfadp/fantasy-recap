@@ -346,7 +346,7 @@ def _latest_played_week(cfg):
         f"{state.get('season_start_date')}). Nothing to write.")
 
 
-def do_league(cfg, week, force, do_write, note=None):
+def do_league(cfg, week, force, do_write, note=None, skip_written=False):
     if cfg["platform"] == "sleeper":
         if week:
             wk = int(week)
@@ -409,6 +409,13 @@ def do_league(cfg, week, force, do_write, note=None):
     with open(os.path.join(d, stem + "-brief.txt"), "w") as f:
         f.write(brief(a))
 
+    md = os.path.join(d, stem + ".md")
+    if do_write and skip_written and os.path.exists(md):
+        # The fallback Tuesday cron lands here when the early run already
+        # wrote the week. Rewriting would produce new text, and delivery
+        # dedupes on the text, so it would mail a second, different recap.
+        print(f"{cfg['name']}: {stem} already written, leaving it alone")
+        return a, None
     text = write_recap(a, cfg, note=note) if do_write else None
     if text:
         with open(os.path.join(d, stem + ".md"), "w") as f:
@@ -466,6 +473,8 @@ def main():
     ap.add_argument("--no-write", action="store_true")
     ap.add_argument("--force", action="store_true", help="ignore unfinished games")
     ap.add_argument("--note", help="steer a rewrite, e.g. --note 'lead with the Kittle zero'")
+    ap.add_argument("--skip-written", action="store_true",
+                    help="do not rewrite a week that already has a recap")
     a = ap.parse_args()
 
     env.load()
@@ -478,7 +487,8 @@ def main():
     failures, early = [], []
     for cfg in active:
         try:
-            _, text = do_league(cfg, a.week, a.force, not a.no_write, note=a.note)
+            _, text = do_league(cfg, a.week, a.force, not a.no_write, note=a.note,
+                                skip_written=a.skip_written)
             print(f"\n=== {cfg['name']} ===")
             print(text or "(facts written; no model call)")
         except NothingYet as e:

@@ -1,0 +1,143 @@
+MOP — 2026 Week 1
+
+SCOREBOARD
+  Kindofblue 132.06 def. NJIGGAS 113.0  (by 19.06)
+  Based God 137.46 def. 2011 Ryan Braun 136.3  (by 1.16)
+  Legacy LeaversTM 125.24 def. Proverbs 3:5-6 88.71  (by 36.53)
+  pukachew⚡️ 138.37 def. Justin Jefferson Davis 130.66  (by 7.71)
+  Olave me or Hate me… 159.86 def. All Hail the Robot Buddha 105.62  (by 54.24)
+  Nice Juds 141.3 def. Windsor Terror 115.94  (by 25.36)
+
+THE WEEK IN ONE GLANCE
+  high: Olave me or Hate me… 159.86
+  low:  Proverbs 3:5-6 88.71
+  league average: 127.04
+  closest: Based God over 2011 Ryan Braun by 1.16
+  blowout: Olave me or Hate me… over All Hail the Robot Buddha by 54.24
+  unlucky: 2011 Ryan Braun scored 136.3 and still lost to Based God (137.46); that score would have beaten 7 of the other 11 teams
+  lucky:   Legacy LeaversTM won with just 125.24 against Proverbs 3:5-6's 88.71
+
+PLAYERS
+   37.26  Caleb Williams (QB, Olave me or Hate me…)
+   35.66  Josh Allen (QB, Kindofblue)
+    35.3  Derrick Henry (RB, 2011 Ryan Braun)
+    34.1  Kenneth Walker (RB, Windsor Terror)
+    33.6  Jahmyr Gibbs (RB, Nice Juds)
+  worst start: Kyle Pitts (TE) 0.0 for Kindofblue
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Jalen Coker (33.8, rthd20) - would have replaced Tee Higgins (8.9) at WR, +24.9  WOULD HAVE FLIPPED THE GAME
+  Brock Purdy (22.1, bbasse3267) - would have replaced Matthew Stafford (5.1) at QB, +17.0
+  Matthew Golden (15.5, jxllokreflo) - would have replaced Ja'Marr Chase (3.2) at WR, +12.3  WOULD HAVE FLIPPED THE GAME
+  Deebo Samuel (18.0, bbasse3267) - would have replaced George Pickens (5.8) at WR, +12.2
+  Jakobi Meyers (12.2, jxllokreflo) - would have replaced Ja'Marr Chase (3.2) at WR, +9.0
+  Jadarian Price (7.8, oliverslater) - would have replaced Jordan Addison (0.0) at FLEX, +7.8
+  Malik Washington (6.3, oliverslater) - would have replaced Jordan Addison (0.0) at FLEX, +6.3
+  Tyler Allgeier (9.0, RobotBuddha) - would have replaced Courtland Sutton (3.1) at FLEX, +5.9
+  NOT a flip: NJIGGAS only clears 132.06 with a full optimal lineup (149.7), which is several swaps. Do not write this as could-have-won.
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Houston Texans (DEF, Proverbs 3:5-6) 0.25 vs DEF median 9.5 = 2.6%
+  Los Angeles Rams (DEF, pukachew⚡️) 0.75 vs DEF median 9.5 = 7.9%
+  Jaylen Waddle (WR, Olave me or Hate me…) 1.2 vs WR median 8.8 = 13.6%
+  J.K. Dobbins (RB, Justin Jefferson Davis) 3.6 vs RB median 14.65 = 24.6%
+  Rico Dowdle (RB, Windsor Terror) 4.1 vs RB median 14.65 = 28.0%
+  Tony Pollard (RB, pukachew⚡️) 4.4 vs RB median 14.65 = 30.0%
+  New England Patriots (DEF, 2011 Ryan Braun) 3.0 vs DEF median 9.5 = 31.6%
+  Matthew Stafford (QB, NJIGGAS) 5.1 vs QB median 15.92 = 32.0%
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  Kindofblue started Kyle Pitts (TE) for 0.0
+  Proverbs 3:5-6 started Jordan Addison (WR) for 0.0
+  Windsor Terror started Colston Loveland (TE) for 0.0
+  Windsor Terror started Los Angeles Chargers (DEF) for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  Proverbs 3:5-6 (0-1, 88.71) - rank 12/12 this week; here for: one of the week's lowest scores, record (0-1)
+  All Hail the Robot Buddha (0-1, 105.62) - rank 11/12 this week; here for: one of the week's lowest scores, record (0-1)
+  NJIGGAS (0-1, 113.0) - rank 10/12 this week; here for: one of the week's lowest scores
+
+TOILET BOWL: Proverbs 3:5-6 88.71
+
+WAIVER WIRE GENIUS (started, 10+, top-3 or swung the game)
+  rthd20 -> Devaughn Vele 19.9 (top-3 on roster)
+
+STANDINGS
+   1. Olave me or Hate me…  1-0  PF 159.86  PA 105.62
+   2. Nice Juds  1-0  PF 141.3  PA 115.94
+   3. pukachew⚡️  1-0  PF 138.37  PA 130.66
+   4. Based God  1-0  PF 137.46  PA 136.3
+   5. Kindofblue  1-0  PF 132.06  PA 113.0
+   6. Legacy LeaversTM  1-0  PF 125.24  PA 88.71
+   7. 2011 Ryan Braun  0-1  PF 136.3  PA 137.46
+   8. Justin Jefferson Davis  0-1  PF 130.66  PA 138.37
+   9. Windsor Terror  0-1  PF 115.94  PA 141.3
+  10. NJIGGAS  0-1  PF 113.0  PA 132.06
+  11. All Hail the Robot Buddha  0-1  PF 105.62  PA 159.86
+  12. Proverbs 3:5-6  0-1  PF 88.71  PA 125.24
+
+STREAKS
+
+HISTORY (28 prior weeks on record)
+  Olave me or Hate me…'s 159.86 is the best since 2025 New York Yankees put up 163.04 in 2025 week 14
+  Olave me or Hate me… set a new high: 159.86 (old best 155.61)
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Devaughn Vele (rthd20, 09/07) — 19.9 points (started at FLEX)
+  2. Jared Goff (soneal718, 09/11) — 16.44 points (started at QB)
+  3. Baker Mayfield (yogz, 09/10) — 11.64 points (started at QB)
+  4. Kansas City Chiefs (tfadp, 09/08) — 11.5 points (started at DEF)
+  5. David Njoku (treypaulino, 09/13) — 10.8 points (benched)
+  6. Michael Mayer (xainshawty, 09/13) — 9.2 points (started at TE)
+  7. Mark Andrews (zazach, 09/08) — 8.9 points (benched)
+  8. Emmett Johnson (jxllokreflo, 09/14) — 8.8 points (benched)
+  9. Pat Bryant (yogz, 09/13) — 8.2 points (benched)
+  10. Tre Tucker (oliverslater, 09/07) — 4.7 points (benched)
+  11. Jerry Jeudy (jxllokreflo, 09/09) — 4.6 points (benched)
+  12. George Holani (jxllokreflo, 09/09) — 2.9 points (benched)
+  13. Tank Dell (soneal718, 09/11) — 0.0 points (benched)
+  14. Josh Jacobs (rthd20, 09/10) — 0.0 points (benched)
+  15. Jonah Coleman (soneal718, 09/07) — 0.0 points (benched)
+  16. Los Angeles Chargers (soneal718, 09/07) — -1.0 points (started at DEF)
+  best add: Devaughn Vele — 19.9 for rthd20
+  worst add: Los Angeles Chargers — started at DEF, -1.0 for soneal718
+
+POWER RANKINGS (through this week)
+1. Olave me or Hate me… — 174.1 (–)   [record 1-0]
+2. Nice Juds — 155.3 (–)   [record 1-0]
+3. pukachew⚡️ — 152.4 (–)   [record 1-0]
+4. Based God — 151.4 (–)   [record 1-0]
+5. Kindofblue — 146.0 (–)   [record 1-0]
+6. Legacy LeaversTM — 139.1 (–)   [record 1-0]
+7. 2011 Ryan Braun — 122.6 (–)   [record 0-1]
+8. Justin Jefferson Davis — 116.9 (–)   [record 0-1]
+9. Windsor Terror — 102.0 (–)   [record 0-1]
+10. NJIGGAS — 99.0 (–)   [record 0-1]
+11. All Hail the Robot Buddha — 91.6 (–)   [record 0-1]
+12. Proverbs 3:5-6 — 74.5 (–)   [record 0-1]
+
+MOVES
+  free_agent: Emmett Johnson to 2011 Ryan Braun; dropped Jerry Jeudy off 2011 Ryan Braun
+  free_agent: Pat Bryant to Legacy LeaversTM; dropped Ja'Kobi Lane off Legacy LeaversTM
+  free_agent: David Njoku to Nice Juds; dropped Keenan Allen off Nice Juds
+  free_agent: Michael Mayer to pukachew⚡️
+  free_agent: Jared Goff to Windsor Terror; dropped Braelon Allen off Windsor Terror
+  commissioner: Tank Dell to Windsor Terror
+  free_agent: dropped Tank Dell off Windsor Terror
+  free_agent: Keenan Allen to Nice Juds; dropped Rashid Shaheed off Nice Juds
+  free_agent: Baker Mayfield to Legacy LeaversTM; dropped Seth McGowan off Legacy LeaversTM
+  free_agent: Josh Jacobs to Justin Jefferson Davis; dropped Brian Robinson off Justin Jefferson Davis
+  free_agent: Jerry Jeudy to 2011 Ryan Braun; dropped George Holani off 2011 Ryan Braun
+  free_agent: George Holani to 2011 Ryan Braun; dropped Jerry Jeudy off 2011 Ryan Braun
+  free_agent: Jerry Jeudy to 2011 Ryan Braun
+  free_agent: Kansas City Chiefs to Kindofblue; dropped Minnesota Vikings off Kindofblue
+  free_agent: Mark Andrews to Olave me or Hate me…; dropped Jauan Jennings off Olave me or Hate me…
+  free_agent: Los Angeles Chargers to Windsor Terror; dropped Dontayvion Wicks off Windsor Terror
+  free_agent: Seth McGowan to Legacy LeaversTM; dropped Cyrus Allen off Legacy LeaversTM
+  free_agent: Brian Robinson to Justin Jefferson Davis; dropped Kayshon Boutte off Justin Jefferson Davis
+  free_agent: Dontayvion Wicks to Windsor Terror
+  free_agent: dropped Josh Jacobs off Windsor Terror
+  free_agent: Jonah Coleman to Windsor Terror
+  free_agent: Tre Tucker to Proverbs 3:5-6
+  free_agent: Devaughn Vele to Justin Jefferson Davis
+  trade: (no players)
