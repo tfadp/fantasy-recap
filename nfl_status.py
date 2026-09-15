@@ -37,13 +37,17 @@ def week_status(season, week, season_type=2):
     }
 
 
+class NotFinal(RuntimeError):
+    """The week's games are not all final. Come back later, not a failure."""
+
+
 def assert_final(season, week, season_type=2, allow_incomplete=False):
     s = week_status(season, week, season_type)
     if s["total_games"] == 0:
         raise RuntimeError(f"ESPN has no games for {season} week {week}. Wrong week or season?")
     if not s["final"] and not allow_incomplete:
         names = ", ".join(g["game"] for g in s["unfinished"])
-        raise RuntimeError(
+        raise NotFinal(
             f"{len(s['unfinished'])} game(s) not final for week {week}: {names}. "
             f"Re-run later, or pass --force to write anyway.")
     return s

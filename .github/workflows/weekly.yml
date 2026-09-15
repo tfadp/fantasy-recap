@@ -2,22 +2,21 @@ name: Weekly fantasy recap
 
 on:
   schedule:
-    # Tuesday 06:00 UTC: 2am Eastern until the clocks change, 1am after. Monday
-    # night is final by then, and GitHub cron routinely runs hours late, so in
-    # practice the recap lands early Tuesday morning.
+    # Every 30 minutes from late Monday night through Tuesday late morning.
+    # 03:00 UTC is 11pm Monday Eastern, 15:30 UTC is 11:30am Tuesday.
     #
-    # 13:00 UTC is the fallback. If the early run found a late Monday game not
-    # yet final, or GitHub dropped it, this one writes the week. If the early
-    # run already wrote it, --skip-written makes this one a no-op, so there is
-    # never a second, different recap in your inbox.
+    # The point is not to guess when Monday Night Football ends. The run asks
+    # ESPN whether every game is final; if one is still on, it exits quietly
+    # and the next slot tries again. The first slot after the last whistle
+    # writes the recap and emails the link, so it is waiting by morning.
     #
-    # The same flag covers a manual run with no note: it re-sends the week
-    # already written instead of rewriting it. Add a note to force a rewrite.
+    # Every later slot that day finds the week already written and does
+    # nothing: --skip-written leaves it alone, and delivery dedupes on the
+    # text of the recap. One recap, one email, however many times this fires.
     #
-    # No hour guard. A guard once skipped a real Tuesday (1 September) because
-    # the run was four hours late, and reported success.
-    - cron: "0 6 * * 2"
-    - cron: "0 13 * * 2"
+    # GitHub cron is best-effort and has run four hours late here before.
+    # Twenty-six chances is the answer to that, not a more precise hour.
+    - cron: "0,30 3-15 * * 2"
   # the browser extension fires this when you click "Send week to writer"
   repository_dispatch:
     types: [yahoo-week]
@@ -37,6 +36,12 @@ on:
 # the run commits history, out/ and docs/ back to the repo
 permissions:
   contents: write
+
+# Slots are 30 minutes apart and a run takes about a minute, but a slow model
+# call plus a late trigger could overlap two of them onto the same push.
+concurrency:
+  group: weekly-recap
+  cancel-in-progress: false
 
 jobs:
   recap:

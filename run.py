@@ -455,14 +455,25 @@ def _save_history(name, lw):
 
 
 def _load_history(name):
+    """Past weeks for a league the API cannot be re-asked for.
+
+    Only the league_week files. `_save_power` writes power-<season>-wk<NN>.json
+    into the same directory and those are lists, not weeks: loading them gave
+    standings.py a list to subscript by string and took the whole run down with
+    `list indices must be integers`. The Sleeper path never hit it because it
+    re-fetches its history from the API instead of reading this directory.
+    """
     d = os.path.join(HIST, name)
     if not os.path.isdir(d):
         return []
     out = []
     for fn in sorted(os.listdir(d)):
-        if fn.endswith(".json"):
-            with open(os.path.join(d, fn)) as f:
-                out.append(json.load(f))
+        if not fn.endswith(".json") or fn.startswith("power-"):
+            continue
+        with open(os.path.join(d, fn)) as f:
+            wk = json.load(f)
+        if isinstance(wk, dict) and "week" in wk and "season" in wk:
+            out.append(wk)
     return out
 
 
@@ -491,8 +502,9 @@ def main():
                                 skip_written=a.skip_written)
             print(f"\n=== {cfg['name']} ===")
             print(text or "(facts written; no model call)")
-        except NothingYet as e:
-            # Pre-season Tuesdays are not failures. Saying so quietly beats
+        except (NothingYet, nfl_status.NotFinal) as e:
+            # Pre-season Tuesdays, and Monday nights still in progress, are not
+            # failures. Saying so quietly beats
             # sending a red X and a "recap failed" email every week until
             # kickoff, which trains you to ignore the one that matters.
             early.append(cfg["name"])
