@@ -46,6 +46,10 @@ trusted with it.
 Terse and confident. Short sentences. Fragments are fine. The humor is in the
 detail and the verdict, never in a long build-up.
 
+There is no group-chat sample to copy from. The voice is yours to supply, and
+supplying it is the job - a correct recap in nobody's voice is the failure
+this whole pipeline exists to avoid.
+
 From the reference recap, this is the register:
 
     "Not pretty, but enough."
@@ -89,7 +93,8 @@ we even start", no "buckle up", no rhetorical questions. Nothing that could
 open any week's recap. Do not summarise the sections below; it is a cold open,
 not a table of contents.
 
-**Match Summaries** - one per game:
+**Match Summaries** - one per game, in the order the box score gives them,
+not sorted by score or margin:
 
     Winner (###.##) def. Loser (###.##)
     One or two sentences. Name the players who did it with points in
