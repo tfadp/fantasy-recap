@@ -117,11 +117,9 @@ section{margin-top:34px}
 .column p strong:only-child{font-family:var(--data);font-size:12px;font-weight:600;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   display:block;margin-top:26px}
-.column p.standfirst{font-size:20px;line-height:1.5;margin-bottom:26px}
 .column p.section{font-family:var(--data);font-size:12px;font-weight:600;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   margin:30px 0 12px}
-.column h3.matchup{font-size:21px;margin:26px 0 8px}
 .column ul{list-style:none;padding-left:0}
 .column ul li{position:relative;padding-left:16px}
 .column ul li::before{content:"\\2022";position:absolute;left:0;color:var(--accent)}
@@ -173,23 +171,15 @@ SECTIONS = {
     "Match Summaries",
     "Biggest Losers (Bench Legends)",
     "Studs Who Failed",
+    "Started A Zero",
     "Call the Doctor",
     "Waiver Wire Genius",
     "Toilet Bowl Performance",
     "Power Rankings (with Movement)",
 }
 
-# "Team A (137.46) def. Team B (136.3)", the score line that opens each matchup.
-_SCORELINE = re.compile(r"^(.+?)\s+\(\d+(?:\.\d+)?\)\s+(?:def\.|tied)\s+.+?\s+\(\d+(?:\.\d+)?\)$")
-
-
-def md_to_html(md, lead=False):
-    """
-    lead: style the first paragraph as the opener. It is the three-to-five
-    sentence summary of the week and reads as body text without this.
-    """
+def md_to_html(md):
     out, in_list = [], None
-    first_p = lead
     for raw in md.split("\n"):
         line = raw.rstrip()
         h = re.match(r"^(#{1,4})\s+(.*)", line)
@@ -201,10 +191,6 @@ def md_to_html(md, lead=False):
         if bare in SECTIONS:
             if in_list: out.append(f"</{in_list}>"); in_list = None
             out.append(f'<p class="section">{inline(bare)}</p>')
-            continue
-        if line.strip() and _SCORELINE.match(line.strip()):
-            if in_list: out.append(f"</{in_list}>"); in_list = None
-            out.append(f'<h3 class="matchup">{inline(line.strip())}</h3>')
             continue
         if h:
             if in_list: out.append(f"</{in_list}>"); in_list = None
@@ -225,9 +211,7 @@ def md_to_html(md, lead=False):
             if in_list: out.append(f"</{in_list}>"); in_list = None
         else:
             if in_list: out.append(f"</{in_list}>"); in_list = None
-            cls = ' class="standfirst"' if first_p else ""
-            first_p = False
-            out.append(f"<p{cls}>{inline(line)}</p>")
+            out.append(f"<p>{inline(line)}</p>")
     if in_list: out.append(f"</{in_list}>")
     return "\n".join(out)
 
@@ -268,7 +252,7 @@ def league_block(name, recap_md, data, multi):
 
     headline, body_md = split_headline(recap_md or "")
     if body_md.strip():
-        head.append(f'<div class="column">{md_to_html(body_md, lead=True)}</div>')
+        head.append(f'<div class="column">{md_to_html(body_md)}</div>')
 
     R = []
 
