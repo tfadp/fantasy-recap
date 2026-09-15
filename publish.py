@@ -117,6 +117,14 @@ section{margin-top:34px}
 .column p strong:only-child{font-family:var(--data);font-size:12px;font-weight:600;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   display:block;margin-top:26px}
+.column p.standfirst{font-size:20px;line-height:1.5;margin-bottom:26px}
+.column p.section{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  margin:30px 0 12px}
+.column h3.matchup{font-size:21px;margin:26px 0 8px}
+.column ul{list-style:none;padding-left:0}
+.column ul li{position:relative;padding-left:16px}
+.column ul li::before{content:"\\2022";position:absolute;left:0;color:var(--accent)}
 .column hr{border:0;border-top:1px solid var(--rule);margin:30px 0}
 .column h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;
   font-size:26px;font-weight:600;margin:34px 0 11px;line-height:1.05;
@@ -156,13 +164,48 @@ footer{margin-top:22px;font-family:var(--data);font-size:11px;color:var(--dim);
 """
 
 
-def md_to_html(md):
+# The fixed skeleton in prompts/mop.md. The write-up is plain text for iMessage,
+# so these arrive as bare lines with nothing to mark them as headings; on the
+# page they are what gives the write-up its structure. Week 14 happened to bold
+# them and rendered fine, later weeks did not and came out as a wall of
+# paragraphs, so match the names rather than relying on the model's markup.
+SECTIONS = {
+    "Match Summaries",
+    "Biggest Losers (Bench Legends)",
+    "Studs Who Failed",
+    "Call the Doctor",
+    "Waiver Wire Genius",
+    "Toilet Bowl Performance",
+    "Power Rankings (with Movement)",
+}
+
+# "Team A (137.46) def. Team B (136.3)", the score line that opens each matchup.
+_SCORELINE = re.compile(r"^(.+?)\s+\(\d+(?:\.\d+)?\)\s+(?:def\.|tied)\s+.+?\s+\(\d+(?:\.\d+)?\)$")
+
+
+def md_to_html(md, lead=False):
+    """
+    lead: style the first paragraph as the opener. It is the three-to-five
+    sentence summary of the week and reads as body text without this.
+    """
     out, in_list = [], None
+    first_p = lead
     for raw in md.split("\n"):
         line = raw.rstrip()
         h = re.match(r"^(#{1,4})\s+(.*)", line)
-        b = re.match(r"^\s*[-*]\s+(.*)", line)
+        # The prompt asks for "\u2022 " bullets, which are not markdown. Without them
+        # here every bullet fell through to its own loose paragraph.
+        b = re.match(r"^\s*[-*\u2022\u00b7]\s+(.*)", line)
         n = re.match(r"^\s*(\d+)[.)]\s+(.*)", line)
+        bare = line.strip().strip("*").strip()
+        if bare in SECTIONS:
+            if in_list: out.append(f"</{in_list}>"); in_list = None
+            out.append(f'<p class="section">{inline(bare)}</p>')
+            continue
+        if line.strip() and _SCORELINE.match(line.strip()):
+            if in_list: out.append(f"</{in_list}>"); in_list = None
+            out.append(f'<h3 class="matchup">{inline(line.strip())}</h3>')
+            continue
         if h:
             if in_list: out.append(f"</{in_list}>"); in_list = None
             out.append(f"<h3>{inline(h.group(2))}</h3>")
@@ -182,7 +225,9 @@ def md_to_html(md):
             if in_list: out.append(f"</{in_list}>"); in_list = None
         else:
             if in_list: out.append(f"</{in_list}>"); in_list = None
-            out.append(f"<p>{inline(line)}</p>")
+            cls = ' class="standfirst"' if first_p else ""
+            first_p = False
+            out.append(f"<p{cls}>{inline(line)}</p>")
     if in_list: out.append(f"</{in_list}>")
     return "\n".join(out)
 
@@ -196,6 +241,10 @@ def split_headline(md):
     lines = md.lstrip().split("\n")
     if lines and re.match(r"^#{1,3}\s+\S", lines[0]):
         return re.sub(r"^#{1,3}\s+", "", lines[0]).strip(), "\n".join(lines[1:]).lstrip()
+    # prompts/mop.md forbids markdown headings, so the header arrives plain.
+    # Left in the body it printed as a stray first paragraph above the opener.
+    if lines and re.match(r"^Week\s+\d+\s+Recap\b", lines[0].strip()):
+        return lines[0].strip(), "\n".join(lines[1:]).lstrip()
     return None, md
 
 
@@ -219,7 +268,7 @@ def league_block(name, recap_md, data, multi):
 
     headline, body_md = split_headline(recap_md or "")
     if body_md.strip():
-        head.append(f'<div class="column">{md_to_html(body_md)}</div>')
+        head.append(f'<div class="column">{md_to_html(body_md, lead=True)}</div>')
 
     R = []
 
