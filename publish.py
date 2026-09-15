@@ -324,7 +324,7 @@ def league_block(name, recap_md, data, multi):
     receipts = ""
     if R:
         label = "The receipts" if not multi else f"The receipts &middot; {e(name)}"
-        receipts = (f'<details class="receipts"><summary>{label}</summary>'
+        receipts = (f'<details class="receipts" open><summary>{label}</summary>'
                     f'{"".join(R)}</details>')
     return headline, "\n".join(head) + receipts
 
