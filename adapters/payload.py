@@ -15,6 +15,16 @@ import glob
 import json
 import os
 
+
+class NotHandedIn(Exception):
+    """
+    Nothing has been handed in yet. Not a failure: a payload league has no API
+    to ask, so until the button is pressed there is simply no week. run.py maps
+    this onto NothingYet so a Tuesday that nobody has clicked yet reports
+    "nothing to write" instead of turning the whole run red.
+    """
+
+
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INBOX = os.path.join(HERE, "inbox")
 
@@ -25,9 +35,9 @@ NEEDS_ROSTERS = ("top performer", "bench regret", "optimal lineup", "waiver pick
 def fetch(league_id, week):
     lw = _load()
     if lw is None:
-        raise RuntimeError(
-            "No week was handed in. Either the extension did not fire, or "
-            "there is nothing in inbox/. Nothing was written.")
+        raise NotHandedIn(
+            "nothing handed in for this league yet. Press the extension "
+            "button on your league page, or drop a week into inbox/.")
     if week and lw.get("week") and int(lw["week"]) != int(week):
         raise RuntimeError(
             f"Asked for week {week} but the handed-in data is week {lw['week']}. "

@@ -375,7 +375,10 @@ def do_league(cfg, week, force, do_write, note=None, skip_written=False):
         history = _load_history(cfg["name"])
     elif cfg["platform"] == "payload":
         from adapters import payload
-        lw = payload.fetch(cfg["league_id"], week)
+        try:
+            lw = payload.fetch(cfg["league_id"], week)
+        except payload.NotHandedIn as e:
+            raise NothingYet(f"{cfg.get('display_name', cfg['name'])}: {e}")
         wk = int(lw["week"])
         history = _load_history(cfg["name"])
     else:
