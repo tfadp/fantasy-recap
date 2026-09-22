@@ -10,6 +10,9 @@
            border: 0; border-radius: 7px; background: #135b45; color: #fff;
            cursor: pointer; }
   button:disabled { background: #9aa3a8; cursor: default; }
+  button.secondary { margin-top: 7px; background: #fff; color: #5b6270;
+                     border: 1px solid #d4d8db; font-weight: 500; }
+  button.secondary:disabled { color: #b0b6bb; background: #fff; }
   #status { margin-top: 11px; font-size: 12px; white-space: pre-wrap;
             line-height: 1.5; }
   .ok { color: #135b45; } .err { color: #a3261d; } .warn { color: #7a5b12; }
@@ -24,14 +27,13 @@
 <p class="sub">Open your league page and press the button. It works out which
 week is finished on its own.</p>
 <button id="go">Read the week and send it</button>
+<button id="test" class="secondary">Test only - read it, don't send</button>
 <div id="status"></div>
 <details>
   <summary>Options</summary>
   <label>Week (blank = the finished one)
     <input id="week" type="number" min="1" max="18" placeholder="auto">
   </label>
-  <label><input type="checkbox" id="preview" style="width:auto"> Read it but do
-    not send</label>
   <p style="margin-top:10px"><a href="#" id="opts">Repository and token…</a></p>
 </details>
 <script src="popup.js"></script>
