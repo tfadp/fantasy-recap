@@ -14,3 +14,8 @@ __pycache__/
 prompts/*-chat.md
 .draft-salt
 approved.json.bak
+
+# Handed-in weeks. payload.py takes the newest file here, so a committed one
+# would be re-processed by every scheduled run long after its week is over.
+# The week itself is preserved in history/<league>/ once it has been written.
+inbox/*.json

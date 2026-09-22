@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Send Week To Writer",
-  "version": "1.0.0",
-  "description": "Exports the Yahoo fantasy matchup week you are looking at as structured JSON for your own recap workflow.",
-  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "version": "2.0.0",
+  "description": "Reads the finished week and the waiver log from your own Yahoo league and hands them to your recap workflow.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
   "options_page": "options.html",
   "host_permissions": [
     "https://football.fantasysports.yahoo.com/*",

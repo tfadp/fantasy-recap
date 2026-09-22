@@ -1,27 +1,37 @@
 <!doctype html>
 <meta charset="utf-8">
 <style>
-  body { font: 13px/1.45 -apple-system, system-ui, sans-serif; width: 300px;
-         margin: 0; padding: 14px; color: #16181d; }
-  h1 { font-size: 14px; margin: 0 0 10px; }
-  button { width: 100%; padding: 9px; margin-bottom: 6px; border-radius: 7px;
-           border: 1px solid #c8ccd4; background: #fff; font-size: 13px;
+  body { width: 320px; margin: 0; padding: 14px;
+         font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         color: #17181a; background: #fff; }
+  h1 { font-size: 14px; margin: 0 0 2px; }
+  p.sub { margin: 0 0 12px; color: #6b7076; font-size: 12px; }
+  button { width: 100%; padding: 10px; font-size: 13px; font-weight: 600;
+           border: 0; border-radius: 7px; background: #135b45; color: #fff;
            cursor: pointer; }
-  button.primary { background: #1c4ed8; border-color: #1c4ed8; color: #fff;
-                   font-weight: 600; }
-  button:disabled { opacity: .55; cursor: default; }
-  #status { margin-top: 10px; padding: 8px; border-radius: 6px; font-size: 12px;
-            white-space: pre-wrap; display: none; }
-  .ok   { background: #e8f5ec; color: #14562c; display: block !important; }
-  .warn { background: #fdf4e3; color: #6b4c10; display: block !important; }
-  .err  { background: #fdeceb; color: #7d1f1a; display: block !important; }
-  a { font-size: 12px; color: #1c4ed8; }
+  button:disabled { background: #9aa3a8; cursor: default; }
+  #status { margin-top: 11px; font-size: 12px; white-space: pre-wrap;
+            line-height: 1.5; }
+  .ok { color: #135b45; } .err { color: #a3261d; } .warn { color: #7a5b12; }
+  details { margin-top: 11px; }
+  summary { font-size: 12px; color: #6b7076; cursor: pointer; }
+  label { display: block; margin-top: 8px; font-size: 12px; color: #6b7076; }
+  input { width: 100%; padding: 6px; margin-top: 3px; font-size: 12px;
+          border: 1px solid #d4d8db; border-radius: 5px; box-sizing: border-box; }
+  a { color: #135b45; font-size: 12px; }
 </style>
-
 <h1>Send week to writer</h1>
-<button id="send" class="primary">Read this page and send</button>
-<button id="copy">Copy JSON to clipboard</button>
-<button id="download">Download JSON</button>
+<p class="sub">Open your league page and press the button. It works out which
+week is finished on its own.</p>
+<button id="go">Read the week and send it</button>
 <div id="status"></div>
-<a href="#" id="opts">Settings</a>
+<details>
+  <summary>Options</summary>
+  <label>Week (blank = the finished one)
+    <input id="week" type="number" min="1" max="18" placeholder="auto">
+  </label>
+  <label><input type="checkbox" id="preview" style="width:auto"> Read it but do
+    not send</label>
+  <p style="margin-top:10px"><a href="#" id="opts">Repository and token…</a></p>
+</details>
 <script src="popup.js"></script>

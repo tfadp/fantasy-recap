@@ -23,8 +23,8 @@ because it is never asked to.
 |---|---|
 | Sleeper adapter | Working. Replays 2025 weeks 1-14 byte-identically |
 | Analysis layer | Working, 25 weeks of real history pulled and validated |
-| Yahoo Chrome button | Written, **untested** until run on a live league page |
-| Yahoo API adapter | Parked. Written, unused, no approval pursued |
+| Yahoo Chrome button | Working. One click sends the week and the waivers |
+| Yahoo API adapter | Parked. The button does the job without an approval queue |
 | Web page + archive | Working, see `docs/` |
 | Game-final gate | Working, ESPN public scoreboard |
 | Email + link delivery | Written, needs a Resend key |
@@ -41,13 +41,40 @@ status, and caught two pickups the manual version missed.
 The Chrome button, not the API. Open your league page, click once, done. No
 application, no approval queue, works today.
 
-The honest read on Yahoo's terms: this is not a crawler. It runs only on click,
-only on the tab you already have open, only on your own league, and it sends
-nothing on its own. That is meaningfully different from a scheduled scraper,
-but Yahoo's general terms are broad enough that it is not clearly *permitted*
-either. Defensible, not sanctioned.
+One click does the whole week:
 
-The API adapter stays in the repo, disabled, in case that ever changes.
+```
+click ─→ extract.js    on the page you have open
+         ├─ works out which week is finished, and checks it has scores
+         ├─ 7 matchup pages  -> pairings, totals, starters, bench
+         └─ 14 team pages    -> team names, from the <title>
+      ─→ transactions.js  in a throwaway background tab
+         └─ the waiver log, read from the rendered DOM
+      ─→ repository_dispatch  -> the same Action the Tuesday cron runs
+```
+
+Two things about that shape are worth knowing, because both were learned the
+hard way against a live league:
+
+**The matchup page does carry the bench.** `YAHOO-MARKUP.md` said for a while
+that it did not. That was established against an undrafted league, where the
+second roster table was empty and so indistinguishable from absent. There are
+three roster-shaped tables; the bench rows carry the same
+`span.pos-label[data-pos]` hook as the starters.
+
+**The transactions page has to be read from the live DOM, not fetched.** A
+background `fetch` only ever sees server-rendered HTML, which is why the
+standings page comes back with zero tables. The tab you are looking at has
+already run the page's JavaScript. So the button opens the transactions page
+in a background tab, reads `document`, and closes it.
+
+The honest read on Yahoo's terms: this is not a crawler. It runs only on click,
+only on your own league, and it sends nothing on its own. That is meaningfully
+different from a scheduled scraper, but Yahoo's general terms are broad enough
+that it is not clearly *permitted* either. Defensible, not sanctioned.
+
+`tools/yahoo-week.js` and `tools/yahoo-transactions.js` are the same logic as
+console scripts, for when you want to look at a week without sending it.
 
 ## Setup
 
@@ -71,8 +98,13 @@ cp .env.example .env          # then put your keys in it
 For Yahoo: open `chrome://extensions`, turn on Developer mode, Load unpacked,
 pick the `extension/` folder. In its Settings put your repository
 (`you/fantasy-recap`) and a fine-grained token scoped to that one repo with
-Contents read and write. Then open your Yahoo league matchup page and click
-the button.
+Contents read and write. Then open your Yahoo league page and click the button.
+
+It takes about a minute and tells you what it found before it sends: the week,
+the team and matchup counts, how many bench players and transactions, and
+whether every team's total matches the sum of its starters. That last line is
+the one to read. If it does not reconcile, the parse is wrong and the recap
+would be confidently wrong with it.
 
 ## Tuesday morning
 
