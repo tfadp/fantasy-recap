@@ -1,0 +1,127 @@
+Bring It On Season 19 — 2026 Week 1
+
+SCOREBOARD
+  ‘Ster the Pot 128 def. Philly Special 124.2  (by 3.8)
+  Ass in a Box 79.3 def. LT Bavaros 79  (by 0.3)
+  Dread the Bred 93.6 def. 1.21 Gigawatts 92.2  (by 1.4)
+  Anchor Down 133.75 def. Krispy 123.15  (by 10.6)
+  Canes to the Cup 87.35 def. Busta Skreen 81.2  (by 6.15)
+  THE FURY 95.55 def. Gowanus Heights Hex 83.85  (by 11.7)
+  Sleeping With The Fishes 100.5 def. Schmul Gone Wild 77.3  (by 23.2)
+
+THE WEEK IN ONE GLANCE
+  high: Anchor Down 133.75
+  low:  Schmul Gone Wild 77.3
+  league average: 98.5
+  closest: Ass in a Box over LT Bavaros by 0.3
+  blowout: Sleeping With The Fishes over Schmul Gone Wild by 23.2
+  unlucky: Philly Special scored 124.2 and still lost to ‘Ster the Pot (128); that score would have beaten 11 of the other 13 teams
+  lucky:   Ass in a Box won with just 79.3 against LT Bavaros's 79
+
+PLAYERS
+   39.95  Caleb Williams (QB, THE FURY)
+      39  Josh Allen (QB, ‘Ster the Pot)
+    34.3  Derrick Henry (RB, Anchor Down)
+    31.4  D'Andre Swift (RB, Philly Special)
+    31.1  Kenneth Walker (RB, Canes to the Cup)
+  worst start: Kyler Murray (QB) -0.2 for Ass in a Box
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Jalen Coker (25.8, Rick) - would have replaced Jaylen Waddle (0.2) at WR, +25.6  WOULD HAVE FLIPPED THE GAME
+  Kyle Monangai (18.4, Scott) - would have replaced Quentin Johnston (1.7) at W/R/T, +16.7  WOULD HAVE FLIPPED THE GAME
+  Denzel Boston (11.9, Rick) - would have replaced Jaylen Waddle (0.2) at WR, +11.7
+  Juwan Johnson (11.4, David Kramer) - would have replaced Mark Andrews (4.9) at TE, +6.5  WOULD HAVE FLIPPED THE GAME
+  Jakobi Meyers (10.2, David) - would have replaced Josh Downs (3.7) at W/R/T, +6.5  WOULD HAVE FLIPPED THE GAME
+  Jordan Mason (11.9, David Kramer) - would have replaced Michael Pittman Jr. (5.8) at W/R/T, +6.1
+  Matthew Golden (9.5, Aaron) - would have replaced Carnell Tate (3.8) at WR, +5.7
+  Jacory Croskey-Merritt (11.6, Daniel Porter) - would have replaced Bhayshul Tuten (8.8) at RB, +2.8
+  NOT a flip: Philly Special only clears 128 with a full optimal lineup (129.6), which is several swaps. Do not write this as could-have-won.
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Jaylen Waddle (WR, Schmul Gone Wild) 0.2 vs WR median 5.5 = 3.6%
+  Brandon Aubrey (K, Canes to the Cup) 1 vs K median 8.2 = 12.2%
+  Harrison Mevis (K, Schmul Gone Wild) 1 vs K median 8.2 = 12.2%
+  Courtland Sutton (WR, Anchor Down) 1.1 vs WR median 5.5 = 20.0%
+  Rico Dowdle (RB, THE FURY) 2.1 vs RB median 10 = 21.0%
+  Ja'Marr Chase (WR, Schmul Gone Wild) 1.2 vs WR median 5.5 = 21.8%
+  Chargers (DEF, ‘Ster the Pot) 1 vs DEF median 4.5 = 22.2%
+  Cameron Dicker (K, Busta Skreen) 2 vs K median 8.2 = 24.4%
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  1.21 Gigawatts started Colston Loveland (TE) for 0.0
+  1.21 Gigawatts started Titans (DEF) for 0.0
+  Ass in a Box started Kyler Murray (QB) [Q] for 0.0
+  Canes to the Cup started Kyle Pitts Sr. (TE) for 0.0
+  Gowanus Heights Hex started Texans (DEF) for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  Schmul Gone Wild (0-1, 77.3) - rank 14/14 this week; here for: one of the week's lowest scores, record (0-1)
+  LT Bavaros (0-1, 79) - rank 13/14 this week; here for: one of the week's lowest scores, record (0-1)
+  Ass in a Box (1-0, 79.3) - rank 12/14 this week; here for: one of the week's lowest scores
+
+TOILET BOWL: Schmul Gone Wild 77.3
+
+STANDINGS
+   1. Anchor Down  1-0  PF 133.75  PA 123.15
+   2. ‘Ster the Pot  1-0  PF 128.0  PA 124.2
+   3. Sleeping With The Fishes  1-0  PF 100.5  PA 77.3
+   4. THE FURY  1-0  PF 95.55  PA 83.85
+   5. Dread the Bred  1-0  PF 93.6  PA 92.2
+   6. Canes to the Cup  1-0  PF 87.35  PA 81.2
+   7. Ass in a Box  1-0  PF 79.3  PA 79.0
+   8. Philly Special  0-1  PF 124.2  PA 128.0
+   9. Krispy  0-1  PF 123.15  PA 133.75
+  10. 1.21 Gigawatts  0-1  PF 92.2  PA 93.6
+  11. Gowanus Heights Hex  0-1  PF 83.85  PA 95.55
+  12. Busta Skreen  0-1  PF 81.2  PA 87.35
+  13. LT Bavaros  0-1  PF 79.0  PA 79.3
+  14. Schmul Gone Wild  0-1  PF 77.3  PA 100.5
+
+STREAKS
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Jalen Coker (Rick, 09/13) — 25.8 points (benched)
+  2. Tyler Loop (Daniel Porter, 09/08) — 15.2 points (started at K)
+  3. Raiders (Daniel Porter, 09/08) — 13 points (started at DEF)
+  4. Emmett Johnson (Rick, 09/13) — 6.8 points (benched)
+  5. Dominic Zvada (Ass in a Box, 09/08) — 4 points (started at K)
+  6. Michael Mayer (DAVID DEROSE, 09/09) — 3.2 points (started at TE)
+  7. Hunter Henry (Daniel Porter, 09/09) — 2.6 points (started at TE)
+  8. Chris Rodriguez Jr. (Eliza, 09/12, $1) — 2.3 points (benched)
+  9. Tank Dell (Matthew, 09/09) — 0 points (benched)
+  10. Titans (Scott, 09/08) — 0 points (started at DEF)
+  best add: Tyler Loop — 15.2 for Daniel Porter
+  worst add: Titans — started at DEF, 0 for Scott
+
+POWER RANKINGS (through this week)
+1. Anchor Down — 95.0 (–)   [record 1-0]
+2. ‘Ster the Pot — 88.4 (–)   [record 1-0]
+3. Philly Special — 59.0 (–)   [record 0-1]
+4. Krispy — 57.8 (–)   [record 0-1]
+5. Sleeping With The Fishes — 56.7 (–)   [record 1-0]
+6. THE FURY — 51.0 (–)   [record 1-0]
+7. Dread the Bred — 48.8 (–)   [record 1-0]
+8. Canes to the Cup — 41.6 (–)   [record 1-0]
+9. Ass in a Box — 32.3 (–)   [record 1-0]
+10. 1.21 Gigawatts — 22.2 (–)   [record 0-1]
+11. Gowanus Heights Hex — 12.5 (–)   [record 0-1]
+12. Busta Skreen — 9.5 (–)   [record 0-1]
+13. LT Bavaros — 7.0 (–)   [record 0-1]
+14. Schmul Gone Wild — 5.0 (–)   [record 0-1]
+
+MOVES
+  free_agent: Dominic Zvada to Ass in a Box; dropped Spencer Shrader off Ass in a Box
+  free_agent: Kayshon Boutte to ‘Ster the Pot
+  free_agent: Tank Dell to ‘Ster the Pot; dropped Rashid Shaheed off ‘Ster the Pot
+  free_agent: Titans to 1.21 Gigawatts; dropped Bills off 1.21 Gigawatts
+  free_agent: dropped Kayshon Boutte off ‘Ster the Pot
+  free_agent: dropped Tank Dell off ‘Ster the Pot
+  free_agent: Tyler Loop to Philly Special
+  free_agent: Raiders to Philly Special; dropped Dontayvion Wicks off Philly Special
+  free_agent: Tank Dell to ‘Ster the Pot
+  free_agent: Michael Mayer to THE FURY; dropped Jalen Coker off THE FURY
+  free_agent: Hunter Henry to Philly Special; dropped Chris Rodriguez Jr. off Philly Special
+  free_agent: dropped Jordyn Tyson off Philly Special
+  waiver $1: Chris Rodriguez Jr. to Anchor Down; dropped Bo Nix off Anchor Down
+  free_agent: Emmett Johnson to Schmul Gone Wild; dropped Isiah Pacheco off Schmul Gone Wild
+  free_agent: Jalen Coker to Schmul Gone Wild; dropped Dalton Schultz off Schmul Gone Wild

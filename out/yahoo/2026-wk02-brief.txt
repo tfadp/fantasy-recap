@@ -1,0 +1,115 @@
+Bring It On Season 19 — 2026 Week 2
+
+SCOREBOARD
+  Philly Special 125.8 def. Dread the Bred 83.45  (by 42.35)
+  Sleeping With The Fishes 91 def. LT Bavaros 89.15  (by 1.85)
+  Canes to the Cup 105.85 def. 1.21 Gigawatts 82.95  (by 22.9)
+  Ass in a Box 97.35 def. Anchor Down 77.6  (by 19.75)
+  Busta Skreen 71.6 def. Krispy 64.05  (by 7.55)
+  ‘Ster the Pot 130.4 def. Gowanus Heights Hex 61.7  (by 68.7)
+  Schmul Gone Wild 90.45 def. THE FURY 77.5  (by 12.95)
+
+THE WEEK IN ONE GLANCE
+  high: ‘Ster the Pot 130.4
+  low:  Gowanus Heights Hex 61.7
+  league average: 89.2
+  closest: Sleeping With The Fishes over LT Bavaros by 1.85
+  blowout: ‘Ster the Pot over Gowanus Heights Hex by 68.7
+  upset: Ass in a Box (79.3 avg) beat Anchor Down (133.75 avg), 97.35 to 77.6
+  lucky:   Busta Skreen won with just 71.6 against Krispy's 64.05
+
+PLAYERS
+    43.3  Josh Allen (QB, ‘Ster the Pot)
+    33.5  Jaxon Smith-Njigba (WR, Busta Skreen)
+   32.55  Dak Prescott (QB, Canes to the Cup)
+    31.5  Davante Adams (WR, Philly Special)
+   31.35  Brock Purdy (QB, LT Bavaros)
+  worst start: DJ Moore (WR) -0.1 for LT Bavaros
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Stefon Diggs (16.7, Jared Kramer) - would have replaced Malik Nabers (0.1) at W/R/T, +16.6
+  Jonah Coleman (11.8, Fran) - would have replaced Saquon Barkley (2) at RB, +9.8  WOULD HAVE FLIPPED THE GAME
+  Tank Bigsby (9.8, Fran) - would have replaced Saquon Barkley (2) at RB, +7.8
+  Xavier Worthy (8.5, Scott) - would have replaced Quentin Johnston (1.4) at WR, +7.1
+  AJ Barner (6.9, Aaron) - would have replaced Alec Pierce (1.1) at W/R/T, +5.8
+  Adonai Mitchell (6.3, DAVID DEROSE) - would have replaced Malachi Fields (3) at WR, +3.3
+  DK Metcalf (2.7, Jared Kramer) - would have replaced Malik Nabers (0.1) at W/R/T, +2.6
+  Jared Goff (33.05, David Kramer) - would have replaced Brock Purdy (31.35) at QB, +1.7
+  NOT a flip: LT Bavaros only clears 91 with a full optimal lineup (91.45), which is several swaps. Do not write this as could-have-won.
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Malik Nabers (WR, Dread the Bred) 0.1 vs WR median 5.8 = 1.7%, Q
+  Colston Loveland (TE, 1.21 Gigawatts) 0.3 vs TE median 6.6 = 4.5%
+  Dallas Goedert (TE, Ass in a Box) 0.4 vs TE median 6.6 = 6.1%, D
+  Chiefs (DEF, ‘Ster the Pot) 1 vs DEF median 7.0 = 14.3%
+  Alec Pierce (WR, Gowanus Heights Hex) 1.1 vs WR median 5.8 = 19.0%, D
+  Tucker Kraft (TE, Busta Skreen) 1.5 vs TE median 6.6 = 22.7%
+  Quentin Johnston (WR, 1.21 Gigawatts) 1.4 vs WR median 5.8 = 24.1%
+  Saquon Barkley (RB, Krispy) 2 vs RB median 8.0 = 25.0%, Q
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  LT Bavaros started DJ Moore (WR) [Q] for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  Gowanus Heights Hex (0-2, 61.7) - rank 14/14 this week; here for: one of the week's lowest scores, record (0-2)
+  Krispy (0-2, 64.05) - rank 13/14 this week; here for: one of the week's lowest scores
+  Busta Skreen (1-1, 71.6) - rank 12/14 this week; here for: one of the week's lowest scores
+  LT Bavaros (0-2, 89.15) - rank 7/14 this week; here for: record (0-2)
+
+TOILET BOWL: Gowanus Heights Hex 61.7
+
+STANDINGS
+   1. ‘Ster the Pot  2-0  PF 258.4  PA 185.9  (up 1)
+   2. Canes to the Cup  2-0  PF 193.2  PA 164.15  (up 4)
+   3. Sleeping With The Fishes  2-0  PF 191.5  PA 166.45
+   4. Ass in a Box  2-0  PF 176.65  PA 156.6  (up 3)
+   5. Philly Special  1-1  PF 250.0  PA 211.45  (up 3)
+   6. Anchor Down  1-1  PF 211.35  PA 220.5  (down 5)
+   7. Dread the Bred  1-1  PF 177.05  PA 218.0  (down 2)
+   8. THE FURY  1-1  PF 173.05  PA 174.3  (down 4)
+   9. Schmul Gone Wild  1-1  PF 167.75  PA 178.0  (up 5)
+  10. Busta Skreen  1-1  PF 152.8  PA 151.4  (up 2)
+  11. Krispy  0-2  PF 187.2  PA 205.35  (down 2)
+  12. 1.21 Gigawatts  0-2  PF 175.15  PA 199.45  (down 2)
+  13. LT Bavaros  0-2  PF 168.15  PA 170.3
+  14. Gowanus Heights Hex  0-2  PF 145.55  PA 225.95  (down 3)
+
+STREAKS
+  ‘Ster the Pot: 2 straight wins  (WW)
+  Ass in a Box: 2 straight wins  (WW)
+  Canes to the Cup: 2 straight wins  (WW)
+  Sleeping With The Fishes: 2 straight wins  (WW)
+  LT Bavaros: 2 straight losses  (LL)
+  1.21 Gigawatts: 2 straight losses  (LL)
+  Krispy: 2 straight losses  (LL)
+  Gowanus Heights Hex: 2 straight losses  (LL)
+
+HISTORY (1 prior weeks on record)
+  ‘Ster the Pot's 130.4 is the best since Anchor Down put up 133.75 in 2026 week 1
+  Gowanus Heights Hex's 61.7 is the lowest score in the 2 weeks on record
+  Philly Special set a new high for the 2 weeks on record: 125.8 (old best 124.2)
+  LT Bavaros set a new high for the 2 weeks on record: 89.15 (old best 79)
+  Canes to the Cup set a new high for the 2 weeks on record: 105.85 (old best 87.35)
+  Ass in a Box set a new high for the 2 weeks on record: 97.35 (old best 79.3)
+  ‘Ster the Pot set a new high for the 2 weeks on record: 130.4 (old best 128)
+  Schmul Gone Wild set a new high for the 2 weeks on record: 90.45 (old best 77.3)
+  NOTE: only 2 weeks are on record. Do not write "franchise high", "league record", "ever" or "in league history" - this league is older than the data.
+
+POWER RANKINGS (through this week)
+1. ‘Ster the Pot — 98.7 (↑1)   [record 2-0]
+2. Philly Special — 81.8 (↑1)   [record 1-1]
+3. Sleeping With The Fishes — 56.3 (↑2)   [record 2-0]
+4. Canes to the Cup — 52.4 (↑4)   [record 2-0]
+5. Anchor Down — 50.4 (↓4)   [record 1-1]
+6. Ass in a Box — 43.1 (↑3)   [record 2-0]
+7. Dread the Bred — 35.1 (–)   [record 1-1]
+8. THE FURY — 28.5 (↓2)   [record 1-1]
+9. Schmul Gone Wild — 28.1 (↑5)   [record 1-1]
+10. Krispy — 24.0 (↓6)   [record 0-2]
+11. 1.21 Gigawatts — 22.0 (↓1)   [record 0-2]
+12. Busta Skreen — 21.5 (–)   [record 1-1]
+13. LT Bavaros — 17.5 (–)   [record 0-2]
+14. Gowanus Heights Hex — 0.0 (↓3)   [record 0-2]
+
+MOVES
+  none

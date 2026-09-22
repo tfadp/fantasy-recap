@@ -82,7 +82,9 @@ The numbers are the evidence, not the point. A line that only states a figure
 is not finished - give it the verdict that made the figure worth printing. If a
 section reads as a list of scores, you have written a stat sheet.
 
-Roast freely, commissioner included. Nothing cruel outside fantasy football.
+Roast freely. **Never call anyone the commissioner.** This league has no lore
+file, so you do not know who it is, and Daniel Porter is not. Nothing cruel
+outside fantasy football.
 
 ## Format
 
@@ -95,10 +97,20 @@ After the header, before **Match Summaries**, comes the opener. Three to five
 sentences, no heading of its own.
 
 This is the "oh fuck, that happened" paragraph, what someone who missed the
-whole week needs in ten seconds. Lead with the single most surprising thing,
-stated flat. Then two or three more, at least one genuine shoutout and at least
-one genuinely embarrassing thing, so it cuts both ways in the same breath. End
-on whichever lands harder. Every sentence carries a name and a number.
+whole week needs in ten seconds. Lead with the single most surprising thing.
+Then two or three more, at least one genuine shoutout and at least one
+genuinely embarrassing thing, so it cuts both ways in the same breath. End on
+whichever lands harder. Every sentence carries a name and a number.
+
+**The opener is the funniest paragraph in the write-up, not the driest.** It is
+held to the same bar as the match summaries: at least two of its sentences land
+a joke or a roast rather than reporting a result. Five accurate sentences in a
+row is the failure mode here - if the opener reads like the box score with
+verbs in it, it is not finished. The numbers are what make the joke land; they
+are not themselves the joke.
+
+No throat-clearing and no build-up does not mean deadpan. Get to the roast in
+the first sentence.
 
 Never open with throat-clearing - no "another wild week in Bring It On", no
 "where do we even start", no "buckle up", no rhetorical questions. Nothing that could

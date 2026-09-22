@@ -164,18 +164,31 @@ def brief(a):
     if h.get("weeks_of_history"):
         L.append("")
         L.append(f"HISTORY ({h['weeks_of_history']} prior weeks on record)")
+        # "league history" means the weeks this pipeline has on record, which
+        # for a new league is a fortnight. A league in its nineteenth season
+        # does not want to read that 61.7 is the worst score ever recorded in
+        # it. Say the window out loud so the write-up cannot overclaim, and
+        # drop the superlative framing entirely until there is a season of it.
+        weeks = h["weeks_of_history"] + 1
+        thin = weeks < 17
+        window = f"the {weeks} weeks on record" if thin else "league history"
         t = h.get("top_score_context") or {}
         if t.get("is_league_record"):
-            L.append(f"  {t['team']}'s {t['points']} is the highest score in league history")
+            L.append(f"  {t['team']}'s {t['points']} is the highest score in {window}")
         elif t.get("last_time_higher"):
             p = t["last_time_higher"]
             L.append(f"  {t['team']}'s {t['points']} is the best since {p['team']} put up "
                      f"{p['points']} in {p['season']} week {p['week']}")
         lo = h.get("low_score_context") or {}
         if lo.get("is_league_low"):
-            L.append(f"  {lo['team']}'s {lo['points']} is the lowest score in league history")
+            L.append(f"  {lo['team']}'s {lo['points']} is the lowest score in {window}")
         for pb in h.get("season_or_career_highs", []):
-            L.append(f"  {pb['team']} set a new high: {pb['points']} (old best {pb['previous_best']})")
+            L.append(f"  {pb['team']} set a new high for {window}: {pb['points']} "
+                     f"(old best {pb['previous_best']})")
+        if thin:
+            L.append(f"  NOTE: only {weeks} weeks are on record. Do not write "
+                     f"\"franchise high\", \"league record\", \"ever\" or "
+                     f"\"in league history\" - this league is older than the data.")
     wp = f.get("waiver_pickups") or {}
     if wp.get("pickups"):
         L.append("")
