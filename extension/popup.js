@@ -19,10 +19,11 @@ el("go").onclick = async () => {
         ? "Every total matches the sum of its starters."
         : "WARNING: a total does not match its starters. Not sent as trustworthy.",
     ];
-    lines.push(r.sent
+    if (r.sendError) lines.push("Read fine, but sending failed:\n" + r.sendError);
+    else lines.push(r.sent
       ? "Sent. The recap will be in your email shortly."
       : "Read only - nothing was sent.");
-    say(lines.join("\n"), s.reconciles ? "ok" : "err");
+    say(lines.join("\n"), r.sendError || !s.reconciles ? "err" : "ok");
   } catch (e) {
     say(e.message, "err");
   } finally {

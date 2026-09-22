@@ -20,6 +20,18 @@ chrome.runtime.onMessage.addListener((msg, _sender, respond) => {
 });
 
 async function run({ week, dispatch }) {
+  // Check the settings before doing a minute of work, not after. Throwing at
+  // the dispatch step meant reading every matchup page and the waiver log and
+  // then discarding all of it.
+  if (dispatch) {
+    const cfg = await chrome.storage.sync.get(["repo", "token"]);
+    if (!cfg.repo || !cfg.token) {
+      throw new Error(
+        "No repository or token saved yet.\n\nEither open Options and add " +
+        "them, or tick \"Read it but do not send\" to test without sending.");
+    }
+  }
+
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   if (!tab || !/football\.fantasysports\.yahoo\.com\/f1\//.test(tab.url || "")) {
     throw new Error("Open your Yahoo league page first, then click this.");
@@ -57,7 +69,13 @@ async function run({ week, dispatch }) {
     bench: lw._check.reduce((a, c) => a + c.bench, 0),
   };
   if (!dispatch) return { ok: true, summary, payload: lw };
-  await send(lw);
+  try {
+    await send(lw);
+  } catch (e) {
+    // The week is read and good; only the handoff failed. Report both so a
+    // bad token does not cost another minute of reading.
+    return { ok: true, summary, sent: false, sendError: e.message };
+  }
   return { ok: true, summary, sent: true };
 }
 
