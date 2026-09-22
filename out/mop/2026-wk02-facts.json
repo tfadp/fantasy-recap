@@ -3081,6 +3081,28 @@
     },
     "transactions": [
       {
+        "type": "free_agent",
+        "date": "09/22",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "4892",
+            "player": "Baker Mayfield",
+            "pos": "QB",
+            "team_id": "7",
+            "team": "Legacy LeaversTM"
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1790098132112,
+        "teams": [
+          "Legacy LeaversTM"
+        ]
+      },
+      {
         "type": "trade",
         "date": "09/21",
         "team_ids": [
