@@ -1,0 +1,153 @@
+MOP — 2026 Week 2
+
+SCOREBOARD
+  NJIGGAS 147.83 def. 2011 Ryan Braun 142.31  (by 5.52)
+  Legacy LeaversTM 135.23 def. Kindofblue 104.77  (by 30.46)
+  Keep Devaughn Truckin 109.4 def. Based God 69.98  (by 39.42)
+  All Hail the Robot Buddha 120.27 def. Proverbs 3:5-6 98.03  (by 22.24)
+  Nice Juds 98.4 def. pukachew⚡️ 86.86  (by 11.54)
+  Olave me or Hate me… 138.32 def. Windsor Terror 134.24  (by 4.08)
+
+THE WEEK IN ONE GLANCE
+  high: NJIGGAS 147.83
+  low:  Based God 69.98
+  league average: 115.47
+  closest: Olave me or Hate me… over Windsor Terror by 4.08
+  blowout: Keep Devaughn Truckin over Based God by 39.42
+  upset: NJIGGAS (113.0 avg) beat 2011 Ryan Braun (136.3 avg), 147.83 to 142.31
+  unlucky: 2011 Ryan Braun scored 142.31 and still lost to NJIGGAS (147.83); that score would have beaten 10 of the other 11 teams
+  lucky:   Nice Juds won with just 98.4 against pukachew⚡️'s 86.86
+
+PLAYERS
+    42.5  Jaxon Smith-Njigba (WR, NJIGGAS)
+   40.82  Josh Allen (QB, Kindofblue)
+    39.5  Davante Adams (WR, Proverbs 3:5-6)
+    35.3  CeeDee Lamb (WR, Windsor Terror)
+    35.2  Amon-Ra St. Brown (WR, All Hail the Robot Buddha)
+  worst start: DJ Moore (WR) -0.1 for Nice Juds
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Rashod Bateman (21.8, tfadp) - would have replaced Dallas Goedert (1.4) at FLEX, +20.4
+  Tre Tucker (22.9, oliverslater) - would have replaced Jordan Addison (4.1) at WR, +18.8
+  TreVeyon Henderson (13.6, jxllokreflo) - would have replaced Jakobi Meyers (3.8) at FLEX, +9.8  WOULD HAVE FLIPPED THE GAME
+  Tank Bigsby (11.8, oliverslater) - would have replaced Saquon Barkley (3.0) at RB, +8.8
+  Tyjae Spears (9.0, tfadp) - would have replaced Dallas Goedert (1.4) at FLEX, +7.6
+  Xavier Worthy (13.5, juliansryan) - would have replaced Luther Burden (6.2) at WR, +7.3
+  Tony Pollard (7.5, xainshawty) - would have replaced Alec Pierce (2.1) at FLEX, +5.4
+  Braelon Allen (8.5, juliansryan) - would have replaced Rhamondre Stevenson (3.6) at RB, +4.9
+  NOT a flip: Proverbs 3:5-6 only clears 120.27 with a full optimal lineup (135.43), which is several swaps. Do not write this as could-have-won.
+  NOT a flip: Windsor Terror only clears 138.32 with a full optimal lineup (141.09), which is several swaps. Do not write this as could-have-won.
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Jaxson Dart (QB, Nice Juds) 0.8 vs QB median 15.27 = 5.2%, Out
+  Colston Loveland (TE, Windsor Terror) 1.3 vs TE median 12.65 = 10.3%
+  Dallas Goedert (TE, Kindofblue) 1.4 vs TE median 12.65 = 11.1%, Questionable
+  Malik Nabers (WR, Nice Juds) 1.1 vs WR median 9.9 = 11.1%, Questionable
+  Jacksonville Jaguars (DEF, NJIGGAS) 1.25 vs DEF median 7.75 = 16.1%
+  Kansas City Chiefs (DEF, Kindofblue) 1.25 vs DEF median 7.75 = 16.1%
+  DeMario Douglas (WR, Kindofblue) 1.9 vs WR median 9.9 = 19.2%
+  Alec Pierce (WR, pukachew⚡️) 2.1 vs WR median 9.9 = 21.2%, Out
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  Nice Juds started DJ Moore (WR) [Out] for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  Based God (1-1, 69.98) - rank 12/12 this week; here for: one of the week's lowest scores
+  pukachew⚡️ (1-1, 86.86) - rank 11/12 this week; here for: one of the week's lowest scores
+  Proverbs 3:5-6 (0-2, 98.03) - rank 10/12 this week; here for: one of the week's lowest scores, record (0-2)
+  Windsor Terror (0-2, 134.24) - rank 5/12 this week; here for: record (0-2)
+
+TOILET BOWL: Based God 69.98
+
+WAIVER WIRE GENIUS (started, 10+, top-3 or swung the game)
+  treypaulino -> Dalton Schultz 26.0 (top-3 on roster, bigger than the 11.54 margin)
+  zazach -> Jaylen Waddle 21.8 (top-3 on roster, bigger than the 4.08 margin)
+  yogz -> Carolina Panthers 21.25 (top-3 on roster)
+
+STANDINGS
+   1. Olave me or Hate me…  2-0  PF 298.18  PA 239.86
+   2. Legacy LeaversTM  2-0  PF 260.47  PA 193.48  (up 4)
+   3. Nice Juds  2-0  PF 239.7  PA 202.8  (down 1)
+   4. NJIGGAS  1-1  PF 260.83  PA 274.37  (up 6)
+   5. Keep Devaughn Truckin  1-1  PF 240.31  PA 208.35  (up 3)
+   6. Kindofblue  1-1  PF 236.83  PA 248.23  (down 1)
+   7. All Hail the Robot Buddha  1-1  PF 225.89  PA 257.89  (up 4)
+   8. pukachew⚡️  1-1  PF 225.23  PA 229.31  (down 5)
+   9. Based God  1-1  PF 207.44  PA 245.7  (down 5)
+  10. 2011 Ryan Braun  0-2  PF 278.61  PA 285.29  (down 3)
+  11. Windsor Terror  0-2  PF 250.18  PA 279.62  (down 2)
+  12. Proverbs 3:5-6  0-2  PF 186.74  PA 245.51
+
+STREAKS
+  Legacy LeaversTM: 2 straight wins  (WW)
+  Olave me or Hate me…: 2 straight wins  (WW)
+  Nice Juds: 2 straight wins  (WW)
+  2011 Ryan Braun: 2 straight losses  (LL)
+  Proverbs 3:5-6: 2 straight losses  (LL)
+  Windsor Terror: 2 straight losses  (LL)
+
+HISTORY (29 prior weeks on record)
+  NJIGGAS's 147.83 is the best since Olave me or Hate me… put up 159.86 in 2026 week 1
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Dalton Schultz (treypaulino, 09/19) — 26.0 points (started at FLEX)
+  2. Jaylen Waddle (zazach, 09/20) — 21.8 points (started at FLEX)
+  3. Carolina Panthers (yogz, 09/17) — 21.25 points (started at DEF)
+  4. Dontayvion Wicks (soneal718, 09/16) — 12.4 points (started at FLEX)
+  5. Mark Andrews (yogz, 09/17, $3) — 10.9 points (started at TE)
+  6. Brian Robinson (yogz, 09/16) — 8.7 points (benched)
+  7. Green Bay Packers (soneal718, 09/20) — 7.5 points (started at DEF)
+  8. Trevor Lawrence (soneal718, 09/17, $15) — 7.16 points (benched)
+  9. Kayshon Boutte (juliansryan, 09/18) — 6.7 points (benched)
+  10. Tre' Harris (juliansryan, 09/19) — 6.3 points (benched)
+  11. Luther Burden (juliansryan, 09/20) — 6.2 points (started at WR)
+  12. Michael Mayer (xainshawty, 09/20) — 5.3 points (started at TE)
+  13. George Holani (treypaulino, 09/17) — 2.5 points (benched)
+  14. DeMario Douglas (tfadp, 09/19) — 1.9 points (started at WR)
+  15. Makai Lemon (treypaulino, 09/17, $15) — 1.9 points (benched)
+  16. Demond Claiborne (xainshawty, 09/16) — 1.2 points (benched)
+  best add: Dalton Schultz — 26.0 for treypaulino
+  worst add: DeMario Douglas — started at WR, 1.9 for tfadp
+
+POWER RANKINGS (through this week)
+1. Olave me or Hate me… — 92.1 (–)   [record 2-0]
+2. Legacy LeaversTM — 74.3 (↑4)   [record 2-0]
+3. 2011 Ryan Braun — 61.4 (↑4)   [record 0-2]
+4. Nice Juds — 55.9 (↓2)   [record 2-0]
+5. NJIGGAS — 55.7 (↑5)   [record 1-1]
+6. Keep Devaughn Truckin — 45.8 (↑2)   [record 1-1]
+7. Kindofblue — 41.7 (↓2)   [record 1-1]
+8. Windsor Terror — 40.2 (↑1)   [record 0-2]
+9. All Hail the Robot Buddha — 39.9 (↑2)   [record 1-1]
+10. pukachew⚡️ — 35.0 (↓7)   [record 1-1]
+11. Based God — 24.6 (↓7)   [record 1-1]
+12. Proverbs 3:5-6 — 6.6 (–)   [record 0-2]
+
+MOVES
+  trade: Brian Thomas to Proverbs 3:5-6, Jordyn Tyson to pukachew⚡️; dropped Brian Thomas off pukachew⚡️, Jordyn Tyson off Proverbs 3:5-6
+  trade: Michael Wilson to Nice Juds, Patrick Mahomes to Legacy LeaversTM, Dalton Schultz to Legacy LeaversTM, Mark Andrews to Nice Juds; dropped Michael Wilson off Legacy LeaversTM, Patrick Mahomes off Nice Juds, Dalton Schultz off Nice Juds, Mark Andrews off Legacy LeaversTM
+  commissioner: Luther Burden to Based God, Jaylen Waddle to Olave me or Hate me…; dropped Luther Burden off Olave me or Hate me…, Jaylen Waddle off Based God
+  free_agent: Michael Mayer to pukachew⚡️
+  free_agent: Green Bay Packers to Windsor Terror; dropped Mack Hollins off Windsor Terror
+  free_agent: DeMario Douglas to Kindofblue; dropped Kalif Raymond off Kindofblue
+  free_agent: Tre' Harris to Based God; dropped Keaton Mitchell off Based God
+  free_agent: Dalton Schultz to Nice Juds; dropped David Njoku off Nice Juds
+  trade: Luther Burden to Olave me or Hate me…, Jaylen Waddle to Based God; dropped Luther Burden off Based God, Jaylen Waddle off Olave me or Hate me…
+  free_agent: Keaton Mitchell to Based God
+  free_agent: Kayshon Boutte to Based God; dropped Dalton Schultz off Based God
+  free_agent: Dalton Schultz to Based God; dropped Xavier Hutchinson off Based God
+  free_agent: Carolina Panthers to Legacy LeaversTM
+  free_agent: dropped Harold Fannin off Legacy LeaversTM
+  free_agent: George Holani to Nice Juds; dropped Chris Brooks off Nice Juds
+  free_agent: Brian Robinson to Legacy LeaversTM
+  free_agent: Mack Hollins to Windsor Terror; dropped De'Zhaun Stribling off Windsor Terror
+  free_agent: Xavier Hutchinson to Based God; dropped Keaton Mitchell off Based God
+  waiver $15: Makai Lemon to Nice Juds
+  free_agent: Demond Claiborne to pukachew⚡️; dropped Michael Mayer off pukachew⚡️
+  free_agent: dropped Kyler Murray off Based God
+  free_agent: dropped Bo Nix off Legacy LeaversTM
+  waiver $3: Mark Andrews to Legacy LeaversTM; dropped Pittsburgh Steelers off Legacy LeaversTM
+  free_agent: dropped Zachariah Branch off pukachew⚡️
+  free_agent: Dontayvion Wicks to Windsor Terror; dropped Los Angeles Chargers off Windsor Terror
+  waiver $15: Trevor Lawrence to Windsor Terror; dropped Jared Goff off Windsor Terror
+  free_agent: dropped Jalen Nailor off 2011 Ryan Braun
