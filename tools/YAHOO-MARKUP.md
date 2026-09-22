@@ -39,7 +39,7 @@ attribute rather than display text, so it survives a relayout.
 Team totals come from the second Datatable, same cell indices 3 and 7, on the
 row whose position cell reads `TOTAL`.
 
-## The problem: no bench
+## The problem: no bench — WRONG, see the correction below
 
 `rosterTableCount: 2` — starters and totals. **The matchup page does not carry
 bench players.** That removes, for Yahoo:
@@ -91,3 +91,60 @@ from the same code, and week 1 is trivially 1-0 or 0-1.
 
 Transactions are still unmapped and may well be client-rendered too, in which
 case Yahoo recaps lose the waiver section until the API comes through.
+
+## Background fetch vs. the tab you are looking at
+
+Probe 4's finding that the standings page returns 200 with zero tables is a
+fact about `fetch`, not about the page. A background fetch only ever sees
+server-rendered HTML; the tab you have open has already run the page's
+JavaScript. So anything Yahoo renders client side is unreachable from
+`yahoo-week.js`, which fetches, and reachable from a script run on that page
+itself, which reads the rendered `document`.
+
+That is the split the two tools take:
+
+| tool | run it on | how it reads | gets |
+|---|---|---|---|
+| `yahoo-week.js` | any league page | fetches matchup + team pages | pairings, totals, starters, bench |
+| `yahoo-transactions.js` | the transactions page | the live DOM | waivers, adds, drops, FAAB |
+
+Unverified as of this writing: whether the transactions page actually carries
+the rows in its rendered DOM, and whether it lazy-loads far enough back to
+cover a full week. `yahoo-transactions.js` scrolls to the bottom until the row
+count stops growing, and writes a diagnostic instead of an empty list if
+nothing matches.
+
+Standings could be recovered the same way if they were ever needed, but they
+are not: `standings.py` derives records, PF and PA from the weekly results.
+
+
+## Correction: the matchup page does carry the bench
+
+Established against real week 1 data on 2026-09-15, which is the first time
+these pages had values in them. The matchup page has **three** roster-shaped
+tables, not two:
+
+| class | rows | what |
+|---|---|---|
+| `M-a` | 4 | the score strip: both totals, and Orig Proj |
+| `… Datatable …` | 11 | starters, both teams mirrored |
+| `… Datatable …` | 6 | **bench, both teams mirrored, same header shape** |
+| `W-100` | 5-8 | per-player stat breakdowns, no player links |
+
+The bench rows carry the same `span.pos-label[data-pos="BN"]` hook as the
+starters. The earlier finding was taken from an undrafted league, where the
+bench table was empty and so indistinguishable from absent.
+
+That removes the reason for fetching 14 team pages. Team pages are still worth
+one hit each for their `<title>`, which is where team names live, but every
+roster fact comes off the 7 matchup pages.
+
+Two smaller things the real data corrected:
+
+- **Team abbreviations are title case.** "Chi - RB", "Det - QB", beside the
+  all-caps ones like "NYJ - WR". A `[A-Z]{2,3}` pattern silently matches only
+  about half the league and leaves the rest as `pos: "?"`.
+- **The team page has no "Player" header.** Its column reads "Offense",
+  "Kickers" or "Defense/Special Teams" depending on the table, so resolving
+  that column by header text finds nothing. Moot now, but it is why the team
+  page parse returned zero rows.

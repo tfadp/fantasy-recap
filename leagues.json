@@ -14,7 +14,7 @@
     {
       "_comment": "Yahoo via the browser extension / tools/yahoo-week.js. The week is handed in through inbox/ or LEAGUE_WEEK_JSON. Flip enabled to true once a real week has been extracted and reconciled.",
       "name": "yahoo",
-      "enabled": false,
+      "enabled": true,
       "platform": "payload",
       "league_id": "78540",
       "display_name": "Bring It On",

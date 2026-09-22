@@ -478,6 +478,14 @@ def promote(stem):
 
 
 if __name__ == "__main__":
+    # deliver.py loads .env and publish.py did not, so a local run computed the
+    # draft token from a generated .draft-salt while the email computed it from
+    # DRAFT_SALT. Same week, two URLs, and the one that got mailed 404s. Under
+    # Actions both agree because DRAFT_SALT is a real environment variable
+    # there, which is why this only ever broke on the machine it was run from.
+    import env
+    env.load()
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--artifact", metavar="STEM",
                     help="print one week as a fragment instead of building docs/")

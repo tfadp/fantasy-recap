@@ -56,29 +56,14 @@ jobs:
       - name: Install
         run: pip install -r requirements.txt
 
-      # The voice files are gitignored, because a public repo is the price of
-      # free Pages and the league's group chat should not be on it. They are
-      # restored here from secrets for the length of the run.
-      - name: Restore the voice files
-        env:
-          MOP_CHAT: ${{ secrets.MOP_CHAT }}
-          MOP_LORE: ${{ secrets.MOP_LORE }}
-        # Actions runs steps under `bash -e`, so a bare `[ -n "$X" ] && cmd`
-        # exits 1 when the secret is unset and fails the whole job. Use if.
-        run: |
-          if [ -n "$MOP_CHAT" ]; then
-            printf '%s' "$MOP_CHAT" > prompts/mop-chat.md
-            echo "restored mop-chat.md"
-          else
-            echo "MOP_CHAT not set; the recap will be written without the group chat"
-          fi
-          if [ -n "$MOP_LORE" ]; then
-            printf '%s' "$MOP_LORE" > prompts/mop-lore.md
-            echo "restored mop-lore.md"
-          else
-            echo "MOP_LORE not set; the recap will be written without the lore"
-          fi
-
+      # The voice files used to be restored here from secrets. That is how the
+      # wrong manager stayed "commissioner" for three weeks: prompts/mop-lore.md
+      # was gitignored, the fix landed on Dan's Mac, and every run overwrote it
+      # with the stale MOP_LORE secret. The lore is tracked in the repo now -
+      # team names, handles and last season's scores, all of which are already
+      # on the published recap pages - so a fix reaches this run by being
+      # committed, like everything else. prompts/mop-chat.md stays ignored and
+      # simply does not exist yet.
       - name: Restore Yahoo token
         env:
           YAHOO_OAUTH_JSON: ${{ secrets.YAHOO_OAUTH_JSON }}
