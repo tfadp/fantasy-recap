@@ -1,0 +1,5206 @@
+{
+  "league": "Bring It On Season 19",
+  "source": "yahoo",
+  "season": "2026",
+  "week": 3,
+  "games": [
+    {
+      "matchup_id": "0",
+      "winner": "Canes to the Cup",
+      "winner_points": 111.1,
+      "loser": "Philly Special",
+      "loser_points": 106.05,
+      "margin": 5.05,
+      "winner_id": "6",
+      "loser_id": "10",
+      "expected_margin": -28.4,
+      "upset_size": 28.4
+    },
+    {
+      "matchup_id": "1",
+      "winner": "Schmul Gone Wild",
+      "winner_points": 105.85,
+      "loser": "LT Bavaros",
+      "loser_points": 86.35,
+      "margin": 19.5,
+      "winner_id": "11",
+      "loser_id": "1",
+      "expected_margin": -0.2,
+      "upset_size": 0.2
+    },
+    {
+      "matchup_id": "2",
+      "winner": "1.21 Gigawatts",
+      "winner_points": 92.2,
+      "loser": "Krispy",
+      "loser_points": 80.1,
+      "margin": 12.1,
+      "winner_id": "2",
+      "loser_id": "9",
+      "expected_margin": -6.02,
+      "upset_size": 6.02
+    },
+    {
+      "matchup_id": "3",
+      "winner": "Anchor Down",
+      "winner_points": 73.65,
+      "loser": "Sleeping With The Fishes",
+      "loser_points": 54.8,
+      "margin": 18.85,
+      "winner_id": "3",
+      "loser_id": "12",
+      "expected_margin": 9.92,
+      "upset_size": -9.92
+    },
+    {
+      "matchup_id": "4",
+      "winner": "Ass in a Box",
+      "winner_points": 111.6,
+      "loser": "Busta Skreen",
+      "loser_points": 76.55,
+      "margin": 35.05,
+      "winner_id": "4",
+      "loser_id": "5",
+      "expected_margin": 11.92,
+      "upset_size": -11.92
+    },
+    {
+      "matchup_id": "5",
+      "winner": "Gowanus Heights Hex",
+      "winner_points": 99.6,
+      "loser": "Dread the Bred",
+      "loser_points": 71.3,
+      "margin": 28.3,
+      "winner_id": "8",
+      "loser_id": "7",
+      "expected_margin": -15.75,
+      "upset_size": 15.75
+    },
+    {
+      "matchup_id": "6",
+      "winner": "THE FURY",
+      "winner_points": 102.65,
+      "loser": "\u2018Ster the Pot",
+      "loser_points": 76.1,
+      "margin": 26.55,
+      "winner_id": "13",
+      "loser_id": "14",
+      "expected_margin": -42.67,
+      "upset_size": 42.67
+    }
+  ],
+  "teams": [
+    {
+      "team_id": "10",
+      "team": "Philly Special",
+      "manager": "Daniel Porter",
+      "matchup_id": "0",
+      "points": 106.05,
+      "opponent": "Canes to the Cup",
+      "opponent_id": "6",
+      "opponent_points": 111.1,
+      "result": "L",
+      "margin": 5.05,
+      "top_starter": {
+        "injury": null,
+        "name": "Tyler Shough",
+        "nfl_team": "NO",
+        "player_id": "41825",
+        "points": 26.35,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Dalton Schultz",
+        "nfl_team": "HOU",
+        "player_id": "31107",
+        "points": 3,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "optimal_points": 120.65,
+      "points_left_on_bench": 14.6,
+      "lineup_efficiency": 0.879,
+      "bench_mistakes": [
+        {
+          "benched": "Brock Bowers",
+          "benched_points": 17.6,
+          "started": "Dalton Schultz",
+          "started_points": 3,
+          "cost": 14.6
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Brock Bowers",
+        "benched_pos": "TE",
+        "benched_points": 17.6,
+        "started": "Dalton Schultz",
+        "started_slot": "TE",
+        "started_points": 3,
+        "swing": 14.6
+      },
+      "total_after_best_swap": 120.65,
+      "would_have_won": true,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Tyler Shough",
+          "nfl_team": "NO",
+          "player_id": "41825",
+          "points": 26.35,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "D'Andre Swift",
+          "nfl_team": "CHI",
+          "player_id": "32705",
+          "points": 8.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Chuba Hubbard",
+          "nfl_team": "CAR",
+          "player_id": "33514",
+          "points": 11,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Davante Adams",
+          "nfl_team": "LAR",
+          "player_id": "27581",
+          "points": 13.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Devaughn Vele",
+          "nfl_team": "NO",
+          "player_id": "41097",
+          "points": 3.9,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Dalton Schultz",
+          "nfl_team": "HOU",
+          "player_id": "31107",
+          "points": 3,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Bhayshul Tuten",
+          "nfl_team": "JAX",
+          "player_id": "41900",
+          "points": 15,
+          "pos": "RB",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Tyler Loop",
+          "nfl_team": "BAL",
+          "player_id": "41988",
+          "points": 12.3,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Raiders",
+          "nfl_team": "LV",
+          "player_id": "Raiders",
+          "points": 12,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Brian Thomas Jr.",
+          "nfl_team": "JAX",
+          "player_id": "40883",
+          "points": 0.8,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Brock Bowers",
+          "nfl_team": "LV",
+          "player_id": "40878",
+          "points": 17.6,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Jacory Croskey-Merritt",
+          "nfl_team": "WAS",
+          "player_id": "42010",
+          "points": 4.3,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Dontayvion Wicks",
+          "nfl_team": "PHI",
+          "player_id": "40201",
+          "points": 3.2,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "A.J. Brown",
+          "nfl_team": "NE",
+          "player_id": "31883",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "11-2",
+      "week_rank": 3
+    },
+    {
+      "team_id": "6",
+      "team": "Canes to the Cup",
+      "manager": "Jonathan",
+      "matchup_id": "0",
+      "points": 111.1,
+      "opponent": "Philly Special",
+      "opponent_id": "10",
+      "opponent_points": 106.05,
+      "result": "W",
+      "margin": 5.05,
+      "top_starter": {
+        "injury": null,
+        "name": "Dak Prescott",
+        "nfl_team": "DAL",
+        "player_id": "29369",
+        "points": 21.7,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Kyle Pitts Sr.",
+        "nfl_team": "ATL",
+        "player_id": "33392",
+        "points": 0.5,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "optimal_points": 140.3,
+      "points_left_on_bench": 29.2,
+      "lineup_efficiency": 0.7919,
+      "bench_mistakes": [
+        {
+          "benched": "Kenyon Sadiq",
+          "benched_points": 16.5,
+          "started": "Kyle Pitts Sr.",
+          "started_points": 0.5,
+          "cost": 16.0
+        },
+        {
+          "benched": "Michael Wilson",
+          "benched_points": 14.9,
+          "started": "Romeo Doubs",
+          "started_points": 4.9,
+          "cost": 10.0
+        },
+        {
+          "benched": "Mike Evans",
+          "benched_points": 9.4,
+          "started": "Romeo Doubs",
+          "started_points": 4.9,
+          "cost": 4.5
+        },
+        {
+          "benched": "Woody Marks",
+          "benched_points": 8.1,
+          "started": "Romeo Doubs",
+          "started_points": 4.9,
+          "cost": 3.2
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Kenyon Sadiq",
+        "benched_pos": "TE",
+        "benched_points": 16.5,
+        "started": "Kyle Pitts Sr.",
+        "started_slot": "TE",
+        "started_points": 0.5,
+        "swing": 16.0
+      },
+      "total_after_best_swap": 127.1,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Dak Prescott",
+          "nfl_team": "DAL",
+          "player_id": "29369",
+          "points": 21.7,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Kenneth Walker III",
+          "nfl_team": "KC",
+          "player_id": "33996",
+          "points": 19.3,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Jeremiyah Love",
+          "nfl_team": "ARI",
+          "player_id": "42625",
+          "points": 16.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Garrett Wilson",
+          "nfl_team": "NYJ",
+          "player_id": "33965",
+          "points": 16.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Emeka Egbuka",
+          "nfl_team": "TB",
+          "player_id": "41804",
+          "points": 6.2,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Kyle Pitts Sr.",
+          "nfl_team": "ATL",
+          "player_id": "33392",
+          "points": 0.5,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Romeo Doubs",
+          "nfl_team": "NE",
+          "player_id": "34088",
+          "points": 4.9,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Brandon Aubrey",
+          "nfl_team": "DAL",
+          "player_id": "40819",
+          "points": 10.9,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Broncos",
+          "nfl_team": "DEN",
+          "player_id": "Broncos",
+          "points": 14,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": "Q",
+          "name": "Mike Evans",
+          "nfl_team": "SF",
+          "player_id": "27535",
+          "points": 9.4,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kenyon Sadiq",
+          "nfl_team": "NYJ",
+          "player_id": "42638",
+          "points": 16.5,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Woody Marks",
+          "nfl_team": "HOU",
+          "player_id": "41902",
+          "points": 8.1,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Michael Wilson",
+          "nfl_team": "ARI",
+          "player_id": "40121",
+          "points": 14.9,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "12-1",
+      "week_rank": 2
+    },
+    {
+      "team_id": "1",
+      "team": "LT Bavaros",
+      "manager": "David Kramer",
+      "matchup_id": "1",
+      "points": 86.35,
+      "opponent": "Schmul Gone Wild",
+      "opponent_id": "11",
+      "opponent_points": 105.85,
+      "result": "L",
+      "margin": 19.5,
+      "top_starter": {
+        "injury": null,
+        "name": "Brock Purdy",
+        "nfl_team": "SF",
+        "player_id": "34218",
+        "points": 34.25,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Michael Pittman Jr.",
+        "nfl_team": "PIT",
+        "player_id": "32704",
+        "points": 1.6,
+        "pos": "WR",
+        "slot": "W/R/T"
+      },
+      "optimal_points": 100.05,
+      "points_left_on_bench": 13.7,
+      "lineup_efficiency": 0.8631,
+      "bench_mistakes": [
+        {
+          "benched": "Juwan Johnson",
+          "benched_points": 15.3,
+          "started": "Michael Pittman Jr.",
+          "started_points": 1.6,
+          "cost": 13.7
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Juwan Johnson",
+        "benched_pos": "TE",
+        "benched_points": 15.3,
+        "started": "Michael Pittman Jr.",
+        "started_slot": "W/R/T",
+        "started_points": 1.6,
+        "swing": 13.7
+      },
+      "total_after_best_swap": 100.05,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Brock Purdy",
+          "nfl_team": "SF",
+          "player_id": "34218",
+          "points": 34.25,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Chase Brown",
+          "nfl_team": "CIN",
+          "player_id": "40196",
+          "points": 6.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Kyren Williams",
+          "nfl_team": "LAR",
+          "player_id": "34120",
+          "points": 15.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "DJ Moore",
+          "nfl_team": "BUF",
+          "player_id": "30994",
+          "points": 6.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Terry McLaurin",
+          "nfl_team": "WAS",
+          "player_id": "31908",
+          "points": 13.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Mark Andrews",
+          "nfl_team": "BAL",
+          "player_id": "31056",
+          "points": 2.4,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Michael Pittman Jr.",
+          "nfl_team": "PIT",
+          "player_id": "32704",
+          "points": 1.6,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Wil Lutz",
+          "nfl_team": "DEN",
+          "player_id": "29754",
+          "points": 2,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Rams",
+          "nfl_team": "LAR",
+          "player_id": "Rams",
+          "points": 3,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Emanuel Wilson",
+          "nfl_team": "SEA",
+          "player_id": "40707",
+          "points": 1.4,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Juwan Johnson",
+          "nfl_team": "NO",
+          "player_id": "33113",
+          "points": 15.3,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Jared Goff",
+          "nfl_team": "DET",
+          "player_id": "29235",
+          "points": 22.05,
+          "pos": "QB",
+          "slot": null
+        },
+        {
+          "injury": "CEL",
+          "name": "Josh Jacobs",
+          "nfl_team": "GB",
+          "player_id": "31856",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "Jordan Mason",
+          "nfl_team": "MIN",
+          "player_id": "34320",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "6-7",
+      "week_rank": 8
+    },
+    {
+      "team_id": "11",
+      "team": "Schmul Gone Wild",
+      "manager": "Rick",
+      "matchup_id": "1",
+      "points": 105.85,
+      "opponent": "LT Bavaros",
+      "opponent_id": "1",
+      "opponent_points": 86.35,
+      "result": "W",
+      "margin": 19.5,
+      "top_starter": {
+        "injury": null,
+        "name": "Jahmyr Gibbs",
+        "nfl_team": "DET",
+        "player_id": "40059",
+        "points": 34.4,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "worst_starter": {
+        "injury": "Q",
+        "name": "Jalen Coker",
+        "nfl_team": "CAR",
+        "player_id": "41293",
+        "points": 1.8,
+        "pos": "WR",
+        "slot": "W/R/T"
+      },
+      "optimal_points": 115.7,
+      "points_left_on_bench": 9.85,
+      "lineup_efficiency": 0.9149,
+      "bench_mistakes": [
+        {
+          "benched": "Bo Nix",
+          "benched_points": 26,
+          "started": "Bryce Young",
+          "started_points": 16.55,
+          "cost": 9.45
+        },
+        {
+          "benched": "Jordan Love",
+          "benched_points": 21.6,
+          "started": "Bryce Young",
+          "started_points": 16.55,
+          "cost": 5.05
+        },
+        {
+          "benched": "Tyquan Thornton",
+          "benched_points": 2.2,
+          "started": "Jalen Coker",
+          "started_points": 1.8,
+          "cost": 0.4
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Bo Nix",
+        "benched_pos": "QB",
+        "benched_points": 26,
+        "started": "Bryce Young",
+        "started_slot": "QB",
+        "started_points": 16.55,
+        "swing": 9.45
+      },
+      "total_after_best_swap": 115.3,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Bryce Young",
+          "nfl_team": "CAR",
+          "player_id": "40029",
+          "points": 16.55,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Jahmyr Gibbs",
+          "nfl_team": "DET",
+          "player_id": "40059",
+          "points": 34.4,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Rhamondre Stevenson",
+          "nfl_team": "NE",
+          "player_id": "33508",
+          "points": 3.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Ja'Marr Chase",
+          "nfl_team": "CIN",
+          "player_id": "33393",
+          "points": 15.8,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Jaylen Waddle",
+          "nfl_team": "DEN",
+          "player_id": "33394",
+          "points": 4.4,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Tyler Warren",
+          "nfl_team": "IND",
+          "player_id": "41799",
+          "points": 5.7,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": "Q",
+          "name": "Jalen Coker",
+          "nfl_team": "CAR",
+          "player_id": "41293",
+          "points": 1.8,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Harrison Butker",
+          "nfl_team": "KC",
+          "player_id": "30346",
+          "points": 6.4,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Vikings",
+          "nfl_team": "MIN",
+          "player_id": "Vikings",
+          "points": 17,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Jordan Love",
+          "nfl_team": "GB",
+          "player_id": "32696",
+          "points": 21.6,
+          "pos": "QB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Emmett Johnson",
+          "nfl_team": "KC",
+          "player_id": "42796",
+          "points": 1.7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Bo Nix",
+          "nfl_team": "DEN",
+          "player_id": "40875",
+          "points": 26,
+          "pos": "QB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Tyquan Thornton",
+          "nfl_team": "KC",
+          "player_id": "34005",
+          "points": 2.2,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "10-3",
+      "week_rank": 4
+    },
+    {
+      "team_id": "2",
+      "team": "1.21 Gigawatts",
+      "manager": "Scott",
+      "matchup_id": "2",
+      "points": 92.2,
+      "opponent": "Krispy",
+      "opponent_id": "9",
+      "opponent_points": 80.1,
+      "result": "W",
+      "margin": 12.1,
+      "top_starter": {
+        "injury": null,
+        "name": "Joe Burrow",
+        "nfl_team": "CIN",
+        "player_id": "32671",
+        "points": 25.4,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Xavier Worthy",
+        "nfl_team": "KC",
+        "player_id": "40877",
+        "points": 2,
+        "pos": "WR",
+        "slot": "WR"
+      },
+      "optimal_points": 103.3,
+      "points_left_on_bench": 11.1,
+      "lineup_efficiency": 0.8925,
+      "bench_mistakes": [
+        {
+          "benched": "Zay Flowers",
+          "benched_points": 10.4,
+          "started": "Xavier Worthy",
+          "started_points": 2,
+          "cost": 8.4
+        },
+        {
+          "benched": "George Holani",
+          "benched_points": 5.8,
+          "started": "Kyle Monangai",
+          "started_points": 3.1,
+          "cost": 2.7
+        },
+        {
+          "benched": "Quentin Johnston",
+          "benched_points": 4,
+          "started": "Xavier Worthy",
+          "started_points": 2,
+          "cost": 2
+        },
+        {
+          "benched": "RJ Harvey",
+          "benched_points": 4.7,
+          "started": "Kyle Monangai",
+          "started_points": 3.1,
+          "cost": 1.6
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Zay Flowers",
+        "benched_pos": "WR",
+        "benched_points": 10.4,
+        "started": "Xavier Worthy",
+        "started_slot": "WR",
+        "started_points": 2,
+        "swing": 8.4
+      },
+      "total_after_best_swap": 100.6,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Joe Burrow",
+          "nfl_team": "CIN",
+          "player_id": "32671",
+          "points": 25.4,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Jonathan Taylor",
+          "nfl_team": "IND",
+          "player_id": "32711",
+          "points": 7.2,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Jaylen Warren",
+          "nfl_team": "PIT",
+          "player_id": "34447",
+          "points": 17.6,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Tee Higgins",
+          "nfl_team": "CIN",
+          "player_id": "32703",
+          "points": 15,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Xavier Worthy",
+          "nfl_team": "KC",
+          "player_id": "40877",
+          "points": 2,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Colston Loveland",
+          "nfl_team": "CHI",
+          "player_id": "41795",
+          "points": 3.1,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Kyle Monangai",
+          "nfl_team": "CHI",
+          "player_id": "42025",
+          "points": 3.1,
+          "pos": "RB",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Evan McPherson",
+          "nfl_team": "CIN",
+          "player_id": "33537",
+          "points": 11.8,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Lions",
+          "nfl_team": "DET",
+          "player_id": "Lions",
+          "points": 7,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Zay Flowers",
+          "nfl_team": "BAL",
+          "player_id": "40039",
+          "points": 10.4,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Quentin Johnston",
+          "nfl_team": "LAC",
+          "player_id": "40051",
+          "points": 4,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "RJ Harvey",
+          "nfl_team": "DEN",
+          "player_id": "41845",
+          "points": 4.7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "George Holani",
+          "nfl_team": "SEA",
+          "player_id": "41344",
+          "points": 5.8,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "Ja'Kobi Lane",
+          "nfl_team": "BAL",
+          "player_id": "42702",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "7-6",
+      "week_rank": 7
+    },
+    {
+      "team_id": "9",
+      "team": "Krispy",
+      "manager": "Fran",
+      "matchup_id": "2",
+      "points": 80.1,
+      "opponent": "1.21 Gigawatts",
+      "opponent_id": "2",
+      "opponent_points": 92.2,
+      "result": "L",
+      "margin": 12.1,
+      "top_starter": {
+        "injury": null,
+        "name": "Trevor Lawrence",
+        "nfl_team": "JAX",
+        "player_id": "33389",
+        "points": 21.6,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Isaiah Likely",
+        "nfl_team": "NYG",
+        "player_id": "34095",
+        "points": 1.3,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "optimal_points": 82.4,
+      "points_left_on_bench": 2.3,
+      "lineup_efficiency": 0.9721,
+      "bench_mistakes": [
+        {
+          "benched": "Marvin Harrison Jr.",
+          "benched_points": 4,
+          "started": "Tetairoa McMillan",
+          "started_points": 1.7,
+          "cost": 2.3
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Marvin Harrison Jr.",
+        "benched_pos": "WR",
+        "benched_points": 4,
+        "started": "Tetairoa McMillan",
+        "started_slot": "WR",
+        "started_points": 1.7,
+        "swing": 2.3
+      },
+      "total_after_best_swap": 82.4,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Trevor Lawrence",
+          "nfl_team": "JAX",
+          "player_id": "33389",
+          "points": 21.6,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Javonte Williams",
+          "nfl_team": "DAL",
+          "player_id": "33423",
+          "points": 16.3,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Tony Pollard",
+          "nfl_team": "TEN",
+          "player_id": "31960",
+          "points": 9.6,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Ladd McConkey",
+          "nfl_team": "LAC",
+          "player_id": "40908",
+          "points": 6.6,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Tetairoa McMillan",
+          "nfl_team": "CAR",
+          "player_id": "41793",
+          "points": 1.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Isaiah Likely",
+          "nfl_team": "NYG",
+          "player_id": "34095",
+          "points": 1.3,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Saquon Barkley",
+          "nfl_team": "PHI",
+          "player_id": "30972",
+          "points": 8,
+          "pos": "RB",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Chase McLaughlin",
+          "nfl_team": "TB",
+          "player_id": "32417",
+          "points": 13,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Seahawks",
+          "nfl_team": "SEA",
+          "player_id": "Seahawks",
+          "points": 2,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Marvin Harrison Jr.",
+          "nfl_team": "ARI",
+          "player_id": "40893",
+          "points": 4,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "KC Concepcion Jr.",
+          "nfl_team": "CLE",
+          "player_id": "42646",
+          "points": 0.9,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Tank Bigsby",
+          "nfl_team": "PHI",
+          "player_id": "40095",
+          "points": -1.5,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Hunter Henry",
+          "nfl_team": "NE",
+          "player_id": "29269",
+          "points": 0.5,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "Jonah Coleman",
+          "nfl_team": "DEN",
+          "player_id": "42730",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "5-8",
+      "week_rank": 9
+    },
+    {
+      "team_id": "3",
+      "team": "Anchor Down",
+      "manager": "Eliza",
+      "matchup_id": "3",
+      "points": 73.65,
+      "opponent": "Sleeping With The Fishes",
+      "opponent_id": "12",
+      "opponent_points": 54.8,
+      "result": "W",
+      "margin": 18.85,
+      "top_starter": {
+        "injury": null,
+        "name": "Derrick Henry",
+        "nfl_team": "BAL",
+        "player_id": "29279",
+        "points": 20.9,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "worst_starter": {
+        "injury": "Q",
+        "name": "Justin Jefferson",
+        "nfl_team": "MIN",
+        "player_id": "32692",
+        "points": 3.2,
+        "pos": "WR",
+        "slot": "WR"
+      },
+      "optimal_points": 85.45,
+      "points_left_on_bench": 11.8,
+      "lineup_efficiency": 0.8619,
+      "bench_mistakes": [
+        {
+          "benched": "Jordan Addison",
+          "benched_points": 15,
+          "started": "Justin Jefferson",
+          "started_points": 3.2,
+          "cost": 11.8
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Jordan Addison",
+        "benched_pos": "WR",
+        "benched_points": 15,
+        "started": "Justin Jefferson",
+        "started_slot": "WR",
+        "started_points": 3.2,
+        "swing": 11.8
+      },
+      "total_after_best_swap": 85.45,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Jalen Hurts",
+          "nfl_team": "PHI",
+          "player_id": "32723",
+          "points": 14.15,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Derrick Henry",
+          "nfl_team": "BAL",
+          "player_id": "29279",
+          "points": 20.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Cam Skattebo",
+          "nfl_team": "NYG",
+          "player_id": "41922",
+          "points": 10,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": "Q",
+          "name": "Justin Jefferson",
+          "nfl_team": "MIN",
+          "player_id": "32692",
+          "points": 3.2,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Rome Odunze",
+          "nfl_team": "CHI",
+          "player_id": "40901",
+          "points": 4.4,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Sam LaPorta",
+          "nfl_team": "DET",
+          "player_id": "40064",
+          "points": 4.4,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Courtland Sutton",
+          "nfl_team": "DEN",
+          "player_id": "31010",
+          "points": 4.6,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Jake Bates",
+          "nfl_team": "DET",
+          "player_id": "40835",
+          "points": 7,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Steelers",
+          "nfl_team": "PIT",
+          "player_id": "Steelers",
+          "points": 5,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Jordan Addison",
+          "nfl_team": "MIN",
+          "player_id": "40042",
+          "points": 15,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kayshon Boutte",
+          "nfl_team": "HOU",
+          "player_id": "40224",
+          "points": 2.1,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Alvin Kamara",
+          "nfl_team": "NO",
+          "player_id": "30180",
+          "points": 4.1,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Rashid Shaheed",
+          "nfl_team": "SEA",
+          "player_id": "34659",
+          "points": 1.4,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "De'Zhaun Stribling",
+          "nfl_team": "SF",
+          "player_id": "42655",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "2-11",
+      "week_rank": 12
+    },
+    {
+      "team_id": "12",
+      "team": "Sleeping With The Fishes",
+      "manager": "William",
+      "matchup_id": "3",
+      "points": 54.8,
+      "opponent": "Anchor Down",
+      "opponent_id": "3",
+      "opponent_points": 73.65,
+      "result": "L",
+      "margin": 18.85,
+      "top_starter": {
+        "injury": null,
+        "name": "Patrick Mahomes",
+        "nfl_team": "KC",
+        "player_id": "30123",
+        "points": 18.4,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Jadarian Price",
+        "nfl_team": "SEA",
+        "player_id": "42654",
+        "points": 0.2,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "optimal_points": 60.8,
+      "points_left_on_bench": 6.0,
+      "lineup_efficiency": 0.9013,
+      "bench_mistakes": [
+        {
+          "benched": "Jake Ferguson",
+          "benched_points": 6.3,
+          "started": "Dalton Kincaid",
+          "started_points": 1.8,
+          "cost": 4.5
+        },
+        {
+          "benched": "Braelon Allen",
+          "benched_points": 1.7,
+          "started": "Jadarian Price",
+          "started_points": 0.2,
+          "cost": 1.5
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Jake Ferguson",
+        "benched_pos": "TE",
+        "benched_points": 6.3,
+        "started": "Dalton Kincaid",
+        "started_slot": "TE",
+        "started_points": 1.8,
+        "swing": 4.5
+      },
+      "total_after_best_swap": 59.3,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Patrick Mahomes",
+          "nfl_team": "KC",
+          "player_id": "30123",
+          "points": 18.4,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Omarion Hampton",
+          "nfl_team": "LAC",
+          "player_id": "41807",
+          "points": 5.6,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Jadarian Price",
+          "nfl_team": "SEA",
+          "player_id": "42654",
+          "points": 0.2,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "DeVonta Smith",
+          "nfl_team": "PHI",
+          "player_id": "33398",
+          "points": 6.5,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Parker Washington",
+          "nfl_team": "JAX",
+          "player_id": "40234",
+          "points": 10,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Dalton Kincaid",
+          "nfl_team": "BUF",
+          "player_id": "40048",
+          "points": 1.8,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Chris Godwin Jr.",
+          "nfl_team": "TB",
+          "player_id": "30197",
+          "points": 2.5,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Tyler Bass",
+          "nfl_team": "BUF",
+          "player_id": "32858",
+          "points": 5.8,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Panthers",
+          "nfl_team": "CAR",
+          "player_id": "Panthers",
+          "points": 4,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Jake Ferguson",
+          "nfl_team": "DAL",
+          "player_id": "34085",
+          "points": 6.3,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": "O",
+          "name": "Nico Collins",
+          "nfl_team": "HOU",
+          "player_id": "33477",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Braelon Allen",
+          "nfl_team": "NYJ",
+          "player_id": "40981",
+          "points": 1.7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "O",
+          "name": "Jayden Daniels",
+          "nfl_team": "WAS",
+          "player_id": "40896",
+          "points": 0,
+          "pos": "QB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "0-13",
+      "week_rank": 14
+    },
+    {
+      "team_id": "4",
+      "team": "Ass in a Box",
+      "manager": "Ass in a Box",
+      "matchup_id": "4",
+      "points": 111.6,
+      "opponent": "Busta Skreen",
+      "opponent_id": "5",
+      "opponent_points": 76.55,
+      "result": "W",
+      "margin": 35.05,
+      "top_starter": {
+        "injury": null,
+        "name": "Matthew Stafford",
+        "nfl_team": "LAR",
+        "player_id": "9265",
+        "points": 24.8,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Oronde Gadsden",
+        "nfl_team": "LAC",
+        "player_id": "41951",
+        "points": 0,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "optimal_points": 115.7,
+      "points_left_on_bench": 4.1,
+      "lineup_efficiency": 0.9646,
+      "bench_mistakes": [
+        {
+          "benched": "Travis Etienne Jr.",
+          "benched_points": 7,
+          "started": "TreVeyon Henderson",
+          "started_points": 2.9,
+          "cost": 4.1
+        },
+        {
+          "benched": "J.K. Dobbins",
+          "benched_points": 5.3,
+          "started": "TreVeyon Henderson",
+          "started_points": 2.9,
+          "cost": 2.4
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Travis Etienne Jr.",
+        "benched_pos": "RB",
+        "benched_points": 7,
+        "started": "TreVeyon Henderson",
+        "started_slot": "RB",
+        "started_points": 2.9,
+        "swing": 4.1
+      },
+      "total_after_best_swap": 115.7,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Matthew Stafford",
+          "nfl_team": "LAR",
+          "player_id": "9265",
+          "points": 24.8,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "James Cook III",
+          "nfl_team": "BUF",
+          "player_id": "34019",
+          "points": 19.4,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "TreVeyon Henderson",
+          "nfl_team": "NE",
+          "player_id": "41823",
+          "points": 2.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "George Pickens",
+          "nfl_team": "DAL",
+          "player_id": "34007",
+          "points": 8.2,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Christian Watson",
+          "nfl_team": "GB",
+          "player_id": "33989",
+          "points": 15.6,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Oronde Gadsden",
+          "nfl_team": "LAC",
+          "player_id": "41951",
+          "points": 0,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Deebo Samuel Sr.",
+          "nfl_team": "SF",
+          "player_id": "31868",
+          "points": 15.4,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Will Reichard",
+          "nfl_team": "MIN",
+          "player_id": "41093",
+          "points": 17.3,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Giants",
+          "nfl_team": "NYG",
+          "player_id": "Giants",
+          "points": 8,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": "O",
+          "name": "Travis Etienne Jr.",
+          "nfl_team": "NO",
+          "player_id": "33413",
+          "points": 7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "O",
+          "name": "Dallas Goedert",
+          "nfl_team": "PHI",
+          "player_id": "31019",
+          "points": 0,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "J.K. Dobbins",
+          "nfl_team": "DEN",
+          "player_id": "32725",
+          "points": 5.3,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kyler Murray",
+          "nfl_team": "MIN",
+          "player_id": "31833",
+          "points": 12.1,
+          "pos": "QB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "13-0",
+      "week_rank": 1
+    },
+    {
+      "team_id": "5",
+      "team": "Busta Skreen",
+      "manager": "David",
+      "matchup_id": "4",
+      "points": 76.55,
+      "opponent": "Ass in a Box",
+      "opponent_id": "4",
+      "opponent_points": 111.6,
+      "result": "L",
+      "margin": 35.05,
+      "top_starter": {
+        "injury": null,
+        "name": "Jaxon Smith-Njigba",
+        "nfl_team": "SEA",
+        "player_id": "40041",
+        "points": 25.5,
+        "pos": "WR",
+        "slot": "WR"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Tucker Kraft",
+        "nfl_team": "GB",
+        "player_id": "40102",
+        "points": 2.6,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "optimal_points": 82.45,
+      "points_left_on_bench": 5.9,
+      "lineup_efficiency": 0.9284,
+      "bench_mistakes": [
+        {
+          "benched": "Mike Washington Jr.",
+          "benched_points": 11.4,
+          "started": "Josh Downs",
+          "started_points": 7.7,
+          "cost": 3.7
+        },
+        {
+          "benched": "Rachaad White",
+          "benched_points": 10.1,
+          "started": "Josh Downs",
+          "started_points": 7.7,
+          "cost": 2.4
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Mike Washington Jr.",
+        "benched_pos": "RB",
+        "benched_points": 11.4,
+        "started": "Josh Downs",
+        "started_slot": "W/R/T",
+        "started_points": 7.7,
+        "swing": 3.7
+      },
+      "total_after_best_swap": 80.25,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Drake Maye",
+          "nfl_team": "NE",
+          "player_id": "40881",
+          "points": 5.75,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Ashton Jeanty",
+          "nfl_team": "LV",
+          "player_id": "41791",
+          "points": 9.3,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Quinshon Judkins",
+          "nfl_team": "CLE",
+          "player_id": "41821",
+          "points": 7.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Jaxon Smith-Njigba",
+          "nfl_team": "SEA",
+          "player_id": "40041",
+          "points": 25.5,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Luther Burden III",
+          "nfl_team": "CHI",
+          "player_id": "41824",
+          "points": 12.8,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Tucker Kraft",
+          "nfl_team": "GB",
+          "player_id": "40102",
+          "points": 2.6,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Josh Downs",
+          "nfl_team": "IND",
+          "player_id": "40126",
+          "points": 7.7,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Trey Smack",
+          "nfl_team": "GB",
+          "player_id": "42838",
+          "points": 2,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Bengals",
+          "nfl_team": "CIN",
+          "player_id": "Bengals",
+          "points": 3,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Mike Washington Jr.",
+          "nfl_team": "LV",
+          "player_id": "42744",
+          "points": 11.4,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Rachaad White",
+          "nfl_team": "WAS",
+          "player_id": "34047",
+          "points": 10.1,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Khalil Shakir",
+          "nfl_team": "BUF",
+          "player_id": "34104",
+          "points": 0.6,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Tre Tucker",
+          "nfl_team": "LV",
+          "player_id": "40114",
+          "points": 4.3,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "4-9",
+      "week_rank": 10
+    },
+    {
+      "team_id": "7",
+      "team": "Dread the Bred",
+      "manager": "Jared Kramer",
+      "matchup_id": "5",
+      "points": 71.3,
+      "opponent": "Gowanus Heights Hex",
+      "opponent_id": "8",
+      "opponent_points": 99.6,
+      "result": "L",
+      "margin": 28.3,
+      "top_starter": {
+        "injury": null,
+        "name": "Lamar Jackson",
+        "nfl_team": "BAL",
+        "player_id": "31002",
+        "points": 22.3,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "MarShawn Lloyd",
+        "nfl_team": "GB",
+        "player_id": "40971",
+        "points": 1.8,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "optimal_points": 86.7,
+      "points_left_on_bench": 15.4,
+      "lineup_efficiency": 0.8224,
+      "bench_mistakes": [
+        {
+          "benched": "Keaton Mitchell",
+          "benched_points": 10.7,
+          "started": "MarShawn Lloyd",
+          "started_points": 1.8,
+          "cost": 8.9
+        },
+        {
+          "benched": "DK Metcalf",
+          "benched_points": 9.1,
+          "started": "Malik Nabers",
+          "started_points": 2.6,
+          "cost": 6.5
+        },
+        {
+          "benched": "Stefon Diggs",
+          "benched_points": 3.3,
+          "started": "Malik Nabers",
+          "started_points": 2.6,
+          "cost": 0.7
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Keaton Mitchell",
+        "benched_pos": "RB",
+        "benched_points": 10.7,
+        "started": "MarShawn Lloyd",
+        "started_slot": "RB",
+        "started_points": 1.8,
+        "swing": 8.9
+      },
+      "total_after_best_swap": 80.2,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Lamar Jackson",
+          "nfl_team": "BAL",
+          "player_id": "31002",
+          "points": 22.3,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Bucky Irving",
+          "nfl_team": "TB",
+          "player_id": "40993",
+          "points": 5.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "MarShawn Lloyd",
+          "nfl_team": "GB",
+          "player_id": "40971",
+          "points": 1.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Amon-Ra St. Brown",
+          "nfl_team": "DET",
+          "player_id": "33500",
+          "points": 7.9,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Rashee Rice",
+          "nfl_team": "KC",
+          "player_id": "40084",
+          "points": 8.8,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Harold Fannin Jr.",
+          "nfl_team": "CLE",
+          "player_id": "41877",
+          "points": 17.1,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Malik Nabers",
+          "nfl_team": "NYG",
+          "player_id": "40899",
+          "points": 2.6,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Cam Little",
+          "nfl_team": "JAX",
+          "player_id": "41062",
+          "points": 5,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Eagles",
+          "nfl_team": "PHI",
+          "player_id": "Eagles",
+          "points": 0,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "DK Metcalf",
+          "nfl_team": "PIT",
+          "player_id": "31896",
+          "points": 9.1,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Stefon Diggs",
+          "nfl_team": "WAS",
+          "player_id": "28534",
+          "points": 3.3,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kaelon Black",
+          "nfl_team": "SF",
+          "player_id": "42712",
+          "points": 1.7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Keaton Mitchell",
+          "nfl_team": "LAC",
+          "player_id": "40641",
+          "points": 10.7,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "Jonathon Brooks",
+          "nfl_team": "CAR",
+          "player_id": "40926",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "1-12",
+      "week_rank": 13
+    },
+    {
+      "team_id": "8",
+      "team": "Gowanus Heights Hex",
+      "manager": "Aaron",
+      "matchup_id": "5",
+      "points": 99.6,
+      "opponent": "Dread the Bred",
+      "opponent_id": "7",
+      "opponent_points": 71.3,
+      "result": "W",
+      "margin": 28.3,
+      "top_starter": {
+        "injury": null,
+        "name": "Bijan Robinson",
+        "nfl_team": "ATL",
+        "player_id": "40055",
+        "points": 33.3,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "worst_starter": {
+        "injury": "IR",
+        "name": "De'Von Achane",
+        "nfl_team": "MIA",
+        "player_id": "40118",
+        "points": 1.7,
+        "pos": "RB",
+        "slot": "RB"
+      },
+      "optimal_points": 99.6,
+      "points_left_on_bench": 0.0,
+      "lineup_efficiency": 1.0,
+      "bench_mistakes": [],
+      "best_legal_swap": null,
+      "total_after_best_swap": 99.6,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Justin Herbert",
+          "nfl_team": "LAC",
+          "player_id": "32676",
+          "points": 15,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Bijan Robinson",
+          "nfl_team": "ATL",
+          "player_id": "40055",
+          "points": 33.3,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": "IR",
+          "name": "De'Von Achane",
+          "nfl_team": "MIA",
+          "player_id": "40118",
+          "points": 1.7,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Jameson Williams",
+          "nfl_team": "DET",
+          "player_id": "33967",
+          "points": 4.9,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Matthew Golden",
+          "nfl_team": "GB",
+          "player_id": "41808",
+          "points": 16,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Trey McBride",
+          "nfl_team": "ARI",
+          "player_id": "34010",
+          "points": 7.5,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Carnell Tate",
+          "nfl_team": "TEN",
+          "player_id": "42626",
+          "points": 5.8,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Ka'imi Fairbairn",
+          "nfl_team": "HOU",
+          "player_id": "29792",
+          "points": 4.4,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Texans",
+          "nfl_team": "HOU",
+          "player_id": "Texans",
+          "points": 11,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Tyler Allgeier",
+          "nfl_team": "ARI",
+          "player_id": "34107",
+          "points": 0.9,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "PUP-",
+          "name": "Zach Charbonnet",
+          "nfl_team": "SEA",
+          "player_id": "40075",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "IR",
+          "name": "Alec Pierce",
+          "nfl_team": "IND",
+          "player_id": "34008",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Keon Coleman",
+          "nfl_team": "BUF",
+          "player_id": "40911",
+          "points": 3.7,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "8-5",
+      "week_rank": 6
+    },
+    {
+      "team_id": "13",
+      "team": "THE FURY",
+      "manager": "DAVID DEROSE",
+      "matchup_id": "6",
+      "points": 102.65,
+      "opponent": "\u2018Ster the Pot",
+      "opponent_id": "14",
+      "opponent_points": 76.1,
+      "result": "W",
+      "margin": 26.55,
+      "top_starter": {
+        "injury": null,
+        "name": "George Kittle",
+        "nfl_team": "SF",
+        "player_id": "30259",
+        "points": 20.2,
+        "pos": "TE",
+        "slot": "TE"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Denzel Boston",
+        "nfl_team": "CLE",
+        "player_id": "42661",
+        "points": 6.1,
+        "pos": "WR",
+        "slot": "WR"
+      },
+      "optimal_points": 102.65,
+      "points_left_on_bench": 0.0,
+      "lineup_efficiency": 1.0,
+      "bench_mistakes": [],
+      "best_legal_swap": null,
+      "total_after_best_swap": 102.65,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "C.J. Stroud",
+          "nfl_team": "HOU",
+          "player_id": "40030",
+          "points": 13.35,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": null,
+          "name": "Christian McCaffrey",
+          "nfl_team": "SF",
+          "player_id": "30121",
+          "points": 17.6,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Aaron Jones Sr.",
+          "nfl_team": "MIN",
+          "player_id": "30295",
+          "points": 9.2,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Drake London",
+          "nfl_team": "ATL",
+          "player_id": "33963",
+          "points": 19.4,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Denzel Boston",
+          "nfl_team": "CLE",
+          "player_id": "42661",
+          "points": 6.1,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "George Kittle",
+          "nfl_team": "SF",
+          "player_id": "30259",
+          "points": 20.2,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Malik Washington",
+          "nfl_team": "MIA",
+          "player_id": "41058",
+          "points": 6.1,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Jason Myers",
+          "nfl_team": "SEA",
+          "player_id": "28378",
+          "points": 9.7,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "49ers",
+          "nfl_team": "SF",
+          "player_id": "49ers",
+          "points": 1,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": "O",
+          "name": "Puka Nacua",
+          "nfl_team": "LAR",
+          "player_id": "40168",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": "O",
+          "name": "Rico Dowdle",
+          "nfl_team": "PIT",
+          "player_id": "33100",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "O",
+          "name": "Caleb Williams",
+          "nfl_team": "CHI",
+          "player_id": "40900",
+          "points": 0,
+          "pos": "QB",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kaleb Johnson",
+          "nfl_team": "GB",
+          "player_id": "41881",
+          "points": 1.6,
+          "pos": "RB",
+          "slot": null
+        }
+      ],
+      "all_play_record": "9-4",
+      "week_rank": 5
+    },
+    {
+      "team_id": "14",
+      "team": "\u2018Ster the Pot",
+      "manager": "Matthew",
+      "matchup_id": "6",
+      "points": 76.1,
+      "opponent": "THE FURY",
+      "opponent_id": "13",
+      "opponent_points": 102.65,
+      "result": "L",
+      "margin": 26.55,
+      "top_starter": {
+        "injury": "Q",
+        "name": "Josh Allen",
+        "nfl_team": "BUF",
+        "player_id": "30977",
+        "points": 18.5,
+        "pos": "QB",
+        "slot": "QB"
+      },
+      "worst_starter": {
+        "injury": null,
+        "name": "Blake Corum",
+        "nfl_team": "LAR",
+        "player_id": "40962",
+        "points": 1.5,
+        "pos": "RB",
+        "slot": "W/R/T"
+      },
+      "optimal_points": 78.3,
+      "points_left_on_bench": 2.2,
+      "lineup_efficiency": 0.9719,
+      "bench_mistakes": [
+        {
+          "benched": "Rashod Bateman",
+          "benched_points": 3.7,
+          "started": "Blake Corum",
+          "started_points": 1.5,
+          "cost": 2.2
+        },
+        {
+          "benched": "Malachi Fields",
+          "benched_points": 1.9,
+          "started": "Blake Corum",
+          "started_points": 1.5,
+          "cost": 0.4
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Rashod Bateman",
+        "benched_pos": "WR",
+        "benched_points": 3.7,
+        "started": "Blake Corum",
+        "started_slot": "W/R/T",
+        "started_points": 1.5,
+        "swing": 2.2
+      },
+      "total_after_best_swap": 78.3,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": "Q",
+          "name": "Josh Allen",
+          "nfl_team": "BUF",
+          "player_id": "30977",
+          "points": 18.5,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": "Q",
+          "name": "Breece Hall",
+          "nfl_team": "NYJ",
+          "player_id": "33991",
+          "points": 5.5,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "David Montgomery",
+          "nfl_team": "HOU",
+          "player_id": "31905",
+          "points": 4.8,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "CeeDee Lamb",
+          "nfl_team": "DAL",
+          "player_id": "32687",
+          "points": 13.2,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Chris Olave",
+          "nfl_team": "NO",
+          "player_id": "33966",
+          "points": 10.7,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Travis Kelce",
+          "nfl_team": "KC",
+          "player_id": "26686",
+          "points": 11.9,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": null,
+          "name": "Blake Corum",
+          "nfl_team": "LAR",
+          "player_id": "40962",
+          "points": 1.5,
+          "pos": "RB",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Daniel Carlson",
+          "nfl_team": "NO",
+          "player_id": "31137",
+          "points": 2,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Chiefs",
+          "nfl_team": "KC",
+          "player_id": "Chiefs",
+          "points": 8,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Tyjae Spears",
+          "nfl_team": "TEN",
+          "player_id": "40119",
+          "points": 0.5,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "IR-R",
+          "name": "Tank Dell",
+          "nfl_team": "HOU",
+          "player_id": "40097",
+          "points": 0,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Rashod Bateman",
+          "nfl_team": "BAL",
+          "player_id": "33415",
+          "points": 3.7,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Malachi Fields",
+          "nfl_team": "NYG",
+          "player_id": "42696",
+          "points": 1.9,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "3-10",
+      "week_rank": 11
+    }
+  ],
+  "facts": {
+    "highest_score": {
+      "team": "Ass in a Box",
+      "points": 111.6
+    },
+    "lowest_score": {
+      "team": "Sleeping With The Fishes",
+      "points": 54.8
+    },
+    "average_score": 89.14,
+    "closest_game": {
+      "matchup_id": "0",
+      "winner": "Canes to the Cup",
+      "winner_points": 111.1,
+      "loser": "Philly Special",
+      "loser_points": 106.05,
+      "margin": 5.05,
+      "winner_id": "6",
+      "loser_id": "10",
+      "expected_margin": -28.4,
+      "upset_size": 28.4
+    },
+    "biggest_blowout": {
+      "matchup_id": "4",
+      "winner": "Ass in a Box",
+      "winner_points": 111.6,
+      "loser": "Busta Skreen",
+      "loser_points": 76.55,
+      "margin": 35.05,
+      "winner_id": "4",
+      "loser_id": "5",
+      "expected_margin": 11.92,
+      "upset_size": -11.92
+    },
+    "unluckiest_loss": {
+      "team": "Philly Special",
+      "points": 106.05,
+      "opponent": "Canes to the Cup",
+      "opponent_points": 111.1,
+      "would_have_beaten": 11,
+      "of_other_teams": 13
+    },
+    "luckiest_win": {
+      "team": "Anchor Down",
+      "points": 73.65,
+      "opponent": "Sleeping With The Fishes",
+      "opponent_points": 54.8
+    },
+    "biggest_upset": {
+      "winner": "THE FURY",
+      "loser": "\u2018Ster the Pot",
+      "score": "102.65 to 76.1",
+      "actual_margin": 26.55,
+      "winner_season_avg": 86.53,
+      "loser_season_avg": 129.2,
+      "expected_margin_for_loser": 42.67
+    },
+    "highest_scoring_player": {
+      "player": "Jahmyr Gibbs",
+      "pos": "RB",
+      "team": "Schmul Gone Wild",
+      "points": 34.4
+    },
+    "worst_starter_league_wide": {
+      "player": "Oronde Gadsden",
+      "pos": "TE",
+      "team": "Ass in a Box",
+      "points": 0
+    },
+    "top_5_players": [
+      {
+        "player": "Jahmyr Gibbs",
+        "pos": "RB",
+        "team": "Schmul Gone Wild",
+        "points": 34.4
+      },
+      {
+        "player": "Brock Purdy",
+        "pos": "QB",
+        "team": "LT Bavaros",
+        "points": 34.25
+      },
+      {
+        "player": "Bijan Robinson",
+        "pos": "RB",
+        "team": "Gowanus Heights Hex",
+        "points": 33.3
+      },
+      {
+        "player": "Tyler Shough",
+        "pos": "QB",
+        "team": "Philly Special",
+        "points": 26.35
+      },
+      {
+        "player": "Jaxon Smith-Njigba",
+        "pos": "WR",
+        "team": "Busta Skreen",
+        "points": 25.5
+      }
+    ],
+    "biggest_bench_mistake": {
+      "team": "Canes to the Cup",
+      "benched": "Kenyon Sadiq",
+      "benched_points": 16.5,
+      "started": "Kyle Pitts Sr.",
+      "started_points": 0.5,
+      "cost": 16.0
+    },
+    "would_have_won_with_one_legal_swap": [
+      {
+        "team": "Philly Special",
+        "scored": 106.05,
+        "after_swap": 120.65,
+        "opponent": "Canes to the Cup",
+        "opponent_points": 111.1,
+        "swap": {
+          "benched": "Brock Bowers",
+          "benched_pos": "TE",
+          "benched_points": 17.6,
+          "started": "Dalton Schultz",
+          "started_slot": "TE",
+          "started_points": 3,
+          "swing": 14.6
+        }
+      }
+    ],
+    "optimal_lineup_only_note": [],
+    "bench_legends": [
+      {
+        "team": "Philly Special",
+        "manager": "Daniel Porter",
+        "benched": "Brock Bowers",
+        "benched_pos": "TE",
+        "benched_points": 17.6,
+        "started": "Dalton Schultz",
+        "started_slot": "TE",
+        "started_points": 3,
+        "swing": 14.6,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": true
+      },
+      {
+        "team": "LT Bavaros",
+        "manager": "David Kramer",
+        "benched": "Juwan Johnson",
+        "benched_pos": "TE",
+        "benched_points": 15.3,
+        "started": "Michael Pittman Jr.",
+        "started_slot": "W/R/T",
+        "started_points": 1.6,
+        "swing": 13.7,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Dread the Bred",
+        "manager": "Jared Kramer",
+        "benched": "Keaton Mitchell",
+        "benched_pos": "RB",
+        "benched_points": 10.7,
+        "started": "MarShawn Lloyd",
+        "started_slot": "RB",
+        "started_points": 1.8,
+        "swing": 8.9,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Dread the Bred",
+        "manager": "Jared Kramer",
+        "benched": "DK Metcalf",
+        "benched_pos": "WR",
+        "benched_points": 9.1,
+        "started": "Malik Nabers",
+        "started_slot": "W/R/T",
+        "started_points": 2.6,
+        "swing": 6.5,
+        "is_best_swap_for_team": false,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Sleeping With The Fishes",
+        "manager": "William",
+        "benched": "Jake Ferguson",
+        "benched_pos": "TE",
+        "benched_points": 6.3,
+        "started": "Dalton Kincaid",
+        "started_slot": "TE",
+        "started_points": 1.8,
+        "swing": 4.5,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Busta Skreen",
+        "manager": "David",
+        "benched": "Mike Washington Jr.",
+        "benched_pos": "RB",
+        "benched_points": 11.4,
+        "started": "Josh Downs",
+        "started_slot": "W/R/T",
+        "started_points": 7.7,
+        "swing": 3.7,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Busta Skreen",
+        "manager": "David",
+        "benched": "Rachaad White",
+        "benched_pos": "RB",
+        "benched_points": 10.1,
+        "started": "Josh Downs",
+        "started_slot": "W/R/T",
+        "started_points": 7.7,
+        "swing": 2.4,
+        "is_best_swap_for_team": false,
+        "flipped_the_game": false
+      },
+      {
+        "team": "Krispy",
+        "manager": "Fran",
+        "benched": "Marvin Harrison Jr.",
+        "benched_pos": "WR",
+        "benched_points": 4,
+        "started": "Tetairoa McMillan",
+        "started_slot": "WR",
+        "started_points": 1.7,
+        "swing": 2.3,
+        "is_best_swap_for_team": true,
+        "flipped_the_game": false
+      }
+    ],
+    "least_efficient_lineup": {
+      "team": "Canes to the Cup",
+      "efficiency": 0.7919
+    },
+    "standings": [
+      {
+        "losses": 0,
+        "manager": "Jonathan",
+        "name": "Canes to the Cup",
+        "points_against": 270.2,
+        "points_for": 304.3,
+        "team_id": "6",
+        "ties": 0,
+        "wins": 3,
+        "games_played": 3,
+        "rank": 1
+      },
+      {
+        "losses": 0,
+        "manager": "Ass in a Box",
+        "name": "Ass in a Box",
+        "points_against": 233.15,
+        "points_for": 288.25,
+        "team_id": "4",
+        "ties": 0,
+        "wins": 3,
+        "games_played": 3,
+        "rank": 2
+      },
+      {
+        "losses": 1,
+        "manager": "Matthew",
+        "name": "\u2018Ster the Pot",
+        "points_against": 288.55,
+        "points_for": 334.5,
+        "team_id": "14",
+        "ties": 0,
+        "wins": 2,
+        "games_played": 3,
+        "rank": 3
+      },
+      {
+        "losses": 1,
+        "manager": "Eliza",
+        "name": "Anchor Down",
+        "points_against": 275.3,
+        "points_for": 285.0,
+        "team_id": "3",
+        "ties": 0,
+        "wins": 2,
+        "games_played": 3,
+        "rank": 4
+      },
+      {
+        "losses": 1,
+        "manager": "DAVID DEROSE",
+        "name": "THE FURY",
+        "points_against": 250.4,
+        "points_for": 275.7,
+        "team_id": "13",
+        "ties": 0,
+        "wins": 2,
+        "games_played": 3,
+        "rank": 5
+      },
+      {
+        "losses": 1,
+        "manager": "Rick",
+        "name": "Schmul Gone Wild",
+        "points_against": 264.35,
+        "points_for": 273.6,
+        "team_id": "11",
+        "ties": 0,
+        "wins": 2,
+        "games_played": 3,
+        "rank": 6
+      },
+      {
+        "losses": 1,
+        "manager": "William",
+        "name": "Sleeping With The Fishes",
+        "points_against": 240.1,
+        "points_for": 246.3,
+        "team_id": "12",
+        "ties": 0,
+        "wins": 2,
+        "games_played": 3,
+        "rank": 7
+      },
+      {
+        "losses": 2,
+        "manager": "Daniel Porter",
+        "name": "Philly Special",
+        "points_against": 322.55,
+        "points_for": 356.05,
+        "team_id": "10",
+        "ties": 0,
+        "wins": 1,
+        "games_played": 3,
+        "rank": 8
+      },
+      {
+        "losses": 2,
+        "manager": "Scott",
+        "name": "1.21 Gigawatts",
+        "points_against": 279.55,
+        "points_for": 267.35,
+        "team_id": "2",
+        "ties": 0,
+        "wins": 1,
+        "games_played": 3,
+        "rank": 9
+      },
+      {
+        "losses": 2,
+        "manager": "Jared Kramer",
+        "name": "Dread the Bred",
+        "points_against": 317.6,
+        "points_for": 248.35,
+        "team_id": "7",
+        "ties": 0,
+        "wins": 1,
+        "games_played": 3,
+        "rank": 10
+      },
+      {
+        "losses": 2,
+        "manager": "Aaron",
+        "name": "Gowanus Heights Hex",
+        "points_against": 297.25,
+        "points_for": 245.15,
+        "team_id": "8",
+        "ties": 0,
+        "wins": 1,
+        "games_played": 3,
+        "rank": 11
+      },
+      {
+        "losses": 2,
+        "manager": "David",
+        "name": "Busta Skreen",
+        "points_against": 263.0,
+        "points_for": 229.35,
+        "team_id": "5",
+        "ties": 0,
+        "wins": 1,
+        "games_played": 3,
+        "rank": 12
+      },
+      {
+        "losses": 3,
+        "manager": "Fran",
+        "name": "Krispy",
+        "points_against": 297.55,
+        "points_for": 267.3,
+        "team_id": "9",
+        "ties": 0,
+        "wins": 0,
+        "games_played": 3,
+        "rank": 13
+      },
+      {
+        "losses": 3,
+        "manager": "David Kramer",
+        "name": "LT Bavaros",
+        "points_against": 276.15,
+        "points_for": 254.5,
+        "team_id": "1",
+        "ties": 0,
+        "wins": 0,
+        "games_played": 3,
+        "rank": 14
+      }
+    ],
+    "streaks": [
+      {
+        "team": "Ass in a Box",
+        "streak": "W3",
+        "kind": "W",
+        "length": 3,
+        "results": "WWW"
+      },
+      {
+        "team": "Canes to the Cup",
+        "streak": "W3",
+        "kind": "W",
+        "length": 3,
+        "results": "WWW"
+      },
+      {
+        "team": "Schmul Gone Wild",
+        "streak": "W2",
+        "kind": "W",
+        "length": 2,
+        "results": "LWW"
+      },
+      {
+        "team": "1.21 Gigawatts",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "LLW"
+      },
+      {
+        "team": "Anchor Down",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "WLW"
+      },
+      {
+        "team": "Gowanus Heights Hex",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "LLW"
+      },
+      {
+        "team": "THE FURY",
+        "streak": "W1",
+        "kind": "W",
+        "length": 1,
+        "results": "WLW"
+      },
+      {
+        "team": "LT Bavaros",
+        "streak": "L3",
+        "kind": "L",
+        "length": 3,
+        "results": "LLL"
+      },
+      {
+        "team": "Krispy",
+        "streak": "L3",
+        "kind": "L",
+        "length": 3,
+        "results": "LLL"
+      },
+      {
+        "team": "Dread the Bred",
+        "streak": "L2",
+        "kind": "L",
+        "length": 2,
+        "results": "WLL"
+      },
+      {
+        "team": "Philly Special",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "LWL"
+      },
+      {
+        "team": "\u2018Ster the Pot",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "WWL"
+      },
+      {
+        "team": "Busta Skreen",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "LWL"
+      },
+      {
+        "team": "Sleeping With The Fishes",
+        "streak": "L1",
+        "kind": "L",
+        "length": 1,
+        "results": "WWL"
+      }
+    ],
+    "record_changes": [
+      {
+        "team": "Canes to the Cup",
+        "rank": 1,
+        "previous_rank": 2,
+        "change": 1
+      },
+      {
+        "team": "Ass in a Box",
+        "rank": 2,
+        "previous_rank": 4,
+        "change": 2
+      },
+      {
+        "team": "\u2018Ster the Pot",
+        "rank": 3,
+        "previous_rank": 1,
+        "change": -2
+      },
+      {
+        "team": "Anchor Down",
+        "rank": 4,
+        "previous_rank": 6,
+        "change": 2
+      },
+      {
+        "team": "THE FURY",
+        "rank": 5,
+        "previous_rank": 8,
+        "change": 3
+      },
+      {
+        "team": "Schmul Gone Wild",
+        "rank": 6,
+        "previous_rank": 9,
+        "change": 3
+      },
+      {
+        "team": "Sleeping With The Fishes",
+        "rank": 7,
+        "previous_rank": 3,
+        "change": -4
+      },
+      {
+        "team": "Philly Special",
+        "rank": 8,
+        "previous_rank": 5,
+        "change": -3
+      },
+      {
+        "team": "1.21 Gigawatts",
+        "rank": 9,
+        "previous_rank": 12,
+        "change": 3
+      },
+      {
+        "team": "Dread the Bred",
+        "rank": 10,
+        "previous_rank": 7,
+        "change": -3
+      },
+      {
+        "team": "Gowanus Heights Hex",
+        "rank": 11,
+        "previous_rank": 14,
+        "change": 3
+      },
+      {
+        "team": "Busta Skreen",
+        "rank": 12,
+        "previous_rank": 10,
+        "change": -2
+      },
+      {
+        "team": "Krispy",
+        "rank": 13,
+        "previous_rank": 11,
+        "change": -2
+      },
+      {
+        "team": "LT Bavaros",
+        "rank": 14,
+        "previous_rank": 13,
+        "change": -1
+      }
+    ],
+    "historical": {
+      "weeks_of_history": 2,
+      "top_score_context": {
+        "team": "Ass in a Box",
+        "points": 111.6,
+        "all_time_rank": 7,
+        "is_league_record": false,
+        "last_time_higher": {
+          "season": "2026",
+          "week": 2,
+          "team": "Philly Special",
+          "points": 125.8
+        }
+      },
+      "low_score_context": {
+        "team": "Sleeping With The Fishes",
+        "points": 54.8,
+        "is_league_low": true,
+        "worse_performances_on_record": 0
+      },
+      "league_history_average": 93.85,
+      "season_or_career_highs": [
+        {
+          "team": "Canes to the Cup",
+          "points": 111.1,
+          "previous_best": 105.85
+        },
+        {
+          "team": "Schmul Gone Wild",
+          "points": 105.85,
+          "previous_best": 90.45
+        },
+        {
+          "team": "Ass in a Box",
+          "points": 111.6,
+          "previous_best": 97.35
+        },
+        {
+          "team": "Gowanus Heights Hex",
+          "points": 99.6,
+          "previous_best": 83.85
+        },
+        {
+          "team": "THE FURY",
+          "points": 102.65,
+          "previous_best": 95.55
+        }
+      ]
+    },
+    "transactions": [
+      {
+        "adds": [
+          {
+            "player": "Daniel Carlson",
+            "player_id": "31137",
+            "pos": "K",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Jason Myers",
+            "player_id": "28378",
+            "pos": "K",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": 1,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Lions",
+            "player_id": "Lions",
+            "pos": "DEF",
+            "team_id": "2",
+            "team": "1.21 Gigawatts"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Buccaneers",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "2",
+            "team": "1.21 Gigawatts"
+          }
+        ],
+        "faab_bid": 2,
+        "team_ids": [
+          "2"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "1.21 Gigawatts"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Oronde Gadsden",
+            "player_id": "41951",
+            "pos": "TE",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Cairo Santos",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "faab_bid": 4,
+        "team_ids": [
+          "4"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "Ass in a Box"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Alvin Kamara",
+            "player_id": "30180",
+            "pos": "RB",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Chris Rodriguez Jr.",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "faab_bid": 5,
+        "team_ids": [
+          "3"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "Anchor Down"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Harrison Butker",
+            "player_id": "30346",
+            "pos": "K",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Jaguars",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "faab_bid": 9,
+        "team_ids": [
+          "11"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "Schmul Gone Wild"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Vikings",
+            "player_id": "Vikings",
+            "pos": "DEF",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Jayden Reed",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "faab_bid": 9,
+        "team_ids": [
+          "11"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "Schmul Gone Wild"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "C.J. Stroud",
+            "player_id": "40030",
+            "pos": "QB",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Malachi Fields",
+            "player_id": "42696",
+            "pos": "WR",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "faab_bid": 11,
+        "team_ids": [
+          "13"
+        ],
+        "ts": 1790149080,
+        "type": "waiver",
+        "teams": [
+          "THE FURY"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Tre Tucker",
+            "player_id": "40114",
+            "pos": "WR",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Jakobi Meyers",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "5"
+        ],
+        "ts": 1790150280,
+        "type": "free_agent",
+        "teams": [
+          "Busta Skreen"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Trey Smack",
+            "player_id": "42838",
+            "pos": "K",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Cameron Dicker",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "5"
+        ],
+        "ts": 1790150340,
+        "type": "free_agent",
+        "teams": [
+          "Busta Skreen"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Bengals",
+            "player_id": "Bengals",
+            "pos": "DEF",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Cowboys",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "5"
+        ],
+        "ts": 1790150400,
+        "type": "free_agent",
+        "teams": [
+          "Busta Skreen"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Panthers",
+            "player_id": "Panthers",
+            "pos": "DEF",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Ravens",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "12"
+        ],
+        "ts": 1790173980,
+        "type": "free_agent",
+        "teams": [
+          "Sleeping With The Fishes"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Kaleb Johnson",
+            "player_id": "41881",
+            "pos": "RB",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Keaton Mitchell",
+            "player_id": "40641",
+            "pos": "RB",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "13"
+        ],
+        "ts": 1790177760,
+        "type": "free_agent",
+        "teams": [
+          "THE FURY"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Rashid Shaheed",
+            "player_id": "34659",
+            "pos": "WR",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "date": "09/23",
+        "drops": [
+          {
+            "player": "Jaxson Dart",
+            "player_id": null,
+            "pos": "QB",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "3"
+        ],
+        "ts": 1790191260,
+        "type": "free_agent",
+        "teams": [
+          "Anchor Down"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Braelon Allen",
+            "player_id": "40981",
+            "pos": "RB",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "date": "09/23",
+        "drops": [],
+        "faab_bid": null,
+        "team_ids": [
+          "12"
+        ],
+        "ts": 1790203860,
+        "type": "free_agent",
+        "teams": [
+          "Sleeping With The Fishes"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Tyquan Thornton",
+            "player_id": "34005",
+            "pos": "WR",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "date": "09/24",
+        "drops": [
+          {
+            "player": "Harrison Mevis",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "11"
+        ],
+        "ts": 1790306940,
+        "type": "free_agent",
+        "teams": [
+          "Schmul Gone Wild"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Will Reichard",
+            "player_id": "41093",
+            "pos": "K",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "date": "09/25",
+        "drops": [
+          {
+            "player": "Ray Davis",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "4"
+        ],
+        "ts": 1790346300,
+        "type": "free_agent",
+        "teams": [
+          "Ass in a Box"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Keaton Mitchell",
+            "player_id": "40641",
+            "pos": "RB",
+            "team_id": "7",
+            "team": "Dread the Bred"
+          }
+        ],
+        "date": "09/26",
+        "drops": [],
+        "faab_bid": 0,
+        "team_ids": [
+          "7"
+        ],
+        "ts": 1790407440,
+        "type": "free_agent",
+        "teams": [
+          "Dread the Bred"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Jason Myers",
+            "player_id": "28378",
+            "pos": "K",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "date": "09/26",
+        "drops": [
+          {
+            "player": "Eddy Pineiro",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "faab_bid": 0,
+        "team_ids": [
+          "13"
+        ],
+        "ts": 1790407440,
+        "type": "free_agent",
+        "teams": [
+          "THE FURY"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Keon Coleman",
+            "player_id": "40911",
+            "pos": "WR",
+            "team_id": "8",
+            "team": "Gowanus Heights Hex"
+          }
+        ],
+        "date": "09/26",
+        "drops": [
+          {
+            "player": "AJ Barner",
+            "player_id": null,
+            "pos": "TE",
+            "team_id": "8",
+            "team": "Gowanus Heights Hex"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "8"
+        ],
+        "ts": 1790414820,
+        "type": "free_agent",
+        "teams": [
+          "Gowanus Heights Hex"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Giants",
+            "player_id": "Giants",
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "date": "09/26",
+        "drops": [
+          {
+            "player": "Patriots",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "4"
+        ],
+        "ts": 1790451240,
+        "type": "free_agent",
+        "teams": [
+          "Ass in a Box"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Terrance Ferguson",
+            "player_id": null,
+            "pos": "TE",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "date": "09/26",
+        "drops": [
+          {
+            "player": "Kenny Gainwell",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "12"
+        ],
+        "ts": 1790454660,
+        "type": "free_agent",
+        "teams": [
+          "Sleeping With The Fishes"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Hunter Henry",
+            "player_id": "29269",
+            "pos": "TE",
+            "team_id": "9",
+            "team": "Krispy"
+          }
+        ],
+        "date": "09/26",
+        "drops": [],
+        "faab_bid": null,
+        "team_ids": [
+          "9"
+        ],
+        "ts": 1790456460,
+        "type": "free_agent",
+        "teams": [
+          "Krispy"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Malachi Fields",
+            "player_id": "42696",
+            "pos": "WR",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "09/26",
+        "drops": [
+          {
+            "player": "Caleb Douglas",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1790476020,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Malik Washington",
+            "player_id": "41058",
+            "pos": "WR",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "date": "09/27",
+        "drops": [
+          {
+            "player": "Adonai Mitchell",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "13"
+        ],
+        "ts": 1790525280,
+        "type": "free_agent",
+        "teams": [
+          "THE FURY"
+        ]
+      },
+      {
+        "adds": [],
+        "date": "09/27",
+        "drops": [
+          {
+            "player": "Terrance Ferguson",
+            "player_id": null,
+            "pos": "TE",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "12"
+        ],
+        "ts": 1790530860,
+        "type": "free_agent",
+        "teams": [
+          "Sleeping With The Fishes"
+        ]
+      }
+    ],
+    "trades": [],
+    "waiver_pickups": {
+      "pickups": [
+        {
+          "player": "Will Reichard",
+          "pos": "K",
+          "manager": "Ass in a Box",
+          "team": "Ass in a Box",
+          "date": "09/25",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "K",
+          "points": 17.3
+        },
+        {
+          "player": "Vikings",
+          "pos": "DEF",
+          "manager": "Rick",
+          "team": "Schmul Gone Wild",
+          "date": "09/23",
+          "faab_bid": 9,
+          "status": "started",
+          "slot": "DEF",
+          "points": 17
+        },
+        {
+          "player": "C.J. Stroud",
+          "pos": "QB",
+          "manager": "DAVID DEROSE",
+          "team": "THE FURY",
+          "date": "09/23",
+          "faab_bid": 11,
+          "status": "started",
+          "slot": "QB",
+          "points": 13.35
+        },
+        {
+          "player": "Keaton Mitchell",
+          "pos": "RB",
+          "manager": "Jared Kramer",
+          "team": "Dread the Bred",
+          "date": "09/26",
+          "faab_bid": 0,
+          "status": "benched",
+          "slot": null,
+          "points": 10.7
+        },
+        {
+          "player": "Jason Myers",
+          "pos": "K",
+          "manager": "DAVID DEROSE",
+          "team": "THE FURY",
+          "date": "09/26",
+          "faab_bid": 0,
+          "status": "started",
+          "slot": "K",
+          "points": 9.7
+        },
+        {
+          "player": "Giants",
+          "pos": "DEF",
+          "manager": "Ass in a Box",
+          "team": "Ass in a Box",
+          "date": "09/26",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 8
+        },
+        {
+          "player": "Lions",
+          "pos": "DEF",
+          "manager": "Scott",
+          "team": "1.21 Gigawatts",
+          "date": "09/23",
+          "faab_bid": 2,
+          "status": "started",
+          "slot": "DEF",
+          "points": 7
+        },
+        {
+          "player": "Harrison Butker",
+          "pos": "K",
+          "manager": "Rick",
+          "team": "Schmul Gone Wild",
+          "date": "09/23",
+          "faab_bid": 9,
+          "status": "started",
+          "slot": "K",
+          "points": 6.4
+        },
+        {
+          "player": "Malik Washington",
+          "pos": "WR",
+          "manager": "DAVID DEROSE",
+          "team": "THE FURY",
+          "date": "09/27",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "W/R/T",
+          "points": 6.1
+        },
+        {
+          "player": "Tre Tucker",
+          "pos": "WR",
+          "manager": "David",
+          "team": "Busta Skreen",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 4.3
+        },
+        {
+          "player": "Alvin Kamara",
+          "pos": "RB",
+          "manager": "Eliza",
+          "team": "Anchor Down",
+          "date": "09/23",
+          "faab_bid": 5,
+          "status": "benched",
+          "slot": null,
+          "points": 4.1
+        },
+        {
+          "player": "Panthers",
+          "pos": "DEF",
+          "manager": "William",
+          "team": "Sleeping With The Fishes",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 4
+        },
+        {
+          "player": "Keon Coleman",
+          "pos": "WR",
+          "manager": "Aaron",
+          "team": "Gowanus Heights Hex",
+          "date": "09/26",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 3.7
+        },
+        {
+          "player": "Bengals",
+          "pos": "DEF",
+          "manager": "David",
+          "team": "Busta Skreen",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 3
+        },
+        {
+          "player": "Tyquan Thornton",
+          "pos": "WR",
+          "manager": "Rick",
+          "team": "Schmul Gone Wild",
+          "date": "09/24",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 2.2
+        },
+        {
+          "player": "Daniel Carlson",
+          "pos": "K",
+          "manager": "Matthew",
+          "team": "\u2018Ster the Pot",
+          "date": "09/23",
+          "faab_bid": 1,
+          "status": "started",
+          "slot": "K",
+          "points": 2
+        },
+        {
+          "player": "Trey Smack",
+          "pos": "K",
+          "manager": "David",
+          "team": "Busta Skreen",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "K",
+          "points": 2
+        },
+        {
+          "player": "Malachi Fields",
+          "pos": "WR",
+          "manager": "Matthew",
+          "team": "\u2018Ster the Pot",
+          "date": "09/26",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 1.9
+        },
+        {
+          "player": "Braelon Allen",
+          "pos": "RB",
+          "manager": "William",
+          "team": "Sleeping With The Fishes",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 1.7
+        },
+        {
+          "player": "Kaleb Johnson",
+          "pos": "RB",
+          "manager": "DAVID DEROSE",
+          "team": "THE FURY",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 1.6
+        },
+        {
+          "player": "Rashid Shaheed",
+          "pos": "WR",
+          "manager": "Eliza",
+          "team": "Anchor Down",
+          "date": "09/23",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 1.4
+        },
+        {
+          "player": "Hunter Henry",
+          "pos": "TE",
+          "manager": "Fran",
+          "team": "Krispy",
+          "date": "09/26",
+          "faab_bid": null,
+          "status": "benched",
+          "slot": null,
+          "points": 0.5
+        },
+        {
+          "player": "Oronde Gadsden",
+          "pos": "TE",
+          "manager": "Ass in a Box",
+          "team": "Ass in a Box",
+          "date": "09/23",
+          "faab_bid": 4,
+          "status": "started",
+          "slot": "TE",
+          "points": 0
+        }
+      ],
+      "added_but_did_not_count": [
+        {
+          "player": "Terrance Ferguson",
+          "pos": "TE",
+          "manager": "William",
+          "team": "Sleeping With The Fishes",
+          "date": "09/26",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        }
+      ],
+      "best_add": {
+        "player": "Will Reichard",
+        "pos": "K",
+        "manager": "Ass in a Box",
+        "team": "Ass in a Box",
+        "date": "09/25",
+        "faab_bid": null,
+        "status": "started",
+        "slot": "K",
+        "points": 17.3
+      },
+      "worst_add": {
+        "player": "Oronde Gadsden",
+        "pos": "TE",
+        "manager": "Ass in a Box",
+        "team": "Ass in a Box",
+        "date": "09/23",
+        "faab_bid": 4,
+        "status": "started",
+        "slot": "TE",
+        "points": 0
+      },
+      "added_and_benched": [
+        {
+          "player": "Keaton Mitchell",
+          "pos": "RB",
+          "manager": "Jared Kramer",
+          "team": "Dread the Bred",
+          "date": "09/26",
+          "faab_bid": 0,
+          "status": "benched",
+          "slot": null,
+          "points": 10.7
+        }
+      ]
+    },
+    "match_summaries": [
+      {
+        "winner": "Canes to the Cup",
+        "winner_points": 111.1,
+        "loser": "Philly Special",
+        "loser_points": 106.05,
+        "margin": 5.05,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Dak Prescott",
+          "nfl_team": "DAL",
+          "player_id": "29369",
+          "points": 21.7,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Tyler Shough",
+          "nfl_team": "NO",
+          "player_id": "41825",
+          "points": 26.35,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Broncos",
+          "nfl_team": "DEN",
+          "player_id": "Broncos",
+          "points": 14,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "Schmul Gone Wild",
+        "winner_points": 105.85,
+        "loser": "LT Bavaros",
+        "loser_points": 86.35,
+        "margin": 19.5,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Jahmyr Gibbs",
+          "nfl_team": "DET",
+          "player_id": "40059",
+          "points": 34.4,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Brock Purdy",
+          "nfl_team": "SF",
+          "player_id": "34218",
+          "points": 34.25,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Vikings",
+          "nfl_team": "MIN",
+          "player_id": "Vikings",
+          "points": 17,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "1.21 Gigawatts",
+        "winner_points": 92.2,
+        "loser": "Krispy",
+        "loser_points": 80.1,
+        "margin": 12.1,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Joe Burrow",
+          "nfl_team": "CIN",
+          "player_id": "32671",
+          "points": 25.4,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Trevor Lawrence",
+          "nfl_team": "JAX",
+          "player_id": "33389",
+          "points": 21.6,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Lions",
+          "nfl_team": "DET",
+          "player_id": "Lions",
+          "points": 7,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "Anchor Down",
+        "winner_points": 73.65,
+        "loser": "Sleeping With The Fishes",
+        "loser_points": 54.8,
+        "margin": 18.85,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Derrick Henry",
+          "nfl_team": "BAL",
+          "player_id": "29279",
+          "points": 20.9,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Patrick Mahomes",
+          "nfl_team": "KC",
+          "player_id": "30123",
+          "points": 18.4,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Steelers",
+          "nfl_team": "PIT",
+          "player_id": "Steelers",
+          "points": 5,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "Ass in a Box",
+        "winner_points": 111.6,
+        "loser": "Busta Skreen",
+        "loser_points": 76.55,
+        "margin": 35.05,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Matthew Stafford",
+          "nfl_team": "LAR",
+          "player_id": "9265",
+          "points": 24.8,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Jaxon Smith-Njigba",
+          "nfl_team": "SEA",
+          "player_id": "40041",
+          "points": 25.5,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Giants",
+          "nfl_team": "NYG",
+          "player_id": "Giants",
+          "points": 8,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "Gowanus Heights Hex",
+        "winner_points": 99.6,
+        "loser": "Dread the Bred",
+        "loser_points": 71.3,
+        "margin": 28.3,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "Bijan Robinson",
+          "nfl_team": "ATL",
+          "player_id": "40055",
+          "points": 33.3,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        "loser_top_scorer": {
+          "injury": null,
+          "name": "Lamar Jackson",
+          "nfl_team": "BAL",
+          "player_id": "31002",
+          "points": 22.3,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "Texans",
+          "nfl_team": "HOU",
+          "player_id": "Texans",
+          "points": 11,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      },
+      {
+        "winner": "THE FURY",
+        "winner_points": 102.65,
+        "loser": "\u2018Ster the Pot",
+        "loser_points": 76.1,
+        "margin": 26.55,
+        "tie": false,
+        "winner_top_scorer": {
+          "injury": null,
+          "name": "George Kittle",
+          "nfl_team": "SF",
+          "player_id": "30259",
+          "points": 20.2,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        "loser_top_scorer": {
+          "injury": "Q",
+          "name": "Josh Allen",
+          "nfl_team": "BUF",
+          "player_id": "30977",
+          "points": 18.5,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        "winner_def": {
+          "injury": null,
+          "name": "49ers",
+          "nfl_team": "SF",
+          "player_id": "49ers",
+          "points": 1,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      }
+    ],
+    "studs_who_failed": {
+      "position_medians": {
+        "QB": 20.05,
+        "RB": 9.0,
+        "WR": 6.65,
+        "TE": 3.05,
+        "K": 6.7,
+        "DEF": 6.0
+      },
+      "busts": [
+        {
+          "player": "Jadarian Price",
+          "pos": "RB",
+          "nfl_team": "SEA",
+          "points": 0.2,
+          "team": "Sleeping With The Fishes",
+          "manager": "William",
+          "position_median": 9.0,
+          "pct_of_median": 2.2,
+          "injury": null
+        },
+        {
+          "player": "Kyle Pitts Sr.",
+          "pos": "TE",
+          "nfl_team": "ATL",
+          "points": 0.5,
+          "team": "Canes to the Cup",
+          "manager": "Jonathan",
+          "position_median": 3.05,
+          "pct_of_median": 16.4,
+          "injury": null
+        },
+        {
+          "player": "49ers",
+          "pos": "DEF",
+          "nfl_team": "SF",
+          "points": 1,
+          "team": "THE FURY",
+          "manager": "DAVID DEROSE",
+          "position_median": 6.0,
+          "pct_of_median": 16.7,
+          "injury": null
+        },
+        {
+          "player": "Blake Corum",
+          "pos": "RB",
+          "nfl_team": "LAR",
+          "points": 1.5,
+          "team": "\u2018Ster the Pot",
+          "manager": "Matthew",
+          "position_median": 9.0,
+          "pct_of_median": 16.7,
+          "injury": null
+        },
+        {
+          "player": "De'Von Achane",
+          "pos": "RB",
+          "nfl_team": "MIA",
+          "points": 1.7,
+          "team": "Gowanus Heights Hex",
+          "manager": "Aaron",
+          "position_median": 9.0,
+          "pct_of_median": 18.9,
+          "injury": "IR"
+        },
+        {
+          "player": "MarShawn Lloyd",
+          "pos": "RB",
+          "nfl_team": "GB",
+          "points": 1.8,
+          "team": "Dread the Bred",
+          "manager": "Jared Kramer",
+          "position_median": 9.0,
+          "pct_of_median": 20.0,
+          "injury": null
+        },
+        {
+          "player": "Michael Pittman Jr.",
+          "pos": "WR",
+          "nfl_team": "PIT",
+          "points": 1.6,
+          "team": "LT Bavaros",
+          "manager": "David Kramer",
+          "position_median": 6.65,
+          "pct_of_median": 24.1,
+          "injury": null
+        },
+        {
+          "player": "Tetairoa McMillan",
+          "pos": "WR",
+          "nfl_team": "CAR",
+          "points": 1.7,
+          "team": "Krispy",
+          "manager": "Fran",
+          "position_median": 6.65,
+          "pct_of_median": 25.6,
+          "injury": null
+        }
+      ],
+      "started_but_never_played": [
+        {
+          "player": "Oronde Gadsden",
+          "pos": "TE",
+          "nfl_team": "LAC",
+          "points": 0,
+          "team": "Ass in a Box",
+          "manager": "Ass in a Box",
+          "position_median": 3.05,
+          "pct_of_median": 0.0,
+          "injury": null
+        },
+        {
+          "player": "Eagles",
+          "pos": "DEF",
+          "nfl_team": "PHI",
+          "points": 0,
+          "team": "Dread the Bred",
+          "manager": "Jared Kramer",
+          "position_median": 6.0,
+          "pct_of_median": 0.0,
+          "injury": null
+        }
+      ]
+    },
+    "call_the_doctor": [
+      {
+        "team": "Sleeping With The Fishes",
+        "manager": "William",
+        "points": 54.8,
+        "rank": 14,
+        "of": 14,
+        "result": "L",
+        "opponent": "Anchor Down",
+        "opponent_points": 73.65,
+        "record": "2-1",
+        "reasons": [
+          "one of the week's lowest scores"
+        ]
+      },
+      {
+        "team": "Dread the Bred",
+        "manager": "Jared Kramer",
+        "points": 71.3,
+        "rank": 13,
+        "of": 14,
+        "result": "L",
+        "opponent": "Gowanus Heights Hex",
+        "opponent_points": 99.6,
+        "record": "1-2",
+        "reasons": [
+          "one of the week's lowest scores"
+        ]
+      },
+      {
+        "team": "Anchor Down",
+        "manager": "Eliza",
+        "points": 73.65,
+        "rank": 12,
+        "of": 14,
+        "result": "W",
+        "opponent": "Sleeping With The Fishes",
+        "opponent_points": 54.8,
+        "record": "2-1",
+        "reasons": [
+          "one of the week's lowest scores"
+        ]
+      },
+      {
+        "team": "LT Bavaros",
+        "manager": "David Kramer",
+        "points": 86.35,
+        "rank": 8,
+        "of": 14,
+        "result": "L",
+        "opponent": "Schmul Gone Wild",
+        "opponent_points": 105.85,
+        "record": "0-3",
+        "reasons": [
+          "record (0-3)"
+        ]
+      },
+      {
+        "team": "Krispy",
+        "manager": "Fran",
+        "points": 80.1,
+        "rank": 9,
+        "of": 14,
+        "result": "L",
+        "opponent": "1.21 Gigawatts",
+        "opponent_points": 92.2,
+        "record": "0-3",
+        "reasons": [
+          "record (0-3)"
+        ]
+      }
+    ],
+    "toilet_bowl": {
+      "team": "Sleeping With The Fishes",
+      "manager": "William",
+      "points": 54.8
+    },
+    "waiver_wire_genius": [
+      {
+        "player": "Will Reichard",
+        "pos": "K",
+        "manager": "Ass in a Box",
+        "team": "Ass in a Box",
+        "date": "09/25",
+        "faab_bid": null,
+        "status": "started",
+        "slot": "K",
+        "points": 17.3,
+        "top_3_on_roster": true,
+        "swung_the_game": false,
+        "team_result": "W",
+        "team_margin": 35.05
+      },
+      {
+        "player": "Vikings",
+        "pos": "DEF",
+        "manager": "Rick",
+        "team": "Schmul Gone Wild",
+        "date": "09/23",
+        "faab_bid": 9,
+        "status": "started",
+        "slot": "DEF",
+        "points": 17,
+        "top_3_on_roster": true,
+        "swung_the_game": false,
+        "team_result": "W",
+        "team_margin": 19.5
+      }
+    ],
+    "empty_starting_slots": []
+  },
+  "standings_source": {
+    "weeks_counted": [
+      1,
+      2,
+      3
+    ],
+    "expected_games": 3,
+    "agrees_with_api": false
+  },
+  "power_rankings": [
+    {
+      "team_id": "10",
+      "team": "Philly Special",
+      "manager": "Daniel Porter",
+      "record": "1-2",
+      "power_score": 76.7,
+      "inputs": {
+        "season_pf": 356.05,
+        "last2_avg": 115.92,
+        "win_pct": 33.33,
+        "stdev": 8.96,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 100.0,
+        "last2": 100.0,
+        "record": 33.33,
+        "consistency": 33.63
+      },
+      "rank": 1,
+      "display_score": 76.7,
+      "previous_rank": 2,
+      "movement": 1
+    },
+    {
+      "team_id": "6",
+      "team": "Canes to the Cup",
+      "manager": "Jonathan",
+      "record": "3-0",
+      "power_score": 71.87,
+      "inputs": {
+        "season_pf": 304.3,
+        "last2_avg": 108.47,
+        "win_pct": 100.0,
+        "stdev": 10.19,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 59.16,
+        "last2": 83.01,
+        "record": 100.0,
+        "consistency": 24.52
+      },
+      "rank": 2,
+      "display_score": 71.87,
+      "previous_rank": 4,
+      "movement": 2
+    },
+    {
+      "team_id": "14",
+      "team": "\u2018Ster the Pot",
+      "manager": "Matthew",
+      "record": "2-1",
+      "power_score": 67.64,
+      "inputs": {
+        "season_pf": 334.5,
+        "last2_avg": 103.25,
+        "win_pct": 66.67,
+        "stdev": 25.05,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 82.99,
+        "last2": 71.11,
+        "record": 66.67,
+        "consistency": 0.0
+      },
+      "rank": 3,
+      "display_score": 67.64,
+      "previous_rank": 1,
+      "movement": -2
+    },
+    {
+      "team_id": "4",
+      "team": "Ass in a Box",
+      "manager": "Ass in a Box",
+      "record": "3-0",
+      "power_score": 62.28,
+      "inputs": {
+        "season_pf": 288.25,
+        "last2_avg": 104.47,
+        "win_pct": 100.0,
+        "stdev": 13.22,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 46.49,
+        "last2": 73.89,
+        "record": 100.0,
+        "consistency": 2.07
+      },
+      "rank": 4,
+      "display_score": 62.28,
+      "previous_rank": 6,
+      "movement": 2
+    },
+    {
+      "team_id": "11",
+      "team": "Schmul Gone Wild",
+      "manager": "Rick",
+      "record": "2-1",
+      "power_score": 46.87,
+      "inputs": {
+        "season_pf": 273.6,
+        "last2_avg": 98.15,
+        "win_pct": 66.67,
+        "stdev": 11.67,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 34.93,
+        "last2": 59.48,
+        "record": 66.67,
+        "consistency": 13.56
+      },
+      "rank": 5,
+      "display_score": 46.87,
+      "previous_rank": 9,
+      "movement": 4
+    },
+    {
+      "team_id": "13",
+      "team": "THE FURY",
+      "manager": "DAVID DEROSE",
+      "record": "2-1",
+      "power_score": 43.72,
+      "inputs": {
+        "season_pf": 275.7,
+        "last2_avg": 90.08,
+        "win_pct": 66.67,
+        "stdev": 10.59,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 36.58,
+        "last2": 41.07,
+        "record": 66.67,
+        "consistency": 21.56
+      },
+      "rank": 6,
+      "display_score": 43.72,
+      "previous_rank": 8,
+      "movement": 2
+    },
+    {
+      "team_id": "3",
+      "team": "Anchor Down",
+      "manager": "Eliza",
+      "record": "2-1",
+      "power_score": 36.26,
+      "inputs": {
+        "season_pf": 285.0,
+        "last2_avg": 75.62,
+        "win_pct": 66.67,
+        "stdev": 27.45,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 43.92,
+        "last2": 8.1,
+        "record": 66.67,
+        "consistency": 0.0
+      },
+      "rank": 7,
+      "display_score": 36.26,
+      "previous_rank": 5,
+      "movement": -2
+    },
+    {
+      "team_id": "2",
+      "team": "1.21 Gigawatts",
+      "manager": "Scott",
+      "record": "1-2",
+      "power_score": 35.94,
+      "inputs": {
+        "season_pf": 267.35,
+        "last2_avg": 87.58,
+        "win_pct": 33.33,
+        "stdev": 4.36,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 29.99,
+        "last2": 35.37,
+        "record": 33.33,
+        "consistency": 67.7
+      },
+      "rank": 8,
+      "display_score": 35.94,
+      "previous_rank": 11,
+      "movement": 3
+    },
+    {
+      "team_id": "1",
+      "team": "LT Bavaros",
+      "manager": "David Kramer",
+      "record": "0-3",
+      "power_score": 23.71,
+      "inputs": {
+        "season_pf": 254.5,
+        "last2_avg": 87.75,
+        "win_pct": 0.0,
+        "stdev": 4.28,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 19.85,
+        "last2": 35.76,
+        "record": 0.0,
+        "consistency": 68.3
+      },
+      "rank": 9,
+      "display_score": 23.71,
+      "previous_rank": 13,
+      "movement": 4
+    },
+    {
+      "team_id": "12",
+      "team": "Sleeping With The Fishes",
+      "manager": "William",
+      "record": "2-1",
+      "power_score": 22.49,
+      "inputs": {
+        "season_pf": 246.3,
+        "last2_avg": 72.9,
+        "win_pct": 66.67,
+        "stdev": 19.69,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 13.38,
+        "last2": 1.89,
+        "record": 66.67,
+        "consistency": 0.0
+      },
+      "rank": 10,
+      "display_score": 22.49,
+      "previous_rank": 3,
+      "movement": -7
+    },
+    {
+      "team_id": "7",
+      "team": "Dread the Bred",
+      "manager": "Jared Kramer",
+      "record": "1-2",
+      "power_score": 20.6,
+      "inputs": {
+        "season_pf": 248.35,
+        "last2_avg": 77.38,
+        "win_pct": 33.33,
+        "stdev": 9.12,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 15.0,
+        "last2": 12.11,
+        "record": 33.33,
+        "consistency": 32.44
+      },
+      "rank": 11,
+      "display_score": 20.6,
+      "previous_rank": 7,
+      "movement": -4
+    },
+    {
+      "team_id": "8",
+      "team": "Gowanus Heights Hex",
+      "manager": "Aaron",
+      "record": "1-2",
+      "power_score": 18.21,
+      "inputs": {
+        "season_pf": 245.15,
+        "last2_avg": 80.65,
+        "win_pct": 33.33,
+        "stdev": 15.55,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 12.47,
+        "last2": 19.57,
+        "record": 33.33,
+        "consistency": 0.0
+      },
+      "rank": 12,
+      "display_score": 18.21,
+      "previous_rank": 14,
+      "movement": 2
+    },
+    {
+      "team_id": "5",
+      "team": "Busta Skreen",
+      "manager": "David",
+      "record": "1-2",
+      "power_score": 16.57,
+      "inputs": {
+        "season_pf": 229.35,
+        "last2_avg": 74.07,
+        "win_pct": 33.33,
+        "stdev": 3.92,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 0.0,
+        "last2": 4.56,
+        "record": 33.33,
+        "consistency": 70.96
+      },
+      "rank": 13,
+      "display_score": 16.57,
+      "previous_rank": 12,
+      "movement": -1
+    },
+    {
+      "team_id": "9",
+      "team": "Krispy",
+      "manager": "Fran",
+      "record": "0-3",
+      "power_score": 11.98,
+      "inputs": {
+        "season_pf": 267.3,
+        "last2_avg": 72.07,
+        "win_pct": 0.0,
+        "stdev": 24.95,
+        "league_avg_stdev": 13.5,
+        "weeks_counted": 3
+      },
+      "subscores": {
+        "pf": 29.95,
+        "last2": 0.0,
+        "record": 0.0,
+        "consistency": 0.0
+      },
+      "rank": 14,
+      "display_score": 11.98,
+      "previous_rank": 10,
+      "movement": -4
+    }
+  ],
+  "power_rankings_audit": "PR inputs (weights pf 0.4, last2 0.25, record 0.25, consistency 0.1; pf_mode value, consistency_mode spec)\n  Philly Special: PF 356.05 -> 100.0 | L2 115.92 -> 100.0 | win% 33.33 | stdev 8.96 -> 33.63 | = 76.7\n  Canes to the Cup: PF 304.3 -> 59.16 | L2 108.47 -> 83.01 | win% 100.0 | stdev 10.19 -> 24.52 | = 71.87\n  \u2018Ster the Pot: PF 334.5 -> 82.99 | L2 103.25 -> 71.11 | win% 66.67 | stdev 25.05 -> 0.0 | = 67.64\n  Ass in a Box: PF 288.25 -> 46.49 | L2 104.47 -> 73.89 | win% 100.0 | stdev 13.22 -> 2.07 | = 62.28\n  Schmul Gone Wild: PF 273.6 -> 34.93 | L2 98.15 -> 59.48 | win% 66.67 | stdev 11.67 -> 13.56 | = 46.87\n  THE FURY: PF 275.7 -> 36.58 | L2 90.08 -> 41.07 | win% 66.67 | stdev 10.59 -> 21.56 | = 43.72\n  Anchor Down: PF 285.0 -> 43.92 | L2 75.62 -> 8.1 | win% 66.67 | stdev 27.45 -> 0.0 | = 36.26\n  1.21 Gigawatts: PF 267.35 -> 29.99 | L2 87.58 -> 35.37 | win% 33.33 | stdev 4.36 -> 67.7 | = 35.94\n  LT Bavaros: PF 254.5 -> 19.85 | L2 87.75 -> 35.76 | win% 0.0 | stdev 4.28 -> 68.3 | = 23.71\n  Sleeping With The Fishes: PF 246.3 -> 13.38 | L2 72.9 -> 1.89 | win% 66.67 | stdev 19.69 -> 0.0 | = 22.49\n  Dread the Bred: PF 248.35 -> 15.0 | L2 77.38 -> 12.11 | win% 33.33 | stdev 9.12 -> 32.44 | = 20.6\n  Gowanus Heights Hex: PF 245.15 -> 12.47 | L2 80.65 -> 19.57 | win% 33.33 | stdev 15.55 -> 0.0 | = 18.21\n  Busta Skreen: PF 229.35 -> 0.0 | L2 74.07 -> 4.56 | win% 33.33 | stdev 3.92 -> 70.96 | = 16.57\n  Krispy: PF 267.3 -> 29.95 | L2 72.07 -> 0.0 | win% 0.0 | stdev 24.95 -> 0.0 | = 11.98",
+  "qc_audit": "QC audit - Bring It On Season 19 week 3, 2026\n  games counted: 7\n  max score: 111.6 (Ass in a Box)\n  min score: 54.8 (Sleeping With The Fishes)\n  waiver window: the week's own transactions, from the API\n  history: 2 prior weeks\n  check: 14 teams, each exactly once\n  check: 7 games\n  check: winners and margins recomputed\n  check: totals match starter sums\n  check: high 111.6, low 54.8, toilet bowl matches\n  check: bench swaps legal and single; 1 genuine flip(s): Philly Special\n  check: 28 K/DEF starters counted\n  check: power rankings 1-14, movement nets to zero\n  check: standings computed from weeks 1-3, 3 games each; differs from the live API totals, which is expected when re-running a past week\n  check: every cited number computed here; the model adds no arithmetic"
+}
