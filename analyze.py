@@ -430,7 +430,10 @@ def _studs_who_failed(scored):
             # bye week, inactive, or a late scratch. That is a lineup-management
             # story, not a star who underperformed, and writing it as "failed"
             # is the kind of claim that gets corrected in the group chat.
-            (zeros if p["points"] <= 0 else out).append(rec)
+            # Exactly zero, not "zero or less": a defense at -1.0 took the field
+            # and was bad, which is a bust. Filing it here printed "for 0.0" and
+            # gave one bad defense its own section.
+            (zeros if p["points"] == 0 else out).append(rec)
     out.sort(key=lambda x: x["pct_of_median"])
     zeros.sort(key=lambda x: x["team"])
     return {"position_medians": medians, "busts": out[:8],

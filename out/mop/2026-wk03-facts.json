@@ -4205,6 +4205,17 @@
       },
       "busts": [
         {
+          "player": "Green Bay Packers",
+          "pos": "DEF",
+          "nfl_team": "GB",
+          "points": -1.0,
+          "team": "Windsor Terror",
+          "manager": "soneal718",
+          "position_median": 4.0,
+          "pct_of_median": -25.0,
+          "injury": null
+        },
+        {
           "player": "Jadarian Price",
           "pos": "RB",
           "nfl_team": "SEA",
@@ -4280,32 +4291,9 @@
           "position_median": 12.45,
           "pct_of_median": 23.3,
           "injury": null
-        },
-        {
-          "player": "Tetairoa McMillan",
-          "pos": "WR",
-          "nfl_team": "CAR",
-          "points": 3.7,
-          "team": "Keep Devaughn Truckin",
-          "manager": "rthd20",
-          "position_median": 12.45,
-          "pct_of_median": 29.7,
-          "injury": null
         }
       ],
-      "started_but_never_played": [
-        {
-          "player": "Green Bay Packers",
-          "pos": "DEF",
-          "nfl_team": "GB",
-          "points": -1.0,
-          "team": "Windsor Terror",
-          "manager": "soneal718",
-          "position_median": 4.0,
-          "pct_of_median": -25.0,
-          "injury": null
-        }
-      ]
+      "started_but_never_played": []
     },
     "call_the_doctor": [
       {

@@ -32,6 +32,19 @@ trusted with it.
   always worth a line.
 - A player in `started_but_never_played` was on a bye, inactive, or scratched.
   That is a lineup problem, not a stud who failed. Never mix the two.
+- **Injury tags are today's status, not kickoff's.** The facts are pulled
+  days after the games, so `injury` (IR, Out, Questionable) is where the player
+  stands now. A player who scored points was active for that game; if he now
+  shows IR or Out, he got hurt in it or after it. Never say or imply a manager
+  started an injured, IR or Out player, or "knew" a Questionable one would
+  flop. The injury itself can be the line - his season may have ended on the
+  manager's roster - but do not invent how it happened.
+- **One blunder, one roast.** The week's worst decision will qualify for the
+  opener, its match summary, Bench Legends and possibly more. Roast it properly
+  once, wherever it lands hardest. Everywhere else, list it flat in a few words
+  with no new joke, or leave it out if the section does not need it. No manager
+  gets hit for the same decision more than twice in the whole write-up. Twelve
+  teams played; a recap that keeps circling back to one guy is boring.
 - Ties: "Team A (n.n) tied Team B (n.n)."
 - Records are W-L. Never append a ties column.
 - Never write "both now X-Y" unless both records are genuinely identical in
@@ -101,6 +114,21 @@ are not themselves the joke.
 
 No throat-clearing and no build-up does not mean deadpan. Get to the roast in
 the first sentence.
+
+Every sentence in the opener has a target and a verdict: who is a fraud, who
+choked, who got robbed, who should be embarrassed to show his face in the
+thread. Say it with contempt. Edgy is the bar - the people named should wince a
+little. A sentence that reports who scored what and stops is a box score line,
+however many numbers it carries, and it does not belong here. This is the kind
+of line that fails: "Team X answered with 157.34 and a perfect lineup, the
+biggest number since week 1." Accurate, and nobody laughs. Keep the number and
+add the insult. Even the shoutout is backhanded: the week's best team gets its
+credit and a knock in the same sentence.
+
+The opener is where the one-blunder rule bites hardest. A blunder that Bench
+Legends or Started A Zero will list anyway is not the opener's to spend unless
+it is the only story of the week - find the targets the lists below will not
+reach.
 
 Never open with throat-clearing - no "another wild week in MOP", no "where do
 we even start", no "buckle up", no rhetorical questions. Nothing that could

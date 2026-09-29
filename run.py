@@ -110,7 +110,8 @@ def brief(a):
         L.append("")
         L.append("STUDS WHO FAILED (played, under 50% of this week's positional median)")
         for b in sf["busts"]:
-            inj = f", {b['injury']}" if b.get("injury") else ""
+            inj = (f", {b['injury']} now - listed after the game, so he got hurt "
+                   f"in it or since; he was active at kickoff") if b.get("injury") else ""
             L.append(f"  {b['player']} ({b['pos']}, {b['team']}) {b['points']} vs "
                      f"{b['pos']} median {b['position_median']} "
                      f"= {b['pct_of_median']}%{inj}")
@@ -118,7 +119,7 @@ def brief(a):
         L.append("")
         L.append("STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)")
         for z in sf["started_but_never_played"]:
-            inj = f" [{z['injury']}]" if z.get("injury") else ""
+            inj = f" [{z['injury']} as of today, not necessarily at kickoff]" if z.get("injury") else ""
             L.append(f"  {z['team']} started {z['player']} ({z['pos']}){inj} for 0.0")
 
     if f.get("call_the_doctor"):
