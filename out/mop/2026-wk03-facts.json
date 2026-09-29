@@ -3100,6 +3100,28 @@
     "transactions": [
       {
         "type": "free_agent",
+        "date": "09/29",
+        "team_ids": [
+          "5"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "GB",
+            "player": "Green Bay Packers",
+            "pos": "DEF",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1790696657658,
+        "teams": [
+          "Windsor Terror"
+        ]
+      },
+      {
+        "type": "free_agent",
         "date": "09/27",
         "team_ids": [
           "3"

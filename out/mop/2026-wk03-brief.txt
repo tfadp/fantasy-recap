@@ -105,6 +105,7 @@ POWER RANKINGS (through this week)
 12. Proverbs 3:5-6 — 14.3 (–)   [record 1-2]
 
 MOVES
+  free_agent: dropped Green Bay Packers off Windsor Terror
   free_agent: dropped Kayshon Boutte off Based God
   free_agent: Tyreek Hill to LLTM for commish ; dropped Emari Demercado off LLTM for commish 
   free_agent: Emari Demercado to LLTM for commish ; dropped Jonathon Brooks off LLTM for commish 
