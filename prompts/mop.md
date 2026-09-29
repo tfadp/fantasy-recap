@@ -39,6 +39,10 @@ trusted with it.
   started an injured, IR or Out player, or "knew" a Questionable one would
   flop. The injury itself can be the line - his season may have ended on the
   manager's roster - but do not invent how it happened.
+- **A claim about an earlier week needs that week in the facts.** "Two
+  weeks running", "again", "second straight" and "all season" are claims of
+  fact. Make one only when the facts show the earlier week too. Otherwise keep
+  it to this week. Week 3 of this league shipped with two made-up streaks.
 - **One blunder, one roast.** The week's worst decision will qualify for the
   opener, its match summary, Bench Legends and possibly more. Roast it properly
   once, wherever it lands hardest. Everywhere else, list it flat in a few words
