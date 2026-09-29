@@ -6,6 +6,7 @@
       "platform": "sleeper",
       "league_id": "1389327808316067840",
       "display_name": "MOP",
+      "site_path": "",
       "prompt_file": "prompts/mop.md",
       "lore_file": "prompts/mop-lore.md",
       "seasons_back": 2,

@@ -3,11 +3,16 @@
 The Tuesday morning front door.
 
     ./recap                       pull, write, publish a draft, email it to you
-    ./recap approve               approve the newest week -> public URL + archive
-    ./recap approve 2026-wk03     approve a specific week
-    ./recap redo --note "..."     rewrite the newest week, steered
+    ./recap approve mop           approve MOP's newest week -> public URL + archive
+    ./recap approve yahoo 2026-wk03
+                                  approve one league's specific week
+    ./recap redo --only yahoo --note "..."
+                                  rewrite a league's newest week, steered
     ./recap facts --week 3        numbers only, no model call, nothing published
-    ./recap link                  print the link for the newest week
+    ./recap link                  print each league's link for its newest week
+
+Each league has its own page and its own link. Approving one never touches
+the other.
 
 Everything it does is also reachable through run.py / publish.py / deliver.py.
 This just spares you remembering which is which at 9am.
@@ -34,14 +39,9 @@ def sh(*args):
         sys.exit(r.returncode)
 
 
-def newest_stem():
-    stems = set()
-    for cfg in json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]:
-        for f in glob.glob(os.path.join(HERE, "out", cfg["name"], "*.md")):
-            stems.add(os.path.basename(f)[:-3])
-    if not stems:
-        sys.exit("No write-ups yet. Run ./recap first.")
-    return sorted(stems)[-1]
+def enabled():
+    return [c["name"] for c in json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]
+            if c.get("enabled")]
 
 
 def main():
@@ -61,22 +61,27 @@ def main():
         sh("deliver.py")
 
     elif cmd == "approve":
-        stem = rest[0] if rest and not rest[0].startswith("-") else newest_stem()
-        publish.promote(stem)
+        if not rest or rest[0] not in enabled():
+            sys.exit(f"Which league? ./recap approve <{'|'.join(enabled())}> [week]")
+        league = rest[0]
+        stem = rest[1] if len(rest) > 1 else publish.newest(league)
+        publish.promote(league, stem)
         link = os.environ.get("PAGES_URL", "").rstrip("/")
-        print(f"\nSend this:\n{link}/{stem}.html" if link
-              else f"\nApproved {stem}. Set PAGES_URL in .env to get the link printed.")
+        print(f"\nSend this to the {league} thread:\n{link}/{publish.page_path(league, stem)}"
+              if link else f"\nApproved {league} {stem}. Set PAGES_URL in .env to get the link printed.")
 
     elif cmd == "facts":
         sh("run.py", "--no-write", *rest)
 
     elif cmd == "link":
         import deliver
-        stem = newest_stem()
-        url, public = deliver.page_link(stem)
-        print(url or "Set PAGES_URL in .env")
-        if url and not public:
-            print("(draft - not on the archive yet)")
+        for league in enabled():
+            if league not in publish.collect():
+                continue
+            stem = publish.newest(league)
+            url, public = deliver.page_link(league, stem)
+            print(f"{league} {stem}: {url or 'Set PAGES_URL in .env'}"
+                  + ("" if public else "  (draft)"))
 
     else:
         sys.exit(__doc__)

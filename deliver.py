@@ -41,7 +41,7 @@ def latest_recaps():
         files = sorted(glob.glob(os.path.join(OUT, cfg["name"], "*.md")))
         if files:
             with open(files[-1]) as f:
-                found.append((cfg.get("display_name", cfg["name"]), f.read(), files[-1]))
+                found.append((cfg, f.read(), files[-1]))
     return found
 
 
@@ -58,7 +58,7 @@ def _sent_log():
         return {}
 
 
-def already_sent(stem, text):
+def already_sent(sent_key, text):
     """
     Keyed on the text, not just the week, so a redo mails the new version but a
     re-run of an unchanged week stays quiet.
@@ -67,12 +67,12 @@ def already_sent(stem, text):
     kickoff, and any re-run - re-mails the newest recap on disk. Which is last
     season's, and reads as though the thing fired correctly.
     """
-    return _sent_log().get(stem) == hashlib.sha256(text.encode()).hexdigest()[:16]
+    return _sent_log().get(sent_key) == hashlib.sha256(text.encode()).hexdigest()[:16]
 
 
-def mark_sent(stem, text):
+def mark_sent(sent_key, text):
     log = _sent_log()
-    log[stem] = hashlib.sha256(text.encode()).hexdigest()[:16]
+    log[sent_key] = hashlib.sha256(text.encode()).hexdigest()[:16]
     json.dump(log, open(SENT, "w"), indent=2, sort_keys=True)
 
 
@@ -150,7 +150,7 @@ def email(subject, text):
         return r.status < 300
 
 
-def page_link(stem=None):
+def page_link(league, stem=None):
     """
     The URL to paste into the thread. A week that has not been approved yet
     lives at its unguessable draft path, so this returns that instead: you get
@@ -167,10 +167,11 @@ def page_link(stem=None):
         return None, False
     base = base.rstrip("/")
     if stem is None:
-        return base + "/", True
-    if stem in publish.approved():
-        return f"{base}/{stem}.html", True
-    return f"{base}/drafts/{publish.draft_name(stem)}", False
+        d = publish.site_dir(league)
+        return f"{base}/{d + '/' if d else ''}", True
+    if publish.key(league, stem) in publish.approved():
+        return f"{base}/{publish.page_path(league, stem)}", True
+    return f"{base}/drafts/{publish.draft_name(league, stem)}", False
 
 
 def main():
@@ -184,13 +185,15 @@ def main():
     if not recaps:
         sys.exit("Nothing to deliver. Did run.py write a recap?")
 
-    for name, text, path in recaps:
+    for cfg, text, path in recaps:
+        name, league = cfg.get("display_name", cfg["name"]), cfg["name"]
         stem = stem_of(path)
-        if already_sent(stem, text) and not args.force:
+        sent_key = publish.key(league, stem)
+        if already_sent(sent_key, text) and not args.force:
             print(f"{name}: {stem} already delivered, nothing new. "
                   f"(--force to send again)")
             continue
-        link, is_public = page_link(stem)
+        link, is_public = page_link(league, stem)
         state = "" if is_public else " [DRAFT]"
 
         body = text
@@ -205,8 +208,8 @@ def main():
                 body += f"\n{'-' * 40}\nNot for the thread, for you:\n\n{audit}\n"
             if not is_public:
                 body += (f"\n{'-' * 40}\n"
-                         f"Happy with it?   ./recap approve {stem}\n"
-                         f"Want it redone?  ./recap redo --week "
+                         f"Happy with it?   ./recap approve {league} {stem}\n"
+                         f"Want it redone?  ./recap redo --only {league} --week "
                          f"{int(stem.split('-wk')[1])} --note \"...\"\n")
 
         sent, problems = [], []
@@ -231,7 +234,7 @@ def main():
         for pr in problems:
             print(f"  delivery failed, {pr}", file=sys.stderr)
         if sent:
-            mark_sent(stem, text)
+            mark_sent(sent_key, text)
         print(f"{name}: {', '.join(sent) or 'printed only'}  ({path})")
         if not sent:
             print(body)

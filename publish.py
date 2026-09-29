@@ -2,12 +2,14 @@
 """
 Builds the web page you paste into the iMessage thread.
 
-Writes docs/, which GitHub Pages serves. Each week gets a permanent URL and
-index.html always points at the newest one, so the link you send is short and
-the archive builds itself.
+Writes docs/, which GitHub Pages serves. Each league gets its own pages: two
+leagues, two group chats, two links. MOP lives at the root, where its links
+were already being sent, and every other league under its own folder.
 
-    https://<you>.github.io/fantasy-recap/            newest
-    https://<you>.github.io/fantasy-recap/2026-wk05.html
+    https://<you>.github.io/fantasy-recap/                     MOP, newest
+    https://<you>.github.io/fantasy-recap/2026-wk05.html       MOP
+    https://<you>.github.io/fantasy-recap/yahoo/               Yahoo, newest
+    https://<you>.github.io/fantasy-recap/yahoo/2026-wk05.html Yahoo
 
     python3 publish.py --artifact 2025-wk12 > page.html
         emits one week as a fragment, for hosting somewhere that supplies its
@@ -329,23 +331,17 @@ def league_block(name, recap_md, data, multi):
     return headline, "\n".join(head) + receipts
 
 
-def week_body(stem, entries):
-    blocks, league, wk, season, headline = [], None, None, None, None
-    multi = len(entries) > 1
-    for cfg, fpath in sorted(entries, key=lambda x: x[0]["name"]):
-        with open(fpath) as fh:
-            data = json.load(fh)
-        league, wk, season = data["league"], data["week"], data["season"]
-        md_path = fpath.replace("-facts.json", ".md")
-        md = open(md_path).read() if os.path.exists(md_path) else None
-        h, block = league_block(cfg.get("display_name", cfg["name"]), md, data, multi)
-        headline = headline or h
-        blocks.append(block)
-    return league, wk, season, headline, "\n".join(blocks)
+def week_body(cfg, fpath):
+    with open(fpath) as fh:
+        data = json.load(fh)
+    md_path = fpath.replace("-facts.json", ".md")
+    md = open(md_path).read() if os.path.exists(md_path) else None
+    headline, block = league_block(cfg.get("display_name", cfg["name"]), md, data, False)
+    return data["league"], data["week"], data["season"], headline, block
 
 
-def render(stem, entries, order, standalone=True):
-    league, wk, season, headline, body = week_body(stem, entries)
+def render(stem, entry, order, standalone=True):
+    league, wk, season, headline, body = week_body(*entry)
     display = headline or f"{league} Week {wk}"
     title = f"{league} Week {wk}"
     nav = "".join(f'<a href="{s}.html">Week {s.split("-wk")[1].lstrip("0")}</a>'
@@ -379,16 +375,44 @@ DRAFTS = os.path.join(DOCS, "drafts")
 DRAFT_BANNER = ""
 
 
+def leagues():
+    return json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]
+
+
+def league_cfg(name):
+    for cfg in leagues():
+        if cfg["name"] == name:
+            return cfg
+    raise SystemExit(f"no such league: {name}. have: "
+                     f"{', '.join(c['name'] for c in leagues() if c.get('enabled'))}")
+
+
+def site_dir(name):
+    """Where a league's pages live under docs/. "" is the root."""
+    return league_cfg(name).get("site_path", name)
+
+
+def page_path(name, stem):
+    d = site_dir(name)
+    return f"{d}/{stem}.html" if d else f"{stem}.html"
+
+
+def key(name, stem):
+    return f"{name}:{stem}"
+
+
 def approved():
+    """League-qualified keys, "mop:2026-wk03". Approving one league's week says
+    nothing about the other's."""
     if not os.path.exists(APPROVED):
         return []
     return json.load(open(APPROVED)).get("approved", [])
 
 
-def approve(stem):
+def approve(name, stem):
     a = approved()
-    if stem not in a:
-        a.append(stem)
+    if key(name, stem) not in a:
+        a.append(key(name, stem))
         json.dump({"approved": sorted(a)}, open(APPROVED, "w"), indent=2)
     return a
 
@@ -408,21 +432,30 @@ def _salt():
     return open(path).read().strip()
 
 
-def draft_name(stem):
-    tok = hashlib.sha256(f"{stem}:{_salt()}".encode()).hexdigest()[:12]
-    return f"{stem}-{tok}.html"
+def draft_name(name, stem):
+    # The root league keeps the token it has always had, so a MOP draft link
+    # already in someone's inbox still opens. Any other league is prefixed and
+    # salted with its name, so its drafts never collide with MOP's.
+    if not site_dir(name):
+        tok = hashlib.sha256(f"{stem}:{_salt()}".encode()).hexdigest()[:12]
+        return f"{stem}-{tok}.html"
+    tok = hashlib.sha256(f"{name}:{stem}:{_salt()}".encode()).hexdigest()[:12]
+    return f"{name}-{stem}-{tok}.html"
 
 
 def collect():
-    cfgs = json.load(open(os.path.join(HERE, "leagues.json")))["leagues"]
-    weeks = {}
-    for cfg in cfgs:
+    """{league name: {stem: (cfg, facts path)}} - one page per league per week."""
+    out = {}
+    for cfg in leagues():
+        weeks = {}
         for f in glob.glob(os.path.join(OUT, cfg["name"], "*-facts.json")):
             stem = os.path.basename(f).replace("-facts.json", "")
             # a week with no write-up yet is not a page, it is a facts dump
             if os.path.exists(os.path.join(OUT, cfg["name"], stem + ".md")):
-                weeks.setdefault(stem, []).append((cfg, f))
-    return weeks
+                weeks[stem] = (cfg, f)
+        if weeks:
+            out[cfg["name"]] = weeks
+    return out
 
 
 def _as_draft(html):
@@ -432,49 +465,58 @@ def _as_draft(html):
 
 
 def build():
-    weeks = collect()
-    if not weeks:
+    by_league = collect()
+    if not by_league:
         print("Nothing in out/ to publish (no write-ups yet).")
         return []
-    os.makedirs(DOCS, exist_ok=True)
     os.makedirs(DRAFTS, exist_ok=True)
+    done = []
 
-    ok = [s for s in sorted(weeks, reverse=True) if s in approved()]
-    pending = [s for s in sorted(weeks, reverse=True) if s not in approved()]
+    for name, weeks in by_league.items():
+        pub = os.path.join(DOCS, site_dir(name))
+        os.makedirs(pub, exist_ok=True)
+        ok = [s for s in sorted(weeks, reverse=True) if key(name, s) in approved()]
+        pending = [s for s in sorted(weeks, reverse=True) if key(name, s) not in approved()]
 
-    # Approved weeks are the public site: clean URLs, archive nav, index.
-    for stem in ok:
-        with open(os.path.join(DOCS, f"{stem}.html"), "w") as fh:
-            fh.write(render(stem, weeks[stem], ok))
-    if ok:
-        with open(os.path.join(DOCS, "index.html"), "w") as fh:
-            fh.write(open(os.path.join(DOCS, f"{ok[0]}.html")).read())
+        # Approved weeks are the league's public site: clean URLs, archive nav,
+        # its own index. The nav only ever links the same league's weeks.
+        for stem in ok:
+            with open(os.path.join(pub, f"{stem}.html"), "w") as fh:
+                fh.write(render(stem, weeks[stem], ok))
+        if ok:
+            with open(os.path.join(pub, "index.html"), "w") as fh:
+                fh.write(open(os.path.join(pub, f"{ok[0]}.html")).read())
+            print(f"{name}: published {len(ok)} approved week(s), newest is {ok[0]}")
 
-    # Pending weeks live at an unguessable path, off the archive entirely.
-    for stem in pending:
-        path = os.path.join(DRAFTS, draft_name(stem))
-        with open(path, "w") as fh:
-            fh.write(_as_draft(render(stem, weeks[stem], [])))
+        # Pending weeks live at an unguessable path, off the archive entirely.
+        for stem in pending:
+            with open(os.path.join(DRAFTS, draft_name(name, stem)), "w") as fh:
+                fh.write(_as_draft(render(stem, weeks[stem], [])))
+            print(f"{name}: DRAFT (not on the archive): drafts/{draft_name(name, stem)}")
+        done += [(name, s) for s in ok + pending]
 
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    if ok:
-        print(f"Published {len(ok)} approved week(s), newest is {ok[0]}")
-    for stem in pending:
-        print(f"DRAFT (not on the archive): drafts/{draft_name(stem)}  [{stem}]")
-    return ok + pending
+    return done
 
 
-def promote(stem):
-    """Approve a week, then rebuild so it lands on the real URL."""
-    weeks = collect()
+def promote(name, stem):
+    """Approve one league's week, then rebuild so it lands on the real URL."""
+    weeks = collect().get(name, {})
     if stem not in weeks:
-        raise SystemExit(f"no such week: {stem}. have: {', '.join(sorted(weeks))}")
-    approve(stem)
-    d = os.path.join(DRAFTS, draft_name(stem))
+        raise SystemExit(f"no such week for {name}: {stem}. have: {', '.join(sorted(weeks))}")
+    approve(name, stem)
+    d = os.path.join(DRAFTS, draft_name(name, stem))
     if os.path.exists(d):
         os.remove(d)
     build()
-    print(f"Approved {stem}. Live at {stem}.html and on the index.")
+    print(f"Approved {name} {stem}. Live at {page_path(name, stem)}.")
+
+
+def newest(name):
+    weeks = collect().get(name)
+    if not weeks:
+        raise SystemExit(f"No write-ups yet for {name}.")
+    return sorted(weeks)[-1]
 
 
 if __name__ == "__main__":
@@ -491,11 +533,15 @@ if __name__ == "__main__":
                     help="print one week as a fragment instead of building docs/")
     ap.add_argument("--approve", metavar="STEM",
                     help="promote a draft to its public URL and the archive")
+    ap.add_argument("--league", help="which league (mop, yahoo); required with "
+                                     "--approve and --artifact")
     a = ap.parse_args()
+    if (a.approve or a.artifact) and not a.league:
+        raise SystemExit("say which league: --league mop or --league yahoo")
     if a.approve:
-        promote(a.approve)
+        promote(a.league, a.approve)
     elif a.artifact:
-        w = collect()
+        w = collect().get(a.league, {})
         if a.artifact not in w:
             raise SystemExit(f"no such week: {a.artifact}. have: {', '.join(sorted(w))}")
         print(render(a.artifact, w[a.artifact], sorted(w, reverse=True), standalone=False))

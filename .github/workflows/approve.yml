@@ -4,11 +4,16 @@ name: Approve a recap
 # URL; this promotes it to the clean URL and puts it on the archive.
 #
 # Runnable from the GitHub mobile app, so approving does not require a laptop:
-#   Actions -> Approve a recap -> Run workflow -> paste the week.
+#   Actions -> Approve a recap -> Run workflow -> pick the league, paste the week.
 
 on:
   workflow_dispatch:
     inputs:
+      league:
+        description: "Which league"
+        required: true
+        type: choice
+        options: [mop, yahoo]
       week:
         description: "Week stem, e.g. 2026-wk03 (blank = newest)"
         required: false
@@ -30,29 +35,25 @@ jobs:
           DRAFT_SALT: ${{ secrets.DRAFT_SALT }}
           PAGES_URL: ${{ vars.PAGES_URL }}
         run: |
+          LEAGUE="${{ github.event.inputs.league }}"
           WEEK="${{ github.event.inputs.week }}"
           if [ -z "$WEEK" ]; then
-            WEEK=$(python3 -c "
-          import glob, json, os
-          stems = set()
-          for cfg in json.load(open('leagues.json'))['leagues']:
-              for f in glob.glob(os.path.join('out', cfg['name'], '*.md')):
-                  stems.add(os.path.basename(f)[:-3])
-          print(sorted(stems)[-1])")
+            WEEK=$(python3 -c "import publish; print(publish.newest('$LEAGUE'))")
           fi
-          echo "Approving $WEEK"
-          python3 publish.py --approve "$WEEK"
-          echo "APPROVED_WEEK=$WEEK" >> $GITHUB_ENV
+          echo "Approving $LEAGUE $WEEK"
+          python3 publish.py --league "$LEAGUE" --approve "$WEEK"
+          echo "APPROVED=$LEAGUE $WEEK" >> $GITHUB_ENV
+          echo "PAGE=$(python3 -c "import publish; print(publish.page_path('$LEAGUE', '$WEEK'))")" >> $GITHUB_ENV
 
       - name: Commit
         run: |
           git config user.name "fantasy-recap"
           git config user.email "actions@github.com"
           git add docs approved.json
-          git diff --staged --quiet || git commit -m "Approve $APPROVED_WEEK"
+          git diff --staged --quiet || git commit -m "Approve $APPROVED"
           git push
 
       - name: The link
         run: |
-          echo "### Approved $APPROVED_WEEK" >> $GITHUB_STEP_SUMMARY
-          echo "${{ vars.PAGES_URL }}/$APPROVED_WEEK.html" >> $GITHUB_STEP_SUMMARY
+          echo "### Approved $APPROVED" >> $GITHUB_STEP_SUMMARY
+          echo "${{ vars.PAGES_URL }}/$PAGE" >> $GITHUB_STEP_SUMMARY

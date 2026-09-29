@@ -116,16 +116,22 @@ you have, and emails you that link plus the finished text.
         Emails you: the draft link, then the text ready to paste.
 
 you     Read it.
-        Good      -> ./recap approve          (or the "Approve a recap"
-                                               workflow, from your phone)
-                     paste the clean URL into the thread
-        Not good  -> ./recap redo --note "lead with the Kittle zero"
+        Good      -> ./recap approve mop      (or the "Approve a recap"
+                     ./recap approve yahoo     workflow, from your phone)
+                     paste each clean URL into its own league's thread
+        Not good  -> ./recap redo --only mop --note "lead with the Kittle zero"
 ```
 
-`./recap approve` promotes the week to `docs/<season>-wk<NN>.html`, adds it to
-the archive and points `index.html` at it. Before that the week exists only at
-`docs/drafts/<season>-wk<NN>-<token>.html`, which is `noindex`, is linked from
-nowhere, and is deleted on approval. The token comes from `DRAFT_SALT`, so it
+Each league gets its own page and its own link - two leagues, two group chats.
+They are approved separately, and nothing from one ever appears on the other's
+page.
+
+`./recap approve mop` promotes MOP's week to `docs/<season>-wk<NN>.html` and
+points `docs/index.html` at it. MOP stays at the root because its links were
+already being sent. `./recap approve yahoo` does the same under `docs/yahoo/`.
+Before approval a week exists only at `docs/drafts/<season>-wk<NN>-<token>.html`
+(MOP) or `docs/drafts/yahoo-<season>-wk<NN>-<token>.html` (Yahoo), which are
+`noindex`, linked from nowhere, and deleted on approval. The token comes from `DRAFT_SALT`, so it
 is not guessable from the week number.
 
 ## Keeping the chat private
