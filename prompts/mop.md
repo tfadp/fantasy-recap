@@ -43,6 +43,10 @@ trusted with it.
   weeks running", "again", "second straight" and "all season" are claims of
   fact. Make one only when the facts show the earlier week too. Otherwise keep
   it to this week. Week 3 of this league shipped with two made-up streaks.
+- **Nothing about a player that is not in the facts.** No ages, contracts,
+  draft slots, college, career history or role ("slot receiver", "veteran").
+  If the facts package does not carry it, it does not go in. Week 4 of MOP
+  shipped calling Kalif Raymond 31; he is 32, and his age was never in the facts.
 - **One blunder, one roast.** The week's worst decision will qualify for the
   opener, its match summary, Bench Legends and possibly more. Roast it properly
   once, wherever it lands hardest. Everywhere else, list it flat in a few words
