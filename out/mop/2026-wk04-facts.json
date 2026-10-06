@@ -19,10 +19,10 @@
     {
       "matchup_id": "2",
       "winner": "LLTM for commish ",
-      "winner_points": 102.75,
+      "winner_points": 103.25,
       "loser": "All Hail the Robot Buddha",
       "loser_points": 89.52,
-      "margin": 13.23,
+      "margin": 13.73,
       "winner_id": "7",
       "loser_id": "10",
       "expected_margin": 10.13,
@@ -462,12 +462,12 @@
       "team": "LLTM for commish ",
       "manager": "yogz",
       "matchup_id": "2",
-      "points": 102.75,
+      "points": 103.25,
       "opponent": "All Hail the Robot Buddha",
       "opponent_id": "10",
       "opponent_points": 89.52,
       "result": "W",
-      "margin": 13.23,
+      "margin": 13.73,
       "top_starter": {
         "player_id": "7594",
         "name": "Chuba Hubbard",
@@ -486,9 +486,9 @@
         "points": 0.0,
         "injury": null
       },
-      "optimal_points": 126.85,
+      "optimal_points": 127.35,
       "points_left_on_bench": 24.1,
-      "lineup_efficiency": 0.81,
+      "lineup_efficiency": 0.8108,
       "bench_mistakes": [
         {
           "benched": "Brian Robinson",
@@ -528,7 +528,7 @@
         "started_points": 4.3,
         "swing": 21.4
       },
-      "total_after_best_swap": 124.15,
+      "total_after_best_swap": 124.65,
       "would_have_won": false,
       "would_have_won_optimal_lineup_only": false,
       "starters": [
@@ -610,7 +610,7 @@
           "pos": "DEF",
           "nfl_team": "GB",
           "slot": "DEF",
-          "points": 8.25,
+          "points": 8.75,
           "injury": null
         }
       ],
@@ -717,9 +717,9 @@
       "points": 89.52,
       "opponent": "LLTM for commish ",
       "opponent_id": "7",
-      "opponent_points": 102.75,
+      "opponent_points": 103.25,
       "result": "L",
-      "margin": 13.23,
+      "margin": 13.73,
       "top_starter": {
         "player_id": "7547",
         "name": "Amon-Ra St. Brown",
@@ -2575,7 +2575,7 @@
       "team": "All Hail the Robot Buddha",
       "points": 89.52
     },
-    "average_score": 118.22,
+    "average_score": 118.27,
     "closest_game": {
       "matchup_id": "6",
       "winner": "pukachew\u26a1\ufe0f",
@@ -2714,7 +2714,7 @@
         "team": "All Hail the Robot Buddha",
         "scored": 89.52,
         "optimal": 114.76,
-        "opponent_points": 102.75
+        "opponent_points": 103.25
       },
       {
         "team": "BaruchAtahAdonai M.",
@@ -2883,7 +2883,7 @@
         "wins": 3,
         "losses": 1,
         "ties": 0,
-        "points_for": 453.31,
+        "points_for": 453.81,
         "points_against": 440.34,
         "games_played": 4,
         "rank": 4
@@ -2956,7 +2956,7 @@
         "losses": 3,
         "ties": 0,
         "points_for": 409.67,
-        "points_against": 488.2,
+        "points_against": 488.7,
         "games_played": 4,
         "rank": 10
       },
@@ -3799,6 +3799,17 @@
           "points": 11.4
         },
         {
+          "player": "Green Bay Packers",
+          "pos": "DEF",
+          "manager": "yogz",
+          "team": "LLTM for commish ",
+          "date": "09/30",
+          "faab_bid": null,
+          "status": "started",
+          "slot": "DEF",
+          "points": 8.75
+        },
+        {
           "player": "Tre Tucker",
           "pos": "WR",
           "manager": "tfadp",
@@ -3819,17 +3830,6 @@
           "status": "started",
           "slot": "WR",
           "points": 8.3
-        },
-        {
-          "player": "Green Bay Packers",
-          "pos": "DEF",
-          "manager": "yogz",
-          "team": "LLTM for commish ",
-          "date": "09/30",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "DEF",
-          "points": 8.25
         },
         {
           "player": "Chicago Bears",
@@ -4084,10 +4084,10 @@
       },
       {
         "winner": "LLTM for commish ",
-        "winner_points": 102.75,
+        "winner_points": 103.25,
         "loser": "All Hail the Robot Buddha",
         "loser_points": 89.52,
-        "margin": 13.23,
+        "margin": 13.73,
         "tie": false,
         "winner_top_scorer": {
           "player_id": "7594",
@@ -4113,7 +4113,7 @@
           "pos": "DEF",
           "nfl_team": "GB",
           "slot": "DEF",
-          "points": 8.25,
+          "points": 8.75,
           "injury": null
         }
       },
@@ -4412,7 +4412,7 @@
         "of": 12,
         "result": "L",
         "opponent": "LLTM for commish ",
-        "opponent_points": 102.75,
+        "opponent_points": 103.25,
         "record": "1-3",
         "reasons": [
           "one of the week's lowest scores"
@@ -4478,7 +4478,7 @@
       4
     ],
     "expected_games": 4,
-    "agrees_with_api": true
+    "agrees_with_api": false
   },
   "power_rankings": [
     {
@@ -4549,7 +4549,7 @@
         "pf": 63.84,
         "last2": 66.42,
         "record": 75.0,
-        "consistency": 37.56
+        "consistency": 37.54
       },
       "rank": 3,
       "display_score": 64.65,
@@ -4599,7 +4599,7 @@
         "pf": 61.8,
         "last2": 60.88,
         "record": 75.0,
-        "consistency": 8.2
+        "consistency": 8.17
       },
       "rank": 5,
       "display_score": 59.51,
@@ -4624,7 +4624,7 @@
         "pf": 88.06,
         "last2": 60.86,
         "record": 25.0,
-        "consistency": 21.7
+        "consistency": 21.68
       },
       "rank": 6,
       "display_score": 58.86,
@@ -4699,7 +4699,7 @@
         "pf": 56.34,
         "last2": 43.38,
         "record": 0.0,
-        "consistency": 51.48
+        "consistency": 51.46
       },
       "rank": 9,
       "display_score": 38.53,
@@ -4711,23 +4711,23 @@
       "team": "LLTM for commish ",
       "manager": "yogz",
       "record": "3-1",
-      "power_score": 36.22,
+      "power_score": 36.47,
       "inputs": {
-        "season_pf": 453.31,
-        "last2_avg": 96.42,
+        "season_pf": 453.81,
+        "last2_avg": 96.67,
         "win_pct": 75.0,
-        "stdev": 17.84,
+        "stdev": 17.77,
         "league_avg_stdev": 16.96,
         "weeks_counted": 4
       },
       "subscores": {
-        "pf": 38.33,
-        "last2": 8.54,
+        "pf": 38.67,
+        "last2": 9.01,
         "record": 75.0,
         "consistency": 0.0
       },
       "rank": 10,
-      "display_score": 36.22,
+      "display_score": 36.47,
       "previous_rank": 6,
       "movement": -4
     },
@@ -4736,7 +4736,7 @@
       "team": "i jus went up in my Price",
       "manager": "oliverslater",
       "record": "1-3",
-      "power_score": 15.24,
+      "power_score": 15.23,
       "inputs": {
         "season_pf": 396.51,
         "last2_avg": 104.88,
@@ -4749,10 +4749,10 @@
         "pf": 0.0,
         "last2": 24.48,
         "record": 25.0,
-        "consistency": 28.66
+        "consistency": 28.63
       },
       "rank": 11,
-      "display_score": 15.24,
+      "display_score": 15.23,
       "previous_rank": 12,
       "movement": 1
     },
@@ -4774,7 +4774,7 @@
         "pf": 8.88,
         "last2": 0.0,
         "record": 25.0,
-        "consistency": 30.13
+        "consistency": 30.11
       },
       "rank": 12,
       "display_score": 12.81,
@@ -4782,6 +4782,6 @@
       "movement": -1
     }
   ],
-  "power_rankings_audit": "PR inputs (weights pf 0.4, last2 0.25, record 0.25, consistency 0.1; pf_mode value, consistency_mode spec)\n  NJIGGAS: PF 544.69 -> 100.0 | L2 141.93 -> 94.29 | win% 50.0 | stdev 17.42 -> 0.0 | = 76.07\n  Keep Devaughn Truckin: PF 530.23 -> 90.24 | L2 144.96 -> 100.0 | win% 50.0 | stdev 25.65 -> 0.0 | = 73.6\n  Kindofblue: PF 491.11 -> 63.84 | L2 127.14 -> 66.42 | win% 75.0 | stdev 10.59 -> 37.56 | = 64.65\n  Based God: PF 475.49 -> 53.3 | L2 134.03 -> 79.4 | win% 75.0 | stdev 28.39 -> 0.0 | = 59.92\n  Nice Juds: PF 488.09 -> 61.8 | L2 124.2 -> 60.88 | win% 75.0 | stdev 15.57 -> 8.2 | = 59.51\n  BaruchAtahAdonai M.: PF 527.0 -> 88.06 | L2 124.19 -> 60.86 | win% 25.0 | stdev 13.28 -> 21.7 | = 58.86\n  Olave me or Hate me\u2026: PF 517.38 -> 81.57 | L2 109.6 -> 33.37 | win% 50.0 | stdev 22.55 -> 0.0 | = 53.47\n  pukachew\u26a1\ufe0f: PF 443.14 -> 31.47 | L2 108.95 -> 32.15 | win% 75.0 | stdev 20.06 -> 0.0 | = 39.38\n  Windsor Terror: PF 479.99 -> 56.34 | L2 114.91 -> 43.38 | win% 0.0 | stdev 8.23 -> 51.48 | = 38.53\n  LLTM for commish : PF 453.31 -> 38.33 | L2 96.42 -> 8.54 | win% 75.0 | stdev 17.84 -> 0.0 | = 36.22\n  i jus went up in my Price: PF 396.51 -> 0.0 | L2 104.88 -> 24.48 | win% 25.0 | stdev 12.1 -> 28.66 | = 15.24\n  All Hail the Robot Buddha: PF 409.67 -> 8.88 | L2 91.89 -> 0.0 | win% 25.0 | stdev 11.85 -> 30.13 | = 12.81",
-  "qc_audit": "QC audit - MOP week 4, 2026\n  games counted: 6\n  max score: 174.83 (Keep Devaughn Truckin)\n  min score: 89.52 (All Hail the Robot Buddha)\n  waiver window: the week's own transactions, from the API\n  history: 31 prior weeks\n  check: 12 teams, each exactly once\n  check: 6 games\n  check: winners and margins recomputed\n  check: totals match starter sums\n  check: high 174.83, low 89.52, toilet bowl matches\n  check: bench swaps legal and single; 2 genuine flip(s): Olave me or Hate me\u2026, i jus went up in my Price\n  check: 12 K/DEF starters counted\n  check: power rankings 1-12, movement nets to zero\n  check: standings computed from weeks 1-4, 4 games each\n  check: every cited number computed here; the model adds no arithmetic"
+  "power_rankings_audit": "PR inputs (weights pf 0.4, last2 0.25, record 0.25, consistency 0.1; pf_mode value, consistency_mode spec)\n  NJIGGAS: PF 544.69 -> 100.0 | L2 141.93 -> 94.29 | win% 50.0 | stdev 17.42 -> 0.0 | = 76.07\n  Keep Devaughn Truckin: PF 530.23 -> 90.24 | L2 144.96 -> 100.0 | win% 50.0 | stdev 25.65 -> 0.0 | = 73.6\n  Kindofblue: PF 491.11 -> 63.84 | L2 127.14 -> 66.42 | win% 75.0 | stdev 10.59 -> 37.54 | = 64.65\n  Based God: PF 475.49 -> 53.3 | L2 134.03 -> 79.4 | win% 75.0 | stdev 28.39 -> 0.0 | = 59.92\n  Nice Juds: PF 488.09 -> 61.8 | L2 124.2 -> 60.88 | win% 75.0 | stdev 15.57 -> 8.17 | = 59.51\n  BaruchAtahAdonai M.: PF 527.0 -> 88.06 | L2 124.19 -> 60.86 | win% 25.0 | stdev 13.28 -> 21.68 | = 58.86\n  Olave me or Hate me\u2026: PF 517.38 -> 81.57 | L2 109.6 -> 33.37 | win% 50.0 | stdev 22.55 -> 0.0 | = 53.47\n  pukachew\u26a1\ufe0f: PF 443.14 -> 31.47 | L2 108.95 -> 32.15 | win% 75.0 | stdev 20.06 -> 0.0 | = 39.38\n  Windsor Terror: PF 479.99 -> 56.34 | L2 114.91 -> 43.38 | win% 0.0 | stdev 8.23 -> 51.46 | = 38.53\n  LLTM for commish : PF 453.81 -> 38.67 | L2 96.67 -> 9.01 | win% 75.0 | stdev 17.77 -> 0.0 | = 36.47\n  i jus went up in my Price: PF 396.51 -> 0.0 | L2 104.88 -> 24.48 | win% 25.0 | stdev 12.1 -> 28.63 | = 15.23\n  All Hail the Robot Buddha: PF 409.67 -> 8.88 | L2 91.89 -> 0.0 | win% 25.0 | stdev 11.85 -> 30.11 | = 12.81",
+  "qc_audit": "QC audit - MOP week 4, 2026\n  games counted: 6\n  max score: 174.83 (Keep Devaughn Truckin)\n  min score: 89.52 (All Hail the Robot Buddha)\n  waiver window: the week's own transactions, from the API\n  history: 31 prior weeks\n  check: 12 teams, each exactly once\n  check: 6 games\n  check: winners and margins recomputed\n  check: totals match starter sums\n  check: high 174.83, low 89.52, toilet bowl matches\n  check: bench swaps legal and single; 2 genuine flip(s): Olave me or Hate me\u2026, i jus went up in my Price\n  check: 12 K/DEF starters counted\n  check: power rankings 1-12, movement nets to zero\n  check: standings computed from weeks 1-4, 4 games each; differs from the live API totals, which is expected when re-running a past week\n  check: every cited number computed here; the model adds no arithmetic"
 }

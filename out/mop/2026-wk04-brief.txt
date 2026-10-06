@@ -2,7 +2,7 @@ MOP — 2026 Week 4
 
 SCOREBOARD
   Keep Devaughn Truckin 174.83 def. NJIGGAS 126.52  (by 48.31)
-  LLTM for commish  102.75 def. All Hail the Robot Buddha 89.52  (by 13.23)
+  LLTM for commish  103.25 def. All Hail the Robot Buddha 89.52  (by 13.73)
   Nice Juds 128.08 def. BaruchAtahAdonai M. 109.05  (by 19.03)
   Kindofblue 126.72 def. Windsor Terror 114.83  (by 11.89)
   Based God 137.87 def. Olave me or Hate me… 120.61  (by 17.26)
@@ -11,7 +11,7 @@ SCOREBOARD
 THE WEEK IN ONE GLANCE
   high: Keep Devaughn Truckin 174.83
   low:  All Hail the Robot Buddha 89.52
-  league average: 118.22
+  league average: 118.27
   closest: pukachew⚡️ over i jus went up in my Price by 6.76
   blowout: Keep Devaughn Truckin over NJIGGAS by 48.31
   upset: Keep Devaughn Truckin (118.47 avg) beat NJIGGAS (139.39 avg), 174.83 to 126.52
@@ -35,7 +35,7 @@ BENCH LEGENDS (losing teams, single legal swap only)
   Drake Maye (27.16, RobotBuddha) - would have replaced Sam Darnold (14.32) at QB, +12.84
   Malik Washington (12.0, oliverslater) - would have replaced Ladd McConkey (0.0) at WR, +12.0
   Colston Loveland (11.7, soneal718) - would have replaced Parker Washington (2.0) at FLEX, +9.7
-  NOT a flip: All Hail the Robot Buddha only clears 102.75 with a full optimal lineup (114.76), which is several swaps. Do not write this as could-have-won.
+  NOT a flip: All Hail the Robot Buddha only clears 103.25 with a full optimal lineup (114.76), which is several swaps. Do not write this as could-have-won.
   NOT a flip: BaruchAtahAdonai M. only clears 128.08 with a full optimal lineup (138.45), which is several swaps. Do not write this as could-have-won.
   NOT a flip: Windsor Terror only clears 126.72 with a full optimal lineup (127.23), which is several swaps. Do not write this as could-have-won.
 
@@ -67,13 +67,13 @@ STANDINGS
    1. Kindofblue  3-1  PF 491.11  PA 457.32  (up 2)
    2. Nice Juds  3-1  PF 488.09  PA 442.03  (up 2)
    3. Based God  3-1  PF 475.49  PA 486.62  (up 4)
-   4. LLTM for commish   3-1  PF 453.31  PA 440.34  (up 1)
+   4. LLTM for commish   3-1  PF 453.81  PA 440.34  (up 1)
    5. pukachew⚡️  3-1  PF 443.14  PA 418.48  (up 1)
    6. NJIGGAS  2-2  PF 544.69  PA 539.29  (down 5)
    7. Keep Devaughn Truckin  2-2  PF 530.23  PA 474.21  (up 2)
    8. Olave me or Hate me…  2-2  PF 517.38  PA 498.3  (down 6)
    9. BaruchAtahAdonai M.  1-3  PF 527.0  PA 528.46  (down 1)
-  10. All Hail the Robot Buddha  1-3  PF 409.67  PA 488.2
+  10. All Hail the Robot Buddha  1-3  PF 409.67  PA 488.7
   11. i jus went up in my Price  1-3  PF 396.51  PA 457.83
   12. Windsor Terror  0-4  PF 479.99  PA 525.53
 
@@ -91,9 +91,9 @@ HISTORY (31 prior weeks on record)
 WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
   1. Kyler Murray (oliverslater, 10/02) — 11.48 points (started at QB)
   2. KC Concepcion (juliansryan, 10/01, $6) — 11.4 points (benched)
-  3. Tre Tucker (tfadp, 09/30) — 8.4 points (started at FLEX)
-  4. Mack Hollins (soneal718, 10/02) — 8.3 points (started at WR)
-  5. Green Bay Packers (yogz, 09/30) — 8.25 points (started at DEF)
+  3. Green Bay Packers (yogz, 09/30) — 8.75 points (started at DEF)
+  4. Tre Tucker (tfadp, 09/30) — 8.4 points (started at FLEX)
+  5. Mack Hollins (soneal718, 10/02) — 8.3 points (started at WR)
   6. Chicago Bears (RobotBuddha, 09/30) — 6.5 points (started at DEF)
   7. Makai Lemon (xainshawty, 10/01) — 5.7 points (started at FLEX)
   8. Brycen Tremayne (yogz, 10/04) — 5.2 points (benched)
@@ -120,7 +120,7 @@ POWER RANKINGS (through this week)
 7. Olave me or Hate me… — 53.5 (↓4)   [record 2-2]
 8. pukachew⚡️ — 39.4 (↑1)   [record 3-1]
 9. Windsor Terror — 38.5 (↓2)   [record 0-4]
-10. LLTM for commish  — 36.2 (↓4)   [record 3-1]
+10. LLTM for commish  — 36.5 (↓4)   [record 3-1]
 11. i jus went up in my Price — 15.2 (↑1)   [record 1-3]
 12. All Hail the Robot Buddha — 12.8 (↓1)   [record 1-3]
 
