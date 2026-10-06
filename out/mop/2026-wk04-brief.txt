@@ -1,0 +1,148 @@
+MOP — 2026 Week 4
+
+SCOREBOARD
+  Keep Devaughn Truckin 174.83 def. NJIGGAS 126.52  (by 48.31)
+  LLTM for commish  102.75 def. All Hail the Robot Buddha 89.52  (by 13.23)
+  Nice Juds 128.08 def. BaruchAtahAdonai M. 109.05  (by 19.03)
+  Kindofblue 126.72 def. Windsor Terror 114.83  (by 11.89)
+  Based God 137.87 def. Olave me or Hate me… 120.61  (by 17.26)
+  pukachew⚡️ 97.34 def. i jus went up in my Price 90.58  (by 6.76)
+
+THE WEEK IN ONE GLANCE
+  high: Keep Devaughn Truckin 174.83
+  low:  All Hail the Robot Buddha 89.52
+  league average: 118.22
+  closest: pukachew⚡️ over i jus went up in my Price by 6.76
+  blowout: Keep Devaughn Truckin over NJIGGAS by 48.31
+  upset: Keep Devaughn Truckin (118.47 avg) beat NJIGGAS (139.39 avg), 174.83 to 126.52
+  unlucky: NJIGGAS scored 126.52 and still lost to Keep Devaughn Truckin (174.83); that score would have beaten 7 of the other 11 teams
+  lucky:   pukachew⚡️ won with just 97.34 against i jus went up in my Price's 90.58
+
+PLAYERS
+    45.2  Tetairoa McMillan (WR, Keep Devaughn Truckin)
+    41.3  CeeDee Lamb (WR, Windsor Terror)
+    36.7  Kyren Williams (RB, NJIGGAS)
+    31.3  Javonte Williams (RB, BaruchAtahAdonai M.)
+    30.9  Kenneth Walker (RB, Windsor Terror)
+  worst start: Kenyon Sadiq (TE) 0.0 for LLTM for commish 
+
+BENCH LEGENDS (losing teams, single legal swap only)
+  Kyle Monangai (28.0, zazach) - would have replaced Kalif Raymond (2.6) at FLEX, +25.4  WOULD HAVE FLIPPED THE GAME
+  Emanuel Wilson (27.0, zazach) - would have replaced Kalif Raymond (2.6) at FLEX, +24.4
+  Carnell Tate (21.5, jxllokreflo) - would have replaced Ja'Marr Chase (5.7) at WR, +15.8
+  Rome Odunze (15.4, oliverslater) - would have replaced Ladd McConkey (0.0) at WR, +15.4  WOULD HAVE FLIPPED THE GAME
+  RJ Harvey (19.3, jxllokreflo) - would have replaced Jakobi Meyers (6.3) at FLEX, +13.0
+  Drake Maye (27.16, RobotBuddha) - would have replaced Sam Darnold (14.32) at QB, +12.84
+  Malik Washington (12.0, oliverslater) - would have replaced Ladd McConkey (0.0) at WR, +12.0
+  Colston Loveland (11.7, soneal718) - would have replaced Parker Washington (2.0) at FLEX, +9.7
+  NOT a flip: All Hail the Robot Buddha only clears 102.75 with a full optimal lineup (114.76), which is several swaps. Do not write this as could-have-won.
+  NOT a flip: BaruchAtahAdonai M. only clears 128.08 with a full optimal lineup (138.45), which is several swaps. Do not write this as could-have-won.
+  NOT a flip: Windsor Terror only clears 126.72 with a full optimal lineup (127.23), which is several swaps. Do not write this as could-have-won.
+
+STUDS WHO FAILED (played, under 50% of this week's positional median)
+  Kendre Miller (RB, pukachew⚡️) 1.9 vs RB median 15.9 = 11.9%
+  Saquon Barkley (RB, i jus went up in my Price) 2.0 vs RB median 15.9 = 12.6%, Out now - listed after the game, so he got hurt in it or since; he was active at kickoff
+  Las Vegas Raiders (DEF, BaruchAtahAdonai M.) 0.75 vs DEF median 5.88 = 12.8%
+  Dalton Kincaid (TE, Olave me or Hate me…) 1.7 vs TE median 10.9 = 15.6%
+  Parker Washington (WR, Windsor Terror) 2.0 vs WR median 11.0 = 18.2%
+  Kalif Raymond (WR, Olave me or Hate me…) 2.6 vs WR median 11.0 = 23.6%
+  DJ Moore (WR, Nice Juds) 2.7 vs WR median 11.0 = 24.5%, Questionable now - listed after the game, so he got hurt in it or since; he was active at kickoff
+  Dalton Schultz (TE, pukachew⚡️) 2.9 vs TE median 10.9 = 26.6%
+
+STARTED A ZERO (bye, inactive or scratched; not a bust, a lineup problem)
+  LLTM for commish  started Kenyon Sadiq (TE) for 0.0
+  Nice Juds started Rashee Rice (WR) [Questionable as of today, not necessarily at kickoff] for 0.0
+  Windsor Terror started Isaiah Davis (RB) for 0.0
+  i jus went up in my Price started Ladd McConkey (WR) [Out as of today, not necessarily at kickoff] for 0.0
+
+CALL THE DOCTOR (bottom scorers)
+  All Hail the Robot Buddha (1-3, 89.52) - rank 12/12 this week; here for: one of the week's lowest scores
+  i jus went up in my Price (1-3, 90.58) - rank 11/12 this week; here for: one of the week's lowest scores, record (1-3)
+  pukachew⚡️ (3-1, 97.34) - rank 10/12 this week; here for: one of the week's lowest scores
+  Windsor Terror (0-4, 114.83) - rank 7/12 this week; here for: record (0-4)
+
+TOILET BOWL: All Hail the Robot Buddha 89.52
+
+STANDINGS
+   1. Kindofblue  3-1  PF 491.11  PA 457.32  (up 2)
+   2. Nice Juds  3-1  PF 488.09  PA 442.03  (up 2)
+   3. Based God  3-1  PF 475.49  PA 486.62  (up 4)
+   4. LLTM for commish   3-1  PF 453.31  PA 440.34  (up 1)
+   5. pukachew⚡️  3-1  PF 443.14  PA 418.48  (up 1)
+   6. NJIGGAS  2-2  PF 544.69  PA 539.29  (down 5)
+   7. Keep Devaughn Truckin  2-2  PF 530.23  PA 474.21  (up 2)
+   8. Olave me or Hate me…  2-2  PF 517.38  PA 498.3  (down 6)
+   9. BaruchAtahAdonai M.  1-3  PF 527.0  PA 528.46  (down 1)
+  10. All Hail the Robot Buddha  1-3  PF 409.67  PA 488.2
+  11. i jus went up in my Price  1-3  PF 396.51  PA 457.83
+  12. Windsor Terror  0-4  PF 479.99  PA 525.53
+
+STREAKS
+  Kindofblue: 2 straight wins  (WLWW)
+  Based God: 2 straight wins  (WLWW)
+  pukachew⚡️: 2 straight wins  (WLWW)
+  Windsor Terror: 4 straight losses  (LLLL)
+  All Hail the Robot Buddha: 2 straight losses  (LWLL)
+  Olave me or Hate me…: 2 straight losses  (WWLL)
+
+HISTORY (31 prior weeks on record)
+  Keep Devaughn Truckin's 174.83 is the best since Based God put up 184.65 in 2025 week 10
+
+WAIVER PICKUPS, BY POINTS SCORED THIS WEEK
+  1. Kyler Murray (oliverslater, 10/02) — 11.48 points (started at QB)
+  2. KC Concepcion (juliansryan, 10/01, $6) — 11.4 points (benched)
+  3. Tre Tucker (tfadp, 09/30) — 8.4 points (started at FLEX)
+  4. Mack Hollins (soneal718, 10/02) — 8.3 points (started at WR)
+  5. Green Bay Packers (yogz, 09/30) — 8.25 points (started at DEF)
+  6. Chicago Bears (RobotBuddha, 09/30) — 6.5 points (started at DEF)
+  7. Makai Lemon (xainshawty, 10/01) — 5.7 points (started at FLEX)
+  8. Brycen Tremayne (yogz, 10/04) — 5.2 points (benched)
+  9. Antonio Williams (yogz, 10/03) — 5.1 points (benched)
+  10. CJ Donaldson (yogz, 10/04) — 4.3 points (benched)
+  11. Buffalo Bills (bbasse3267, 09/30) — 4.0 points (started at DEF)
+  12. New York Jets (treypaulino, 10/02) — 3.5 points (started at DEF)
+  13. George Holani (yogz, 10/04) — 3.0 points (benched)
+  14. Dalton Schultz (xainshawty, 10/04) — 2.9 points (started at TE)
+  15. Sione Vaki (yogz, 10/04) — 2.7 points (benched)
+  16. Joe Mixon (xainshawty, 10/04) — 0.0 points (benched)
+  17. Alec Pierce (xainshawty, 10/02) — 0.0 points (benched)
+  18. Isaiah Davis (soneal718, 09/30) — 0.0 points (started at RB)
+  best add: Kyler Murray — 11.48 for oliverslater
+  worst add: Isaiah Davis — started at RB, 0.0 for soneal718
+
+POWER RANKINGS (through this week)
+1. NJIGGAS — 76.1 (–)   [record 2-2]
+2. Keep Devaughn Truckin — 73.6 (↑6)   [record 2-2]
+3. Kindofblue — 64.7 (↑1)   [record 3-1]
+4. Based God — 59.9 (↑6)   [record 3-1]
+5. Nice Juds — 59.5 (–)   [record 3-1]
+6. BaruchAtahAdonai M. — 58.9 (↓4)   [record 1-3]
+7. Olave me or Hate me… — 53.5 (↓4)   [record 2-2]
+8. pukachew⚡️ — 39.4 (↑1)   [record 3-1]
+9. Windsor Terror — 38.5 (↓2)   [record 0-4]
+10. LLTM for commish  — 36.2 (↓4)   [record 3-1]
+11. i jus went up in my Price — 15.2 (↑1)   [record 1-3]
+12. All Hail the Robot Buddha — 12.8 (↓1)   [record 1-3]
+
+MOVES
+  free_agent: CJ Donaldson to LLTM for commish ; dropped Brycen Tremayne off LLTM for commish 
+  free_agent: Brycen Tremayne to LLTM for commish ; dropped Pat Bryant off LLTM for commish 
+  free_agent: Sione Vaki to LLTM for commish ; dropped George Holani off LLTM for commish 
+  free_agent: George Holani to LLTM for commish ; dropped Jauan Jennings off LLTM for commish 
+  free_agent: Jauan Jennings to LLTM for commish ; dropped Antonio Williams off LLTM for commish 
+  free_agent: Joe Mixon to pukachew⚡️; dropped Los Angeles Rams off pukachew⚡️
+  free_agent: Dalton Schultz to pukachew⚡️; dropped Alec Pierce off pukachew⚡️
+  free_agent: Antonio Williams to LLTM for commish ; dropped Tank Bigsby off LLTM for commish 
+  free_agent: Tank Bigsby to LLTM for commish ; dropped Caleb Douglas off LLTM for commish 
+  free_agent: Kyler Murray to i jus went up in my Price; dropped Justin Herbert off i jus went up in my Price
+  free_agent: Mack Hollins to Windsor Terror; dropped Konata Mumpfield off Windsor Terror
+  free_agent: Alec Pierce to pukachew⚡️; dropped Rashid Shaheed off pukachew⚡️
+  free_agent: New York Jets to Nice Juds; dropped San Francisco 49ers off Nice Juds
+  free_agent: Rashid Shaheed to pukachew⚡️; dropped Terrance Ferguson off pukachew⚡️
+  waiver: Makai Lemon to pukachew⚡️; dropped Alec Pierce off pukachew⚡️
+  free_agent: Tre Tucker to Kindofblue; dropped Dallas Goedert off Kindofblue
+  free_agent: Buffalo Bills to NJIGGAS; dropped Carolina Panthers off NJIGGAS
+  free_agent: Green Bay Packers to LLTM for commish ; dropped Dalton Schultz off LLTM for commish 
+  free_agent: Chicago Bears to All Hail the Robot Buddha; dropped Philadelphia Eagles off All Hail the Robot Buddha
+  waiver $6: KC Concepcion to Based God; dropped Ryan Flournoy off Based God
+  free_agent: Isaiah Davis to Windsor Terror
