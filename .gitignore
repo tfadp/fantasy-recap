@@ -7,6 +7,9 @@ cache/
 __pycache__/
 *.pyc
 
+# local dev virtualenv (ruff etc.); the app itself is stdlib + requirements.txt
+.venv/
+
 # The voice files hold real group chat. GitHub Pages on a free account needs a
 # public repo, and your friends' messages do not belong on the public internet.
 # These live only on your machine and, for the scheduled run, in an Actions
@@ -19,3 +22,13 @@ approved.json.bak
 # would be re-processed by every scheduled run long after its week is over.
 # The week itself is preserved in history/<league>/ once it has been written.
 inbox/*.json
+
+# Footballguys is a PAID service and this repo is public. The parsed advice is
+# their copyrighted content, so it lives only on your machine (same reasoning as
+# the private chat files above). Never commit it.
+history/footballguys/
+
+# The waiver recommendation is for Dan alone and its facts file quotes the paid
+# newsletter's reasoning verbatim. Neither belongs on the public repo.
+out/*/*-waivers-facts.json
+out/*/*-waivers.md
