@@ -3014,6 +3014,50 @@
         "type": "free_agent",
         "date": "10/13",
         "team_ids": [
+          "7"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "DAL",
+            "player": "Dallas Cowboys",
+            "pos": "DEF",
+            "team_id": "7",
+            "team": "LLTM for commish "
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1791900479469,
+        "teams": [
+          "LLTM for commish "
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "10/13",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "96",
+            "player": "Aaron Rodgers",
+            "pos": "QB",
+            "team_id": "7",
+            "team": "LLTM for commish "
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1791900457468,
+        "teams": [
+          "LLTM for commish "
+        ]
+      },
+      {
+        "type": "free_agent",
+        "date": "10/13",
+        "team_ids": [
           "8"
         ],
         "adds": [],
