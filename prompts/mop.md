@@ -111,7 +111,21 @@ This is the "oh fuck, that happened" paragraph, what someone who missed the
 whole week needs in ten seconds. Lead with the single most surprising thing.
 Then two or three more, at least one genuine shoutout and at least one
 genuinely embarrassing thing, so it cuts both ways in the same breath. End on
-whichever lands harder. Every sentence carries a name and a number.
+whichever lands harder. Every sentence carries a name and one number.
+
+**Short sentences, one number each.** Twenty-five words is the ceiling for an
+opener sentence and most should be well under it. One number per sentence is
+the rule, two is the limit, and if a thought needs three it is two sentences.
+A 50-word sentence with four stats in it is a box score wearing a joke as a
+hat; the week 6 opener had five of them in a row. Cut the number that is not
+the punchline.
+
+**Leave the bookkeeping in the sections below.** Lineup efficiency ratios,
+all-play records, "best in MOP since X in week N", bench totals and waiver
+add dates are evidence for Bench Legends, Call the Doctor and the Power
+Rankings. In the opener they are ballast. One score, one margin or one record
+is enough to hang a roast on. The reader checks the numbers in the sections;
+the opener exists to tell him who to laugh at.
 
 **The opener is the funniest paragraph in the write-up, not the driest.** It is
 held to the same bar as the match summaries: at least two of its sentences land
@@ -132,6 +146,31 @@ of line that fails: "Team X answered with 157.34 and a perfect lineup, the
 biggest number since week 1." Accurate, and nobody laughs. Keep the number and
 add the insult. Even the shoutout is backhanded: the week's best team gets its
 credit and a knock in the same sentence.
+
+The roast is a comparison, not a description. The reference pool the match
+summaries draw on - sports, rap, movies, TV, whatever the chat file shows this
+league actually quotes - is open to the opener too, and the opener is where
+the best one of the week belongs. Pick the comparison the thread would
+recognise and let the number prove it. Here is the move, on a real week 6
+sentence:
+
+    Before: "Nice Juds posted 73.44 with a lineup efficiency of 1.0, which
+    means there was nothing to fix, nothing to swap, nothing alive on the
+    roster at all; treypaulino's big move was signing Najee Harris on 10/16
+    and starting him for 0.2."
+
+    After: "Nice Juds scored 73.44 with a perfect lineup. That is the worst
+    sentence in fantasy football. Trey's answer was to sign Najee Harris and
+    start him for 0.2."
+
+Same facts, half the words, and the reader knows the diagnosis is terminal.
+
+One victim gets the hardest line of the week, and the opener is where it goes.
+Decide who had the most indefensible Sunday and write the sentence you would
+be slightly nervous to post. The test for every opener line is whether the
+manager named in it would screenshot it into the thread himself, out of pride
+or out of injury. If nobody would, it is not finished. End the paragraph on
+its shortest sentence.
 
 The opener is where the one-blunder rule bites hardest. A blunder that Bench
 Legends or Started A Zero will list anyway is not the opener's to spend unless
