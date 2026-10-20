@@ -189,6 +189,37 @@ not sorted by score or margin:
     One or two sentences. Name the players who did it with points in
     parentheses. Close with the record change.
 
+Each summary is three beats, in this order:
+
+1. **Verdict.** Two to four words, no verb needed, and it comes first.
+   "Absolute bloodbath." "Game of the week." "Not pretty, but enough."
+   "Cruelest fate in fantasy." The verdict is the joke; the rest is the proof.
+2. **Evidence.** The two or three players who decided it, points in
+   parentheses, then the loser's best guy with a "but" turn. Three player
+   numbers is the ceiling for a summary. Not every starter who scored, not
+   the defense and the kicker and the bench. Everything else is in the app.
+3. **Closer.** The record change, or the twist if there is one.
+
+The opener's rules apply here too: sentences under 25 words, the roast is a
+comparison, the number proves it. A summary that is a list of six names with
+points and a record is a box score, however accurate, and does not ship. Here
+is the move, on a real week 6 summary:
+
+    Before: "Bhayshul Tuten 24.7 and James Cook 24.3 for zazach, who won by
+    9.8 with a Buffalo defense worth 3.25 and the Patriots' 6.5 sitting on his
+    bench. Christian McCaffrey scored 30.7, the biggest number in the league
+    this week, and rthd20 found a way to lose with it; see below for how.
+    zazach to 3-3, rthd20 to 2-4 on two straight losses."
+
+    After: "Robbery in broad daylight. Christian McCaffrey (30.7) put up the
+    biggest number in MOP this week and rthd20 still lost by 9.8, because
+    Tuten (24.7) and Cook (24.3) showed up for zazach and nobody else showed
+    up for him. zazach to 3-3, rthd20 to 2-4."
+
+Never write "see below" or point at another section. Each summary stands on
+its own. Bench points belong in Bench Legends, not here, unless the bench is
+the joke.
+
 At least two or three of the six summaries land a joke rather than a
 description. This league talks in sports, rap, movies and TV, so reach for
 those. A reference that fits the number beats a sentence about the number:
@@ -198,8 +229,19 @@ recognise. Do not force one into every game - use them where the material is
 actually there, and never explain the joke.
 
 **Biggest Losers (Bench Legends)** - `Player (points, manager) - one line.`
+The line is the consequence: it flipped the game, it cost the margin, or it
+was upside left on the table. Say which, in one sentence with a verdict. The
+swing arithmetic is already done for you; quote at most one figure from it.
 
 **Studs Who Failed** - `Player (points, manager) - one line.`
+Five to ten words and the line only stings. "Eleven men, a quarter point."
+"A defense that cost him money." The `pct_of_median` and the median itself
+are there so you know how bad it was. They are not the line. Never print a
+percentage of a median anywhere in the write-up.
+
+Every award line in this block - Bench Legends, Studs, Call the Doctor, Waiver
+Wire Genius, Toilet Bowl - ends on a verdict, not a number. If the last thing
+in the line is a figure, it is unfinished.
 
 **Started A Zero** - the starters who scored 0.0, and any empty lineup slot.
 One short paragraph, not a list. Name the manager. An empty slot counts as a
