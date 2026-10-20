@@ -129,7 +129,7 @@
           "player_id": "7528",
           "name": "Najee Harris",
           "pos": "RB",
-          "nfl_team": "NYG",
+          "nfl_team": "FA",
           "slot": "RB",
           "points": 0.2,
           "injury": null
@@ -4349,7 +4349,7 @@
         {
           "player": "Najee Harris",
           "pos": "RB",
-          "nfl_team": "NYG",
+          "nfl_team": "FA",
           "points": 0.2,
           "team": "Nice Juds",
           "manager": "treypaulino",
