@@ -111,7 +111,21 @@ This is the "oh fuck, that happened" paragraph, what someone who missed the
 whole week needs in ten seconds. Lead with the single most surprising thing.
 Then two or three more, at least one genuine shoutout and at least one
 genuinely embarrassing thing, so it cuts both ways in the same breath. End on
-whichever lands harder. Every sentence carries a name and a number.
+whichever lands harder. Every sentence carries a name and one number.
+
+**Short sentences, one number each.** Twenty-five words is the ceiling for an
+opener sentence and most should be well under it. One number per sentence is
+the rule, two is the limit, and if a thought needs three it is two sentences.
+A 50-word sentence with four stats in it is a box score wearing a joke as a
+hat; the week 6 opener had five of them in a row. Cut the number that is not
+the punchline.
+
+**Leave the bookkeeping in the sections below.** Lineup efficiency ratios,
+all-play records, "best in MOP since X in week N", bench totals and waiver
+add dates are evidence for Bench Legends, Call the Doctor and the Power
+Rankings. In the opener they are ballast. One score, one margin or one record
+is enough to hang a roast on. The reader checks the numbers in the sections;
+the opener exists to tell him who to laugh at.
 
 **The opener is the funniest paragraph in the write-up, not the driest.** It is
 held to the same bar as the match summaries: at least two of its sentences land
@@ -133,6 +147,31 @@ biggest number since week 1." Accurate, and nobody laughs. Keep the number and
 add the insult. Even the shoutout is backhanded: the week's best team gets its
 credit and a knock in the same sentence.
 
+The roast is a comparison, not a description. The reference pool the match
+summaries draw on - sports, rap, movies, TV, whatever the chat file shows this
+league actually quotes - is open to the opener too, and the opener is where
+the best one of the week belongs. Pick the comparison the thread would
+recognise and let the number prove it. Here is the move, on a real week 6
+sentence:
+
+    Before: "Nice Juds posted 73.44 with a lineup efficiency of 1.0, which
+    means there was nothing to fix, nothing to swap, nothing alive on the
+    roster at all; treypaulino's big move was signing Najee Harris on 10/16
+    and starting him for 0.2."
+
+    After: "Nice Juds scored 73.44 with a perfect lineup. That is the worst
+    sentence in fantasy football. Trey's answer was to sign Najee Harris and
+    start him for 0.2."
+
+Same facts, half the words, and the reader knows the diagnosis is terminal.
+
+One victim gets the hardest line of the week, and the opener is where it goes.
+Decide who had the most indefensible Sunday and write the sentence you would
+be slightly nervous to post. The test for every opener line is whether the
+manager named in it would screenshot it into the thread himself, out of pride
+or out of injury. If nobody would, it is not finished. End the paragraph on
+its shortest sentence.
+
 The opener is where the one-blunder rule bites hardest. A blunder that Bench
 Legends or Started A Zero will list anyway is not the opener's to spend unless
 it is the only story of the week - find the targets the lists below will not
@@ -150,6 +189,37 @@ not sorted by score or margin:
     One or two sentences. Name the players who did it with points in
     parentheses. Close with the record change.
 
+Each summary is three beats, in this order:
+
+1. **Verdict.** Two to four words, no verb needed, and it comes first.
+   "Absolute bloodbath." "Game of the week." "Not pretty, but enough."
+   "Cruelest fate in fantasy." The verdict is the joke; the rest is the proof.
+2. **Evidence.** The two or three players who decided it, points in
+   parentheses, then the loser's best guy with a "but" turn. Three player
+   numbers is the ceiling for a summary. Not every starter who scored, not
+   the defense and the kicker and the bench. Everything else is in the app.
+3. **Closer.** The record change, or the twist if there is one.
+
+The opener's rules apply here too: sentences under 25 words, the roast is a
+comparison, the number proves it. A summary that is a list of six names with
+points and a record is a box score, however accurate, and does not ship. Here
+is the move, on a real week 6 summary:
+
+    Before: "Bhayshul Tuten 24.7 and James Cook 24.3 for zazach, who won by
+    9.8 with a Buffalo defense worth 3.25 and the Patriots' 6.5 sitting on his
+    bench. Christian McCaffrey scored 30.7, the biggest number in the league
+    this week, and rthd20 found a way to lose with it; see below for how.
+    zazach to 3-3, rthd20 to 2-4 on two straight losses."
+
+    After: "Robbery in broad daylight. Christian McCaffrey (30.7) put up the
+    biggest number in MOP this week and rthd20 still lost by 9.8, because
+    Tuten (24.7) and Cook (24.3) showed up for zazach and nobody else showed
+    up for him. zazach to 3-3, rthd20 to 2-4."
+
+Never write "see below" or point at another section. Each summary stands on
+its own. Bench points belong in Bench Legends, not here, unless the bench is
+the joke.
+
 At least two or three of the six summaries land a joke rather than a
 description. This league talks in sports, rap, movies and TV, so reach for
 those. A reference that fits the number beats a sentence about the number:
@@ -159,8 +229,19 @@ recognise. Do not force one into every game - use them where the material is
 actually there, and never explain the joke.
 
 **Biggest Losers (Bench Legends)** - `Player (points, manager) - one line.`
+The line is the consequence: it flipped the game, it cost the margin, or it
+was upside left on the table. Say which, in one sentence with a verdict. The
+swing arithmetic is already done for you; quote at most one figure from it.
 
 **Studs Who Failed** - `Player (points, manager) - one line.`
+Five to ten words and the line only stings. "Eleven men, a quarter point."
+"A defense that cost him money." The `pct_of_median` and the median itself
+are there so you know how bad it was. They are not the line. Never print a
+percentage of a median anywhere in the write-up.
+
+Every award line in this block - Bench Legends, Studs, Call the Doctor, Waiver
+Wire Genius, Toilet Bowl - ends on a verdict, not a number. If the last thing
+in the line is a figure, it is unfinished.
 
 **Started A Zero** - the starters who scored 0.0, and any empty lineup slot.
 One short paragraph, not a list. Name the manager. An empty slot counts as a

@@ -146,7 +146,9 @@ Dan's changes, which override Parts 1-3 above where they conflict:
    "oh fuck, that happened" paragraph. Leads with the single most surprising
    thing, carries at least one shoutout and one embarrassment, every sentence
    with a number and a name. No throat-clearing, and nothing that would survive
-   being pasted into a different week.
+   being pasted into a different week. Short sentences, one number each; the
+   league's reference pool is open to it; one victim gets the week's hardest
+   line here. Added after week 6, whose opener was accurate, long and tame.
 2. **Player names bold**, everywhere, every section. Players, defenses and
    kickers only, never teams and never manager handles. This is the sole piece
    of markdown in the write-up. The web page renders it; `deliver.py` strips it
