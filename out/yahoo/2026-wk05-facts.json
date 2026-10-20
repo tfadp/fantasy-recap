@@ -102,7 +102,7 @@
       "result": "L",
       "margin": 44.35,
       "top_starter": {
-        "injury": null,
+        "injury": "O",
         "name": "Davante Adams",
         "nfl_team": "LAR",
         "player_id": "27581",
@@ -179,7 +179,7 @@
           "slot": "RB"
         },
         {
-          "injury": null,
+          "injury": "O",
           "name": "Davante Adams",
           "nfl_team": "LAR",
           "player_id": "27581",
@@ -206,8 +206,8 @@
           "slot": "TE"
         },
         {
-          "injury": null,
-          "name": "Jacory Croskey-Merritt",
+          "injury": "IR",
+          "name": "J. Croskey-Merritt",
           "nfl_team": "WAS",
           "player_id": "42010",
           "points": 14.2,
@@ -271,7 +271,7 @@
           "slot": null
         },
         {
-          "injury": "IR",
+          "injury": "Q",
           "name": "A.J. Brown",
           "nfl_team": "NE",
           "player_id": "31883",
@@ -377,7 +377,7 @@
           "slot": "RB"
         },
         {
-          "injury": "Q",
+          "injury": null,
           "name": "TreVeyon Henderson",
           "nfl_team": "NE",
           "player_id": "41823",
@@ -644,7 +644,7 @@
           "slot": null
         },
         {
-          "injury": null,
+          "injury": "D",
           "name": "Terry McLaurin",
           "nfl_team": "WAS",
           "player_id": "31908",
@@ -662,7 +662,7 @@
           "slot": null
         },
         {
-          "injury": "CEL",
+          "injury": null,
           "name": "Josh Jacobs",
           "nfl_team": "GB",
           "player_id": "31856",
@@ -671,7 +671,7 @@
           "slot": null
         },
         {
-          "injury": "IR",
+          "injury": "IR-R",
           "name": "Jordan Mason",
           "nfl_team": "MIN",
           "player_id": "34320",
@@ -756,7 +756,7 @@
           "slot": "RB"
         },
         {
-          "injury": "Q",
+          "injury": "O",
           "name": "Quinshon Judkins",
           "nfl_team": "CLE",
           "player_id": "41821",
@@ -765,7 +765,7 @@
           "slot": "RB"
         },
         {
-          "injury": "Q",
+          "injury": null,
           "name": "Jaxon Smith-Njigba",
           "nfl_team": "SEA",
           "player_id": "40041",
@@ -1016,7 +1016,7 @@
           "slot": null
         },
         {
-          "injury": "O",
+          "injury": null,
           "name": "Quentin Johnston",
           "nfl_team": "LAC",
           "player_id": "40051",
@@ -1034,7 +1034,7 @@
           "slot": null
         },
         {
-          "injury": "IR",
+          "injury": null,
           "name": "Ja'Kobi Lane",
           "nfl_team": "BAL",
           "player_id": "42702",
@@ -1193,7 +1193,7 @@
           "slot": null
         },
         {
-          "injury": "O",
+          "injury": null,
           "name": "DeVonta Smith",
           "nfl_team": "PHI",
           "player_id": "33398",
@@ -1211,7 +1211,7 @@
           "slot": null
         },
         {
-          "injury": "D",
+          "injury": "IR",
           "name": "Will Shipley",
           "nfl_team": "PHI",
           "player_id": "41002",
@@ -1301,7 +1301,7 @@
       "would_have_won_optimal_lineup_only": false,
       "starters": [
         {
-          "injury": null,
+          "injury": "IR",
           "name": "Jalen Hurts",
           "nfl_team": "PHI",
           "player_id": "32723",
@@ -1393,7 +1393,7 @@
           "slot": null
         },
         {
-          "injury": "O",
+          "injury": "Q",
           "name": "Jordan Addison",
           "nfl_team": "MIN",
           "player_id": "40042",
@@ -1453,7 +1453,7 @@
         "slot": "RB"
       },
       "worst_starter": {
-        "injury": "D",
+        "injury": "O",
         "name": "Tre' Harris",
         "nfl_team": "LAC",
         "player_id": "41840",
@@ -1532,7 +1532,7 @@
           "slot": "WR"
         },
         {
-          "injury": null,
+          "injury": "O",
           "name": "Tyler Warren",
           "nfl_team": "IND",
           "player_id": "41799",
@@ -1541,7 +1541,7 @@
           "slot": "TE"
         },
         {
-          "injury": "D",
+          "injury": "O",
           "name": "Tre' Harris",
           "nfl_team": "LAC",
           "player_id": "41840",
@@ -1571,7 +1571,7 @@
       "bench": [
         {
           "injury": null,
-          "name": "Brian Robinson",
+          "name": "Brian Robinson Jr.",
           "nfl_team": "ATL",
           "player_id": "34054",
           "points": 1.6,
@@ -1588,7 +1588,7 @@
           "slot": null
         },
         {
-          "injury": "Q",
+          "injury": null,
           "name": "Jalen Coker",
           "nfl_team": "CAR",
           "player_id": "41293",
@@ -1608,6 +1608,190 @@
       ],
       "all_play_record": "10-3",
       "week_rank": 4
+    },
+    {
+      "team_id": "6",
+      "team": "Canes to the Cup",
+      "manager": "Jonathan",
+      "matchup_id": "4",
+      "points": 75.15,
+      "opponent": "THE FURY",
+      "opponent_id": "13",
+      "opponent_points": 133.05,
+      "result": "L",
+      "margin": 57.9,
+      "top_starter": {
+        "injury": null,
+        "name": "Garrett Wilson",
+        "nfl_team": "NYJ",
+        "player_id": "33965",
+        "points": 16.4,
+        "pos": "WR",
+        "slot": "WR"
+      },
+      "worst_starter": {
+        "injury": "IR",
+        "name": "Romeo Doubs",
+        "nfl_team": "NE",
+        "player_id": "34088",
+        "points": 1.6,
+        "pos": "WR",
+        "slot": "W/R/T"
+      },
+      "optimal_points": 100.7,
+      "points_left_on_bench": 25.55,
+      "lineup_efficiency": 0.7463,
+      "bench_mistakes": [
+        {
+          "benched": "Mike Evans",
+          "benched_points": 19.3,
+          "started": "Romeo Doubs",
+          "started_points": 1.6,
+          "cost": 17.7
+        },
+        {
+          "benched": "Emeka Egbuka",
+          "benched_points": 11.2,
+          "started": "Romeo Doubs",
+          "started_points": 1.6,
+          "cost": 9.6
+        }
+      ],
+      "best_legal_swap": {
+        "benched": "Mike Evans",
+        "benched_pos": "WR",
+        "benched_points": 19.3,
+        "started": "Romeo Doubs",
+        "started_slot": "W/R/T",
+        "started_points": 1.6,
+        "swing": 17.7
+      },
+      "total_after_best_swap": 92.85,
+      "would_have_won": false,
+      "would_have_won_optimal_lineup_only": false,
+      "starters": [
+        {
+          "injury": null,
+          "name": "Dak Prescott",
+          "nfl_team": "DAL",
+          "player_id": "29369",
+          "points": 15.8,
+          "pos": "QB",
+          "slot": "QB"
+        },
+        {
+          "injury": "O",
+          "name": "Jeremiyah Love",
+          "nfl_team": "ARI",
+          "player_id": "42625",
+          "points": 2.2,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Woody Marks",
+          "nfl_team": "HOU",
+          "player_id": "41902",
+          "points": 8.5,
+          "pos": "RB",
+          "slot": "RB"
+        },
+        {
+          "injury": null,
+          "name": "Garrett Wilson",
+          "nfl_team": "NYJ",
+          "player_id": "33965",
+          "points": 16.4,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Michael Wilson",
+          "nfl_team": "ARI",
+          "player_id": "40121",
+          "points": 3.35,
+          "pos": "WR",
+          "slot": "WR"
+        },
+        {
+          "injury": null,
+          "name": "Kyle Pitts Sr.",
+          "nfl_team": "ATL",
+          "player_id": "33392",
+          "points": 10.2,
+          "pos": "TE",
+          "slot": "TE"
+        },
+        {
+          "injury": "IR",
+          "name": "Romeo Doubs",
+          "nfl_team": "NE",
+          "player_id": "34088",
+          "points": 1.6,
+          "pos": "WR",
+          "slot": "W/R/T"
+        },
+        {
+          "injury": null,
+          "name": "Brandon Aubrey",
+          "nfl_team": "DAL",
+          "player_id": "40819",
+          "points": 5.1,
+          "pos": "K",
+          "slot": "K"
+        },
+        {
+          "injury": null,
+          "name": "Broncos",
+          "nfl_team": "DEN",
+          "player_id": "Broncos",
+          "points": 12,
+          "pos": "DEF",
+          "slot": "DEF"
+        }
+      ],
+      "bench": [
+        {
+          "injury": null,
+          "name": "Kenyon Sadiq",
+          "nfl_team": "NYJ",
+          "player_id": "42638",
+          "points": -1.7,
+          "pos": "TE",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Emeka Egbuka",
+          "nfl_team": "TB",
+          "player_id": "41804",
+          "points": 11.2,
+          "pos": "WR",
+          "slot": null
+        },
+        {
+          "injury": null,
+          "name": "Kenneth Walker III",
+          "nfl_team": "KC",
+          "player_id": "33996",
+          "points": 0,
+          "pos": "RB",
+          "slot": null
+        },
+        {
+          "injury": "Q",
+          "name": "Mike Evans",
+          "nfl_team": "SF",
+          "player_id": "27535",
+          "points": 19.3,
+          "pos": "WR",
+          "slot": null
+        }
+      ],
+      "all_play_record": "2-11",
+      "week_rank": 12
     },
     {
       "team_id": "13",
@@ -1731,7 +1915,7 @@
       ],
       "bench": [
         {
-          "injury": "O",
+          "injury": null,
           "name": "Rico Dowdle",
           "nfl_team": "PIT",
           "player_id": "33100",
@@ -1740,7 +1924,7 @@
           "slot": null
         },
         {
-          "injury": "O",
+          "injury": null,
           "name": "Caleb Williams",
           "nfl_team": "CHI",
           "player_id": "40900",
@@ -1769,190 +1953,6 @@
       ],
       "all_play_record": "13-0",
       "week_rank": 1
-    },
-    {
-      "team_id": "6",
-      "team": "Canes to the Cup",
-      "manager": "Jonathan",
-      "matchup_id": "4",
-      "points": 75.15,
-      "opponent": "THE FURY",
-      "opponent_id": "13",
-      "opponent_points": 133.05,
-      "result": "L",
-      "margin": 57.9,
-      "top_starter": {
-        "injury": null,
-        "name": "Garrett Wilson",
-        "nfl_team": "NYJ",
-        "player_id": "33965",
-        "points": 16.4,
-        "pos": "WR",
-        "slot": "WR"
-      },
-      "worst_starter": {
-        "injury": null,
-        "name": "Romeo Doubs",
-        "nfl_team": "NE",
-        "player_id": "34088",
-        "points": 1.6,
-        "pos": "WR",
-        "slot": "W/R/T"
-      },
-      "optimal_points": 100.7,
-      "points_left_on_bench": 25.55,
-      "lineup_efficiency": 0.7463,
-      "bench_mistakes": [
-        {
-          "benched": "Mike Evans",
-          "benched_points": 19.3,
-          "started": "Romeo Doubs",
-          "started_points": 1.6,
-          "cost": 17.7
-        },
-        {
-          "benched": "Emeka Egbuka",
-          "benched_points": 11.2,
-          "started": "Romeo Doubs",
-          "started_points": 1.6,
-          "cost": 9.6
-        }
-      ],
-      "best_legal_swap": {
-        "benched": "Mike Evans",
-        "benched_pos": "WR",
-        "benched_points": 19.3,
-        "started": "Romeo Doubs",
-        "started_slot": "W/R/T",
-        "started_points": 1.6,
-        "swing": 17.7
-      },
-      "total_after_best_swap": 92.85,
-      "would_have_won": false,
-      "would_have_won_optimal_lineup_only": false,
-      "starters": [
-        {
-          "injury": null,
-          "name": "Dak Prescott",
-          "nfl_team": "DAL",
-          "player_id": "29369",
-          "points": 15.8,
-          "pos": "QB",
-          "slot": "QB"
-        },
-        {
-          "injury": null,
-          "name": "Jeremiyah Love",
-          "nfl_team": "ARI",
-          "player_id": "42625",
-          "points": 2.2,
-          "pos": "RB",
-          "slot": "RB"
-        },
-        {
-          "injury": null,
-          "name": "Woody Marks",
-          "nfl_team": "HOU",
-          "player_id": "41902",
-          "points": 8.5,
-          "pos": "RB",
-          "slot": "RB"
-        },
-        {
-          "injury": null,
-          "name": "Garrett Wilson",
-          "nfl_team": "NYJ",
-          "player_id": "33965",
-          "points": 16.4,
-          "pos": "WR",
-          "slot": "WR"
-        },
-        {
-          "injury": null,
-          "name": "Michael Wilson",
-          "nfl_team": "ARI",
-          "player_id": "40121",
-          "points": 3.35,
-          "pos": "WR",
-          "slot": "WR"
-        },
-        {
-          "injury": null,
-          "name": "Kyle Pitts Sr.",
-          "nfl_team": "ATL",
-          "player_id": "33392",
-          "points": 10.2,
-          "pos": "TE",
-          "slot": "TE"
-        },
-        {
-          "injury": null,
-          "name": "Romeo Doubs",
-          "nfl_team": "NE",
-          "player_id": "34088",
-          "points": 1.6,
-          "pos": "WR",
-          "slot": "W/R/T"
-        },
-        {
-          "injury": null,
-          "name": "Brandon Aubrey",
-          "nfl_team": "DAL",
-          "player_id": "40819",
-          "points": 5.1,
-          "pos": "K",
-          "slot": "K"
-        },
-        {
-          "injury": null,
-          "name": "Broncos",
-          "nfl_team": "DEN",
-          "player_id": "Broncos",
-          "points": 12,
-          "pos": "DEF",
-          "slot": "DEF"
-        }
-      ],
-      "bench": [
-        {
-          "injury": "Q",
-          "name": "Kenyon Sadiq",
-          "nfl_team": "NYJ",
-          "player_id": "42638",
-          "points": -1.7,
-          "pos": "TE",
-          "slot": null
-        },
-        {
-          "injury": null,
-          "name": "Emeka Egbuka",
-          "nfl_team": "TB",
-          "player_id": "41804",
-          "points": 11.2,
-          "pos": "WR",
-          "slot": null
-        },
-        {
-          "injury": null,
-          "name": "Kenneth Walker III",
-          "nfl_team": "KC",
-          "player_id": "33996",
-          "points": 0,
-          "pos": "RB",
-          "slot": null
-        },
-        {
-          "injury": null,
-          "name": "Mike Evans",
-          "nfl_team": "SF",
-          "player_id": "27535",
-          "points": 19.3,
-          "pos": "WR",
-          "slot": null
-        }
-      ],
-      "all_play_record": "2-11",
-      "week_rank": 12
     },
     {
       "team_id": "7",
@@ -2085,7 +2085,7 @@
           "slot": null
         },
         {
-          "injury": "Q",
+          "injury": "O",
           "name": "Rashee Rice",
           "nfl_team": "KC",
           "player_id": "40084",
@@ -2094,7 +2094,7 @@
           "slot": null
         },
         {
-          "injury": "O",
+          "injury": null,
           "name": "Stefon Diggs",
           "nfl_team": "WAS",
           "player_id": "28534",
@@ -2145,7 +2145,7 @@
         "slot": "QB"
       },
       "worst_starter": {
-        "injury": "Q",
+        "injury": null,
         "name": "CeeDee Lamb",
         "nfl_team": "DAL",
         "player_id": "32687",
@@ -2188,7 +2188,7 @@
           "slot": "QB"
         },
         {
-          "injury": "D",
+          "injury": "O",
           "name": "David Montgomery",
           "nfl_team": "HOU",
           "player_id": "31905",
@@ -2206,7 +2206,7 @@
           "slot": "RB"
         },
         {
-          "injury": "Q",
+          "injury": null,
           "name": "CeeDee Lamb",
           "nfl_team": "DAL",
           "player_id": "32687",
@@ -2515,7 +2515,7 @@
         "slot": "QB"
       },
       "worst_starter": {
-        "injury": "O",
+        "injury": "IR",
         "name": "Roman Wilson",
         "nfl_team": "PIT",
         "player_id": "40952",
@@ -2560,7 +2560,7 @@
           "slot": "RB"
         },
         {
-          "injury": "O",
+          "injury": "IR",
           "name": "Roman Wilson",
           "nfl_team": "PIT",
           "player_id": "40952",
@@ -3303,49 +3303,19 @@
       {
         "adds": [
           {
-            "player": "Mike Gesicki",
-            "player_id": "31012",
-            "pos": "TE",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Darren Waller",
+            "player": "Tyler Higbee",
             "player_id": null,
             "pos": "TE",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "faab_bid": 0,
-        "team_ids": [
-          "4"
-        ],
-        "ts": 1791361080,
-        "type": "free_agent",
-        "teams": [
-          "Ass in a Box"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Jaguars",
-            "player_id": "Jaguars",
-            "pos": "DEF",
             "team_id": "9",
             "team": "Krispy"
           }
         ],
-        "date": "10/07",
+        "date": "10/14",
         "drops": [
           {
-            "player": "Seahawks",
-            "player_id": null,
-            "pos": "DEF",
+            "player": "T.J. Hockenson",
+            "player_id": "31840",
+            "pos": "TE",
             "team_id": "9",
             "team": "Krispy"
           }
@@ -3354,7 +3324,7 @@
         "team_ids": [
           "9"
         ],
-        "ts": 1791361080,
+        "ts": 1791965940,
         "type": "free_agent",
         "teams": [
           "Krispy"
@@ -3363,35 +3333,67 @@
       {
         "adds": [
           {
-            "player": "Mark Andrews",
+            "player": "Samaje Perine",
             "player_id": null,
-            "pos": "TE",
-            "team_id": "1",
-            "team": "LT Bavaros"
+            "pos": "RB",
+            "team_id": "9",
+            "team": "Krispy"
           }
         ],
-        "date": "10/07",
+        "date": "10/14",
         "drops": [
           {
-            "player": "Cooper Kupp",
-            "player_id": null,
+            "player": "Isaac TeSlaa",
+            "player_id": "41865",
             "pos": "WR",
-            "team_id": "1",
-            "team": "LT Bavaros"
+            "team_id": "9",
+            "team": "Krispy"
           }
         ],
         "faab_bid": 0,
         "team_ids": [
-          "1"
+          "9"
         ],
-        "ts": 1791361080,
+        "ts": 1791965940,
         "type": "free_agent",
         "teams": [
-          "LT Bavaros"
+          "Krispy"
+        ]
+      },
+      {
+        "adds": [],
+        "date": "10/14",
+        "drops": [
+          {
+            "player": "Waiver Bengals",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "5",
+            "team": "Busta Skreen"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "5"
+        ],
+        "ts": 1791965940,
+        "type": "free_agent",
+        "teams": [
+          "Busta Skreen"
         ]
       },
       {
         "adds": [
+          {
+            "player": "Bills",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/14",
+        "drops": [
           {
             "player": "Jets",
             "player_id": "Jets",
@@ -3400,7 +3402,237 @@
             "team": "\u2018Ster the Pot"
           }
         ],
-        "date": "10/07",
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792018260,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Tre Tucker",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/14",
+        "drops": [
+          {
+            "player": "Tank Dell",
+            "player_id": "40097",
+            "pos": "WR",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792018320,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Chris Boswell",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "date": "10/14",
+        "drops": [
+          {
+            "player": "Mike Gesicki",
+            "player_id": "31012",
+            "pos": "TE",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "4"
+        ],
+        "ts": 1792026780,
+        "type": "free_agent",
+        "teams": [
+          "Ass in a Box"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Brandin Cooks",
+            "player_id": null,
+            "pos": "WR",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "date": "10/14",
+        "drops": [
+          {
+            "player": "Najee Harris",
+            "player_id": "33412",
+            "pos": "RB",
+            "team_id": "4",
+            "team": "Ass in a Box"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "4"
+        ],
+        "ts": 1792027320,
+        "type": "free_agent",
+        "teams": [
+          "Ass in a Box"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Kyler Murray",
+            "player_id": null,
+            "pos": "QB",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "date": "10/15",
+        "drops": [
+          {
+            "player": "Kirk Cousins",
+            "player_id": "25812",
+            "pos": "QB",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "11"
+        ],
+        "ts": 1792043220,
+        "type": "free_agent",
+        "teams": [
+          "Schmul Gone Wild"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Nick Folk",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "date": "10/15",
+        "drops": [
+          {
+            "player": "Jake Bates",
+            "player_id": "40835",
+            "pos": "K",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "3"
+        ],
+        "ts": 1792093620,
+        "type": "free_agent",
+        "teams": [
+          "Anchor Down"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Dominic Zvada",
+            "player_id": null,
+            "pos": "K",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "date": "10/15",
+        "drops": [
+          {
+            "player": "Matt Gay",
+            "player_id": "31977",
+            "pos": "K",
+            "team_id": "11",
+            "team": "Schmul Gone Wild"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "11"
+        ],
+        "ts": 1792122720,
+        "type": "free_agent",
+        "teams": [
+          "Schmul Gone Wild"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Dylan Sampson",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/16",
+        "drops": [
+          {
+            "player": "Rachaad White",
+            "player_id": "34047",
+            "pos": "RB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792123860,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Panthers",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/16",
         "drops": [
           {
             "player": "Bills",
@@ -3410,12 +3642,334 @@
             "team": "\u2018Ster the Pot"
           }
         ],
-        "faab_bid": 1,
+        "faab_bid": null,
         "team_ids": [
           "14"
         ],
-        "ts": 1791361080,
+        "ts": 1792123980,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Jaleel McLaughlin",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/16",
+        "drops": [
+          {
+            "player": "Dylan Sampson",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792205160,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Jaguars",
+            "player_id": "Jaguars",
+            "pos": "DEF",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "date": "10/17",
+        "drops": [
+          {
+            "player": "Browns",
+            "player_id": "Browns",
+            "pos": "DEF",
+            "team_id": "13",
+            "team": "THE FURY"
+          }
+        ],
+        "faab_bid": 0,
+        "team_ids": [
+          "13"
+        ],
+        "ts": 1792223160,
+        "type": "free_agent",
+        "teams": [
+          "THE FURY"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Tyjae Spears",
+            "player_id": "40119",
+            "pos": "RB",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "date": "10/17",
+        "drops": [
+          {
+            "player": "Will Shipley",
+            "player_id": "41002",
+            "pos": "RB",
+            "team_id": "12",
+            "team": "Sleeping With The Fishes"
+          }
+        ],
+        "faab_bid": 0,
+        "team_ids": [
+          "12"
+        ],
+        "ts": 1792223160,
+        "type": "free_agent",
+        "teams": [
+          "Sleeping With The Fishes"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Saints",
+            "player_id": null,
+            "pos": "DEF",
+            "team_id": "10",
+            "team": "Philly Special"
+          }
+        ],
+        "date": "10/17",
+        "drops": [
+          {
+            "player": "Raiders",
+            "player_id": "Raiders",
+            "pos": "DEF",
+            "team_id": "10",
+            "team": "Philly Special"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "10"
+        ],
+        "ts": 1792241100,
+        "type": "free_agent",
+        "teams": [
+          "Philly Special"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Kirk Cousins",
+            "player_id": "25812",
+            "pos": "QB",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "date": "10/17",
+        "drops": [
+          {
+            "player": "Jordan Addison",
+            "player_id": "40042",
+            "pos": "WR",
+            "team_id": "3",
+            "team": "Anchor Down"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "3"
+        ],
+        "ts": 1792246020,
+        "type": "free_agent",
+        "teams": [
+          "Anchor Down"
+        ]
+      },
+      {
+        "adds": [],
+        "date": "10/17",
+        "drops": [
+          {
+            "player": "Ja'Kobi Lane",
+            "player_id": "42702",
+            "pos": "WR",
+            "team_id": "2",
+            "team": "1.21 Gigawatts"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "2"
+        ],
+        "ts": 1792290660,
+        "type": "free_agent",
+        "teams": [
+          "1.21 Gigawatts"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Michael Penix Jr.",
+            "player_id": null,
+            "pos": "QB",
+            "team_id": "7",
+            "team": "Dread the Bred"
+          }
+        ],
+        "date": "10/18",
+        "drops": [
+          {
+            "player": "Stefon Diggs",
+            "player_id": "28534",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "Dread the Bred"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "7"
+        ],
+        "ts": 1792302720,
+        "type": "free_agent",
+        "teams": [
+          "Dread the Bred"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Rachaad White",
+            "player_id": "34047",
+            "pos": "RB",
+            "team_id": "9",
+            "team": "Krispy"
+          }
+        ],
+        "date": "10/18",
+        "drops": [
+          {
+            "player": "Tyler Higbee",
+            "player_id": null,
+            "pos": "TE",
+            "team_id": "9",
+            "team": "Krispy"
+          }
+        ],
+        "faab_bid": 7,
+        "team_ids": [
+          "9"
+        ],
+        "ts": 1792308300,
         "type": "waiver",
+        "teams": [
+          "Krispy"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Najee Harris",
+            "player_id": "33412",
+            "pos": "RB",
+            "team_id": "9",
+            "team": "Krispy"
+          }
+        ],
+        "date": "10/18",
+        "drops": [
+          {
+            "player": "Samaje Perine",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "9",
+            "team": "Krispy"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "9"
+        ],
+        "ts": 1792327980,
+        "type": "free_agent",
+        "teams": [
+          "Krispy"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Daniel Jones",
+            "player_id": "31838",
+            "pos": "QB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/18",
+        "drops": [
+          {
+            "player": "Jaleel McLaughlin",
+            "player_id": null,
+            "pos": "RB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792330320,
+        "type": "free_agent",
+        "teams": [
+          "\u2018Ster the Pot"
+        ]
+      },
+      {
+        "adds": [
+          {
+            "player": "Geno Smith",
+            "player_id": null,
+            "pos": "QB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "date": "10/18",
+        "drops": [
+          {
+            "player": "Daniel Jones",
+            "player_id": "31838",
+            "pos": "QB",
+            "team_id": "14",
+            "team": "\u2018Ster the Pot"
+          }
+        ],
+        "faab_bid": null,
+        "team_ids": [
+          "14"
+        ],
+        "ts": 1792330380,
+        "type": "free_agent",
         "teams": [
           "\u2018Ster the Pot"
         ]
@@ -3426,86 +3980,26 @@
             "player": "Hunter Henry",
             "player_id": "29269",
             "pos": "TE",
-            "team_id": "14",
-            "team": "\u2018Ster the Pot"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Makai Lemon",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "14",
-            "team": "\u2018Ster the Pot"
-          }
-        ],
-        "faab_bid": 2,
-        "team_ids": [
-          "14"
-        ],
-        "ts": 1791361080,
-        "type": "waiver",
-        "teams": [
-          "\u2018Ster the Pot"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Cowboys",
-            "player_id": "Cowboys",
-            "pos": "DEF",
-            "team_id": "2",
-            "team": "1.21 Gigawatts"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Ravens",
-            "player_id": null,
-            "pos": "DEF",
-            "team_id": "2",
-            "team": "1.21 Gigawatts"
-          }
-        ],
-        "faab_bid": 3,
-        "team_ids": [
-          "2"
-        ],
-        "ts": 1791361080,
-        "type": "waiver",
-        "teams": [
-          "1.21 Gigawatts"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Matt Gay",
-            "player_id": "31977",
-            "pos": "K",
             "team_id": "11",
             "team": "Schmul Gone Wild"
           }
         ],
-        "date": "10/07",
+        "date": "10/18",
         "drops": [
           {
-            "player": "Harrison Mevis",
+            "player": "Chiefs",
             "player_id": null,
-            "pos": "K",
+            "pos": "DEF",
             "team_id": "11",
             "team": "Schmul Gone Wild"
           }
         ],
-        "faab_bid": 4,
+        "faab_bid": null,
         "team_ids": [
           "11"
         ],
-        "ts": 1791361080,
-        "type": "waiver",
+        "ts": 1792340640,
+        "type": "free_agent",
         "teams": [
           "Schmul Gone Wild"
         ]
@@ -3513,139 +4007,19 @@
       {
         "adds": [
           {
-            "player": "Malik Washington",
-            "player_id": "41058",
-            "pos": "WR",
-            "team_id": "12",
-            "team": "Sleeping With The Fishes"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Dontayvion Wicks",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "12",
-            "team": "Sleeping With The Fishes"
-          }
-        ],
-        "faab_bid": 7,
-        "team_ids": [
-          "12"
-        ],
-        "ts": 1791361080,
-        "type": "waiver",
-        "teams": [
-          "Sleeping With The Fishes"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Dameon Pierce",
+            "player": "Austin Ekeler",
             "player_id": null,
             "pos": "RB",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Tank Bigsby",
-            "player_id": null,
-            "pos": "RB",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791388200,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Commanders",
-            "player_id": "Commanders",
-            "pos": "DEF",
-            "team_id": "12",
-            "team": "Sleeping With The Fishes"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Saints",
-            "player_id": null,
-            "pos": "DEF",
-            "team_id": "12",
-            "team": "Sleeping With The Fishes"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "12"
-        ],
-        "ts": 1791388320,
-        "type": "free_agent",
-        "teams": [
-          "Sleeping With The Fishes"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Kenny Gainwell",
-            "player_id": "33538",
-            "pos": "RB",
-            "team_id": "13",
-            "team": "THE FURY"
-          }
-        ],
-        "date": "10/07",
-        "drops": [
-          {
-            "player": "Jaylen Wright",
-            "player_id": null,
-            "pos": "RB",
-            "team_id": "13",
-            "team": "THE FURY"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "13"
-        ],
-        "ts": 1791391020,
-        "type": "free_agent",
-        "teams": [
-          "THE FURY"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Dohnte Meyers",
-            "player_id": "42616",
-            "pos": "WR",
             "team_id": "14",
             "team": "\u2018Ster the Pot"
           }
         ],
-        "date": "10/07",
+        "date": "10/18",
         "drops": [
           {
-            "player": "Tyjae Spears",
-            "player_id": "40119",
-            "pos": "RB",
+            "player": "Kendrick Bourne",
+            "player_id": null,
+            "pos": "WR",
             "team_id": "14",
             "team": "\u2018Ster the Pot"
           }
@@ -3654,641 +4028,172 @@
         "team_ids": [
           "14"
         ],
-        "ts": 1791406860,
+        "ts": 1792341000,
         "type": "free_agent",
         "teams": [
           "\u2018Ster the Pot"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Roman Wilson",
-            "player_id": "40952",
-            "pos": "WR",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "date": "10/08",
-        "drops": [
-          {
-            "player": "Kalif Raymond",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791482400,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
-        ]
-      },
-      {
-        "adds": [],
-        "date": "10/08",
-        "drops": [
-          {
-            "player": "Adonai Mitchell",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "13",
-            "team": "THE FURY"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "13"
-        ],
-        "ts": 1791489420,
-        "type": "free_agent",
-        "teams": [
-          "THE FURY"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Patriots",
-            "player_id": "Patriots",
-            "pos": "DEF",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "date": "10/09",
-        "drops": [
-          {
-            "player": "Packers",
-            "player_id": null,
-            "pos": "DEF",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "4"
-        ],
-        "ts": 1791579300,
-        "type": "free_agent",
-        "teams": [
-          "Ass in a Box"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Tyjae Spears",
-            "player_id": "40119",
-            "pos": "RB",
-            "team_id": "3",
-            "team": "Anchor Down"
-          }
-        ],
-        "date": "10/10",
-        "drops": [
-          {
-            "player": "Kayshon Boutte",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "3",
-            "team": "Anchor Down"
-          }
-        ],
-        "faab_bid": 2,
-        "team_ids": [
-          "3"
-        ],
-        "ts": 1791618480,
-        "type": "waiver",
-        "teams": [
-          "Anchor Down"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Bo Nix",
-            "player_id": "40875",
-            "pos": "QB",
-            "team_id": "7",
-            "team": "Dread the Bred"
-          }
-        ],
-        "date": "10/10",
-        "drops": [
-          {
-            "player": "Kaelon Black",
-            "player_id": null,
-            "pos": "RB",
-            "team_id": "7",
-            "team": "Dread the Bred"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "7"
-        ],
-        "ts": 1791667920,
-        "type": "free_agent",
-        "teams": [
-          "Dread the Bred"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Ray Davis",
-            "player_id": "40980",
-            "pos": "RB",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "date": "10/10",
-        "drops": [
-          {
-            "player": "Kyler Murray",
-            "player_id": null,
-            "pos": "QB",
-            "team_id": "4",
-            "team": "Ass in a Box"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "4"
-        ],
-        "ts": 1791676680,
-        "type": "free_agent",
-        "teams": [
-          "Ass in a Box"
-        ]
-      },
-      {
-        "adds": [],
-        "date": "10/10",
-        "drops": [
-          {
-            "player": "Dameon Pierce",
-            "player_id": null,
-            "pos": "RB",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791689400,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "T.J. Hockenson",
-            "player_id": "31840",
-            "pos": "TE",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "date": "10/11",
-        "drops": [],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791722280,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Khalil Shakir",
-            "player_id": "34104",
-            "pos": "WR",
-            "team_id": "2",
-            "team": "1.21 Gigawatts"
-          }
-        ],
-        "date": "10/11",
-        "drops": [
-          {
-            "player": "George Holani",
-            "player_id": null,
-            "pos": "RB",
-            "team_id": "2",
-            "team": "1.21 Gigawatts"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "2"
-        ],
-        "ts": 1791722880,
-        "type": "free_agent",
-        "teams": [
-          "1.21 Gigawatts"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Malachi Fields",
-            "player_id": "42696",
-            "pos": "WR",
-            "team_id": "1",
-            "team": "LT Bavaros"
-          }
-        ],
-        "date": "10/11",
-        "drops": [
-          {
-            "player": "Mark Andrews",
-            "player_id": null,
-            "pos": "TE",
-            "team_id": "1",
-            "team": "LT Bavaros"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "1"
-        ],
-        "ts": 1791733020,
-        "type": "free_agent",
-        "teams": [
-          "LT Bavaros"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Wan'Dale Robinson",
-            "player_id": "33998",
-            "pos": "WR",
-            "team_id": "1",
-            "team": "LT Bavaros"
-          }
-        ],
-        "date": "10/11",
-        "drops": [
-          {
-            "player": "Michael Pittman Jr.",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "1",
-            "team": "LT Bavaros"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "1"
-        ],
-        "ts": 1791733020,
-        "type": "free_agent",
-        "teams": [
-          "LT Bavaros"
-        ]
-      },
-      {
-        "adds": [
-          {
-            "player": "Isaac TeSlaa",
-            "player_id": "41865",
-            "pos": "WR",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "date": "10/11",
-        "drops": [
-          {
-            "player": "KC Concepcion Jr.",
-            "player_id": null,
-            "pos": "WR",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791734220,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
-        ]
-      },
-      {
-        "adds": [],
-        "date": "10/13",
-        "drops": [
-          {
-            "player": "Roman Wilson",
-            "player_id": "40952",
-            "pos": "WR",
-            "team_id": "9",
-            "team": "Krispy"
-          }
-        ],
-        "faab_bid": null,
-        "team_ids": [
-          "9"
-        ],
-        "ts": 1791887340,
-        "type": "free_agent",
-        "teams": [
-          "Krispy"
         ]
       }
     ],
     "trades": [],
     "waiver_pickups": {
-      "pickups": [
+      "pickups": [],
+      "added_but_did_not_count": [
         {
-          "player": "Jets",
-          "pos": "DEF",
-          "manager": "Matthew",
-          "team": "\u2018Ster the Pot",
-          "date": "10/07",
-          "faab_bid": 1,
-          "status": "started",
-          "slot": "DEF",
-          "points": 16
-        },
-        {
-          "player": "Hunter Henry",
-          "pos": "TE",
-          "manager": "Matthew",
-          "team": "\u2018Ster the Pot",
-          "date": "10/07",
-          "faab_bid": 2,
-          "status": "started",
-          "slot": "TE",
-          "points": 10.4
-        },
-        {
-          "player": "Bo Nix",
-          "pos": "QB",
-          "manager": "Jared Kramer",
-          "team": "Dread the Bred",
-          "date": "10/10",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "QB",
-          "points": 9.15
-        },
-        {
-          "player": "Khalil Shakir",
-          "pos": "WR",
-          "manager": "Scott",
-          "team": "1.21 Gigawatts",
-          "date": "10/11",
-          "faab_bid": null,
-          "status": "benched",
+          "player": "Samaje Perine",
+          "pos": "RB",
+          "manager": "Fran",
+          "team": "Krispy",
+          "date": "10/14",
+          "faab_bid": 0,
+          "status": "not on the roster at kickoff",
           "slot": null,
-          "points": 8
+          "points": null
         },
         {
-          "player": "Matt Gay",
+          "player": "Austin Ekeler",
+          "pos": "RB",
+          "manager": "Matthew",
+          "team": "\u2018Ster the Pot",
+          "date": "10/18",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Brandin Cooks",
+          "pos": "WR",
+          "manager": "Ass in a Box",
+          "team": "Ass in a Box",
+          "date": "10/14",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Dominic Zvada",
           "pos": "K",
           "manager": "Rick",
           "team": "Schmul Gone Wild",
-          "date": "10/07",
-          "faab_bid": 4,
-          "status": "started",
-          "slot": "K",
-          "points": 6.6
-        },
-        {
-          "player": "Mike Gesicki",
-          "pos": "TE",
-          "manager": "Ass in a Box",
-          "team": "Ass in a Box",
-          "date": "10/07",
-          "faab_bid": 0,
-          "status": "benched",
+          "date": "10/15",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
           "slot": null,
-          "points": 6.4
+          "points": null
         },
         {
-          "player": "Malik Washington",
-          "pos": "WR",
-          "manager": "William",
-          "team": "Sleeping With The Fishes",
-          "date": "10/07",
-          "faab_bid": 7,
-          "status": "started",
-          "slot": "W/R/T",
-          "points": 6.1
-        },
-        {
-          "player": "Commanders",
-          "pos": "DEF",
-          "manager": "William",
-          "team": "Sleeping With The Fishes",
-          "date": "10/07",
+          "player": "Nick Folk",
+          "pos": "K",
+          "manager": "Eliza",
+          "team": "Anchor Down",
+          "date": "10/15",
           "faab_bid": null,
-          "status": "started",
-          "slot": "DEF",
-          "points": 6
-        },
-        {
-          "player": "Patriots",
-          "pos": "DEF",
-          "manager": "Ass in a Box",
-          "team": "Ass in a Box",
-          "date": "10/09",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "DEF",
-          "points": 6
-        },
-        {
-          "player": "Wan'Dale Robinson",
-          "pos": "WR",
-          "manager": "David Kramer",
-          "team": "LT Bavaros",
-          "date": "10/11",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "WR",
-          "points": 5.3
-        },
-        {
-          "player": "Ray Davis",
-          "pos": "RB",
-          "manager": "Ass in a Box",
-          "team": "Ass in a Box",
-          "date": "10/10",
-          "faab_bid": null,
-          "status": "benched",
+          "status": "not on the roster at kickoff",
           "slot": null,
-          "points": 3.3
-        },
-        {
-          "player": "Kenny Gainwell",
-          "pos": "RB",
-          "manager": "DAVID DEROSE",
-          "team": "THE FURY",
-          "date": "10/07",
-          "faab_bid": null,
-          "status": "benched",
-          "slot": null,
-          "points": 2.8
+          "points": null
         },
         {
           "player": "Jaguars",
           "pos": "DEF",
-          "manager": "Fran",
-          "team": "Krispy",
-          "date": "10/07",
+          "manager": "DAVID DEROSE",
+          "team": "THE FURY",
+          "date": "10/17",
           "faab_bid": 0,
-          "status": "started",
-          "slot": "DEF",
-          "points": 2
-        },
-        {
-          "player": "Malachi Fields",
-          "pos": "WR",
-          "manager": "David Kramer",
-          "team": "LT Bavaros",
-          "date": "10/11",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "WR",
-          "points": 2
-        },
-        {
-          "player": "Dohnte Meyers",
-          "pos": "WR",
-          "manager": "Matthew",
-          "team": "\u2018Ster the Pot",
-          "date": "10/07",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "W/R/T",
-          "points": 1.2
-        },
-        {
-          "player": "Cowboys",
-          "pos": "DEF",
-          "manager": "Scott",
-          "team": "1.21 Gigawatts",
-          "date": "10/07",
-          "faab_bid": 3,
-          "status": "started",
-          "slot": "DEF",
-          "points": 1
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
         },
         {
           "player": "Tyjae Spears",
           "pos": "RB",
-          "manager": "Eliza",
-          "team": "Anchor Down",
-          "date": "10/10",
-          "faab_bid": 2,
-          "status": "benched",
-          "slot": null,
-          "points": 0.8
-        },
-        {
-          "player": "T.J. Hockenson",
-          "pos": "TE",
-          "manager": "Fran",
-          "team": "Krispy",
-          "date": "10/11",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "W/R/T",
-          "points": 0.7
-        },
-        {
-          "player": "Roman Wilson",
-          "pos": "WR",
-          "manager": "Fran",
-          "team": "Krispy",
-          "date": "10/08",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "WR",
-          "points": 0
-        },
-        {
-          "player": "Isaac TeSlaa",
-          "pos": "WR",
-          "manager": "Fran",
-          "team": "Krispy",
-          "date": "10/11",
-          "faab_bid": null,
-          "status": "started",
-          "slot": "WR",
-          "points": 0
-        }
-      ],
-      "added_but_did_not_count": [
-        {
-          "player": "Mark Andrews",
-          "pos": "TE",
-          "manager": "David Kramer",
-          "team": "LT Bavaros",
-          "date": "10/07",
+          "manager": "William",
+          "team": "Sleeping With The Fishes",
+          "date": "10/17",
           "faab_bid": 0,
           "status": "not on the roster at kickoff",
           "slot": null,
           "points": null
         },
         {
-          "player": "Dameon Pierce",
+          "player": "Saints",
+          "pos": "DEF",
+          "manager": "Daniel Porter",
+          "team": "Philly Special",
+          "date": "10/17",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Kirk Cousins",
+          "pos": "QB",
+          "manager": "Eliza",
+          "team": "Anchor Down",
+          "date": "10/17",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Michael Penix Jr.",
+          "pos": "QB",
+          "manager": "Jared Kramer",
+          "team": "Dread the Bred",
+          "date": "10/18",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Rachaad White",
           "pos": "RB",
           "manager": "Fran",
           "team": "Krispy",
-          "date": "10/07",
+          "date": "10/18",
+          "faab_bid": 7,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Najee Harris",
+          "pos": "RB",
+          "manager": "Fran",
+          "team": "Krispy",
+          "date": "10/18",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Daniel Jones",
+          "pos": "QB",
+          "manager": "Matthew",
+          "team": "\u2018Ster the Pot",
+          "date": "10/18",
+          "faab_bid": null,
+          "status": "not on the roster at kickoff",
+          "slot": null,
+          "points": null
+        },
+        {
+          "player": "Hunter Henry",
+          "pos": "TE",
+          "manager": "Rick",
+          "team": "Schmul Gone Wild",
+          "date": "10/18",
           "faab_bid": null,
           "status": "not on the roster at kickoff",
           "slot": null,
           "points": null
         }
-      ],
-      "best_add": {
-        "player": "Jets",
-        "pos": "DEF",
-        "manager": "Matthew",
-        "team": "\u2018Ster the Pot",
-        "date": "10/07",
-        "faab_bid": 1,
-        "status": "started",
-        "slot": "DEF",
-        "points": 16
-      },
-      "worst_add": {
-        "player": "Roman Wilson",
-        "pos": "WR",
-        "manager": "Fran",
-        "team": "Krispy",
-        "date": "10/08",
-        "faab_bid": null,
-        "status": "started",
-        "slot": "WR",
-        "points": 0
-      }
+      ]
     },
     "match_summaries": [
       {
@@ -4308,7 +4213,7 @@
           "slot": "QB"
         },
         "loser_top_scorer": {
-          "injury": null,
+          "injury": "O",
           "name": "Davante Adams",
           "nfl_team": "LAR",
           "player_id": "27581",
@@ -4622,7 +4527,7 @@
           "manager": "Matthew",
           "position_median": 11.2,
           "pct_of_median": 9.8,
-          "injury": "D"
+          "injury": "O"
         },
         {
           "player": "T.J. Hockenson",
@@ -4646,7 +4551,7 @@
           "manager": "Fran",
           "position_median": 5.45,
           "pct_of_median": 0.0,
-          "injury": "O"
+          "injury": "IR"
         },
         {
           "player": "Isaac TeSlaa",
@@ -4712,23 +4617,7 @@
       "manager": "David Kramer",
       "points": 67.65
     },
-    "waiver_wire_genius": [
-      {
-        "player": "Jets",
-        "pos": "DEF",
-        "manager": "Matthew",
-        "team": "\u2018Ster the Pot",
-        "date": "10/07",
-        "faab_bid": 1,
-        "status": "started",
-        "slot": "DEF",
-        "points": 16,
-        "top_3_on_roster": true,
-        "swung_the_game": false,
-        "team_result": "L",
-        "team_margin": 6.05
-      }
-    ],
+    "waiver_wire_genius": [],
     "empty_starting_slots": []
   },
   "standings_source": {
