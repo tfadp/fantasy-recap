@@ -3030,6 +3030,28 @@
     "transactions": [
       {
         "type": "free_agent",
+        "date": "10/20",
+        "team_ids": [
+          "3"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "2306",
+            "player": "Jameis Winston",
+            "pos": "QB",
+            "team_id": "3",
+            "team": "Based God"
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1792501628553,
+        "teams": [
+          "Based God"
+        ]
+      },
+      {
+        "type": "free_agent",
         "date": "10/19",
         "team_ids": [
           "8"
