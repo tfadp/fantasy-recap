@@ -2469,7 +2469,7 @@
           "nfl_team": "PHI",
           "slot": null,
           "points": 11.8,
-          "injury": null
+          "injury": "Questionable"
         },
         {
           "player_id": "9508",
@@ -3032,6 +3032,28 @@
       "league_history_average": 119.79
     },
     "transactions": [
+      {
+        "type": "free_agent",
+        "date": "10/27",
+        "team_ids": [
+          "5"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "96",
+            "player": "Aaron Rodgers",
+            "pos": "QB",
+            "team_id": "5",
+            "team": "Windsor Terror"
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1793112492642,
+        "teams": [
+          "Windsor Terror"
+        ]
+      },
       {
         "type": "free_agent",
         "date": "10/24",
