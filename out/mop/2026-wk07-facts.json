@@ -1044,7 +1044,7 @@
           "nfl_team": "NYG",
           "slot": null,
           "points": 8.7,
-          "injury": "Questionable"
+          "injury": "Out"
         },
         {
           "player_id": "12530",
@@ -3032,6 +3032,28 @@
       "league_history_average": 119.79
     },
     "transactions": [
+      {
+        "type": "free_agent",
+        "date": "10/27",
+        "team_ids": [
+          "7"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "13317",
+            "player": "Ted Hurst III",
+            "pos": "WR",
+            "team_id": "7",
+            "team": "LLTM for commish "
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1793122505531,
+        "teams": [
+          "LLTM for commish "
+        ]
+      },
       {
         "type": "free_agent",
         "date": "10/27",

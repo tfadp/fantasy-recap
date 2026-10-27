@@ -123,6 +123,7 @@ POWER RANKINGS (through this week)
 12. i jus went up in my Price — 3.9 (–)   [record 1-6]
 
 MOVES
+  free_agent: dropped Ted Hurst III off LLTM for commish 
   free_agent: dropped Aaron Rodgers off Windsor Terror
   free_agent: Ryan Flournoy to LLTM for commish ; dropped Keon Coleman off LLTM for commish 
   free_agent: Pat Freiermuth to T-Mac n CMCheese
