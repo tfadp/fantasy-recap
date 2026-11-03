@@ -1269,7 +1269,7 @@
         "nfl_team": "ARI",
         "slot": "FLEX",
         "points": 2.3,
-        "injury": "Out"
+        "injury": "IR"
       },
       "optimal_points": 146.08,
       "points_left_on_bench": 9.3,
@@ -1373,7 +1373,7 @@
           "nfl_team": "ARI",
           "slot": "FLEX",
           "points": 2.3,
-          "injury": "Out"
+          "injury": "IR"
         },
         {
           "player_id": "CLE",
@@ -1471,7 +1471,7 @@
         "nfl_team": "ARI",
         "slot": "FLEX",
         "points": 3.9,
-        "injury": "Out"
+        "injury": "IR"
       },
       "optimal_points": 157.21,
       "points_left_on_bench": 16.5,
@@ -1573,7 +1573,7 @@
           "nfl_team": "ARI",
           "slot": "FLEX",
           "points": 3.9,
-          "injury": "Out"
+          "injury": "IR"
         },
         {
           "player_id": "9500",
@@ -3826,7 +3826,7 @@
           "manager": "juliansryan",
           "position_median": 13.65,
           "pct_of_median": 16.8,
-          "injury": "Out"
+          "injury": "IR"
         },
         {
           "player": "Kyle Pitts Sr.",
