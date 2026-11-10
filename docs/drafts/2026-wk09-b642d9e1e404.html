@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOP Week 9</title>
+<meta name="description" content="Week 9 Recap - MOP League">
+<meta property="og:title" content="Week 9 Recap - MOP League">
+<meta property="og:description" content="MOP week 9 recap.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><style>
+:root{
+  --paper:#eef1f3; --card:#fff; --ink:#0f1519; --dim:#5b6774; --rule:#d7dde2;
+  --accent:#a82f1a; --good:#186b3f; --bad:#a3211a; --agate:#f6f8f9;
+  --display:"Barlow Condensed","Haettenschweiler","Arial Narrow",sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --data:"Barlow","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+    --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+    --agate:#12171d;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+  --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+  --agate:#12171d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:26px 18px 64px}
+
+.masthead{margin-bottom:26px}
+.masthead .eyebrow{font-family:var(--data);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(36px,10vw,58px);
+  line-height:.94;margin:8px 0 0;letter-spacing:-.01em;text-wrap:balance;
+  text-transform:uppercase}
+.masthead .dateline{font-family:var(--data);font-size:12px;color:var(--dim);
+  letter-spacing:.04em;margin-top:12px}
+
+section{margin-top:34px}
+.label{font-family:var(--data);font-size:11px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--ink);
+  padding-bottom:5px;margin-bottom:0}
+
+/* box score, only ever inside the receipts */
+.game{display:grid;grid-template-columns:1fr auto;gap:6px 14px;
+  align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);
+  font-family:var(--data)}
+.game .teams{font-size:16px;line-height:1.35}
+.game .w{font-weight:600}
+.game .l{color:var(--dim)}
+.game .sep{color:var(--dim);font-size:13px;padding:0 2px}
+.game .score{font-family:var(--display);font-size:22px;font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:.01em}
+.game .score .lp{color:var(--dim)}
+
+/* the write-up, which is the whole point of the page */
+.column{font-family:var(--body);font-size:18px;line-height:1.6}
+
+/* the receipts: folded away, for people who want to argue */
+.receipts{margin-top:44px;border-top:3px solid var(--ink);padding-top:0}
+.receipts summary{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+  padding:15px 0;cursor:pointer;list-style:none;display:flex;
+  justify-content:space-between;align-items:center;gap:12px}
+.receipts summary::-webkit-details-marker{display:none}
+.receipts summary::after{content:"Show";font-size:11px;color:var(--accent)}
+.receipts[open] summary::after{content:"Hide"}
+.receipts summary:hover{color:var(--ink)}
+.receipts section:first-of-type{margin-top:6px}
+.column p{margin:0 0 15px}
+.column p:last-child{margin-bottom:0}
+/* power rankings: the number is content, not list furniture, so it is kept
+   literal. An <ol> would renumber from 1 every time a description line
+   interrupts it, which is exactly what this format does twelve times. */
+.column p.ranked{margin:0 0 3px;font-family:var(--data);font-weight:600;
+  font-size:16px;font-variant-numeric:tabular-nums}
+.column p.ranked + p{margin:0 0 16px;color:var(--dim);font-size:16px}
+.column p.ranked .num{color:var(--accent);display:inline-block;min-width:1.6em}
+.column p strong:only-child{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-top:26px}
+.column p.section{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  margin:30px 0 12px}
+.column ul{list-style:none;padding-left:0}
+.column ul li{position:relative;padding-left:16px}
+.column ul li::before{content:"\2022";position:absolute;left:0;color:var(--accent)}
+.column hr{border:0;border-top:1px solid var(--rule);margin:30px 0}
+.column h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;
+  font-size:26px;font-weight:600;margin:34px 0 11px;line-height:1.05;
+  text-wrap:balance}
+.column ul,.column ol{margin:0 0 19px;padding-left:22px}
+.column li{margin-bottom:8px}
+.column em{font-style:italic;color:var(--dim)}
+.column strong{font-weight:600}
+.column blockquote{margin:0 0 19px;padding-left:16px;
+  border-left:3px solid var(--accent);color:var(--dim);font-style:italic}
+
+/* agate */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-family:var(--data);font-size:14px;
+  font-variant-numeric:tabular-nums;margin-top:2px}
+th{text-align:left;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;padding:9px 8px 6px 0;border-bottom:1px solid var(--rule)}
+td{padding:7px 8px 7px 0;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+td:last-child,th:last-child{padding-right:0}
+.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rank{color:var(--dim);width:1.6em;font-size:13px}
+.pts{font-weight:600}
+.up{color:var(--good);font-size:12px}
+.down{color:var(--bad);font-size:12px}
+.muted{color:var(--dim)}
+.slot{font-size:12px;color:var(--dim);letter-spacing:.03em;text-transform:uppercase}
+
+nav{margin-top:40px;padding-top:16px;border-top:3px solid var(--ink);
+  font-family:var(--data);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{margin-top:22px;font-family:var(--data);font-size:11px;color:var(--dim);
+  letter-spacing:.03em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body><div class="wrap"><header class="masthead">
+<div class="eyebrow">MOP &middot; Week 9, 2026</div>
+<h1>Week 9 Recap - MOP League</h1>
+<div class="dateline">Tuesday, November 10</div>
+</header>
+<div class="column"><p>Trey benched Jordan Love&#x27;s 36.18 and started Jared Goff for 6.3. He won by 1.49 anyway, which is less a lineup call than a man finding a winning scratch-off in last winter&#x27;s coat. jxllokreflo set the all-time MOP record at 165.58 and picked the 2–7 team to do it to. Zain signed Audric Estime, sat him for 14.7, and lost by 3.98; that one swap flips the game. oliverslater managed 70.02 and is 1–8.</p>
+<p class="section">Match Summaries</p>
+<p>NJIGGAS (139.68) def. pukachew⚡️ (135.7)</p>
+<p>Four points and a shrug. Bucky Irving (28.5) and Brock Purdy (26.28) got bbasse3267 over the line by 3.98, and Puka Nacua (35.0) spent the afternoon building the best losing resume in the league. Both now 6–3.</p>
+<p>Olave me or Hate me… (97.31) def. i jus went up in my Price (70.02)</p>
+<p>Won with the parking brake on. zazach&#x27;s best player scored 16.8 and it was never remotely in doubt, which tells you everything about what was standing across from him. Rome Odunze (16.0) was oliverslater&#x27;s whole Sunday. zazach to 5–4 on two straight wins, oliverslater to 1–8 on six straight losses.</p>
+<p>Windsor Terror (163.58) def. Based God (127.29)</p>
+<p>Upset, and a beating. Kenneth Walker III (36.3) and CeeDee Lamb (33.5) put soneal718 on 163.58 and juliansryan never got close. Joe Burrow went 29.54 and got nothing for it but a ride home. soneal718 to 3–6, juliansryan to 5–4 on two straight losses.</p>
+<p>Nice Juds (81.45) def. Kindofblue (79.96)</p>
+<p>Two men drowning, one floated. Jahmyr Gibbs (13.4) was the best thing Trey had, Josh Allen (13.86) was the best thing Dan had, and the whole thing was decided by 1.49. Dan left 0.9 on his bench, so that was genuinely the team. Trey to 7–2 and first, Dan to 6–3 on two straight losses.</p>
+<p>BaruchAtahAdonai M. (165.58) def. All Hail the Robot Buddha (102.11)</p>
+<p>League record, soft target. Matthew Golden (32.4) and Ja&#x27;Marr Chase (31.5) built the biggest score in MOP history and the Houston defense jxllokreflo signed on 11/04 added 18.0 on top. Drake Maye (21.26) was RobotBuddha&#x27;s only argument. jxllokreflo to 5–4 on two straight wins, RobotBuddha to 2–7.</p>
+<p>T-Mac n CMCheese (151.71) def. LLTM for commish  (90.83)</p>
+<p>Closed casket. C.J. Stroud (36.36) was the best player in the league this week and Christian McCaffrey (22.7) handled the rest, while yogz&#x27;s leading man was a quarterback on 16.48. Five straight losses for a team still campaigning for commish. rthd20 to 5–4 on three straight wins, yogz to 3–6.</p>
+<hr>
+<p class="section">Biggest Losers (Bench Legends)</p>
+<p>Darren Waller (23.0, RobotBuddha) - A 12.4 swing from the bench, and nowhere near a 63.47 hole. Biggest bench score of the week, wasted.</p>
+<p>KC Concepcion Jr. (18.8, juliansryan) - Sat behind a flex slot that produced 0.0. Eighteen points thrown in the river.</p>
+<p>Audric Estime (14.7, xainshawty) - Benched behind Josh Jacobs (0.5) at running back. That one swap flips the game.</p>
+<p>Jadarian Price (11.8, oliverslater) - Would have replaced the 0.0 in the flex. Any pulse would have.</p>
+<p>Chris Rodriguez Jr. (11.2, oliverslater) - The second man on that bench who cleared a zero. Same flex, same shrug.</p>
+<p>Makai Lemon (12.1, xainshawty) - A 5.5 swing in a game lost by 3.98. The margin was sitting right there.</p>
+<p>Seth McGowan (11.2, yogz) - A 4.3 swing inside a 60.88 loss. Rearranging deck chairs.</p>
+<p>Braelon Allen (5.4, juliansryan) - Also beat a zero without leaving his seat.</p>
+<p class="section">Studs Who Failed</p>
+<p>Josh Jacobs (0.5, xainshawty) - Half a point from a starting back.</p>
+<p>Tucker Kraft (1.9, juliansryan) - The tight end slot never opened.</p>
+<p>Jaylen Waddle (3.2, zazach) - Won in spite of him.</p>
+<p>New England Patriots (4.0, oliverslater) - Eleven men, four points, last place.</p>
+<p>D&#x27;Andre Swift (3.1, xainshawty) - The other dead half of that backfield.</p>
+<p>Aaron Jones Sr. (3.1, tfadp) - Three points in a game lost by 1.49.</p>
+<p>Jared Goff (6.3, treypaulino) - Six points out of the quarterback slot.</p>
+<p>Jameson Williams (5.0, bbasse3267) - Flex spot, no impact, won anyway.</p>
+<p class="section">Started A Zero</p>
+<p>juliansryan started Adonai Mitchell in the flex for 0.0 and lost by 36.29. oliverslater did the same thing with Ladd McConkey, the worst start in MOP this week, in a 70.02 that finished dead last. Two flex slots, two blanks, two losses.</p>
+<p class="section">Call the Doctor</p>
+<p>i jus went up in my Price (1–8, 70.02) - 12th of 12 and six straight losses. Here for both, and both are earned.</p>
+<p>Kindofblue (6–3, 79.96) - Here for the score. 11th of 12 with 0.9 points on the bench, so there is nothing to fix and that is the scary part.</p>
+<p>Nice Juds (7–2, 81.45) - 10th of 12 this week and first in the standings. Somebody up there is handling the scheduling.</p>
+<p>All Hail the Robot Buddha (2–7, 102.11) - Record only. Seventh-best score of the week and second-worst team in MOP.</p>
+<p class="section">Waiver Wire Genius</p>
+<p>jxllokreflo -&gt; Houston Texans (18.0) - Added 11/04, started at DEF, and a load-bearing wall in the biggest score this league has ever seen.</p>
+<p>yogz -&gt; Juwan Johnson (11.4) - Added 11/05 and immediately one of the better things in a 90.83. The wire is outworking the roster.</p>
+<p>tfadp -&gt; Dylan Sampson (7.8) - Added 11/04, started at running back, and Dan lost by 1.49. Still the right call.</p>
+<p class="section">Toilet Bowl Performance</p>
+<p>i jus went up in my Price (70.02) - Lowest in the league, 0–11 in all-play, a flex slot on 0.0. Nobody would have lost to this.</p>
+<hr>
+<p class="section">Power Rankings (with Movement)</p>
+<p class="ranked"><span class="num">1.</span> pukachew⚡️ - 76.9 - 6–3 (-)</p>
+<p>1153.74 points for and a loss by 3.98.</p>
+<p class="ranked"><span class="num">2.</span> NJIGGAS - 75.0 - 6–3 (-)</p>
+<p>1199.49 points for, most in MOP, and a win to show for it.</p>
+<p class="ranked"><span class="num">3.</span> T-Mac n CMCheese - 71.1 - 5–4 (-)</p>
+<p>151.71 behind C.J. Stroud&#x27;s 36.36, three straight wins.</p>
+<p class="ranked"><span class="num">4.</span> BaruchAtahAdonai M. - 68.1 - 5–4 (up 3)</p>
+<p>Biggest riser. 165.58, an 11–0 all-play week, and a league record.</p>
+<p class="ranked"><span class="num">5.</span> Based God - 58.1 - 5–4 (-)</p>
+<p>127.29 and two straight losses, with 18.8 on the bench.</p>
+<p class="ranked"><span class="num">6.</span> Nice Juds - 56.8 - 7–2 (down 2)</p>
+<p>Best record in MOP on 1057.88 points for, the least of any team above them.</p>
+<p class="ranked"><span class="num">7.</span> Windsor Terror - 56.1 - 3–6 (up 2)</p>
+<p>163.58 and a 10–1 all-play week. Still 3–6.</p>
+<p class="ranked"><span class="num">8.</span> Olave me or Hate me… - 52.6 - 5–4 (down 2)</p>
+<p>97.31 and two straight wins. Nobody noticed either.</p>
+<p class="ranked"><span class="num">9.</span> Kindofblue - 39.0 - 6–3 (down 1)</p>
+<p>6–3 in the standings, 79.96 on the field, two straight losses.</p>
+<p class="ranked"><span class="num">10.</span> All Hail the Robot Buddha - 35.8 - 2–7 (-)</p>
+<p>1182.24 points against, most in the league. Brutal draw every week.</p>
+<p class="ranked"><span class="num">11.</span> LLTM for commish  - 29.4 - 3–6 (-)</p>
+<p>90.83 and five straight losses.</p>
+<p class="ranked"><span class="num">12.</span> i jus went up in my Price - 6.3 - 1–8 (-)</p>
+<p>812.21 points for, last in MOP, and six straight losses.</p></div><details class="receipts" open><summary>The receipts</summary><section><p class="label">Box score</p><div class="game"><div class="teams"><span class="w">NJIGGAS</span><span class="sep"> def. </span><span class="l">pukachew⚡️</span></div><div class="score">139.68<span class="lp">&thinsp;&ndash;&thinsp;135.7</span></div></div><div class="game"><div class="teams"><span class="w">Olave me or Hate me…</span><span class="sep"> def. </span><span class="l">i jus went up in my Price</span></div><div class="score">97.31<span class="lp">&thinsp;&ndash;&thinsp;70.02</span></div></div><div class="game"><div class="teams"><span class="w">Windsor Terror</span><span class="sep"> def. </span><span class="l">Based God</span></div><div class="score">163.58<span class="lp">&thinsp;&ndash;&thinsp;127.29</span></div></div><div class="game"><div class="teams"><span class="w">Nice Juds</span><span class="sep"> def. </span><span class="l">Kindofblue</span></div><div class="score">81.45<span class="lp">&thinsp;&ndash;&thinsp;79.96</span></div></div><div class="game"><div class="teams"><span class="w">BaruchAtahAdonai M.</span><span class="sep"> def. </span><span class="l">All Hail the Robot Buddha</span></div><div class="score">165.58<span class="lp">&thinsp;&ndash;&thinsp;102.11</span></div></div><div class="game"><div class="teams"><span class="w">T-Mac n CMCheese</span><span class="sep"> def. </span><span class="l">LLTM for commish </span></div><div class="score">151.71<span class="lp">&thinsp;&ndash;&thinsp;90.83</span></div></div></section><section><p class="label">Standings</p><div class="scroll"><table><thead><tr><th></th><th>Team</th><th class="n">Rec</th><th class="n">PF</th></tr></thead><tbody><tr><td class="rank">1</td><td>Nice Juds <span class="up">&#9650;1</span></td><td class="n">7&#8211;2</td><td class="n pts">1057.88</td></tr><tr><td class="rank">2</td><td>NJIGGAS <span class="up">&#9650;2</span></td><td class="n">6&#8211;3</td><td class="n pts">1199.49</td></tr><tr><td class="rank">3</td><td>pukachew⚡️ <span class="down">&#9660;2</span></td><td class="n">6&#8211;3</td><td class="n pts">1153.74</td></tr><tr><td class="rank">4</td><td>Kindofblue <span class="down">&#9660;1</span></td><td class="n">6&#8211;3</td><td class="n pts">1028.33</td></tr><tr><td class="rank">5</td><td>T-Mac n CMCheese <span class="up">&#9650;1</span></td><td class="n">5&#8211;4</td><td class="n pts">1172.2</td></tr><tr><td class="rank">6</td><td>BaruchAtahAdonai M. <span class="up">&#9650;1</span></td><td class="n">5&#8211;4</td><td class="n pts">1154.17</td></tr><tr><td class="rank">7</td><td>Based God <span class="down">&#9660;2</span></td><td class="n">5&#8211;4</td><td class="n pts">1082.22</td></tr><tr><td class="rank">8</td><td>Olave me or Hate me…</td><td class="n">5&#8211;4</td><td class="n pts">1070.36</td></tr><tr><td class="rank">9</td><td>Windsor Terror <span class="up">&#9650;1</span></td><td class="n">3&#8211;6</td><td class="n pts">1096.14</td></tr><tr><td class="rank">10</td><td>LLTM for commish  <span class="down">&#9660;1</span></td><td class="n">3&#8211;6</td><td class="n pts">929.43</td></tr><tr><td class="rank">11</td><td>All Hail the Robot Buddha</td><td class="n">2&#8211;7</td><td class="n pts">960.64</td></tr><tr><td class="rank">12</td><td>i jus went up in my Price</td><td class="n">1&#8211;8</td><td class="n pts">812.21</td></tr></tbody></table></div></section><section><p class="label">Top performers</p><div class="scroll"><table><thead><tr><th>Player</th><th>Team</th><th class="n">Pts</th></tr></thead><tbody><tr><td>C.J. Stroud <span class="slot">QB</span></td><td class="muted">T-Mac n CMCheese</td><td class="n pts">36.36</td></tr><tr><td>Kenneth Walker III <span class="slot">RB</span></td><td class="muted">Windsor Terror</td><td class="n pts">36.3</td></tr><tr><td>Puka Nacua <span class="slot">WR</span></td><td class="muted">pukachew⚡️</td><td class="n pts">35.0</td></tr><tr><td>CeeDee Lamb <span class="slot">WR</span></td><td class="muted">Windsor Terror</td><td class="n pts">33.5</td></tr><tr><td>Matthew Golden <span class="slot">WR</span></td><td class="muted">BaruchAtahAdonai M.</td><td class="n pts">32.4</td></tr></tbody></table></div></section><section><p class="label">Waiver wire</p><div class="scroll"><table><thead><tr><th>Pickup</th><th>By</th><th>Used</th><th class="n">Pts</th></tr></thead><tbody><tr><td>Houston Texans <span class="slot">DEF</span></td><td class="muted">jxllokreflo</td><td class="slot">started DEF</td><td class="n pts">18.0</td></tr><tr><td>Audric Estime <span class="slot">RB</span></td><td class="muted">xainshawty</td><td class="slot">benched</td><td class="n pts">14.7</td></tr><tr><td>Juwan Johnson <span class="slot">TE</span></td><td class="muted">yogz</td><td class="slot">started TE</td><td class="n pts">11.4</td></tr><tr><td>Alvin Kamara <span class="slot">RB</span></td><td class="muted">xainshawty</td><td class="slot">started FLEX</td><td class="n pts">7.9</td></tr><tr><td>Dylan Sampson <span class="slot">RB</span></td><td class="muted">tfadp</td><td class="slot">started RB</td><td class="n pts">7.8</td></tr><tr><td>Detroit Lions <span class="slot">DEF</span></td><td class="muted">RobotBuddha</td><td class="slot">started DEF</td><td class="n pts">7.75</td></tr><tr><td>Mike Gesicki <span class="slot">TE</span></td><td class="muted">soneal718</td><td class="slot">benched</td><td class="n pts">3.1</td></tr><tr><td>Pittsburgh Steelers <span class="slot">DEF</span></td><td class="muted">jxllokreflo</td><td class="slot">benched</td><td class="n pts">0.0</td></tr></tbody></table></div></section></details>
+<nav></nav>
+<footer>Every number pulled straight from the league. Take it up with the API.</footer></div></body></html>
