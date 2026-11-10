@@ -3032,6 +3032,28 @@
     "transactions": [
       {
         "type": "free_agent",
+        "date": "11/10",
+        "team_ids": [
+          "8"
+        ],
+        "adds": [],
+        "drops": [
+          {
+            "player_id": "10232",
+            "player": "Michael Wilson",
+            "pos": "WR",
+            "team_id": "8",
+            "team": "i jus went up in my Price"
+          }
+        ],
+        "faab_bid": null,
+        "ts": 1794322075865,
+        "teams": [
+          "i jus went up in my Price"
+        ]
+      },
+      {
+        "type": "free_agent",
         "date": "11/08",
         "team_ids": [
           "6"
