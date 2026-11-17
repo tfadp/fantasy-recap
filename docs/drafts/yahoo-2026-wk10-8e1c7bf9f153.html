@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bring It On Season 19 Week 10</title>
+<meta name="description" content="Week 10 Recap - Bring It On">
+<meta property="og:title" content="Week 10 Recap - Bring It On">
+<meta property="og:description" content="Bring It On Season 19 week 10 recap.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><style>
+:root{
+  --paper:#eef1f3; --card:#fff; --ink:#0f1519; --dim:#5b6774; --rule:#d7dde2;
+  --accent:#a82f1a; --good:#186b3f; --bad:#a3211a; --agate:#f6f8f9;
+  --display:"Barlow Condensed","Haettenschweiler","Arial Narrow",sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --data:"Barlow","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+    --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+    --agate:#12171d;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1216; --card:#161b21; --ink:#e7ecf0; --dim:#98a3b0;
+  --rule:#28303a; --accent:#ff7d5e; --good:#5cc98d; --bad:#ff8f81;
+  --agate:#12171d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:26px 18px 64px}
+
+.masthead{margin-bottom:26px}
+.masthead .eyebrow{font-family:var(--data);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(36px,10vw,58px);
+  line-height:.94;margin:8px 0 0;letter-spacing:-.01em;text-wrap:balance;
+  text-transform:uppercase}
+.masthead .dateline{font-family:var(--data);font-size:12px;color:var(--dim);
+  letter-spacing:.04em;margin-top:12px}
+
+section{margin-top:34px}
+.label{font-family:var(--data);font-size:11px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--ink);
+  padding-bottom:5px;margin-bottom:0}
+
+/* box score, only ever inside the receipts */
+.game{display:grid;grid-template-columns:1fr auto;gap:6px 14px;
+  align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);
+  font-family:var(--data)}
+.game .teams{font-size:16px;line-height:1.35}
+.game .w{font-weight:600}
+.game .l{color:var(--dim)}
+.game .sep{color:var(--dim);font-size:13px;padding:0 2px}
+.game .score{font-family:var(--display);font-size:22px;font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:.01em}
+.game .score .lp{color:var(--dim)}
+
+/* the write-up, which is the whole point of the page */
+.column{font-family:var(--body);font-size:18px;line-height:1.6}
+
+/* the receipts: folded away, for people who want to argue */
+.receipts{margin-top:44px;border-top:3px solid var(--ink);padding-top:0}
+.receipts summary{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+  padding:15px 0;cursor:pointer;list-style:none;display:flex;
+  justify-content:space-between;align-items:center;gap:12px}
+.receipts summary::-webkit-details-marker{display:none}
+.receipts summary::after{content:"Show";font-size:11px;color:var(--accent)}
+.receipts[open] summary::after{content:"Hide"}
+.receipts summary:hover{color:var(--ink)}
+.receipts section:first-of-type{margin-top:6px}
+.column p{margin:0 0 15px}
+.column p:last-child{margin-bottom:0}
+/* power rankings: the number is content, not list furniture, so it is kept
+   literal. An <ol> would renumber from 1 every time a description line
+   interrupts it, which is exactly what this format does twelve times. */
+.column p.ranked{margin:0 0 3px;font-family:var(--data);font-weight:600;
+  font-size:16px;font-variant-numeric:tabular-nums}
+.column p.ranked + p{margin:0 0 16px;color:var(--dim);font-size:16px}
+.column p.ranked .num{color:var(--accent);display:inline-block;min-width:1.6em}
+.column p strong:only-child{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-top:26px}
+.column p.section{font-family:var(--data);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  margin:30px 0 12px}
+.column ul{list-style:none;padding-left:0}
+.column ul li{position:relative;padding-left:16px}
+.column ul li::before{content:"\2022";position:absolute;left:0;color:var(--accent)}
+.column hr{border:0;border-top:1px solid var(--rule);margin:30px 0}
+.column h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;
+  font-size:26px;font-weight:600;margin:34px 0 11px;line-height:1.05;
+  text-wrap:balance}
+.column ul,.column ol{margin:0 0 19px;padding-left:22px}
+.column li{margin-bottom:8px}
+.column em{font-style:italic;color:var(--dim)}
+.column strong{font-weight:600}
+.column blockquote{margin:0 0 19px;padding-left:16px;
+  border-left:3px solid var(--accent);color:var(--dim);font-style:italic}
+
+/* agate */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-family:var(--data);font-size:14px;
+  font-variant-numeric:tabular-nums;margin-top:2px}
+th{text-align:left;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;padding:9px 8px 6px 0;border-bottom:1px solid var(--rule)}
+td{padding:7px 8px 7px 0;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+td:last-child,th:last-child{padding-right:0}
+.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rank{color:var(--dim);width:1.6em;font-size:13px}
+.pts{font-weight:600}
+.up{color:var(--good);font-size:12px}
+.down{color:var(--bad);font-size:12px}
+.muted{color:var(--dim)}
+.slot{font-size:12px;color:var(--dim);letter-spacing:.03em;text-transform:uppercase}
+
+nav{margin-top:40px;padding-top:16px;border-top:3px solid var(--ink);
+  font-family:var(--data);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{margin-top:22px;font-family:var(--data);font-size:11px;color:var(--dim);
+  letter-spacing:.03em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body><div class="wrap"><header class="masthead">
+<div class="eyebrow">Bring It On Season 19 &middot; Week 10, 2026</div>
+<h1>Week 10 Recap - Bring It On</h1>
+<div class="dateline">Tuesday, November 17</div>
+</header>
+<div class="column"><p>LT Bavaros is 2–8 and just dropped 118.15 on the team that was sitting first in the league, which is a man on death row winning the lottery. ‘Ster the Pot scored 97.2 and got mugged by the worst record in the building. Schmul Gone Wild hung 137.3 on Krispy, a new high over the ten weeks on record, and benched Cam Ward (21.45) out of pure cruelty. Christian McCaffrey went for 42.3 for THE FURY, which lost by 0.45 - the most expensive 42 points anyone will score this year. Busta Skreen sat C.J. Stroud (22.55) for Drake Maye (3.5) and won anyway, falling down the stairs and landing in a parking spot. Gowanus Heights Hex is 6–4 and scored 67.3, last of fourteen. A playoff team playing like a bye week.</p>
+<p class="section">Match Summaries</p>
+<p>Philly Special (96.55) def. 1.21 Gigawatts (89.35)</p>
+<p>Burrow, alone. Chuba Hubbard (29.2) and Bhayshul Tuten (17.3) did the work and never looked back. Joe Burrow threw for 37.25 and the other eight starters produced a perfect lineup that still came up 7.2 short; both now 5–5, Philly Special on three straight wins, 1.21 Gigawatts on two straight losses.</p>
+<p>LT Bavaros (118.15) def. ‘Ster the Pot (97.2)</p>
+<p>Biggest upset of the week. Brock Purdy (35.55) and a Rams defense worth 16 built a new high of 118.15 against the team that walked in on top of the league. Josh Allen (24.3) led the ambushed; LT Bavaros is 2–8, ‘Ster the Pot is 6–4.</p>
+<p>Anchor Down (88.45) def. THE FURY (88)</p>
+<p>Decided by 0.45. Cam Skattebo (24.2) and Chase Brown (20.3) got there carrying a Steelers defense that scored -3, which should be illegal. THE FURY got 42.3 from Christian McCaffrey, the biggest number in the league, and left Aaron Jones Sr. (11.5) on the bench for Denzel Boston (1.6) in the flex; Anchor Down is 4–6, THE FURY is 5–5.</p>
+<p>Ass in a Box (125.35) def. Canes to the Cup (81.15)</p>
+<p>Dak and nobody. George Pickens (32.5) and Deebo Samuel Sr. (22.9) made it a 44.2-point errand. Dak Prescott threw for 37.85 and the rest of the roster treated it as optional; Ass in a Box is 7–3 and alone at the top, Canes to the Cup is 4–6 on four straight losses and no closer to a cup.</p>
+<p>Busta Skreen (83.3) def. Gowanus Heights Hex (67.3)</p>
+<p>Won it with the lights off. Jaxon Smith-Njigba (23.1) and a Bills defense (12) were plenty, because 67.3 was never going to be enough. C.J. Stroud (22.55) spent the afternoon on the bench behind Drake Maye (3.5) and it cost Busta Skreen absolutely nothing; both now 6–4.</p>
+<p>Dread the Bred (109.7) def. Sleeping With The Fishes (89.65)</p>
+<p>Mahomes and a placekicker. Patrick Mahomes (38.9) and Cam Little (21) finished one-two, which tells you how the rest of the lineup spent its Sunday. Parker Washington (21.2) led Sleeping With The Fishes into another 20.05-point hole; Dread the Bred is 6–4 on two straight wins, Sleeping With The Fishes is 4–6 on two straight losses.</p>
+<p>Schmul Gone Wild (137.3) def. Krispy (83)</p>
+<p>Biggest beating of the week. Jahmyr Gibbs (37.2) and Emmett Johnson (29.1) built a new high of 137.3, the best score in the league since Philly Special&#x27;s 140.7 in week 8. Trevor Lawrence threw for 30.3 and Krispy ran a 100% efficient lineup into a 54.3-point loss, which leaves nothing in the app to blame; Schmul Gone Wild is 6–4 on three straight wins, Krispy is 4–6.</p>
+<hr>
+<p class="section">Biggest Losers (Bench Legends)</p>
+<p>Omarion Hampton (16.5, Sleeping With The Fishes) - Sat behind Braelon Allen (4.6) at running back, worth 11.9 and the worst benching in the league this week.</p>
+<p>Seth McGowan (13.7, Sleeping With The Fishes) - Also would have replaced Allen (4.6), so there were two right answers for one wrong slot.</p>
+<p>Kaelon Black (12.6, Gowanus Heights Hex) - Sat behind Tyler Allgeier (1.4) in the flex, worth 11.2 inside the week&#x27;s lowest score. Upside left in the garage.</p>
+<p>Aaron Jones Sr. (11.5, THE FURY) - Sat behind Denzel Boston (1.6) in the flex. That one swap flips the game.</p>
+<p>Antonio Williams (10.2, ‘Ster the Pot) - Chris Olave (3) kept the job and did nothing with it, worth 7.2 in a loss by 20.95.</p>
+<p>Brenton Strange (6.9, THE FURY) - The second man who would have replaced Boston (1.6). The flex was a trap door.</p>
+<p>Kyle Pitts Sr. (3, Canes to the Cup) - Would have replaced Mike Gesicki (0.9), worth 2.1 in a loss by 44.2. Decorative.</p>
+<p class="section">Studs Who Failed</p>
+<p>Steelers (-3, Anchor Down) - A defense that scored for the opponent.</p>
+<p>Jalen Coker (0.3, Schmul Gone Wild) - Three tenths inside the week&#x27;s best score.</p>
+<p>Tyler Warren (0.4, Schmul Gone Wild) - Tight end, four tenths, nobody noticed.</p>
+<p>Wan&#x27;Dale Robinson (1, Canes to the Cup) - Went and got him, started him, one point.</p>
+<p>Germie Bernard (1, Sleeping With The Fishes) - A dollar, a point, a starting spot.</p>
+<p>Audric Estime (1.1, Dread the Bred) - A starting back worth one and change.</p>
+<p>Tyler Allgeier (1.4, Gowanus Heights Hex) - One point four in the league&#x27;s worst score.</p>
+<p>Drake Maye (3.5, Busta Skreen) - Three and a half from a starting quarterback.</p>
+<p class="section">Started A Zero</p>
+<p>LT Bavaros started Omar Cooper Jr. at receiver for 0.0, the worst start in the league this week, and won by 20.95 anyway. The commish finally gets the forgiving version of his own mistake.</p>
+<p class="section">Call the Doctor</p>
+<p>Gowanus Heights Hex (6–4, 67.3) - Fourteenth of fourteen and 0–13 in all-play, from a team with a winning record. Nothing on the field worked.</p>
+<p>Canes to the Cup (4–6, 81.15) - Thirteenth of fourteen, 1–12 in all-play, four straight losses. The rot is league-leading.</p>
+<p>Krispy (4–6, 83) - Twelfth of fourteen on a 100% efficient lineup. The roster is the illness.</p>
+<p>Sleeping With The Fishes (4–6, 89.65) - 822.85 points for, the fewest in the league, and 24.6 of this week&#x27;s left in reserve.</p>
+<p>LT Bavaros (2–8, 118.15) - Third-best score of the week attached to the worst record in the league. Ten weeks late.</p>
+<p class="section">Waiver Wire Genius</p>
+<p>One add in this league cleared the bar and his team still finished last of fourteen, so the ceremony is brief.</p>
+<p>Gowanus Heights Hex -&gt; Colts (12) - Added 11/15, started at defense, top-3 on the roster, and the team lost by 16.0. Right call, wrong eight other guys.</p>
+<p>Ass in a Box -&gt; Aaron Rodgers (17.05) - Best add in the league, started at quarterback, won by 44.2. Shopping on a Saturday and getting away with it.</p>
+<p>Schmul Gone Wild -&gt; Cam Ward (21.45) - Went out and got the highest-scoring add of the week, then left him on the bench. A 54.3-point win is the only reason nobody is screaming.</p>
+<p>Sleeping With The Fishes -&gt; Germie Bernard (1) - Spent $1, dropped Malik Washington, started him at receiver for a point. Priced correctly.</p>
+<p class="section">Toilet Bowl Performance</p>
+<p>Gowanus Heights Hex (67.3) - League low, 0–13 in all-play, 11.2 points sitting on the bench, all from a 6–4 team. The standings have not noticed yet.</p>
+<hr>
+<p class="section">Power Rankings (with Movement)</p>
+<p class="ranked"><span class="num">1.</span> Schmul Gone Wild - 137.3 - 6–4 (up 3)</p>
+<p>New high at 137.3, 13–0 in all-play, three straight wins.</p>
+<p class="ranked"><span class="num">2.</span> Philly Special - 96.55 - 5–5 (down 1)</p>
+<p>League-high 1046.05 points for and three straight wins.</p>
+<p class="ranked"><span class="num">3.</span> ‘Ster the Pot - 97.2 - 6–4 (up 2)</p>
+<p>974.55 points for and 7.2 left on the bench in an upset loss.</p>
+<p class="ranked"><span class="num">4.</span> 1.21 Gigawatts - 89.35 - 5–5 (down 2)</p>
+<p>Joe Burrow 37.25, a perfect lineup, two straight losses.</p>
+<p class="ranked"><span class="num">5.</span> Ass in a Box - 125.35 - 7–3 (up 7)</p>
+<p>Best record in the league at 7–3 and second-best score of the week.</p>
+<p class="ranked"><span class="num">6.</span> Dread the Bred - 109.7 - 6–4 (up 4)</p>
+<p>Two straight wins with 19.8 points benched.</p>
+<p class="ranked"><span class="num">7.</span> THE FURY - 88 - 5–5 (up 1)</p>
+<p>836.8 points against, the fewest in the league, and a loss by 0.45.</p>
+<p class="ranked"><span class="num">8.</span> Gowanus Heights Hex - 67.3 - 6–4 (down 5)</p>
+<p>Lowest score of the week and 0–13 in all-play.</p>
+<p class="ranked"><span class="num">9.</span> Krispy - 83 - 4–6 (down 3)</p>
+<p>100% efficient lineup, 967.3 points against.</p>
+<p class="ranked"><span class="num">10.</span> Canes to the Cup - 81.15 - 4–6 (down 3)</p>
+<p>1067.25 points against, the most in the league, and four straight losses.</p>
+<p class="ranked"><span class="num">11.</span> Busta Skreen - 83.3 - 6–4 (down 2)</p>
+<p>Worst lineup efficiency in the league at 0.7535 and a win to show for it.</p>
+<p class="ranked"><span class="num">12.</span> Anchor Down - 88.45 - 4–6 (up 1)</p>
+<p>Perfect lineup, a defense on -3, a win by 0.45.</p>
+<p class="ranked"><span class="num">13.</span> Sleeping With The Fishes - 89.65 - 4–6 (-)</p>
+<p>822.85 points for, the fewest in the league, two straight losses.</p>
+<p class="ranked"><span class="num">14.</span> LT Bavaros - 118.15 - 2–8 (-)</p>
+<p>New high at 118.15 and still 2–8.</p></div><details class="receipts" open><summary>The receipts</summary><section><p class="label">Box score</p><div class="game"><div class="teams"><span class="w">Philly Special</span><span class="sep"> def. </span><span class="l">1.21 Gigawatts</span></div><div class="score">96.55<span class="lp">&thinsp;&ndash;&thinsp;89.35</span></div></div><div class="game"><div class="teams"><span class="w">LT Bavaros</span><span class="sep"> def. </span><span class="l">‘Ster the Pot</span></div><div class="score">118.15<span class="lp">&thinsp;&ndash;&thinsp;97.2</span></div></div><div class="game"><div class="teams"><span class="w">Anchor Down</span><span class="sep"> def. </span><span class="l">THE FURY</span></div><div class="score">88.45<span class="lp">&thinsp;&ndash;&thinsp;88</span></div></div><div class="game"><div class="teams"><span class="w">Ass in a Box</span><span class="sep"> def. </span><span class="l">Canes to the Cup</span></div><div class="score">125.35<span class="lp">&thinsp;&ndash;&thinsp;81.15</span></div></div><div class="game"><div class="teams"><span class="w">Busta Skreen</span><span class="sep"> def. </span><span class="l">Gowanus Heights Hex</span></div><div class="score">83.3<span class="lp">&thinsp;&ndash;&thinsp;67.3</span></div></div><div class="game"><div class="teams"><span class="w">Dread the Bred</span><span class="sep"> def. </span><span class="l">Sleeping With The Fishes</span></div><div class="score">109.7<span class="lp">&thinsp;&ndash;&thinsp;89.65</span></div></div><div class="game"><div class="teams"><span class="w">Schmul Gone Wild</span><span class="sep"> def. </span><span class="l">Krispy</span></div><div class="score">137.3<span class="lp">&thinsp;&ndash;&thinsp;83</span></div></div></section><section><p class="label">Standings</p><div class="scroll"><table><thead><tr><th></th><th>Team</th><th class="n">Rec</th><th class="n">PF</th></tr></thead><tbody><tr><td class="rank">1</td><td>Ass in a Box <span class="up">&#9650;2</span></td><td class="n">7&#8211;3</td><td class="n pts">947.7</td></tr><tr><td class="rank">2</td><td>Schmul Gone Wild <span class="up">&#9650;3</span></td><td class="n">6&#8211;4</td><td class="n pts">997.4</td></tr><tr><td class="rank">3</td><td>‘Ster the Pot <span class="down">&#9660;2</span></td><td class="n">6&#8211;4</td><td class="n pts">974.55</td></tr><tr><td class="rank">4</td><td>Gowanus Heights Hex <span class="down">&#9660;2</span></td><td class="n">6&#8211;4</td><td class="n pts">933.2</td></tr><tr><td class="rank">5</td><td>Busta Skreen <span class="up">&#9650;2</span></td><td class="n">6&#8211;4</td><td class="n pts">915.0</td></tr><tr><td class="rank">6</td><td>Dread the Bred <span class="up">&#9650;2</span></td><td class="n">6&#8211;4</td><td class="n pts">910.1</td></tr><tr><td class="rank">7</td><td>Philly Special <span class="up">&#9650;2</span></td><td class="n">5&#8211;5</td><td class="n pts">1046.05</td></tr><tr><td class="rank">8</td><td>1.21 Gigawatts <span class="down">&#9660;4</span></td><td class="n">5&#8211;5</td><td class="n pts">1016.8</td></tr><tr><td class="rank">9</td><td>THE FURY <span class="down">&#9660;3</span></td><td class="n">5&#8211;5</td><td class="n pts">946.95</td></tr><tr><td class="rank">10</td><td>Krispy</td><td class="n">4&#8211;6</td><td class="n pts">931.5</td></tr><tr><td class="rank">11</td><td>Canes to the Cup</td><td class="n">4&#8211;6</td><td class="n pts">916.35</td></tr><tr><td class="rank">12</td><td>Anchor Down <span class="up">&#9650;1</span></td><td class="n">4&#8211;6</td><td class="n pts">878.7</td></tr><tr><td class="rank">13</td><td>Sleeping With The Fishes <span class="down">&#9660;1</span></td><td class="n">4&#8211;6</td><td class="n pts">822.85</td></tr><tr><td class="rank">14</td><td>LT Bavaros</td><td class="n">2&#8211;8</td><td class="n pts">827.3</td></tr></tbody></table></div></section><section><p class="label">Top performers</p><div class="scroll"><table><thead><tr><th>Player</th><th>Team</th><th class="n">Pts</th></tr></thead><tbody><tr><td>Christian McCaffrey <span class="slot">RB</span></td><td class="muted">THE FURY</td><td class="n pts">42.3</td></tr><tr><td>Patrick Mahomes <span class="slot">QB</span></td><td class="muted">Dread the Bred</td><td class="n pts">38.9</td></tr><tr><td>Dak Prescott <span class="slot">QB</span></td><td class="muted">Canes to the Cup</td><td class="n pts">37.85</td></tr><tr><td>Joe Burrow <span class="slot">QB</span></td><td class="muted">1.21 Gigawatts</td><td class="n pts">37.25</td></tr><tr><td>Jahmyr Gibbs <span class="slot">RB</span></td><td class="muted">Schmul Gone Wild</td><td class="n pts">37.2</td></tr></tbody></table></div></section><section><p class="label">Waiver wire</p><div class="scroll"><table><thead><tr><th>Pickup</th><th>By</th><th>Used</th><th class="n">Pts</th></tr></thead><tbody><tr><td>Cam Ward <span class="slot">QB</span></td><td class="muted">Rick</td><td class="slot">benched</td><td class="n pts">21.45</td></tr><tr><td>Aaron Rodgers <span class="slot">QB</span></td><td class="muted">Ass in a Box</td><td class="slot">started QB</td><td class="n pts">17.05</td></tr><tr><td>Colts <span class="slot">DEF</span></td><td class="muted">Aaron</td><td class="slot">started DEF</td><td class="n pts">12</td></tr><tr><td>Brandon McManus <span class="slot">K</span></td><td class="muted">David Kramer</td><td class="slot">started K</td><td class="n pts">10.7</td></tr><tr><td>Konata Mumpfield <span class="slot">WR</span></td><td class="muted">Daniel Porter</td><td class="slot">started WR</td><td class="n pts">8.1</td></tr><tr><td>Chris Boswell <span class="slot">K</span></td><td class="muted">Rick</td><td class="slot">started K</td><td class="n pts">5.5</td></tr><tr><td>Austin Ekeler <span class="slot">RB</span></td><td class="muted">Jared Kramer</td><td class="slot">started RB</td><td class="n pts">5.2</td></tr><tr><td>Kaleb Johnson <span class="slot">RB</span></td><td class="muted">William</td><td class="slot">benched</td><td class="n pts">4.2</td></tr><tr><td>Bengals <span class="slot">DEF</span></td><td class="muted">DAVID DEROSE</td><td class="slot">started DEF</td><td class="n pts">4</td></tr><tr><td>Justice Hill <span class="slot">RB</span></td><td class="muted">Jonathan</td><td class="slot">started RB</td><td class="n pts">3.8</td></tr><tr><td>Jakobi Meyers <span class="slot">WR</span></td><td class="muted">Daniel Porter</td><td class="slot">started W/R/T</td><td class="n pts">3.4</td></tr><tr><td>Juwan Johnson <span class="slot">TE</span></td><td class="muted">Scott</td><td class="slot">started TE</td><td class="n pts">2.8</td></tr><tr><td>Darren Waller <span class="slot">TE</span></td><td class="muted">Ass in a Box</td><td class="slot">started TE</td><td class="n pts">2.4</td></tr><tr><td>Chimere Dike <span class="slot">WR</span></td><td class="muted">Fran</td><td class="slot">started W/R/T</td><td class="n pts">2.1</td></tr><tr><td>Ravens <span class="slot">DEF</span></td><td class="muted">Jared Kramer</td><td class="slot">started DEF</td><td class="n pts">2</td></tr><tr><td>Dominic Zvada <span class="slot">K</span></td><td class="muted">William</td><td class="slot">started K</td><td class="n pts">2</td></tr><tr><td>Germie Bernard <span class="slot">WR</span></td><td class="muted">William</td><td class="slot">started WR</td><td class="n pts">1</td></tr><tr><td>Wan&#x27;Dale Robinson <span class="slot">WR</span></td><td class="muted">Jonathan</td><td class="slot">started W/R/T</td><td class="n pts">1</td></tr><tr><td>Bo Nix <span class="slot">QB</span></td><td class="muted">Ass in a Box</td><td class="slot">benched</td><td class="n pts">0</td></tr><tr><td>Jordan Addison <span class="slot">WR</span></td><td class="muted">Jared Kramer</td><td class="slot">benched</td><td class="n pts">0</td></tr></tbody></table></div></section></details>
+<nav></nav>
+<footer>Every number pulled straight from the league. Take it up with the API.</footer></div></body></html>
